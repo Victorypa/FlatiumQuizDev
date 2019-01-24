@@ -15,6 +15,6 @@ class PersonController extends Controller
 
     public function store()
     {
-
+        dd('working');
     }
 }

@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <app-form></app-form>
+    <info-form></info-form>
 @endsection
