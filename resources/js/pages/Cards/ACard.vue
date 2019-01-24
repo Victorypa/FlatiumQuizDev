@@ -6,15 +6,15 @@
     </h1>
     <div class="image-wrapper">
       <a class="image-card" href="#">
-        <img alt="Более классический" :src="url + '/storage/quiz/A/A1.jpg'">
+        <img alt="Более классический" src="/storage/quiz/A/A1.jpg">
         <h4 class="image-text">Более классический</h4>
       </a>
       <a class="image-card" href="#">
-        <img alt="Что-то между" :src="url + '/storage/quiz/A/A2.jpg'">
+        <img alt="Что-то между" src="/storage/quiz/A/A2.jpg">
         <h4 class="image-text">Что-то между</h4>
       </a>
       <a class="image-card" href="#">
-        <img alt="Более современный" :src="url + '/storage/quiz/A/A3.jpg'">
+        <img alt="Более современный" src="/storage/quiz/A/A3.jpg">
         <h4 class="image-text">Более современный</h4>
       </a>
     </div>
@@ -24,7 +24,11 @@
 
 <script>
   export default {
-
+      data () {
+          return {
+              
+          }
+      }
   }
 </script>
 

@@ -1787,7 +1787,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {};
+  }
+});
 
 /***/ }),
 
@@ -37501,52 +37505,55 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "container" }, [
-      _c("h1", { staticClass: "main-caption" }, [
-        _vm._v("\n    Я бы описал свой стиль как ...\n    ")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "image-wrapper" }, [
-        _c("a", { staticClass: "image-card", attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: {
-              alt: "Более классический",
-              src: _vm.url + "/storage/quiz/A/A1.jpg"
-            }
-          }),
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "container" }, [
+        _c("h1", { staticClass: "main-caption" }, [
+          _vm._v("\n    Я бы описал свой стиль как ...\n    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "image-wrapper" }, [
+          _c("a", { staticClass: "image-card", attrs: { href: "#" } }, [
+            _c("img", {
+              attrs: {
+                alt: "Более классический",
+                src: "/storage/quiz/A/A1.jpg"
+              }
+            }),
+            _vm._v(" "),
+            _c("h4", { staticClass: "image-text" }, [
+              _vm._v("Более классический")
+            ])
+          ]),
           _vm._v(" "),
-          _c("h4", { staticClass: "image-text" }, [
-            _vm._v("Более классический")
+          _c("a", { staticClass: "image-card", attrs: { href: "#" } }, [
+            _c("img", {
+              attrs: { alt: "Что-то между", src: "/storage/quiz/A/A2.jpg" }
+            }),
+            _vm._v(" "),
+            _c("h4", { staticClass: "image-text" }, [_vm._v("Что-то между")])
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "image-card", attrs: { href: "#" } }, [
+            _c("img", {
+              attrs: { alt: "Более современный", src: "/storage/quiz/A/A3.jpg" }
+            }),
+            _vm._v(" "),
+            _c("h4", { staticClass: "image-text" }, [
+              _vm._v("Более современный")
+            ])
           ])
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "image-card", attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: {
-              alt: "Что-то между",
-              src: _vm.url + "/storage/quiz/A/A2.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("h4", { staticClass: "image-text" }, [_vm._v("Что-то между")])
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "image-card", attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: {
-              alt: "Более современный",
-              src: _vm.url + "/storage/quiz/A/A3.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("h4", { staticClass: "image-text" }, [_vm._v("Более современный")])
         ])
       ])
     ])
-  ])
-}
-var staticRenderFns = []
+  }
+]
 render._withStripped = true
 
 
