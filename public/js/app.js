@@ -1782,12 +1782,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       cards_booleans: [],
       acards: [],
+      bcards: [],
+      c1cards: [],
+      c2cards: [],
       selected_uuids: []
     };
   },
@@ -1797,9 +1835,41 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     cardsInit: function cardsInit() {
       this.acards = _index_js__WEBPACK_IMPORTED_MODULE_0__["acards"];
+      this.bcards = _index_js__WEBPACK_IMPORTED_MODULE_0__["bcards"];
+      this.c1cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["c1cards"];
       this.cards_booleans = _index_js__WEBPACK_IMPORTED_MODULE_0__["cards_booleans"];
     },
-    addCard: function addCard(uuid) {
+    addACard: function addACard(uuid) {
+      this.selected_uuids.push(uuid);
+      this.cards_booleans.a = false;
+      this.cards_booleans.b = true;
+    },
+    addBCard: function addBCard(uuid) {
+      this.selected_uuids.push(uuid);
+      this.cards_booleans.b = false;
+
+      switch (this.selected_uuids.join('')) {
+        case 'A1B1':
+        case 'A1B3':
+        case 'A1B2':
+        case 'A2B1':
+        case 'A2B3':
+        case 'A2B2':
+        case 'A3B1':
+        case 'A3B3':
+        case 'A3B2':
+          this.cards_booleans.c1 = true;
+          break;
+
+        case '':
+          this.cards_booleans.c2 = true;
+
+        default:
+          return;
+      } // this.cards_booleans.b = true
+
+    },
+    addCCard: function addCCard(uuid) {
       this.selected_uuids.push(uuid);
       console.log(this.selected_uuids);
     }
@@ -37518,45 +37588,183 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "container" }, [
-      _c("h1", { staticClass: "main-caption" }, [
-        _vm._v("\n    Я бы описал свой стиль как ...\n    ")
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "image-wrapper" },
-        [
-          _vm._l(_vm.acards, function(card) {
-            return [
-              _c(
-                "a",
-                {
-                  staticClass: "image-card",
-                  on: {
-                    click: function($event) {
-                      _vm.addCard(card.uuid)
-                    }
-                  }
-                },
-                [
-                  _c("img", {
-                    attrs: { alt: "Более классический", src: card.path }
-                  }),
-                  _vm._v(" "),
-                  _c("h4", { staticClass: "image-text" }, [
-                    _vm._v(_vm._s(card.name))
-                  ])
-                ]
-              )
-            ]
-          })
-        ],
-        2
-      )
-    ])
-  ])
+  return _vm.cards_booleans
+    ? _c("div", { staticClass: "container" }, [
+        _c("h1", { staticClass: "main-caption" }, [
+          _vm._v("\n        Я бы описал свой стиль как ...\n    ")
+        ]),
+        _vm._v(" "),
+        _vm.cards_booleans.a
+          ? _c(
+              "div",
+              { staticClass: "image-wrapper" },
+              [
+                _vm._l(_vm.acards, function(card) {
+                  return [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "image-card",
+                        on: {
+                          click: function($event) {
+                            _vm.addACard(card.uuid)
+                          }
+                        }
+                      },
+                      [
+                        _c("img", {
+                          attrs: { alt: "Более классический", src: card.path }
+                        }),
+                        _vm._v(" "),
+                        _c("h4", { staticClass: "image-text" }, [
+                          _vm._v(_vm._s(card.name))
+                        ])
+                      ]
+                    )
+                  ]
+                })
+              ],
+              2
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.cards_booleans.b
+          ? _c(
+              "div",
+              { staticClass: "image-wrapper" },
+              [
+                _vm._l(_vm.bcards, function(card) {
+                  return [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "image-card",
+                        on: {
+                          click: function($event) {
+                            _vm.addBCard(card.uuid)
+                          }
+                        }
+                      },
+                      [
+                        _c("img", {
+                          attrs: { alt: "Более классический", src: card.path }
+                        }),
+                        _vm._v(" "),
+                        _c("h4", { staticClass: "image-text" }, [
+                          _vm._v(_vm._s(card.name))
+                        ])
+                      ]
+                    )
+                  ]
+                })
+              ],
+              2
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.cards_booleans.c1
+          ? _c(
+              "div",
+              { staticClass: "image-wrapper" },
+              [
+                _vm._l(_vm.c1cards, function(card) {
+                  return [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "image-card",
+                        on: {
+                          click: function($event) {
+                            _vm.addCCard(card.uuid)
+                          }
+                        }
+                      },
+                      [
+                        _c("img", {
+                          attrs: { alt: "Более классический", src: card.path }
+                        }),
+                        _vm._v(" "),
+                        _c("h4", { staticClass: "image-text" }, [
+                          _vm._v(_vm._s(card.name))
+                        ])
+                      ]
+                    )
+                  ]
+                })
+              ],
+              2
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.cards_booleans.c2
+          ? _c(
+              "div",
+              { staticClass: "image-wrapper" },
+              [
+                _vm._l(_vm.c2cards, function(card) {
+                  return [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "image-card",
+                        on: {
+                          click: function($event) {
+                            _vm.addCCard(card.uuid)
+                          }
+                        }
+                      },
+                      [
+                        _c("img", {
+                          attrs: { alt: "Более классический", src: card.path }
+                        }),
+                        _vm._v(" "),
+                        _c("h4", { staticClass: "image-text" }, [
+                          _vm._v(_vm._s(card.name))
+                        ])
+                      ]
+                    )
+                  ]
+                })
+              ],
+              2
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.cards_booleans.c3
+          ? _c(
+              "div",
+              { staticClass: "image-wrapper" },
+              [
+                _vm._l(_vm.c3cards, function(card) {
+                  return [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "image-card",
+                        on: {
+                          click: function($event) {
+                            _vm.addCCard(card.uuid)
+                          }
+                        }
+                      },
+                      [
+                        _c("img", {
+                          attrs: { alt: "Более классический", src: card.path }
+                        }),
+                        _vm._v(" "),
+                        _c("h4", { staticClass: "image-text" }, [
+                          _vm._v(_vm._s(card.name))
+                        ])
+                      ]
+                    )
+                  ]
+                })
+              ],
+              2
+            )
+          : _vm._e()
+      ])
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -49241,12 +49449,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************!*\
   !*** ./resources/js/pages/Cards/index.js ***!
   \*******************************************/
-/*! exports provided: acards, cards_booleans */
+/*! exports provided: acards, bcards, c1cards, c2cards, c3cards, d1cards, d2cards, d3cards, cards_booleans */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "acards", function() { return acards; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bcards", function() { return bcards; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c1cards", function() { return c1cards; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c2cards", function() { return c2cards; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c3cards", function() { return c3cards; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d1cards", function() { return d1cards; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d2cards", function() { return d2cards; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d3cards", function() { return d3cards; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cards_booleans", function() { return cards_booleans; });
 var acards = [{
   uuid: 'A1',
@@ -49261,20 +49476,107 @@ var acards = [{
   name: 'Более современный',
   path: '/storage/quiz/A/A3.jpg'
 }];
-var cards_booleans = [{
+var bcards = [{
+  uuid: 'B1',
+  name: 'Простые формы',
+  path: '/storage/quiz/B/B1.jpg'
+}, {
+  uuid: 'B2',
+  name: 'Изысканный стиль',
+  path: '/storage/quiz/B/B2.jpg'
+}, {
+  uuid: 'B3',
+  name: 'Брутальный стиль',
+  path: '/storage/quiz/B/B3.jpg'
+}];
+var c1cards = [{
+  uuid: 'C1',
+  name: '',
+  path: '/storage/quiz/C1/C1.jpg'
+}, {
+  uuid: 'C2',
+  name: '',
+  path: '/storage/quiz/C1/C2.jpg'
+}, {
+  uuid: 'C3',
+  name: '',
+  path: '/storage/quiz/C1/C3.jpg'
+}];
+var c2cards = [{
+  uuid: 'C1',
+  name: '',
+  path: '/storage/quiz/C2/C1.jpg'
+}, {
+  uuid: 'C2',
+  name: '',
+  path: '/storage/quiz/C2/C2.jpg'
+}, {
+  uuid: 'C3',
+  name: '',
+  path: '/storage/quiz/C2/C3.jpg'
+}];
+var c3cards = [{
+  uuid: 'C1',
+  name: '',
+  path: '/storage/quiz/C3/C1.jpg'
+}, {
+  uuid: 'C2',
+  name: '',
+  path: '/storage/quiz/C3/C2.jpg'
+}, {
+  uuid: 'C3',
+  name: '',
+  path: '/storage/quiz/C3/C3.jpg'
+}];
+var d1cards = [{
+  uuid: 'D1',
+  name: '',
+  path: '/storage/quiz/D1/D1.jpg'
+}, {
+  uuid: 'D2',
+  name: '',
+  path: '/storage/quiz/D1/D2.jpg'
+}, {
+  uuid: 'D3',
+  name: '',
+  path: '/storage/quiz/D1/D3.jpg'
+}];
+var d2cards = [{
+  uuid: 'D1',
+  name: '',
+  path: '/storage/quiz/D2/D1.jpg'
+}, {
+  uuid: 'D2',
+  name: '',
+  path: '/storage/quiz/D2/D2.jpg'
+}, {
+  uuid: 'D3',
+  name: '',
+  path: '/storage/quiz/D2/D3.jpg'
+}];
+var d3cards = [{
+  uuid: 'D1',
+  name: '',
+  path: '/storage/quiz/D3/D1.jpg'
+}, {
+  uuid: 'D2',
+  name: '',
+  path: '/storage/quiz/D3/D2.jpg'
+}, {
+  uuid: 'D3',
+  name: '',
+  path: '/storage/quiz/D3/D3.jpg'
+}];
+var cards_booleans = {
   a: true,
   b: false,
-  c: {
-    c1: false,
-    c2: false,
-    c3: false
-  },
-  d: {
-    d1: false,
-    d2: false,
-    d3: false
-  }
-}];
+  c1: false,
+  c2: false,
+  c3: false,
+  d1: false,
+  d2: false,
+  d3: false
+};
 
 /***/ }),
 

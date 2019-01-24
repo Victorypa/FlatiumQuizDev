@@ -1,28 +1,66 @@
 <template>
-<div>
-<div class="container">
+<div class="container" v-if="cards_booleans">
     <h1 class="main-caption">
-    Я бы описал свой стиль как ...
+        Я бы описал свой стиль как ...
     </h1>
-    <div class="image-wrapper">
+    <div class="image-wrapper" v-if="cards_booleans.a">
         <template v-for="card in acards">
-            <a class="image-card" @click="addCard(card.uuid)">
+            <a class="image-card" @click="addACard(card.uuid)">
               <img alt="Более классический" :src="card.path">
               <h4 class="image-text">{{ card.name }}</h4>
             </a>
         </template>
     </div>
+
+    <div class="image-wrapper" v-if="cards_booleans.b">
+        <template v-for="card in bcards">
+            <a class="image-card" @click="addBCard(card.uuid)">
+              <img alt="Более классический" :src="card.path">
+              <h4 class="image-text">{{ card.name }}</h4>
+            </a>
+        </template>
+    </div>
+
+    <div class="image-wrapper" v-if="cards_booleans.c1">
+        <template v-for="card in c1cards">
+            <a class="image-card" @click="addCCard(card.uuid)">
+              <img alt="Более классический" :src="card.path">
+              <h4 class="image-text">{{ card.name }}</h4>
+            </a>
+        </template>
+    </div>
+
+    <div class="image-wrapper" v-if="cards_booleans.c2">
+        <template v-for="card in c2cards">
+            <a class="image-card" @click="addCCard(card.uuid)">
+              <img alt="Более классический" :src="card.path">
+              <h4 class="image-text">{{ card.name }}</h4>
+            </a>
+        </template>
+    </div>
+
+    <div class="image-wrapper" v-if="cards_booleans.c3">
+        <template v-for="card in c3cards">
+            <a class="image-card" @click="addCCard(card.uuid)">
+              <img alt="Более классический" :src="card.path">
+              <h4 class="image-text">{{ card.name }}</h4>
+            </a>
+        </template>
+    </div>
+
   </div>
-</div>
 </template>
 
 <script>
-  import { acards, cards_booleans } from './index.js'
+  import { acards, bcards, c1cards, cards_booleans } from './index.js'
   export default {
       data () {
           return {
               cards_booleans: [],
               acards: [],
+              bcards: [],
+              c1cards: [],
+              c2cards: [],
               selected_uuids: [],
           }
       },
@@ -34,10 +72,44 @@
       methods: {
           cardsInit () {
               this.acards = acards
+              this.bcards = bcards
+              this.c1cards = c1cards
               this.cards_booleans = cards_booleans
           },
 
-          addCard (uuid) {
+          addACard (uuid) {
+              this.selected_uuids.push(uuid)
+              this.cards_booleans.a = false
+              this.cards_booleans.b = true
+          },
+
+          addBCard (uuid) {
+              this.selected_uuids.push(uuid)
+              this.cards_booleans.b = false
+
+              switch (this.selected_uuids.join('')) {
+                  case 'A1B1':
+                  case 'A1B3':
+                  case 'A1B2':
+                  case 'A2B1':
+                  case 'A2B3':
+                  case 'A2B2':
+                  case 'A3B1':
+                  case 'A3B3':
+                  case 'A3B2':
+                      this.cards_booleans.c1 = true
+                      break;
+
+                  case '':
+                      this.cards_booleans.c2 = true
+
+                  default:
+                    return
+              }
+              // this.cards_booleans.b = true
+          },
+
+          addCCard (uuid) {
               this.selected_uuids.push(uuid)
               console.log(this.selected_uuids);
           }
