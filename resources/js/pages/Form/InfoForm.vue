@@ -119,7 +119,10 @@
                         break;
                     case 'phone':
                         if (this.person.phone !== '') {
-                            axios.post('api/person/store')
+                            axios.post('api/person/store', this.person)
+                                 .then(response => {
+                                     
+                                 })
                         }
                         break;
                     default:

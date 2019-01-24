@@ -1890,7 +1890,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
 
         case 'phone':
           if (this.person.phone !== '') {
-            axios.post('api/person/store');
+            axios.post('api/person/store', this.person).then(function (response) {});
           }
 
           break;

@@ -13,8 +13,8 @@ class PersonController extends Controller
 
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        dd('working');
+        return Person::create($request->all());
     }
 }
