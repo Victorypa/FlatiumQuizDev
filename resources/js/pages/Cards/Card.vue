@@ -5,28 +5,41 @@
     Я бы описал свой стиль как ...
     </h1>
     <div class="image-wrapper">
-      <a class="image-card" href="#">
-        <img alt="Более классический" src="/storage/quiz/A/A1.jpg">
-        <h4 class="image-text">Более классический</h4>
-      </a>
-      <a class="image-card" href="#">
-        <img alt="Что-то между" src="/storage/quiz/A/A2.jpg">
-        <h4 class="image-text">Что-то между</h4>
-      </a>
-      <a class="image-card" href="#">
-        <img alt="Более современный" src="/storage/quiz/A/A3.jpg">
-        <h4 class="image-text">Более современный</h4>
-      </a>
+        <template v-for="card in acards">
+            <a class="image-card" @click="addCard(card.uuid)">
+              <img alt="Более классический" :src="card.path">
+              <h4 class="image-text">{{ card.name }}</h4>
+            </a>
+        </template>
     </div>
   </div>
 </div>
 </template>
 
 <script>
+  import { acards, cards_booleans } from './index.js'
   export default {
       data () {
           return {
-              
+              cards_booleans: [],
+              acards: [],
+              selected_uuids: [],
+          }
+      },
+
+      mounted () {
+          this.cardsInit()
+      },
+
+      methods: {
+          cardsInit () {
+              this.acards = acards
+              this.cards_booleans = cards_booleans
+          },
+
+          addCard (uuid) {
+              this.selected_uuids.push(uuid)
+              console.log(this.selected_uuids);
           }
       }
   }
@@ -75,6 +88,8 @@ text-decoration: none;
 
 outline: none;
 transition-duration: .6s;
+
+cursor: pointer;
 
 }
 
