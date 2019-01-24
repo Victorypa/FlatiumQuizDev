@@ -33,7 +33,7 @@
          <form @submit.prevent="go('email')">
              <div class="form-wrapper">
                <input type="email"
-                      placeholder="Ваша почка"
+                      placeholder="Ваша почта"
                       v-model="person.email"
                       required
                       autofocus
@@ -60,7 +60,6 @@
                  <vue-tel-input v-model="person.phone"
                                 placeholder="Ваш номер телефона"
                                 :preferredCountries="['ru', 'us', 'ua']"
-                                required
                                 autofocus
                                 >
                 </vue-tel-input>
@@ -118,10 +117,10 @@
                         }
                         break;
                     case 'phone':
-                        if (this.person.phone !== '') {
+                        if (this.person.name !== '' && this.person.email) {
                             axios.post('api/person/store', this.person)
                                  .then(response => {
-                                     
+                                     window.location.href = 'http://flatium.ru'
                                  })
                         }
                         break;
