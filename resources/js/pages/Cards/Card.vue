@@ -242,7 +242,6 @@
                   'result': result
               }).then(response => {
                   window.location.href = `/cards/${response.data.id}/rooms`
-                  console.log(response.data);
               })
           }
       }

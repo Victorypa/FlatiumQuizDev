@@ -1999,7 +1999,6 @@ __webpack_require__.r(__webpack_exports__);
         'result': result
       }).then(function (response) {
         window.location.href = "/cards/".concat(response.data.id, "/rooms");
-        console.log(response.data);
       });
     }
   }
@@ -2243,6 +2242,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2260,6 +2263,14 @@ __webpack_require__.r(__webpack_exports__);
           this.selected_rooms.splice(index, 1);
         }
       }
+    },
+    save: function save() {
+      var card_id = window.location.pathname.match(/\d+/g).toString();
+      axios.post("/cards/".concat(card_id, "/rooms/store"), {
+        'data': this.selected_rooms
+      }).then(function (response) {
+        window.location.href = "/cards/".concat(card_id, "/form");
+      });
     }
   }
 });
@@ -39032,6 +39043,22 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "image-text" }, [_vm._v("Вся квартира")])
             ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "image-card" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-primary",
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.save($event)
+                }
+              }
+            },
+            [_vm._v("OK")]
           )
         ])
       ])

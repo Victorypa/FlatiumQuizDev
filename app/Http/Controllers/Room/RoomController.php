@@ -12,4 +12,13 @@ class RoomController extends Controller
     {
         return view('rooms.index');
     }
+
+    public function store(Card $card, Request $request)
+    {
+        foreach ($request->data as $room) {
+            $card->rooms()->create([
+                'name' => $room
+            ]);
+        }
+    }
 }

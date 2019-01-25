@@ -16,8 +16,10 @@ class CreateRoomsTable extends Migration
         Schema::create('rooms', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('card_id')->unsigned()->index();
-            $table->string('selected');
+            $table->string('name');
             $table->timestamps();
+
+            $table->foreign('card_id')->references('id')->on('cards')->onDelete('cascade');
         });
     }
 

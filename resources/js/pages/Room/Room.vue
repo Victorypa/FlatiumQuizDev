@@ -67,6 +67,10 @@
                   <div class="image-text">Вся квартира</div>
             </button>
         </div>
+
+        <div class="image-card">
+            <button @click.prevent="save" class="btn btn-primary">OK</button>
+        </div>
       </div>
 
     </div>
@@ -91,6 +95,15 @@
                         this.selected_rooms.splice(index, 1)
                     }
                 }
+            },
+
+            save () {
+                let card_id = window.location.pathname.match(/\d+/g).toString()
+                axios.post(`/cards/${card_id}/rooms/store`, {
+                    'data': this.selected_rooms
+                }).then(response => {
+                    window.location.href = `/cards/${card_id}/form`
+                })
             }
         }
     }
