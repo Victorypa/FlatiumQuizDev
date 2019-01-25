@@ -2331,6 +2331,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6671,7 +6676,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".body[data-v-3958fef6] {\n  min-width: 320px;\n}\n.container[data-v-3958fef6] {\n  font-family: \"Rubik\", sans-serif;\n  max-width: 540px;\n  margin: 0 auto;\n}\n.main-caption[data-v-3958fef6] {\n  text-align: center;\n  font-weight: 400;\n  line-height: 1.5;\n  font-size: 20px;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "svg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n}\n.content-center[data-v-3958fef6] {\n  padding: 50px 0;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #2e3854;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -39265,11 +39270,12 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
+        _c("div", { staticClass: "button-wrapper" }, [
           _c(
             "button",
             {
-              staticClass: "btn btn-primary",
+              staticClass: "primary-button",
+              attrs: { type: "submit" },
               on: {
                 click: function($event) {
                   $event.preventDefault()
@@ -39277,7 +39283,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("OK")]
+            [_vm._v("\n               Далее\n           ")]
           )
         ])
       ])
