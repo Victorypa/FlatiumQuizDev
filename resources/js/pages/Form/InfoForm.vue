@@ -14,7 +14,7 @@
                                autofocus
                                >
                                <label class="full-name">Полное имя</label>
-                        <div class="input-info">*Пожалуйста, введите свое имя и фамилию, чтобы продолжить</div>
+                        <!-- <div class="input-info">*Пожалуйста, введите свое имя и фамилию, чтобы продолжить</div> -->
                     </div>
 
                     <div class="button-wrapper">
@@ -39,7 +39,7 @@
                              required
                              autofocus
                              >
-                      <div class="input-info">*Пожалуйста, введите всвой E-mail адрес, чтобы продолжить</div>
+                      <!-- <div class="input-info">*Пожалуйста, введите всвой E-mail адрес, чтобы продолжить</div> -->
                     </div>
                     <div class="button-wrapper">
                         <button type="submit"
@@ -64,7 +64,6 @@
                                        autofocus
                                        >
                        </vue-tel-input>
-                      <div class="input-info">*Пожалуйста, введите свой номер телефона, чтобы продолжить</div>
                     </div>
 
                     <div class="button-wrapper">
@@ -73,6 +72,11 @@
                                 >
                            Далее
                        </button>
+                       <button type="submit"
+                               class="primary-button"
+                               >
+                               Пропустить
+                      </button>
                     </div>
                 </form>
             </div>
@@ -136,14 +140,14 @@
     }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 
 .form-wrapper {
 position: relative;
 
 margin: 0 auto;
-
 }
+
 
 input {
 display: block;
@@ -241,6 +245,19 @@ background-color: #2e3854;
     padding: 100px 0;
 }
 
+.vue-tel-input {
+  box-shadow: none !important;
+  border: 1px solid black;
+  &:focus {
+      border: 1px solid black;
+  }
+
+}
+
+.dropdown {
+  outline: none;
+}
+
 @media (min-width: 700px) {
   .content-center {
     display: flex;
@@ -253,7 +270,7 @@ background-color: #2e3854;
 
     padding: 0;
   }
-  .form-wrapper {
+  .form-wrapper, .main-caption {
     width: 50%;
   }
 }

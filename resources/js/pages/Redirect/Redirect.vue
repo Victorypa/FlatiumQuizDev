@@ -21,7 +21,7 @@
         mounted () {
             setTimeout(() => {
                 window.location.href = 'http://flatium.ru'
-            }, 3000)
+            }, 1500)
         }
 
     }
