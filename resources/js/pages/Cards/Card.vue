@@ -246,7 +246,7 @@
   }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .body {
 min-width: 320px;
 margin: 0px;
@@ -295,9 +295,10 @@ transition-duration: .6s;
 }
 
 .image-card:hover {
-border: 2px solid #000;
-box-shadow: 0 15px 22px 0 rgba(28,34,51,.2);
-transform: scale(1.025);
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 0 15px 22px 0 rgba(28,34,51,.2);
+    transform: scale(1.025);
 }
 
 .image-text {
