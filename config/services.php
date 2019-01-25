@@ -40,4 +40,8 @@ return [
         ],
     ],
 
+    'amocrm' => [
+        'token' => env('AMO_TOKEN'),
+        'email' => env('AMO_EMAIL')
+    ]
 ];
