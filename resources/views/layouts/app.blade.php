@@ -7,7 +7,8 @@
 
         <title>Flatium</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        
         <script>
             window.App = {!! json_encode([
                 'csrfToken' => csrf_token()
