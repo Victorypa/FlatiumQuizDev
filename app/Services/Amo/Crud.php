@@ -11,15 +11,18 @@ class Crud
 
     public function __construct(Client $client, $lead)
     {
+
         $this->client = new Client([
             'cookies' => true
         ]);
+        
         $this->lead = $lead;
+        
+        $this->login();
     }
 
     public function create()
     {
-        $this->login();
 
         $link = 'https://flatium.amocrm.ru/api/v2/leads';
 
@@ -38,6 +41,11 @@ class Crud
         ]);
 
         return json_decode($response->getBody());
+    }
+
+    public function update($lead)
+    {
+
     }
 
     protected function login()
