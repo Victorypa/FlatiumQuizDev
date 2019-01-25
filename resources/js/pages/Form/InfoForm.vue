@@ -1,81 +1,83 @@
 <template>
- <div class="container">
+    <div class="content-center">
+        <div class="container">
 
-     <div class="row" v-if="booleans.name">
-         <h1 class="main-caption">
-           Как вас зовут?
-         </h1>
-         <form @submit.prevent="go('name')">
-             <div class="form-wrapper">
-                 <input type="text"
-                        placeholder="Полное имя"
-                        v-model="person.name"
-                        required
-                        autofocus
-                        >
-                 <div class="input-info">*Пожалуйста, введите свое имя и фамилию, чтобы продолжить</div>
-             </div>
+            <div class="row" v-if="booleans.name">
+                <h1 class="main-caption">
+                  Как вас зовут?
+                </h1>
+                <form @submit.prevent="go('name')">
+                    <div class="form-wrapper">
+                        <input type="text"
+                               placeholder="Полное имя"
+                               v-model="person.name"
+                               required
+                               autofocus
+                               >
+                        <div class="input-info">*Пожалуйста, введите свое имя и фамилию, чтобы продолжить</div>
+                    </div>
 
-             <div class="button-wrapper">
-                 <button type="submit"
-                         class="primary-button"
-                         >
-                    Далее
-                </button>
-             </div>
-         </form>
-     </div>
-
-     <div class="row" v-if="booleans.email">
-         <h1 class="main-caption">
-           Укажите свой E-mail адрес,<br> чтобы получить результат тестирования
-         </h1>
-         <form @submit.prevent="go('email')">
-             <div class="form-wrapper">
-               <input type="email"
-                      placeholder="Ваша почта"
-                      v-model="person.email"
-                      required
-                      autofocus
-                      >
-               <div class="input-info">*Пожалуйста, введите всвой E-mail адрес, чтобы продолжить</div>
-             </div>
-             <div class="button-wrapper">
-                 <button type="submit"
-                         class="primary-button"
-                         >
-                    Далее
-                </button>
-             </div>
-         </form>
-     </div>
-
-     <div class="row" v-if="booleans.phone">
-         <h1 class="main-caption">
-             Укажите свой телефон,<br> если вы хотите проконсультироваться <br> по вопросу ремонта <br>  или услуг интерьерного стилиста.
-         </h1>
-
-         <form @submit.prevent="go('phone')">
-             <div class="form-wrapper">
-                 <vue-tel-input v-model="person.phone"
-                                placeholder="Ваш номер телефона"
-                                :preferredCountries="['ru', 'us', 'ua']"
-                                autofocus
+                    <div class="button-wrapper">
+                        <button type="submit"
+                                class="primary-button"
                                 >
-                </vue-tel-input>
-               <div class="input-info">*Пожалуйста, введите свой номер телефона, чтобы продолжить</div>
-             </div>
+                           Далее
+                       </button>
+                    </div>
+                </form>
+            </div>
 
-             <div class="button-wrapper">
-                 <button type="submit"
-                         class="primary-button"
-                         >
-                    Далее
-                </button>
-             </div>
-         </form>
-     </div>
-</div>
+            <div class="row" v-if="booleans.email">
+                <h1 class="main-caption">
+                  Укажите свой E-mail адрес,<br> чтобы получить результат тестирования
+                </h1>
+                <form @submit.prevent="go('email')">
+                    <div class="form-wrapper">
+                      <input type="email"
+                             placeholder="Ваша почта"
+                             v-model="person.email"
+                             required
+                             autofocus
+                             >
+                      <div class="input-info">*Пожалуйста, введите всвой E-mail адрес, чтобы продолжить</div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button type="submit"
+                                class="primary-button"
+                                >
+                           Далее
+                       </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row" v-if="booleans.phone">
+                <h1 class="main-caption">
+                    Укажите свой телефон,<br> если вы хотите проконсультироваться <br> по вопросу ремонта <br>  или услуг интерьерного стилиста.
+                </h1>
+
+                <form @submit.prevent="go('phone')">
+                    <div class="form-wrapper">
+                        <vue-tel-input v-model="person.phone"
+                                       placeholder="Ваш номер телефона"
+                                       :preferredCountries="['ru', 'us', 'ua']"
+                                       autofocus
+                                       >
+                       </vue-tel-input>
+                      <div class="input-info">*Пожалуйста, введите свой номер телефона, чтобы продолжить</div>
+                    </div>
+
+                    <div class="button-wrapper">
+                        <button type="submit"
+                                class="primary-button"
+                                >
+                           Далее
+                       </button>
+                    </div>
+                </form>
+            </div>
+       </div>
+    </div>
 </template>
 
 <script>
@@ -132,14 +134,17 @@
     }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+
 .body {
 min-width: 320px;
 
 }
 
 .container {
+font-family: 'Rubik', sans-serif;
 max-width: 1150px;
+width: 100%;
 
 margin: 0 auto;
 }
@@ -175,6 +180,22 @@ padding: 14.4px;
 
 transition: border .15s ease-in-out;
 width: 100%;
+}
+
+.full-name {
+position: absolute;
+top: 20px;
+left: 20px;
+background: #fff;
+border-radius: 8px;
+color: #ccc;
+font-weight: 400;
+font-size: 11px;
+text-indent: 0;
+letter-spacing: .1em;
+padding: 0 9.6px;
+transition:0.2s ease all;
+text-transform: uppercase;
 }
 
 input:focus ~ label 		{
@@ -234,6 +255,16 @@ cursor: pointer;
 
 .primary-button:hover {
 background-color: #2e3854;
+}
+
+@media (min-width: 700px) {
+  .content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5%;
+    height: 100vh;
+  }
 }
 
 @media (max-width: 700px) {

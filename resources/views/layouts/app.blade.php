@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
         <title>Flatium</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-        
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script>
             window.App = {!! json_encode([
                 'csrfToken' => csrf_token()
