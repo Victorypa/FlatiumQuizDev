@@ -108,7 +108,7 @@
                 <h1 class="main-caption">
                     Какие цветовые решения в вашем доме, вы предпочитаете?
                 </h1>
-                
+
                 <div class="image-wrapper">
                     <template v-for="card in d3cards">
                         <a class="image-card" @click="addDCard(card.uuid, 'd3')">
@@ -292,6 +292,7 @@
 </script>
 
 <style lang="scss" scoped>
+
 .image {
   &-wrapper {
   display: flex;
@@ -300,12 +301,17 @@
   &-card {
   width: 90%;
   height: 100%;
+
   display: block;
   border: 2px solid #eee;
+
+
   padding: 18px;
   margin-left: 30px;
+
   font-size: 14px;
   text-decoration: none;
+
   outline: none;
   transition-duration: .6s;
   cursor: pointer;
@@ -317,6 +323,7 @@
     img {
     height: auto;
     width: 100%;
+
     }
   }
   &-text {
@@ -327,13 +334,16 @@
   letter-spacing: 2px;
   line-height: 1.9;
   margin-top: 14px;
+
   text-align: center;
   text-transform: uppercase;
   }
+
 }
 .content-center {
   padding: 30px 0;
 }
+
 @media (min-width: 700px) {
   .content-center {
     display: flex;
@@ -343,13 +353,19 @@
     height: 100vh;
   }
 }
+
+
 @media (max-width: 700px) {
+
   .image-wrapper  {
     flex-wrap: wrap;
   }
+
   .image-card {
     margin-bottom: 20px;
     margin-left: 0px;
   }
+
 }
+
 </style>

@@ -124,7 +124,7 @@
 
                             axios.post(`/cards/${card_id}/form/store`, this.person)
                                  .then(response => {
-                                     window.location.href = 'http://flatium.ru'
+                                     window.location.href = '/redirect'
                                  })
                         }
                         break;
