@@ -193,27 +193,14 @@
               this.selected_uuids.push(uuid)
               this.cards_booleans.b = false
 
-              switch (this.selected_uuids.join('')) {
-                  case 'A1B1':
-                  case 'A1B3':
-                  case 'A1B2':
-                      this.cards_booleans.c1 = true
-                      break;
-
-                  case 'A2B1':
-                  case 'A2B3':
-                  case 'A2B2':
-                      this.cards_booleans.c2 = true
-                      break;
-
-                  case 'A3B1':
-                  case 'A3B3':
-                  case 'A3B2':
-                      this.cards_booleans.c3 = true
-                      break;
-
-                  default:
-                    return
+              if (this.selected_uuids.includes('A1')) {
+                  this.cards_booleans.c1 = true
+              }
+              if (this.selected_uuids.includes('A2')) {
+                  this.cards_booleans.c2 = true
+              }
+              if (this.selected_uuids.includes('A3')) {
+                  this.cards_booleans.c3 = true
               }
           },
 
