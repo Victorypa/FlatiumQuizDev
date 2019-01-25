@@ -4,7 +4,7 @@ namespace App\Services\Amo;
 
 use GuzzleHttp\Client;
 
-class CreateLead
+class Crud
 {
     protected $client;
     protected $lead;
@@ -20,7 +20,7 @@ class CreateLead
     public function create()
     {
         $this->login();
-        
+
         $link = 'https://flatium.amocrm.ru/api/v2/leads';
 
         $lead['add'] = array(
@@ -30,7 +30,7 @@ class CreateLead
             )
         );
 
-        $this->client->request('POST', $link, [
+        return $this->client->request('POST', $link, [
             'headers' => [
                 'Content-Type' => 'application/json'
             ],

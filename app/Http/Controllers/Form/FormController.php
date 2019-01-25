@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use App\Models\Card\Card;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Services\Amo\{ Auth, CreateLead };
+use App\Services\Amo\Crud;
 
 class FormController extends Controller
 {
@@ -28,6 +28,6 @@ class FormController extends Controller
     {
         $person = $card->people()->create($request->all());
 
-        (new CreateLead($this->client, $person))->create();
+        (new Crud($this->client, $person))->create();
     }
 }
