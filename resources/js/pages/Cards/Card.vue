@@ -1,80 +1,123 @@
 <template>
     <div class="content-center">
         <div class="container" v-if="cards_booleans">
-            <h1 class="main-caption">
-                Я бы описал свой стиль как ...
-            </h1>
-            <div class="image-wrapper" v-if="cards_booleans.a">
-                <template v-for="card in acards">
-                    <a class="image-card" @click="addACard(card.uuid)">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+            <template v-if="cards_booleans.a">
+                <h1 class="main-caption">
+                    Я бы описал свой стиль как ...
+                </h1>
+                <div class="image-wrapper">
+                    <template v-for="card in acards">
+                        <a class="image-card" @click="addACard(card.uuid)">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
 
-            <div class="image-wrapper" v-if="cards_booleans.b">
-                <template v-for="card in bcards">
-                    <a class="image-card" @click="addBCard(card.uuid)">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+            <template v-if="cards_booleans.b">
+                <h1 class="main-caption">
+                    При выборе мебели и домашнего декора, я предпочитаю ...
+                </h1>
+                <div class="image-wrapper">
+                    <template v-for="card in bcards">
+                        <a class="image-card" @click="addBCard(card.uuid)">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
 
-            <div class="image-wrapper" v-if="cards_booleans.c1">
-                <template v-for="card in c1cards">
-                    <a class="image-card" @click="addCCard(card.uuid, 'c1')">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+            <template v-if="cards_booleans.c1">
+                <h1 class="main-caption">
+                    Какое изображение домашнего декора вам больше нравятся?
+                </h1>
 
-            <div class="image-wrapper" v-if="cards_booleans.c2">
-                <template v-for="card in c2cards">
-                    <a class="image-card" @click="addCCard(card.uuid, 'c2')">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+                <div class="image-wrapper">
+                    <template v-for="card in c1cards">
+                        <a class="image-card" @click="addCCard(card.uuid, 'c1')">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
 
-            <div class="image-wrapper" v-if="cards_booleans.c3">
-                <template v-for="card in c3cards">
-                    <a class="image-card" @click="addCCard(card.uuid, 'c3')">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+            <template v-if="cards_booleans.c2">
+                <h1 class="main-caption">
+                    Какое изображение домашнего декора вам больше нравятся?
+                </h1>
 
-            <div class="image-wrapper" v-if="cards_booleans.d1">
-                <template v-for="card in d1cards">
-                    <a class="image-card" @click="addDCard(card.uuid, 'd1')">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+                <div class="image-wrapper">
+                    <template v-for="card in c2cards">
+                        <a class="image-card" @click="addCCard(card.uuid, 'c2')">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
 
-            <div class="image-wrapper" v-if="cards_booleans.d2">
-                <template v-for="card in d2cards">
-                    <a class="image-card" @click="addDCard(card.uuid, 'd2')">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+            <template v-if="cards_booleans.c3">
+                <h1 class="main-caption">
+                    Какое изображение домашнего декора вам больше нравятся?
+                </h1>
 
-            <div class="image-wrapper" v-if="cards_booleans.d3">
-                <template v-for="card in d3cards">
-                    <a class="image-card" @click="addDCard(card.uuid, 'd3')">
-                      <img alt="Более классический" :src="card.path">
-                      <h4 class="image-text">{{ card.name }}</h4>
-                    </a>
-                </template>
-            </div>
+                <div class="image-wrapper">
+                    <template v-for="card in c3cards">
+                        <a class="image-card" @click="addCCard(card.uuid, 'c3')">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
+
+            <template v-if="cards_booleans.d1">
+                <h1 class="main-caption">
+                    Какие цветовые решения в вашем доме, вы предпочитаете?
+                </h1>
+
+                <div class="image-wrapper">
+                    <template v-for="card in d1cards">
+                        <a class="image-card" @click="addDCard(card.uuid, 'd1')">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
+
+            <template v-if="cards_booleans.d2">
+                <h1 class="main-caption">
+                    Какие цветовые решения в вашем доме, вы предпочитаете?
+                </h1>
+
+                <div class="image-wrapper">
+                    <template v-for="card in d2cards">
+                        <a class="image-card" @click="addDCard(card.uuid, 'd2')">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
+
+            <template v-if="cards_booleans.d3">
+                <h1 class="main-caption">
+                    Какие цветовые решения в вашем доме, вы предпочитаете?
+                </h1>
+                
+                <div class="image-wrapper">
+                    <template v-for="card in d3cards">
+                        <a class="image-card" @click="addDCard(card.uuid, 'd3')">
+                          <img alt="Более классический" :src="card.path">
+                          <h4 class="image-text">{{ card.name }}</h4>
+                        </a>
+                    </template>
+                </div>
+            </template>
 
           </div>
     </div>

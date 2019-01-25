@@ -1847,6 +1847,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -37889,283 +37932,372 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "content-center" }, [
     _vm.cards_booleans
-      ? _c("div", { staticClass: "container" }, [
-          _c("h1", { staticClass: "main-caption" }, [
-            _vm._v("\n            Я бы описал свой стиль как ...\n        ")
-          ]),
-          _vm._v(" "),
-          _vm.cards_booleans.a
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.acards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addACard(card.uuid)
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+      ? _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _vm.cards_booleans.a
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                Я бы описал свой стиль как ...\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.acards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addACard(card.uuid)
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.b
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.bcards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addBCard(card.uuid)
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.b
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                При выборе мебели и домашнего декора, я предпочитаю ...\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.bcards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addBCard(card.uuid)
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.c1
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.c1cards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addCCard(card.uuid, "c1")
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.c1
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.c1cards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addCCard(card.uuid, "c1")
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.c2
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.c2cards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addCCard(card.uuid, "c2")
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.c2
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.c2cards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addCCard(card.uuid, "c2")
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.c3
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.c3cards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addCCard(card.uuid, "c3")
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.c3
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.c3cards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addCCard(card.uuid, "c3")
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.d1
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.d1cards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addDCard(card.uuid, "d1")
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.d1
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.d1cards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addDCard(card.uuid, "d1")
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.d2
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.d2cards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addDCard(card.uuid, "d2")
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.d2
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.d2cards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addDCard(card.uuid, "d2")
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.d3
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                [
-                  _vm._l(_vm.d3cards, function(card) {
-                    return [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "image-card",
-                          on: {
-                            click: function($event) {
-                              _vm.addDCard(card.uuid, "d3")
-                            }
-                          }
-                        },
-                        [
-                          _c("img", {
-                            attrs: { alt: "Более классический", src: card.path }
-                          }),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "image-text" }, [
-                            _vm._v(_vm._s(card.name))
-                          ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.d3
+              ? [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    [
+                      _vm._l(_vm.d3cards, function(card) {
+                        return [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "image-card",
+                              on: {
+                                click: function($event) {
+                                  _vm.addDCard(card.uuid, "d3")
+                                }
+                              }
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  alt: "Более классический",
+                                  src: card.path
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "image-text" }, [
+                                _vm._v(_vm._s(card.name))
+                              ])
+                            ]
+                          )
                         ]
-                      )
-                    ]
-                  })
-                ],
-                2
-              )
-            : _vm._e()
-        ])
+                      })
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e()
+          ],
+          2
+        )
       : _vm._e()
   ])
 }
