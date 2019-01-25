@@ -12,4 +12,9 @@ class FormController extends Controller
     {
         return view('forms.index');
     }
+
+    public function store(Card $card, Request $request)
+    {
+        $card->people()->create($request->all());
+    }
 }

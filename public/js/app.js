@@ -2143,8 +2143,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
 
         case 'phone':
           if (this.person.name !== '' && this.person.email) {
-            axios.post('api/person/store', this.person).then(function (response) {
-              window.location.href = 'http://flatium.ru';
+            var card_id = window.location.pathname.match(/\d+/g).toString();
+            axios.post("/cards/".concat(card_id, "/form/store"), this.person).then(function (response) {// window.location.href = 'http://flatium.ru'
             });
           }
 
@@ -6605,7 +6605,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.body[data-v-19da4664] {\nmin-width: 320px;\n}\n.container[data-v-19da4664] {\nfont-family: 'Rubik', sans-serif;\nmax-width: 1150px;\nwidth: 100%;\n\nmargin: 0 auto;\n}\n.main-caption[data-v-19da4664] {\ntext-align: center;\nfont-weight: bold;\n\nline-height: 1.5;\nfont-size: 30px;\n}\n.form-wrapper[data-v-19da4664] {\nposition: relative;\n\nmargin: 0 auto;\nwidth: 50%;\n}\ninput[data-v-19da4664] {\ndisplay: block;\nborder: 2px solid #eee;\nborder-radius: 5px;\nbox-sizing: border-box;\nfont-weight: 400;\nfont-size: 15px;\nline-height: 1.5;\ntext-indent: 0;\nletter-spacing: .025em;\noutline: none;\npadding: 14.4px;\n\ntransition: border .15s ease-in-out;\nwidth: 100%;\n}\n.full-name[data-v-19da4664] {\nposition: absolute;\ntop: 20px;\nleft: 20px;\nbackground: #fff;\nborder-radius: 8px;\ncolor: #ccc;\nfont-weight: 400;\nfont-size: 11px;\ntext-indent: 0;\nletter-spacing: .1em;\npadding: 0 9.6px;\ntransition:0.2s ease all;\ntext-transform: uppercase;\n}\ninput:focus ~ label[data-v-19da4664] \t\t{\ntop:-6px;\nfont-size:14px;\n}\n.input-info[data-v-19da4664] {\nfont-size: 13px;\ncolor: #738494;\nmargin-top: 10px;\ntext-align: right;\n}\n.login-here[data-v-19da4664] {\ncolor: #738494;\nfont-weight: 400;\nfont-size: 12px;\nline-height: 1.9;\npadding: 18px 0 12px;\ntext-align: center;\n}\n.login-here a[data-v-19da4664] {\ncolor: #738494;\ndisplay: inline-block;\nmargin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\ntext-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\ntext-align: center;\n}\n.primary-button[data-v-19da4664] {\nheight: 42px;\nfont-size: 15px;\nfont-weight: 400;\nbackground-color: #0a0c12;\ncolor: #fff;\n\nmargin: 20px 0;\npadding: 0 30px;\nletter-spacing: .025em;\n\nborder: 0;\nborder-radius: 2px;\n\nline-height: 42px;\noutline: none;\ncursor: pointer;\n}\n.primary-button[data-v-19da4664]:hover {\nbackground-color: #2e3854;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.form-wrapper[data-v-19da4664] {\nwidth: 85%;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.form-wrapper[data-v-19da4664] {\nposition: relative;\n\nmargin: 0 auto;\n}\ninput[data-v-19da4664] {\ndisplay: block;\nborder: 2px solid #eee;\nborder-radius: 5px;\nbox-sizing: border-box;\nfont-weight: 400;\nfont-size: 15px;\nline-height: 1.5;\ntext-indent: 0;\nletter-spacing: .025em;\noutline: none;\npadding: 14.4px;\n\ntransition: border .15s ease-in-out;\nwidth: 100%;\n}\n.full-name[data-v-19da4664] {\nposition: absolute;\ntop: 20px;\nleft: 20px;\nbackground: #fff;\nborder-radius: 8px;\ncolor: #ccc;\nfont-weight: 400;\nfont-size: 11px;\ntext-indent: 0;\nletter-spacing: .1em;\npadding: 0 9.6px;\ntransition:0.2s ease all;\ntext-transform: uppercase;\n}\ninput:focus ~ label[data-v-19da4664] \t\t{\ntop:-6px;\nfont-size:14px;\n}\n.input-info[data-v-19da4664] {\nfont-size: 13px;\ncolor: #738494;\nmargin-top: 10px;\ntext-align: right;\n}\n.login-here[data-v-19da4664] {\ncolor: #738494;\nfont-weight: 400;\nfont-size: 12px;\nline-height: 1.9;\npadding: 18px 0 12px;\ntext-align: center;\n}\n.login-here a[data-v-19da4664] {\ncolor: #738494;\ndisplay: inline-block;\nmargin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\ntext-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\ntext-align: center;\n}\n.primary-button[data-v-19da4664] {\nheight: 42px;\nfont-size: 15px;\nfont-weight: 400;\nbackground-color: #0a0c12;\ncolor: #fff;\n\nmargin: 20px 0;\npadding: 0 30px;\nletter-spacing: .025em;\n\nborder: 0;\nborder-radius: 2px;\n\nline-height: 42px;\noutline: none;\ncursor: pointer;\n}\n.primary-button[data-v-19da4664]:hover {\nbackground-color: #2e3854;\n}\n.content-center[data-v-19da4664] {\n  padding: 20px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n\n    margin-top: -5%;\n    height: 100vh;\n\n    padding: 0;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -38193,7 +38193,7 @@ var render = function() {
   return _c("div", { staticClass: "content-center" }, [
     _c("div", { staticClass: "container" }, [
       _vm.booleans.name
-        ? _c("div", { staticClass: "row" }, [
+        ? _c("div", [
             _c("h1", { staticClass: "main-caption" }, [
               _vm._v("\n              Как вас зовут?\n            ")
             ]),
@@ -38221,7 +38221,7 @@ var render = function() {
                     ],
                     attrs: {
                       type: "text",
-                      placeholder: "Полное имя",
+                      value: "",
                       required: "",
                       autofocus: ""
                     },
@@ -38235,6 +38235,10 @@ var render = function() {
                       }
                     }
                   }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "full-name" }, [
+                    _vm._v("Полное имя")
+                  ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "input-info" }, [
                     _vm._v(
@@ -38250,7 +38254,7 @@ var render = function() {
         : _vm._e(),
       _vm._v(" "),
       _vm.booleans.email
-        ? _c("div", { staticClass: "row" }, [
+        ? _c("div", [
             _vm._m(1),
             _vm._v(" "),
             _c(
@@ -38305,7 +38309,7 @@ var render = function() {
         : _vm._e(),
       _vm._v(" "),
       _vm.booleans.phone
-        ? _c("div", { staticClass: "row" }, [
+        ? _c("div", [
             _vm._m(3),
             _vm._v(" "),
             _c(
@@ -38948,6 +38952,7 @@ var render = function() {
             "button",
             {
               staticClass: "button-card",
+              class: { active: _vm.selected_rooms.includes("Прочее") },
               on: {
                 click: function($event) {
                   $event.preventDefault()
@@ -39009,6 +39014,7 @@ var render = function() {
             "button",
             {
               staticClass: "button-card",
+              class: { active: _vm.selected_rooms.includes("Вся квартира") },
               on: {
                 click: function($event) {
                   $event.preventDefault()

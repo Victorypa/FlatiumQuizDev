@@ -11,6 +11,7 @@ Route::group(['prefix' => 'cards'], function () {
     Route::post('/{card}/rooms/store', 'Room\RoomController@store');
 
     Route::get('/{card}/form', 'Form\FormController@index');
+    Route::post('/{card}/form/store', 'Form\FormController@store');
 });
 
 Auth::routes();

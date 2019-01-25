@@ -2,18 +2,18 @@
     <div class="content-center">
         <div class="container">
 
-            <div class="row" v-if="booleans.name">
+            <div v-if="booleans.name">
                 <h1 class="main-caption">
                   Как вас зовут?
                 </h1>
                 <form @submit.prevent="go('name')">
                     <div class="form-wrapper">
-                        <input type="text"
-                               placeholder="Полное имя"
+                        <input type="text" value=""
                                v-model="person.name"
                                required
                                autofocus
                                >
+                               <label class="full-name">Полное имя</label>
                         <div class="input-info">*Пожалуйста, введите свое имя и фамилию, чтобы продолжить</div>
                     </div>
 
@@ -27,7 +27,7 @@
                 </form>
             </div>
 
-            <div class="row" v-if="booleans.email">
+            <div v-if="booleans.email">
                 <h1 class="main-caption">
                   Укажите свой E-mail адрес,<br> чтобы получить результат тестирования
                 </h1>
@@ -51,7 +51,7 @@
                 </form>
             </div>
 
-            <div class="row" v-if="booleans.phone">
+            <div v-if="booleans.phone">
                 <h1 class="main-caption">
                     Укажите свой телефон,<br> если вы хотите проконсультироваться <br> по вопросу ремонта <br>  или услуг интерьерного стилиста.
                 </h1>
@@ -120,9 +120,11 @@
                         break;
                     case 'phone':
                         if (this.person.name !== '' && this.person.email) {
-                            axios.post('api/person/store', this.person)
+                            let card_id = window.location.pathname.match(/\d+/g).toString()
+
+                            axios.post(`/cards/${card_id}/form/store`, this.person)
                                  .then(response => {
-                                     window.location.href = 'http://flatium.ru'
+                                     // window.location.href = 'http://flatium.ru'
                                  })
                         }
                         break;
@@ -136,33 +138,10 @@
 
 <style lang="css" scoped>
 
-.body {
-min-width: 320px;
-
-}
-
-.container {
-font-family: 'Rubik', sans-serif;
-max-width: 1150px;
-width: 100%;
-
-margin: 0 auto;
-}
-
-.main-caption {
-text-align: center;
-font-weight: bold;
-
-line-height: 1.5;
-font-size: 30px;
-
-}
-
 .form-wrapper {
 position: relative;
 
 margin: 0 auto;
-width: 50%;
 }
 
 input {
@@ -257,20 +236,22 @@ cursor: pointer;
 background-color: #2e3854;
 }
 
+.content-center {
+  padding: 20px 0;
+}
+
 @media (min-width: 700px) {
   .content-center {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
     margin-top: -5%;
     height: 100vh;
-  }
-}
 
-@media (max-width: 700px) {
-.form-wrapper {
-width: 85%;
-}
+    padding: 0;
+  }
 }
 
 </style>
