@@ -124,7 +124,7 @@
 
                             axios.post(`/cards/${card_id}/form/store`, this.person)
                                  .then(response => {
-                                     // window.location.href = 'http://flatium.ru'
+                                     window.location.href = 'http://flatium.ru'
                                  })
                         }
                         break;
@@ -142,6 +142,7 @@
 position: relative;
 
 margin: 0 auto;
+
 }
 
 input {
@@ -237,7 +238,7 @@ background-color: #2e3854;
 }
 
 .content-center {
-  padding: 20px 0;
+    padding: 100px 0;
 }
 
 @media (min-width: 700px) {
@@ -251,6 +252,9 @@ background-color: #2e3854;
     height: 100vh;
 
     padding: 0;
+  }
+  .form-wrapper {
+    width: 50%;
   }
 }
 
