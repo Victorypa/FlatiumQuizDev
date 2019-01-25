@@ -1,18 +1,14 @@
 <template>
     <div class="container">
-        <div class="row">
+      <div class="content-center">
+
             <img src="/storage/quiz/icon.svg" />
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <span>страница спасибо. в две строчки и иконка над ними.</span>
-            </div>
-            <div class="col-12">
-                <span>
-                    Спасибо за ваши ответы. Результаты теста будут отправлены на указанный вами e-mail адрес.
-                </span>
-            </div>
-        </div>
+
+          <div class="finish-text">
+            Спасибо за ваши ответы. Результаты теста будут отправлены на указанный вами e-mail адрес.
+          </div>
+      </div>
+
     </div>
 </template>
 
@@ -27,6 +23,21 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  img {
+    width: 70px;
+    margin: 30px auto;
+  }
+  .finish-text {
+    font-size: 20px;
+    text-align: center;
+  }
 
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
 </style>

@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ca7343889332c2b8ecca11c251430c",
+    "content-hash": "2a02acabf629cc48f2fa31823d185094",
     "packages": [
+        {
+            "name": "classy-org/mailchimp-api-php-client",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/classy-org/mailchimp-api-php-client.git",
+                "reference": "3d4f4c8c7758d37978c6dd4fdd9f5ba724801e26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/classy-org/mailchimp-api-php-client/zipball/3d4f4c8c7758d37978c6dd4fdd9f5ba724801e26",
+                "reference": "3d4f4c8c7758d37978c6dd4fdd9f5ba724801e26",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Classy\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "PGBI",
+                    "email": "pbarrau@classy.org"
+                }
+            ],
+            "description": "Simple wrapper around Guzzle Http Client to interact with Mailchimp API v3.0",
+            "time": "2016-12-09T15:04:50+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
