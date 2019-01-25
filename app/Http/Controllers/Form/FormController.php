@@ -69,8 +69,7 @@ class FormController extends Controller
 
         $leads['add'] = array(
             array(
-                'name'=>$person->email . '  ' . $person->name,
-                'responsible_user_id'=>215302,
+                'name' => $person->email . '  ' . $person->name,
                 'pipeline_id' => 1572109
             )
         );
