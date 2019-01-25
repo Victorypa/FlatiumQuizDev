@@ -83,7 +83,14 @@
 
         methods: {
             addRoom (type) {
-                this.selected_rooms.push(type)
+                if (!this.selected_rooms.includes(type)) {
+                    this.selected_rooms.push(type)
+                } else {
+                    let index = this.selected_rooms.indexOf(type)
+                    if (index > -1) {
+                        this.selected_rooms.splice(index, 1)
+                    }
+                }
             }
         }
     }

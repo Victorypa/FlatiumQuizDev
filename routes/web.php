@@ -2,11 +2,11 @@
 
 Route::get('/', 'Form\FormController@index');
 
-Route::group(['prefix' => 'cards', 'namespace' => 'Card'], function () {
-    Route::get('/', 'CardController@index');
-});
+Route::group(['prefix' => 'cards'], function () {
+    Route::get('/', 'Card\CardController@index');
 
-Route::get('/rooms', 'Room\RoomController@index');
+    Route::get('/{card}/rooms', 'Room\RoomController@index');
+});
 
 Auth::routes();
 

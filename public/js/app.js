@@ -1997,6 +1997,9 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('/api/card/store', {
         'option': this.selected_uuids.join(''),
         'result': result
+      }).then(function (response) {
+        window.location.href = "/cards/".concat(response.data.id, "/rooms");
+        console.log(response.data);
       });
     }
   }
@@ -2248,7 +2251,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     addRoom: function addRoom(type) {
-      this.selected_rooms.push(type);
+      if (!this.selected_rooms.includes(type)) {
+        this.selected_rooms.push(type);
+      } else {
+        var index = this.selected_rooms.indexOf(type);
+
+        if (index > -1) {
+          this.selected_rooms.splice(index, 1);
+        }
+      }
     }
   }
 });

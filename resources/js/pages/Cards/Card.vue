@@ -240,6 +240,9 @@
               axios.post('/api/card/store', {
                   'option': this.selected_uuids.join(''),
                   'result': result
+              }).then(response => {
+                  window.location.href = `/cards/${response.data.id}/rooms`
+                  console.log(response.data);
               })
           }
       }
