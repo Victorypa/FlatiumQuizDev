@@ -297,10 +297,9 @@ transition-duration: .6s;
 }
 
 .image-card:hover {
-    cursor: pointer;
-    border: 2px solid #000;
-    box-shadow: 0 15px 22px 0 rgba(28,34,51,.2);
-    transform: scale(1.025);
+border: 2px solid #000;
+box-shadow: 0 15px 22px 0 rgba(28,34,51,.2);
+transform: scale(1.025);
 }
 
 .image-text {

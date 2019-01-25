@@ -1,5 +1,9 @@
 <?php
 
+Route::get('/', function () {
+    return redirect('/cards');
+});
+
 Route::group(['prefix' => 'cards'], function () {
     Route::get('/', 'Card\CardController@index');
 
