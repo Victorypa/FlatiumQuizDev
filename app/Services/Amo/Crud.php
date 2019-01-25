@@ -30,12 +30,14 @@ class Crud
             )
         );
 
-        return $this->client->request('POST', $link, [
+        $response = $this->client->request('POST', $link, [
             'headers' => [
                 'Content-Type' => 'application/json'
             ],
             'body' => json_encode($lead)
         ]);
+
+        return json_decode($response->getBody());
     }
 
     protected function login()
