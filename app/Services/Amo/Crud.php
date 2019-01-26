@@ -3,21 +3,21 @@
 namespace App\Services\Amo;
 
 use GuzzleHttp\Client;
+use App\Models\Person;
 
 class Crud
 {
     protected $client;
-    protected $lead;
+    protected $person;
 
-    public function __construct(Client $client, $lead)
+    public function __construct(Client $client, Person $person)
     {
-
         $this->client = new Client([
             'cookies' => true
         ]);
-        
-        $this->lead = $lead;
-        
+
+        $this->person = $person;
+
         $this->login();
     }
 
@@ -28,7 +28,8 @@ class Crud
 
         $lead['add'] = array(
             array(
-                'name' => $this->lead->email . '  ' . $this->lead->name,
+                'name' => $this->person->email . '  ' . $this->person->name,
+                'tags' => $this->person->card->result,
                 'pipeline_id' => 1572109
             )
         );
