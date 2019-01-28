@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="progress-bar__wrapper">
-          <progress-bar bar-color="#aad7ea " val="60" text="60%"></progress-bar>
+          <progress-bar bar-color="#aad7ea " val="10"></progress-bar>
     </div>
 
       <div class="content-center">
@@ -334,7 +334,6 @@ import ProgressBar from 'vue-simple-progress'
   &__wrapper {
     margin-top: 30px;
   }
-
 }
 
 .image {

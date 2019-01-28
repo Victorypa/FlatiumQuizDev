@@ -3,7 +3,8 @@ export const acards = [
         uuid: 'A1',
         name: 'Более классический',
         path: '/storage/quiz/A/A1.jpg',
-        classname: 'fade-in one'
+        classname: 'fade-in one',
+
     },
     {
         uuid: 'A2',

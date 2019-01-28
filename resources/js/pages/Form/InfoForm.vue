@@ -1,4 +1,15 @@
 <template>
+
+  <div>
+
+    <div class="logo">
+      <div class="logo__img">
+        <img src="/storage/quiz/logo.svg" alt="Flatium-logo">
+      </div>
+    </div>
+    <div class="progress-bar__wrapper">
+          <progress-bar bar-color="#aad7ea " val="60"></progress-bar>
+    </div>
     <div class="content-center">
         <div class="container">
 
@@ -83,16 +94,22 @@
             </div>
        </div>
     </div>
+  </div>
+
 </template>
 
 <script>
     import Vue from 'vue'
     import VueTelInput from 'vue-tel-input'
     import 'vue-tel-input/dist/vue-tel-input.css';
+    import ProgressBar from 'vue-simple-progress'
 
     Vue.use(VueTelInput)
 
     export default {
+      components: {
+        ProgressBar
+      },
         data () {
             return {
                 person: {
@@ -149,6 +166,23 @@ position: relative;
 margin: 0 auto;
 }
 
+
+.logo {
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 6%;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.progress-bar {
+  &__wrapper {
+    margin-top: 30px;
+  }
+}
 
 input {
 display: block;
