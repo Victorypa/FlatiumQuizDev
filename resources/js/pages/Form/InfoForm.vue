@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="progress-bar__wrapper">
-          <progress-bar bar-color="#aad7ea " val="60"></progress-bar>
+          <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
     </div>
     <div class="content-center">
         <div class="container">
@@ -121,7 +121,8 @@
                     name: true,
                     email: false,
                     phone: false
-                }
+                },
+                progress_value: 70
             }
         },
 
@@ -132,12 +133,14 @@
                         if (this.person.name !== '') {
                             this.booleans.name = false
                             this.booleans.email = true
+                            this.progress_value += 10
                         }
                         break;
                     case 'email':
                         if (this.person.email !== '') {
                             this.booleans.email = false
                             this.booleans.phone = true
+                            this.progress_value += 20
                         }
                         break;
                     case 'phone':
@@ -146,7 +149,7 @@
 
                             axios.post(`/cards/${card_id}/form/store`, this.person)
                                  .then(response => {
-                                     // window.location.href = '/redirect'
+                                     window.location.href = '/redirect'
                                  })
                         }
                         break;
