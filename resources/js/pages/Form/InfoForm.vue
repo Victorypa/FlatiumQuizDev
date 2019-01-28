@@ -74,6 +74,7 @@
                        </button>
                        <button type="submit"
                                class="primary-button"
+                               @submit.prevent="go('phone')"
                                >
                                Пропустить
                       </button>
@@ -128,7 +129,7 @@
 
                             axios.post(`/cards/${card_id}/form/store`, this.person)
                                  .then(response => {
-                                     window.location.href = '/redirect'
+                                     // window.location.href = '/redirect'
                                  })
                         }
                         break;

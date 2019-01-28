@@ -17,12 +17,11 @@ class Crud
         ]);
 
         $this->person = $person;
-
-        $this->login();
     }
 
     public function create()
     {
+        $this->login();
 
         $link = 'https://flatium.amocrm.ru/api/v2/leads';
 
@@ -30,7 +29,14 @@ class Crud
             array(
                 'name' => $this->person->email . '  ' . $this->person->name,
                 'tags' => $this->person->card->result,
-                'pipeline_id' => 1572109
+                'pipeline_id' => 1572109,
+                'responsible_user_id' => 2211916,
+                'custom_fields' => array(
+                    'contacts' => array(
+                        'id' => 28369113,
+                        'values' => array($this->person->email)
+                    )
+                )
             )
         );
 
@@ -41,12 +47,29 @@ class Crud
             'body' => json_encode($lead)
         ]);
 
-        return json_decode($response->getBody());
+        // $this->updateContact($this->person, json_decode($response->getBody())->_embedded->items[0]->id);
+        // return json_decode($response->getBody());
     }
 
-    public function update($lead)
+    protected function updateContact($person, $lead_id)
     {
+        $link = 'https://flatium.amocrm.ru/api/v2/contacts';
 
+        $contacts['add'] = array(
+            array(
+                'name' => $person->name,
+                 'company_id' => 30615,
+                'company_name' => $person->name,
+                'lead_id' => $lead_id
+            )
+        );
+
+        $this->client->request('POST', $link, [
+            'headers' => [
+                'Content-Type' => 'application/json'
+            ],
+            'body' => json_encode($contacts)
+        ]);
     }
 
     protected function login()

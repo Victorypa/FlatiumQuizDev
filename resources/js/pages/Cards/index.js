@@ -91,17 +91,17 @@ export const c3cards = [
 export const d1cards = [
     {
         uuid: 'D1',
-        name: '',
+        name: 'Чистые и нейтральные',
         path: '/storage/quiz/D1/D1.jpg'
     },
     {
         uuid: 'D2',
-        name: '',
+        name: 'Один цвет',
         path: '/storage/quiz/D1/D2.jpg'
     },
     {
         uuid: 'D3',
-        name: '',
+        name: 'Яркие и смелые',
         path: '/storage/quiz/D1/D3.jpg'
     },
 ]
@@ -109,17 +109,17 @@ export const d1cards = [
 export const d2cards = [
     {
         uuid: 'D1',
-        name: '',
+        name: 'Чистые и нейтральные',
         path: '/storage/quiz/D2/D1.jpg'
     },
     {
         uuid: 'D2',
-        name: '',
+        name: 'Один цвет',
         path: '/storage/quiz/D2/D2.jpg'
     },
     {
         uuid: 'D3',
-        name: '',
+        name: 'Яркие и смелые',
         path: '/storage/quiz/D2/D3.jpg'
     },
 ]
@@ -127,17 +127,17 @@ export const d2cards = [
 export const d3cards = [
     {
         uuid: 'D1',
-        name: '',
+        name: 'Чистые и нейтральные',
         path: '/storage/quiz/D3/D1.jpg'
     },
     {
         uuid: 'D2',
-        name: '',
+        name: 'Один цвет',
         path: '/storage/quiz/D3/D2.jpg'
     },
     {
         uuid: 'D3',
-        name: '',
+        name: 'Яркие и смелые',
         path: '/storage/quiz/D3/D3.jpg'
     },
 ]
