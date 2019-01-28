@@ -4,6 +4,10 @@ Route::get('/', function () {
     return redirect('/cards');
 });
 
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
 Route::group(['prefix' => 'cards'], function () {
     Route::get('/', 'Card\CardController@index');
 
@@ -20,6 +24,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'panel', 'namespace' => 'panel
     Route::get('/', 'PanelController@index');
 });
 
-Auth::routes();
+
+
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
