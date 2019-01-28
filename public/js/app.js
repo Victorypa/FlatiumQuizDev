@@ -6666,7 +6666,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".image-wrapper[data-v-6fe4c2a5] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-6fe4c2a5] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-6fe4c2a5]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-6fe4c2a5] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-6fe4c2a5] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-6fe4c2a5] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6fe4c2a5] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6fe4c2a5] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-6fe4c2a5] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6fe4c2a5] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n          animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.two[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.2s;\n          animation-delay: 1.2s;\n}\n.fade-in.three[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.image-wrapper[data-v-6fe4c2a5] {\n  display: flex;\n  justify-content: center;\n  background-color: #fff;\n  z-index: 999;\n}\n.image-card[data-v-6fe4c2a5] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-6fe4c2a5]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-6fe4c2a5] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-6fe4c2a5] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-6fe4c2a5] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6fe4c2a5] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6fe4c2a5] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-6fe4c2a5] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -38077,6 +38077,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addACard(card.uuid)
@@ -38122,6 +38123,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addBCard(card.uuid)
@@ -38167,6 +38169,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addCCard(card.uuid, "c1")
@@ -38212,6 +38215,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addCCard(card.uuid, "c2")
@@ -38257,6 +38261,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addCCard(card.uuid, "c3")
@@ -38302,6 +38307,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addDCard(card.uuid, "d1")
@@ -38347,6 +38353,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addDCard(card.uuid, "d2")
@@ -38392,6 +38399,7 @@ var render = function() {
                             "a",
                             {
                               staticClass: "image-card",
+                              class: card.classname,
                               on: {
                                 click: function($event) {
                                   _vm.addDCard(card.uuid, "d3")
@@ -50861,106 +50869,130 @@ __webpack_require__.r(__webpack_exports__);
 var acards = [{
   uuid: 'A1',
   name: 'Более классический',
-  path: '/storage/quiz/A/A1.jpg'
+  path: '/storage/quiz/A/A1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'A2',
   name: 'Что-то между',
-  path: '/storage/quiz/A/A2.jpg'
+  path: '/storage/quiz/A/A2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'A3',
   name: 'Более современный',
-  path: '/storage/quiz/A/A3.jpg'
+  path: '/storage/quiz/A/A3.jpg',
+  classname: 'fade-in three'
 }];
 var bcards = [{
   uuid: 'B1',
   name: 'Простые формы',
-  path: '/storage/quiz/B/B1.jpg'
+  path: '/storage/quiz/B/B1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'B2',
   name: 'Изысканный стиль',
-  path: '/storage/quiz/B/B2.jpg'
+  path: '/storage/quiz/B/B2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'B3',
   name: 'Брутальный стиль',
-  path: '/storage/quiz/B/B3.jpg'
+  path: '/storage/quiz/B/B3.jpg',
+  classname: 'fade-in three'
 }];
 var c1cards = [{
   uuid: 'C1',
   name: '',
-  path: '/storage/quiz/C1/C1.jpg'
+  path: '/storage/quiz/C1/C1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'C2',
   name: '',
-  path: '/storage/quiz/C1/C2.jpg'
+  path: '/storage/quiz/C1/C2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'C3',
   name: '',
-  path: '/storage/quiz/C1/C3.jpg'
+  path: '/storage/quiz/C1/C3.jpg',
+  classname: 'fade-in three'
 }];
 var c2cards = [{
   uuid: 'C1',
   name: '',
-  path: '/storage/quiz/C2/C1.jpg'
+  path: '/storage/quiz/C2/C1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'C2',
   name: '',
-  path: '/storage/quiz/C2/C2.jpg'
+  path: '/storage/quiz/C2/C2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'C3',
   name: '',
-  path: '/storage/quiz/C2/C3.jpg'
+  path: '/storage/quiz/C2/C3.jpg',
+  classname: 'fade-in three'
 }];
 var c3cards = [{
   uuid: 'C1',
   name: '',
-  path: '/storage/quiz/C3/C1.jpg'
+  path: '/storage/quiz/C3/C1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'C2',
   name: '',
-  path: '/storage/quiz/C3/C2.jpg'
+  path: '/storage/quiz/C3/C2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'C3',
   name: '',
-  path: '/storage/quiz/C3/C3.jpg'
+  path: '/storage/quiz/C3/C3.jpg',
+  classname: 'fade-in three'
 }];
 var d1cards = [{
   uuid: 'D1',
   name: 'Чистые и нейтральные',
-  path: '/storage/quiz/D1/D1.jpg'
+  path: '/storage/quiz/D1/D1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'D2',
   name: 'Один цвет',
-  path: '/storage/quiz/D1/D2.jpg'
+  path: '/storage/quiz/D1/D2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'D3',
   name: 'Яркие и смелые',
-  path: '/storage/quiz/D1/D3.jpg'
+  path: '/storage/quiz/D1/D3.jpg',
+  classname: 'fade-in three'
 }];
 var d2cards = [{
   uuid: 'D1',
   name: 'Чистые и нейтральные',
-  path: '/storage/quiz/D2/D1.jpg'
+  path: '/storage/quiz/D2/D1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'D2',
   name: 'Один цвет',
-  path: '/storage/quiz/D2/D2.jpg'
+  path: '/storage/quiz/D2/D2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'D3',
   name: 'Яркие и смелые',
-  path: '/storage/quiz/D2/D3.jpg'
+  path: '/storage/quiz/D2/D3.jpg',
+  classname: 'fade-in three'
 }];
 var d3cards = [{
   uuid: 'D1',
   name: 'Чистые и нейтральные',
-  path: '/storage/quiz/D3/D1.jpg'
+  path: '/storage/quiz/D3/D1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'D2',
   name: 'Один цвет',
-  path: '/storage/quiz/D3/D2.jpg'
+  path: '/storage/quiz/D3/D2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'D3',
   name: 'Яркие и смелые',
-  path: '/storage/quiz/D3/D3.jpg'
+  path: '/storage/quiz/D3/D3.jpg',
+  classname: 'fade-in three'
 }];
 var cards_booleans = {
   a: true,
@@ -51278,8 +51310,8 @@ var LOFT = ['A3B3C1D1', 'A3B3C1D2', 'A3B3C1D3', 'A3B3C2D1', 'A3B3C2D2', 'A3B3C2D
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
