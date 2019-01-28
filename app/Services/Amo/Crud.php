@@ -31,23 +31,6 @@ class Crud
                 'tags' => $this->person->card->result,
                 'pipeline_id' => 1572109,
                 'responsible_user_id' => 2211916,
-                'custom_fields' => array(
-                    array(
-                        'id' => 276835,
-                        'values' => array(
-                            'value' => 'номер телефона',
-                            'enum' => $this->person->phone
-                        ),
-                    ),
-                    array(
-                        'id' => 276837,
-                        'values' => array(
-                            'value' =>  'email',
-                            'enum' => $this->person->email
-                        )
-                    )
-
-                )
             )
         );
 
@@ -58,8 +41,8 @@ class Crud
             'body' => json_encode($lead)
         ]);
 
-        // $this->updateContact($this->person, json_decode($response->getBody())->_embedded->items[0]->id);
-        // return json_decode($response->getBody());
+        $this->updateContact($this->person, json_decode($response->getBody())->_embedded->items[0]->id);
+        // return json_decode($response->getBody());s
     }
 
     protected function updateContact($person, $lead_id)
@@ -69,9 +52,23 @@ class Crud
         $contacts['add'] = array(
             array(
                 'name' => $person->name,
-                 'company_id' => 30615,
                 'company_name' => $person->name,
-                'lead_id' => $lead_id
+                'lead_id' => (int) $lead_id,
+                'custom_fields' => array(
+                    array(
+                        'id' => 276835,
+                        'values' => array(
+                            array(
+                                'value' => "номер телефона",
+                                'enum' => $person->phone
+                            ),
+                            array(
+                                'value' => "email",
+                                'enum' => $person->email
+                            )
+                        )
+                    ),
+                )
             )
         );
 
