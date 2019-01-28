@@ -52249,8 +52249,8 @@ var LOFT = ['A3B3C1D1', 'A3B3C1D2', 'A3B3C1D3', 'A3B3C2D1', 'A3B3C2D2', 'A3B3C2D
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
