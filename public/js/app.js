@@ -1802,8 +1802,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
-/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
+/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
 //
 //
 //
@@ -1929,9 +1931,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
   data: function data() {
     return {
       cards_booleans: [],
@@ -1958,23 +1976,23 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     cardsInit: function cardsInit() {
-      this.acards = _index_js__WEBPACK_IMPORTED_MODULE_0__["acards"];
-      this.bcards = _index_js__WEBPACK_IMPORTED_MODULE_0__["bcards"];
-      this.c1cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["c1cards"];
-      this.c2cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["c2cards"];
-      this.c3cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["c3cards"];
-      this.d1cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["d1cards"];
-      this.d2cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["d2cards"];
-      this.d3cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["d3cards"];
-      this.cards_booleans = _index_js__WEBPACK_IMPORTED_MODULE_0__["cards_booleans"];
+      this.acards = _index_js__WEBPACK_IMPORTED_MODULE_1__["acards"];
+      this.bcards = _index_js__WEBPACK_IMPORTED_MODULE_1__["bcards"];
+      this.c1cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["c1cards"];
+      this.c2cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["c2cards"];
+      this.c3cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["c3cards"];
+      this.d1cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["d1cards"];
+      this.d2cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["d2cards"];
+      this.d3cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["d3cards"];
+      this.cards_booleans = _index_js__WEBPACK_IMPORTED_MODULE_1__["cards_booleans"];
     },
     resultsInit: function resultsInit() {
-      this.K = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["K"];
-      this.SK = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SK"];
-      this.SKAN = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SKAN"];
-      this.CON = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["CON"];
-      this.ECO = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["ECO"];
-      this.LOFT = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["LOFT"];
+      this.K = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["K"];
+      this.SK = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SK"];
+      this.SKAN = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SKAN"];
+      this.CON = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["CON"];
+      this.ECO = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["ECO"];
+      this.LOFT = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["LOFT"];
     },
     addACard: function addACard(uuid) {
       this.selected_uuids.push(uuid);
@@ -2092,6 +2110,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_tel_input__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_tel_input__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-tel-input/dist/vue-tel-input.css */ "./node_modules/vue-tel-input/dist/vue-tel-input.css");
 /* harmony import */ var vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_3__);
 //
 //
 //
@@ -2179,11 +2199,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_MODULE_1___default.a);
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_3___default.a
+  },
   data: function data() {
     return {
       person: {
@@ -2302,6 +2339,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2429,7 +2468,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
   data: function data() {
     return {
       selected_rooms: []
@@ -6731,7 +6785,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".image-wrapper[data-v-6fe4c2a5] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-6fe4c2a5] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-6fe4c2a5]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-6fe4c2a5] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-6fe4c2a5] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-6fe4c2a5] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6fe4c2a5] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6fe4c2a5] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-6fe4c2a5] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6fe4c2a5] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n          animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.two[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.2s;\n          animation-delay: 1.2s;\n}\n.fade-in.three[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.logo[data-v-6fe4c2a5] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-6fe4c2a5] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-6fe4c2a5] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-6fe4c2a5] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-6fe4c2a5] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-6fe4c2a5]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-6fe4c2a5]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-6fe4c2a5] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-6fe4c2a5] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-6fe4c2a5] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6fe4c2a5] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6fe4c2a5] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-6fe4c2a5] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -6750,7 +6804,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 20px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\n  text-align: center;\n}\n.primary-button[data-v-19da4664] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-19da4664]:hover {\n  background-color: #2e3854;\n}\n.content-center[data-v-19da4664] {\n  padding: 100px 0;\n}\n.vue-tel-input[data-v-19da4664] {\n  box-shadow: none !important;\n  border: 1px solid black;\n}\n.vue-tel-input[data-v-19da4664]:focus {\n  border: 1px solid black;\n}\n.dropdown[data-v-19da4664] {\n  outline: none;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
+exports.push([module.i, ".form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\n.logo[data-v-19da4664] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-19da4664] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-19da4664] {\n  margin-top: 30px;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 20px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\n  text-align: center;\n}\n.primary-button[data-v-19da4664] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-19da4664]:hover {\n  background-color: #2e3854;\n}\n.content-center[data-v-19da4664] {\n  padding: 100px 0;\n}\n.vue-tel-input[data-v-19da4664] {\n  box-shadow: none !important;\n  border: 1px solid black;\n}\n.vue-tel-input[data-v-19da4664]:focus {\n  border: 1px solid black;\n}\n.dropdown[data-v-19da4664] {\n  outline: none;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
 
 // exports
 
@@ -6788,7 +6842,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "svg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n}\n.content-center[data-v-3958fef6] {\n  padding: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #2e3854;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "svg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n}\n.content-center[data-v-3958fef6] {\n  padding: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #2e3854;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -38222,378 +38276,410 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "content-center" }, [
-    _vm.cards_booleans
-      ? _c(
-          "div",
-          { staticClass: "container" },
-          [
-            _vm.cards_booleans.a
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Я бы описал свой стиль как ...\n            "
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "progress-bar__wrapper" },
+      [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "10" } })],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "content-center" }, [
+      _vm.cards_booleans
+        ? _c(
+            "div",
+            { staticClass: "container" },
+            [
+              _vm.cards_booleans.a
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Я бы описал свой стиль как ...\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.acards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addACard(card.uuid)
+                                  }
+                                }
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.acards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addACard(card.uuid)
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.b
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    При выборе мебели и домашнего декора, я предпочитаю ...\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.bcards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addBCard(card.uuid)
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.b
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                При выборе мебели и домашнего декора, я предпочитаю ...\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.bcards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addBCard(card.uuid)
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.c1
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какое изображение домашнего декора вам больше нравятся?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.c1cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addCCard(card.uuid, "c1")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.c1
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.c1cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addCCard(card.uuid, "c1")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.c2
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какое изображение домашнего декора вам больше нравятся?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.c2cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addCCard(card.uuid, "c2")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.c2
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.c2cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addCCard(card.uuid, "c2")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.c3
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какое изображение домашнего декора вам больше нравятся?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.c3cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addCCard(card.uuid, "c3")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.c3
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.c3cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addCCard(card.uuid, "c3")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.d1
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какие цветовые решения в вашем доме, вы предпочитаете?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.d1cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addDCard(card.uuid, "d1")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.d1
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.d1cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addDCard(card.uuid, "d1")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.d2
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какие цветовые решения в вашем доме, вы предпочитаете?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.d2cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addDCard(card.uuid, "d2")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.d2
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.d2cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addDCard(card.uuid, "d2")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.d3
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какие цветовые решения в вашем доме, вы предпочитаете?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.d3cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addDCard(card.uuid, "d3")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.d3
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.d3cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              on: {
-                                click: function($event) {
-                                  _vm.addDCard(card.uuid, "d3")
-                                }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e()
-          ],
-          2
-        )
-      : _vm._e()
+                  ]
+                : _vm._e()
+            ],
+            2
+          )
+        : _vm._e()
+    ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c("div", { staticClass: "logo__img" }, [
+        _c("img", {
+          attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
+        })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -38615,186 +38701,197 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "content-center" }, [
-    _c("div", { staticClass: "container" }, [
-      _vm.booleans.name
-        ? _c("div", [
-            _c("h1", { staticClass: "main-caption" }, [
-              _vm._v("\n              Как вас зовут?\n            ")
-            ]),
-            _vm._v(" "),
-            _c(
-              "form",
-              {
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    _vm.go("name")
-                  }
-                }
-              },
-              [
-                _c("div", { staticClass: "form-wrapper" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.person.name,
-                        expression: "person.name"
-                      }
-                    ],
-                    attrs: {
-                      type: "text",
-                      value: "",
-                      required: "",
-                      autofocus: ""
-                    },
-                    domProps: { value: _vm.person.name },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(_vm.person, "name", $event.target.value)
-                      }
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "progress-bar__wrapper" },
+      [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "60" } })],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "content-center" }, [
+      _c("div", { staticClass: "container" }, [
+        _vm.booleans.name
+          ? _c("div", [
+              _c("h1", { staticClass: "main-caption" }, [
+                _vm._v("\n                Как вас зовут?\n              ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      _vm.go("name")
                     }
-                  }),
-                  _vm._v(" "),
-                  _c("label", { staticClass: "full-name" }, [
-                    _vm._v("Полное имя")
-                  ])
-                ]),
-                _vm._v(" "),
-                _vm._m(0)
-              ]
-            )
-          ])
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.booleans.email
-        ? _c("div", [
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "form",
-              {
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    _vm.go("email")
                   }
-                }
-              },
-              [
-                _c("div", { staticClass: "form-wrapper" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.person.email,
-                        expression: "person.email"
-                      }
-                    ],
-                    attrs: {
-                      type: "email",
-                      placeholder: "Ваша почта",
-                      required: "",
-                      autofocus: ""
-                    },
-                    domProps: { value: _vm.person.email },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
+                },
+                [
+                  _c("div", { staticClass: "form-wrapper" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.person.name,
+                          expression: "person.name"
                         }
-                        _vm.$set(_vm.person, "email", $event.target.value)
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _vm._m(2)
-              ]
-            )
-          ])
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.booleans.phone
-        ? _c("div", [
-            _vm._m(3),
-            _vm._v(" "),
-            _c(
-              "form",
-              {
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    _vm.go("phone")
-                  }
-                }
-              },
-              [
-                _c(
-                  "div",
-                  { staticClass: "form-wrapper" },
-                  [
-                    _c("vue-tel-input", {
+                      ],
                       attrs: {
-                        placeholder: "Ваш номер телефона",
-                        preferredCountries: ["ru", "us", "ua"],
+                        type: "text",
+                        value: "",
+                        required: "",
                         autofocus: ""
                       },
-                      model: {
-                        value: _vm.person.phone,
-                        callback: function($$v) {
-                          _vm.$set(_vm.person, "phone", $$v)
-                        },
-                        expression: "person.phone"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "button-wrapper" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "primary-button",
-                      attrs: { type: "submit" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                       Далее\n                   "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "primary-button",
-                      attrs: { type: "submit" },
+                      domProps: { value: _vm.person.name },
                       on: {
-                        submit: function($event) {
-                          $event.preventDefault()
-                          _vm.go("phone")
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.person, "name", $event.target.value)
                         }
                       }
-                    },
+                    }),
+                    _vm._v(" "),
+                    _c("label", { staticClass: "full-name" }, [
+                      _vm._v("Полное имя")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(1)
+                ]
+              )
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.booleans.email
+          ? _c("div", [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      _vm.go("email")
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "form-wrapper" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.person.email,
+                          expression: "person.email"
+                        }
+                      ],
+                      attrs: {
+                        type: "email",
+                        placeholder: "Ваша почта",
+                        required: "",
+                        autofocus: ""
+                      },
+                      domProps: { value: _vm.person.email },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.person, "email", $event.target.value)
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(3)
+                ]
+              )
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.booleans.phone
+          ? _c("div", [
+              _vm._m(4),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      _vm.go("phone")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "form-wrapper" },
                     [
-                      _vm._v(
-                        "\n                           Пропустить\n                  "
-                      )
-                    ]
-                  )
-                ])
-              ]
-            )
-          ])
-        : _vm._e()
+                      _c("vue-tel-input", {
+                        attrs: {
+                          placeholder: "Ваш номер телефона",
+                          preferredCountries: ["ru", "us", "ua"],
+                          autofocus: ""
+                        },
+                        model: {
+                          value: _vm.person.phone,
+                          callback: function($$v) {
+                            _vm.$set(_vm.person, "phone", $$v)
+                          },
+                          expression: "person.phone"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "button-wrapper" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "primary-button",
+                        attrs: { type: "submit" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                         Далее\n                     "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "primary-button",
+                        attrs: { type: "submit" },
+                        on: {
+                          submit: function($event) {
+                            $event.preventDefault()
+                            _vm.go("phone")
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                             Пропустить\n                    "
+                        )
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ])
+          : _vm._e()
+      ])
     ])
   ])
 }
@@ -38803,11 +38900,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c("div", { staticClass: "logo__img" }, [
+        _c("img", {
+          attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "button-wrapper" }, [
       _c(
         "button",
         { staticClass: "primary-button", attrs: { type: "submit" } },
-        [_vm._v("\n                       Далее\n                   ")]
+        [_vm._v("\n                         Далее\n                     ")]
       )
     ])
   },
@@ -38816,9 +38925,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h1", { staticClass: "main-caption" }, [
-      _vm._v("\n              Укажите свой E-mail адрес,"),
+      _vm._v("\n                Укажите свой E-mail адрес,"),
       _c("br"),
-      _vm._v(" чтобы получить результат тестирования\n            ")
+      _vm._v(" чтобы получить результат тестирования\n              ")
     ])
   },
   function() {
@@ -38829,7 +38938,7 @@ var staticRenderFns = [
       _c(
         "button",
         { staticClass: "primary-button", attrs: { type: "submit" } },
-        [_vm._v("\n                       Далее\n                   ")]
+        [_vm._v("\n                         Далее\n                     ")]
       )
     ])
   },
@@ -38838,13 +38947,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h1", { staticClass: "main-caption" }, [
-      _vm._v("\n                Укажите свой телефон,"),
+      _vm._v("\n                  Укажите свой телефон,"),
       _c("br"),
       _vm._v(" если вы хотите проконсультироваться "),
       _c("br"),
       _vm._v(" по вопросу ремонта "),
       _c("br"),
-      _vm._v("  или услуг интерьерного стилиста.\n            ")
+      _vm._v("  или услуг интерьерного стилиста.\n              ")
     ])
   }
 ]
@@ -38934,671 +39043,699 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "content-center" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("h1", { staticClass: "main-caption" }, [
-        _vm._v(
-          "\n         В какой комнате вы хотели бы сделать ремонт? Можете выбрать несколько комнат или во всей квартире или доме.\n      "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "image-wrapper" }, [
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Гостиная") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Гостиная")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "52",
-                    height: "30",
-                    viewBox: "0 0 52 30",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("title", [_vm._v("living room")]),
-                  _c(
-                    "g",
-                    {
-                      attrs: {
-                        transform: "translate(1 1)",
-                        fill: "none",
-                        "fill-rule": "evenodd"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          stroke: "#FFF",
-                          "stroke-width": "1.5",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                          d:
-                            "M6.713 16.66h36.016V.592H6.712zm36.017.001h6.647v-6.61H42.73zm-42.73 0h6.648v-6.61H0z"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          stroke: "#FFF",
-                          "stroke-width": "1.5",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                          d: "M0 23.49h49.442v-6.829H0zm6 0v4.71m36-4.71v4.71"
-                        }
-                      }),
-                      _c("ellipse", {
-                        attrs: {
-                          fill: "#FFF",
-                          cx: "14",
-                          cy: "5",
-                          rx: "1",
-                          ry: "1"
-                        }
-                      }),
-                      _c("ellipse", {
-                        attrs: {
-                          fill: "#FFF",
-                          cx: "25",
-                          cy: "5",
-                          rx: "1",
-                          ry: "1"
-                        }
-                      }),
-                      _c("ellipse", {
-                        attrs: {
-                          fill: "#FFF",
-                          cx: "36",
-                          cy: "5",
-                          rx: "1",
-                          ry: "1"
-                        }
-                      }),
-                      _c("ellipse", {
-                        attrs: {
-                          fill: "#FFF",
-                          cx: "36",
-                          cy: "12",
-                          rx: "1",
-                          ry: "1"
-                        }
-                      }),
-                      _c("ellipse", {
-                        attrs: {
-                          fill: "#FFF",
-                          cx: "25",
-                          cy: "12",
-                          rx: "1",
-                          ry: "1"
-                        }
-                      }),
-                      _c("ellipse", {
-                        attrs: {
-                          fill: "#FFF",
-                          cx: "14",
-                          cy: "12",
-                          rx: "1",
-                          ry: "1"
-                        }
-                      })
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Гостиная")])
-            ]
+  return _c("div", {}, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "progress-bar__wrapper" },
+      [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "60" } })],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "content-center" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("h1", { staticClass: "main-caption" }, [
+          _vm._v(
+            "\n         В какой комнате вы хотели бы сделать ремонт? Можете выбрать несколько комнат или во всей квартире или доме.\n      "
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Столовая") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Столовая")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "42",
-                    height: "39",
-                    viewBox: "0 0 42 39",
-                    xmlns: "http://www.w3.org/2000/svg"
+        _c("div", { staticClass: "image-wrapper" }, [
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Гостиная") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Гостиная")
                   }
-                },
-                [
-                  _c("title", [_vm._v("dinning room")]),
-                  _c("path", {
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
                     attrs: {
-                      d:
-                        "M8.479 21h24.824M21 21.44v16.636M16.515 38h8.752M1 16.506v21.57m10.98 0V27.29H1m40-10.784v21.57m-10.84 0V27.29h10.98M21 1.603v6.73m-4.95 4.844a4.843 4.843 0 1 1 9.683 0h-9.684zm5.797 0v.562a.956.956 0 1 1-1.912 0v-.562",
-                      stroke: "#D0D6DB",
-                      "stroke-width": "1.5",
-                      fill: "none",
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round"
+                      width: "52",
+                      height: "30",
+                      viewBox: "0 0 52 30",
+                      xmlns: "http://www.w3.org/2000/svg"
                     }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Столовая")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Спальня") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Спальня")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "51",
-                    height: "30",
-                    viewBox: "0 0 51 30",
-                    xmlns: "http://www.w3.org/2000/svg"
+                  },
+                  [
+                    _c("title", [_vm._v("living room")]),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          transform: "translate(1 1)",
+                          fill: "none",
+                          "fill-rule": "evenodd"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            stroke: "#FFF",
+                            "stroke-width": "1.5",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            d:
+                              "M6.713 16.66h36.016V.592H6.712zm36.017.001h6.647v-6.61H42.73zm-42.73 0h6.648v-6.61H0z"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            stroke: "#FFF",
+                            "stroke-width": "1.5",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            d: "M0 23.49h49.442v-6.829H0zm6 0v4.71m36-4.71v4.71"
+                          }
+                        }),
+                        _c("ellipse", {
+                          attrs: {
+                            fill: "#FFF",
+                            cx: "14",
+                            cy: "5",
+                            rx: "1",
+                            ry: "1"
+                          }
+                        }),
+                        _c("ellipse", {
+                          attrs: {
+                            fill: "#FFF",
+                            cx: "25",
+                            cy: "5",
+                            rx: "1",
+                            ry: "1"
+                          }
+                        }),
+                        _c("ellipse", {
+                          attrs: {
+                            fill: "#FFF",
+                            cx: "36",
+                            cy: "5",
+                            rx: "1",
+                            ry: "1"
+                          }
+                        }),
+                        _c("ellipse", {
+                          attrs: {
+                            fill: "#FFF",
+                            cx: "36",
+                            cy: "12",
+                            rx: "1",
+                            ry: "1"
+                          }
+                        }),
+                        _c("ellipse", {
+                          attrs: {
+                            fill: "#FFF",
+                            cx: "25",
+                            cy: "12",
+                            rx: "1",
+                            ry: "1"
+                          }
+                        }),
+                        _c("ellipse", {
+                          attrs: {
+                            fill: "#FFF",
+                            cx: "14",
+                            cy: "12",
+                            rx: "1",
+                            ry: "1"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Гостиная")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Столовая") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Столовая")
                   }
-                },
-                [
-                  _c("title", [_vm._v("bedroom")]),
-                  _c(
-                    "g",
-                    {
-                      attrs: {
-                        stroke: "#D0D6DB",
-                        "stroke-width": "1.5",
-                        fill: "none",
-                        "fill-rule": "evenodd",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M47.217 11.105l2.666 2.639a.753.753 0 0 1 .224.535v8.453H1.602V14.28c0-.2.081-.393.224-.535l2.667-2.639a.771.771 0 0 1 .54-.221h41.643a.77.77 0 0 1 .54.221zM3 23v6.264M49 23v6.264M5.51 10.883H46.2V1.692H5.51z"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M6.567 7.166c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046H6.567zm21.345 0c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046h-17.23z"
-                        }
-                      })
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Спальня")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Детская") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Детская")
                 }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "41",
-                    height: "35",
-                    viewBox: "0 0 41 35",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("title", [_vm._v("Page 1")]),
-                  _c(
-                    "g",
-                    {
-                      attrs: {
-                        stroke: "#D0D6DB",
-                        fill: "none",
-                        "fill-rule": "evenodd",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M1.728 21.993c10.552 9.817 26.932 9.817 37.484 0 .277-.258.728-.055.728.323v2.752c0 .354-.141.698-.397.944-10.647 10.234-27.499 10.234-38.146 0A1.31 1.31 0 0 1 1 25.068v-2.752c0-.378.451-.58.728-.323zm28.373-5.598s2.727-1.162 4.09 1.754l2.261-1.745s-1.39-2.588-4.223-2.588c-2.835 0-3.705 1.874-3.705 1.874",
-                          "stroke-width": "1.5"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M9.388 27.035c1.076-3.793 5.63-6.641 11.082-6.641 5.453 0 10.007 2.848 11.082 6.642",
-                          "stroke-width": "1.5"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M35.177 25.106s-3.166-6.849-4.883-8.538c-1.717-1.69-4.823-.735-8.665-.735-3.843 0-3.924-1.308-4.497-3.848C14.844 2.633 6.697 2.18 6.697 2.18L5.452 1l-.089 1.96c-.317.476-2.427 4.368-3.367 5.742-.25.366-.45.78-.45 1.257 0 1.118.907 2.025 2.025 2.025.433 0 .904-.208 1.164-.369 1.01-.625 4.068-2.293 4.068-2.293 1.571 3.732.344 7.65.344 7.65-1.068 1.474-4.013 7.721-4.013 7.721",
-                          "stroke-width": "1.5"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M18.103 14.796s.72-3.923-.943-7.165c-1.662-3.243-5.411-6.246-11.303-6.246"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d: "M4.555 6.992a.635.635 0 1 1 1.272 0",
-                          "stroke-width": ".5"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d: "M2.29 8.254s2.479.799 2.932 3.037",
-                          "stroke-width": "1.5"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: { d: "M4.822 10.246s4.626-4.312 5.28-7.142" }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d: "M8.545 8.771S7.604 5.5 5.363 2.961",
-                          "stroke-width": "1.5"
-                        }
-                      })
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Детская")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Кабинет") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Кабинет")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "54",
-                    height: "27",
-                    viewBox: "0 0 54 27",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("title", [_vm._v("office")]),
-                  _c("path", {
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
                     attrs: {
-                      d:
-                        "M30 17h19V1H30zM1 1h52M5 1v25.2M49 9v17.2M36 5h7m-7 8h7M30 9h19",
-                      "stroke-width": "1.5",
-                      stroke: "#D0D6DB",
-                      fill: "none",
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round"
+                      width: "42",
+                      height: "39",
+                      viewBox: "0 0 42 39",
+                      xmlns: "http://www.w3.org/2000/svg"
                     }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Кабинет")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Кухня") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Кухня")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "49",
-                    height: "35",
-                    viewBox: "0 0 49 35",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("title", [_vm._v("Page 1")]),
-                  _c(
-                    "g",
-                    {
-                      attrs: {
-                        stroke: "#D0D6DB",
-                        "stroke-width": "1.5",
-                        fill: "none",
-                        "fill-rule": "evenodd",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round"
-                      }
-                    },
-                    [
-                      _c("path", { attrs: { d: "M1 33.853h24.69V7.496H1z" } }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M25.689 33.853h21.87V7.496h-21.87zM1 12h24.69M4.837 30h17.015V16.14H4.837zm3.496-12h10.023M7 8.9v2.017M11 8.9v2.017M15 8.9v2.017M19 8.9v2.017m17-3.42v26.356m-2-15.887v3.098m4-3.098v3.098"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M32.643 2.122c0-.695-.561-1.259-1.253-1.259-.692 0-1.253.564-1.253 1.259v5.375m0-2.382h-.99v-.757"
-                        }
-                      })
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Кухня")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Санузел") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Санузел")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "49",
-                    height: "33",
-                    viewBox: "0 0 49 33",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("title", [_vm._v("Page 1")]),
-                  _c(
-                    "g",
-                    {
-                      attrs: {
-                        stroke: "#D0D6DB",
-                        "stroke-width": "1.5",
-                        fill: "none",
-                        "fill-rule": "evenodd",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M21.699 14.165h26.454zM1.6 14h10.358M9.065 32h31.623M2.927 14.165s.308 10.632 7.865 17.839m36.034-17.839s-.308 10.632-7.865 17.839m-27.003-7.291h9.74V12.164h-9.74zm0-3.713H21.7M37.05 6.398c0-2.654 2.179-4.806 4.866-4.806s4.98 2.152 4.98 4.806c0 1.708-.376 5.031-2.47 7.767"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M34.779 8.645c0-1.24 1.016-2.244 2.271-2.244s2.272 1.004 2.272 2.244h-4.544z"
-                        }
-                      })
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Санузел")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Прочее") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Прочее")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "icon-svg",
-                  attrs: {
-                    width: "16",
-                    height: "40",
-                    viewBox: "0 0 16 40",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("title", [_vm._v("Page 1")]),
-                  _c(
-                    "g",
-                    {
-                      attrs: {
-                        stroke: "#D0D6DB",
-                        "stroke-width": "1.5",
-                        fill: "none",
-                        "fill-rule": "evenodd",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M1.942 39.2l1.306-15.405h9.023L13.577 39.2zM7 13.031v10.764m3.327-16.279c0 1.404-1.15 2.543-2.568 2.543-1.418 0-2.568-1.139-2.568-2.543 0-1.405 1.15-2.544 2.568-2.544 1.418 0 2.568 1.139 2.568 2.544z"
-                        }
-                      }),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M14.519 7.516c0 1.065-1.884 1.64-2.386 2.5-.519.888-.097 2.785-.993 3.299-.868.497-2.305-.799-3.38-.799-1.077 0-2.513 1.296-3.382.799-.896-.514-.474-2.411-.993-3.299C2.883 9.156 1 8.581 1 7.516c0-1.066 1.883-1.64 2.385-2.5.52-.888.098-2.786.993-3.3.869-.497 2.306.799 3.382.799 1.075 0 2.512-1.296 3.38-.798.896.513.474 2.41.993 3.298.502.86 2.386 1.435 2.386 2.5zm-5.507 9.458a4.213 4.213 0 0 0-1.218 3.54 4.304 4.304 0 0 0 3.573-1.207 4.213 4.213 0 0 0 1.218-3.54 4.305 4.305 0 0 0-3.573 1.207z"
-                        }
-                      })
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Прочее")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-card" }, [
-          _c(
-            "button",
-            {
-              staticClass: "button-card",
-              class: { active: _vm.selected_rooms.includes("Вся квартира") },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  _vm.addRoom("Вся квартира")
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticStyle: { "enable-background": "new 0 0 612 612" },
-                  attrs: {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                    x: "0px",
-                    y: "0px",
-                    width: "50px",
-                    height: "50px",
-                    viewBox: "0 0 612 612",
-                    "xml:space": "preserve"
-                  }
-                },
-                [
-                  _c("g", [
+                  },
+                  [
+                    _c("title", [_vm._v("dinning room")]),
                     _c("path", {
-                      staticClass: "fill-color",
                       attrs: {
                         d:
-                          "M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                  \t\tc7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                  \t\ts-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                  \t\tv-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                  \t\tc0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                  \t\tc0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                  \t\tv-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                  \t\tc7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z"
+                          "M8.479 21h24.824M21 21.44v16.636M16.515 38h8.752M1 16.506v21.57m10.98 0V27.29H1m40-10.784v21.57m-10.84 0V27.29h10.98M21 1.603v6.73m-4.95 4.844a4.843 4.843 0 1 1 9.683 0h-9.684zm5.797 0v.562a.956.956 0 1 1-1.912 0v-.562",
+                        stroke: "#D0D6DB",
+                        "stroke-width": "1.5",
+                        fill: "none",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
                       }
                     })
-                  ]),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g"),
-                  _vm._v(" "),
-                  _c("g")
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Вся квартира")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "button-wrapper" }, [
-          _c(
-            "button",
-            {
-              staticClass: "primary-button",
-              attrs: { type: "submit" },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  return _vm.save($event)
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Столовая")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Спальня") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Спальня")
+                  }
                 }
-              }
-            },
-            [_vm._v("\n               Далее\n           ")]
-          )
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
+                    attrs: {
+                      width: "51",
+                      height: "30",
+                      viewBox: "0 0 51 30",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("bedroom")]),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          stroke: "#D0D6DB",
+                          "stroke-width": "1.5",
+                          fill: "none",
+                          "fill-rule": "evenodd",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M47.217 11.105l2.666 2.639a.753.753 0 0 1 .224.535v8.453H1.602V14.28c0-.2.081-.393.224-.535l2.667-2.639a.771.771 0 0 1 .54-.221h41.643a.77.77 0 0 1 .54.221zM3 23v6.264M49 23v6.264M5.51 10.883H46.2V1.692H5.51z"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M6.567 7.166c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046H6.567zm21.345 0c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046h-17.23z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Спальня")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Детская") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Детская")
+                  }
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
+                    attrs: {
+                      width: "41",
+                      height: "35",
+                      viewBox: "0 0 41 35",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("Page 1")]),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          stroke: "#D0D6DB",
+                          fill: "none",
+                          "fill-rule": "evenodd",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M1.728 21.993c10.552 9.817 26.932 9.817 37.484 0 .277-.258.728-.055.728.323v2.752c0 .354-.141.698-.397.944-10.647 10.234-27.499 10.234-38.146 0A1.31 1.31 0 0 1 1 25.068v-2.752c0-.378.451-.58.728-.323zm28.373-5.598s2.727-1.162 4.09 1.754l2.261-1.745s-1.39-2.588-4.223-2.588c-2.835 0-3.705 1.874-3.705 1.874",
+                            "stroke-width": "1.5"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M9.388 27.035c1.076-3.793 5.63-6.641 11.082-6.641 5.453 0 10.007 2.848 11.082 6.642",
+                            "stroke-width": "1.5"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M35.177 25.106s-3.166-6.849-4.883-8.538c-1.717-1.69-4.823-.735-8.665-.735-3.843 0-3.924-1.308-4.497-3.848C14.844 2.633 6.697 2.18 6.697 2.18L5.452 1l-.089 1.96c-.317.476-2.427 4.368-3.367 5.742-.25.366-.45.78-.45 1.257 0 1.118.907 2.025 2.025 2.025.433 0 .904-.208 1.164-.369 1.01-.625 4.068-2.293 4.068-2.293 1.571 3.732.344 7.65.344 7.65-1.068 1.474-4.013 7.721-4.013 7.721",
+                            "stroke-width": "1.5"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M18.103 14.796s.72-3.923-.943-7.165c-1.662-3.243-5.411-6.246-11.303-6.246"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d: "M4.555 6.992a.635.635 0 1 1 1.272 0",
+                            "stroke-width": ".5"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d: "M2.29 8.254s2.479.799 2.932 3.037",
+                            "stroke-width": "1.5"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: { d: "M4.822 10.246s4.626-4.312 5.28-7.142" }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d: "M8.545 8.771S7.604 5.5 5.363 2.961",
+                            "stroke-width": "1.5"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Детская")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Кабинет") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Кабинет")
+                  }
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
+                    attrs: {
+                      width: "54",
+                      height: "27",
+                      viewBox: "0 0 54 27",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("office")]),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M30 17h19V1H30zM1 1h52M5 1v25.2M49 9v17.2M36 5h7m-7 8h7M30 9h19",
+                        "stroke-width": "1.5",
+                        stroke: "#D0D6DB",
+                        fill: "none",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Кабинет")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Кухня") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Кухня")
+                  }
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
+                    attrs: {
+                      width: "49",
+                      height: "35",
+                      viewBox: "0 0 49 35",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("Page 1")]),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          stroke: "#D0D6DB",
+                          "stroke-width": "1.5",
+                          fill: "none",
+                          "fill-rule": "evenodd",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: { d: "M1 33.853h24.69V7.496H1z" }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M25.689 33.853h21.87V7.496h-21.87zM1 12h24.69M4.837 30h17.015V16.14H4.837zm3.496-12h10.023M7 8.9v2.017M11 8.9v2.017M15 8.9v2.017M19 8.9v2.017m17-3.42v26.356m-2-15.887v3.098m4-3.098v3.098"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M32.643 2.122c0-.695-.561-1.259-1.253-1.259-.692 0-1.253.564-1.253 1.259v5.375m0-2.382h-.99v-.757"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Кухня")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Санузел") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Санузел")
+                  }
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
+                    attrs: {
+                      width: "49",
+                      height: "33",
+                      viewBox: "0 0 49 33",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("Page 1")]),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          stroke: "#D0D6DB",
+                          "stroke-width": "1.5",
+                          fill: "none",
+                          "fill-rule": "evenodd",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M21.699 14.165h26.454zM1.6 14h10.358M9.065 32h31.623M2.927 14.165s.308 10.632 7.865 17.839m36.034-17.839s-.308 10.632-7.865 17.839m-27.003-7.291h9.74V12.164h-9.74zm0-3.713H21.7M37.05 6.398c0-2.654 2.179-4.806 4.866-4.806s4.98 2.152 4.98 4.806c0 1.708-.376 5.031-2.47 7.767"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M34.779 8.645c0-1.24 1.016-2.244 2.271-2.244s2.272 1.004 2.272 2.244h-4.544z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Санузел")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Прочее") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Прочее")
+                  }
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon-svg",
+                    attrs: {
+                      width: "16",
+                      height: "40",
+                      viewBox: "0 0 16 40",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("Page 1")]),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          stroke: "#D0D6DB",
+                          "stroke-width": "1.5",
+                          fill: "none",
+                          "fill-rule": "evenodd",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M1.942 39.2l1.306-15.405h9.023L13.577 39.2zM7 13.031v10.764m3.327-16.279c0 1.404-1.15 2.543-2.568 2.543-1.418 0-2.568-1.139-2.568-2.543 0-1.405 1.15-2.544 2.568-2.544 1.418 0 2.568 1.139 2.568 2.544z"
+                          }
+                        }),
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M14.519 7.516c0 1.065-1.884 1.64-2.386 2.5-.519.888-.097 2.785-.993 3.299-.868.497-2.305-.799-3.38-.799-1.077 0-2.513 1.296-3.382.799-.896-.514-.474-2.411-.993-3.299C2.883 9.156 1 8.581 1 7.516c0-1.066 1.883-1.64 2.385-2.5.52-.888.098-2.786.993-3.3.869-.497 2.306.799 3.382.799 1.075 0 2.512-1.296 3.38-.798.896.513.474 2.41.993 3.298.502.86 2.386 1.435 2.386 2.5zm-5.507 9.458a4.213 4.213 0 0 0-1.218 3.54 4.304 4.304 0 0 0 3.573-1.207 4.213 4.213 0 0 0 1.218-3.54 4.305 4.305 0 0 0-3.573 1.207z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Прочее")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-card" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button-card",
+                class: { active: _vm.selected_rooms.includes("Вся квартира") },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.addRoom("Вся квартира")
+                  }
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticStyle: { "enable-background": "new 0 0 612 612" },
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                      x: "0px",
+                      y: "0px",
+                      width: "50px",
+                      height: "50px",
+                      viewBox: "0 0 612 612",
+                      "xml:space": "preserve"
+                    }
+                  },
+                  [
+                    _c("g", [
+                      _c("path", {
+                        staticClass: "fill-color",
+                        attrs: {
+                          d:
+                            "M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                      c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                      s-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                      v-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                      c0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                      c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                      v-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                      c7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g"),
+                    _vm._v(" "),
+                    _c("g")
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [
+                  _vm._v("Вся квартира")
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "button-wrapper" }, [
+            _c(
+              "button",
+              {
+                staticClass: "primary-button",
+                attrs: { type: "submit" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.save($event)
+                  }
+                }
+              },
+              [_vm._v("\n               Далее\n           ")]
+            )
+          ])
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c("div", { staticClass: "logo__img" }, [
+        _c("img", {
+          attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
+        })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -39709,6 +39846,382 @@ function normalizeComponent (
   }
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/vue-simple-progress/dist/vue-simple-progress.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * vue-simple-progress v1.1.0 (https://github.com/dzwillia/vue-simple-progress)
+ * (c) 2018 David Z. Williams
+ * Released under the MIT License.
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else {}
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.VueSimpleProgress = undefined;
+
+var _Progress = __webpack_require__(1);
+
+var _Progress2 = _interopRequireDefault(_Progress);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+if (typeof window !== 'undefined' && window.Vue) {
+  Vue.component('vue-simple-progress', _Progress2.default);
+}
+
+exports.VueSimpleProgress = _Progress2.default;
+exports.default = _Progress2.default;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(2)(
+  /* script */
+  __webpack_require__(3),
+  /* template */
+  __webpack_require__(4),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// this module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  scopeId,
+  cssModules
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  // inject cssModules
+  if (cssModules) {
+    var computed = Object.create(options.computed || null)
+    Object.keys(cssModules).forEach(function (key) {
+      var module = cssModules[key]
+      computed[key] = function () { return module }
+    })
+    options.computed = computed
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+
+var isNumber = function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+};
+
+exports.default = {
+  props: {
+    'val': {
+      default: 0
+    },
+    'max': {
+      default: 100
+    },
+    'size': {
+      default: 3
+    },
+    'bg-color': {
+      type: String,
+      default: '#eee'
+    },
+    'bar-color': {
+      type: String,
+      default: '#2196f3' },
+    'bar-transition': {
+      type: String,
+      default: 'all 0.5s ease'
+    },
+    'spacing': {
+      type: Number,
+      default: 4
+    },
+    'text': {
+      type: String,
+      default: ''
+    },
+    'text-position': {
+      type: String,
+      default: 'bottom' },
+    'font-size': {
+      type: Number,
+      default: 13
+    },
+    'text-fg-color': {
+      type: String,
+      default: '#222'
+    }
+  },
+  computed: {
+    pct: function pct() {
+      var pct = this.val / this.max * 100;
+      pct = pct.toFixed(2);
+      return Math.min(pct, this.max);
+    },
+    size_px: function size_px() {
+      switch (this.size) {
+        case 'tiny':
+          return 2;
+        case 'small':
+          return 4;
+        case 'medium':
+          return 8;
+        case 'large':
+          return 12;
+        case 'big':
+          return 16;
+        case 'huge':
+          return 32;
+        case 'massive':
+          return 64;
+      }
+
+      return isNumber(this.size) ? this.size : 32;
+    },
+    text_padding: function text_padding() {
+      switch (this.size) {
+        case 'tiny':
+        case 'small':
+        case 'medium':
+        case 'large':
+        case 'big':
+        case 'huge':
+        case 'massive':
+          return Math.min(Math.max(Math.ceil(this.size_px / 8), 3), 12);
+      }
+
+      return isNumber(this.spacing) ? this.spacing : 4;
+    },
+    text_font_size: function text_font_size() {
+      switch (this.size) {
+        case 'tiny':
+        case 'small':
+        case 'medium':
+        case 'large':
+        case 'big':
+        case 'huge':
+        case 'massive':
+          return Math.min(Math.max(Math.ceil(this.size_px * 1.4), 11), 32);
+      }
+
+      return isNumber(this.fontSize) ? this.fontSize : 13;
+    },
+    progress_style: function progress_style() {
+      var style = {
+        'background': this.bgColor
+      };
+
+      if (this.textPosition == 'middle' || this.textPosition == 'inside') {
+        style['position'] = 'relative';
+        style['min-height'] = this.size_px + 'px';
+        style['z-index'] = '-2';
+      }
+
+      return style;
+    },
+    bar_style: function bar_style() {
+      var style = {
+        'background': this.barColor,
+        'width': this.pct + '%',
+        'height': this.size_px + 'px',
+        'transition': this.barTransition
+      };
+
+      if (this.textPosition == 'middle' || this.textPosition == 'inside') {
+        style['position'] = 'absolute';
+        style['top'] = '0';
+        style['height'] = '100%';
+        style['min-height'] = this.size_px + 'px', style['z-index'] = '-1';
+      }
+
+      return style;
+    },
+    text_style: function text_style() {
+      var style = {
+        'color': this.textFgColor,
+        'font-size': this.text_font_size + 'px',
+        'text-align': 'center'
+      };
+
+      if (this.textPosition == 'top' || this.textPosition == 'middle' || this.textPosition == 'inside') style['padding-bottom'] = this.text_padding + 'px';
+      if (this.textPosition == 'bottom' || this.textPosition == 'middle' || this.textPosition == 'inside') style['padding-top'] = this.text_padding + 'px';
+
+      return style;
+    }
+  }
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.text.length > 0 && _vm.textPosition == 'top') ? _c('div', {
+    staticClass: "vue-simple-progress-text",
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e(), _vm._v(" "), _c('div', {
+    staticClass: "vue-simple-progress",
+    style: (_vm.progress_style)
+  }, [(_vm.text.length > 0 && _vm.textPosition == 'middle') ? _c('div', {
+    staticClass: "vue-simple-progress-text",
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e(), _vm._v(" "), (_vm.text.length > 0 && _vm.textPosition == 'inside') ? _c('div', {
+    staticStyle: {
+      "position": "relative",
+      "left": "-9999px"
+    },
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e(), _vm._v(" "), _c('div', {
+    staticClass: "vue-simple-progress-bar",
+    style: (_vm.bar_style)
+  }, [(_vm.text.length > 0 && _vm.textPosition == 'inside') ? _c('div', {
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e()])]), _vm._v(" "), (_vm.text.length > 0 && _vm.textPosition == 'bottom') ? _c('div', {
+    staticClass: "vue-simple-progress-text",
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e()])
+},staticRenderFns: []}
+
+/***/ })
+/******/ ])["default"];
+});
 
 /***/ }),
 
@@ -51124,106 +51637,130 @@ __webpack_require__.r(__webpack_exports__);
 var acards = [{
   uuid: 'A1',
   name: 'Более классический',
-  path: '/storage/quiz/A/A1.jpg'
+  path: '/storage/quiz/A/A1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'A2',
   name: 'Что-то между',
-  path: '/storage/quiz/A/A2.jpg'
+  path: '/storage/quiz/A/A2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'A3',
   name: 'Более современный',
-  path: '/storage/quiz/A/A3.jpg'
+  path: '/storage/quiz/A/A3.jpg',
+  classname: 'fade-in three'
 }];
 var bcards = [{
   uuid: 'B1',
   name: 'Простые формы',
-  path: '/storage/quiz/B/B1.jpg'
+  path: '/storage/quiz/B/B1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'B2',
   name: 'Изысканный стиль',
-  path: '/storage/quiz/B/B2.jpg'
+  path: '/storage/quiz/B/B2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'B3',
   name: 'Брутальный стиль',
-  path: '/storage/quiz/B/B3.jpg'
+  path: '/storage/quiz/B/B3.jpg',
+  classname: 'fade-in three'
 }];
 var c1cards = [{
   uuid: 'C1',
   name: '',
-  path: '/storage/quiz/C1/C1.jpg'
+  path: '/storage/quiz/C1/C1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'C2',
   name: '',
-  path: '/storage/quiz/C1/C2.jpg'
+  path: '/storage/quiz/C1/C2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'C3',
   name: '',
-  path: '/storage/quiz/C1/C3.jpg'
+  path: '/storage/quiz/C1/C3.jpg',
+  classname: 'fade-in three'
 }];
 var c2cards = [{
   uuid: 'C1',
   name: '',
-  path: '/storage/quiz/C2/C1.jpg'
+  path: '/storage/quiz/C2/C1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'C2',
   name: '',
-  path: '/storage/quiz/C2/C2.jpg'
+  path: '/storage/quiz/C2/C2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'C3',
   name: '',
-  path: '/storage/quiz/C2/C3.jpg'
+  path: '/storage/quiz/C2/C3.jpg',
+  classname: 'fade-in three'
 }];
 var c3cards = [{
   uuid: 'C1',
   name: '',
-  path: '/storage/quiz/C3/C1.jpg'
+  path: '/storage/quiz/C3/C1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'C2',
   name: '',
-  path: '/storage/quiz/C3/C2.jpg'
+  path: '/storage/quiz/C3/C2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'C3',
   name: '',
-  path: '/storage/quiz/C3/C3.jpg'
+  path: '/storage/quiz/C3/C3.jpg',
+  classname: 'fade-in three'
 }];
 var d1cards = [{
   uuid: 'D1',
   name: 'Чистые и нейтральные',
-  path: '/storage/quiz/D1/D1.jpg'
+  path: '/storage/quiz/D1/D1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'D2',
   name: 'Один цвет',
-  path: '/storage/quiz/D1/D2.jpg'
+  path: '/storage/quiz/D1/D2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'D3',
   name: 'Яркие и смелые',
-  path: '/storage/quiz/D1/D3.jpg'
+  path: '/storage/quiz/D1/D3.jpg',
+  classname: 'fade-in three'
 }];
 var d2cards = [{
   uuid: 'D1',
   name: 'Чистые и нейтральные',
-  path: '/storage/quiz/D2/D1.jpg'
+  path: '/storage/quiz/D2/D1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'D2',
   name: 'Один цвет',
-  path: '/storage/quiz/D2/D2.jpg'
+  path: '/storage/quiz/D2/D2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'D3',
   name: 'Яркие и смелые',
-  path: '/storage/quiz/D2/D3.jpg'
+  path: '/storage/quiz/D2/D3.jpg',
+  classname: 'fade-in three'
 }];
 var d3cards = [{
   uuid: 'D1',
   name: 'Чистые и нейтральные',
-  path: '/storage/quiz/D3/D1.jpg'
+  path: '/storage/quiz/D3/D1.jpg',
+  classname: 'fade-in one'
 }, {
   uuid: 'D2',
   name: 'Один цвет',
-  path: '/storage/quiz/D3/D2.jpg'
+  path: '/storage/quiz/D3/D2.jpg',
+  classname: 'fade-in two'
 }, {
   uuid: 'D3',
   name: 'Яркие и смелые',
-  path: '/storage/quiz/D3/D3.jpg'
+  path: '/storage/quiz/D3/D3.jpg',
+  classname: 'fade-in three'
 }];
 var cards_booleans = {
   a: true,
@@ -51610,8 +52147,8 @@ var LOFT = ['A3B3C1D1', 'A3B3C1D2', 'A3B3C1D3', 'A3B3C2D1', 'A3B3C2D2', 'A3B3C2D
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
