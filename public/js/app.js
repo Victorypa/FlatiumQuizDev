@@ -1787,7 +1787,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
-    logout: function logout() {}
+    logout: function logout() {
+      axios.post('/logout').then(function (response) {
+        window.location.href = '/login';
+      });
+    }
   }
 });
 
@@ -2244,6 +2248,41 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Panel_partials_Navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/Panel/partials/Navigation */ "./resources/js/components/Panel/partials/Navigation.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38869,9 +38908,72 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [_c("Navigation")], 1)
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [_c("Navigation"), _vm._v(" "), _vm._m(0)],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row mt-5" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [_vm._v("Статистика")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "table",
+              {
+                staticClass: "table table-striped table-bordered",
+                staticStyle: { width: "100%" }
+              },
+              [
+                _c("thead", [
+                  _c("tr", [
+                    _c("th", [_vm._v("Дата и время")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Имя")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("E-mail")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Телефон")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Выбор по комнатам")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Результат")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Отправлено в AMO CRM")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("Tiger Nixon")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("System Architect")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Edinburgh")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("61")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2011/04/25")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("$320,800")])
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
