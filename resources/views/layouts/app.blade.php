@@ -7,6 +7,7 @@
 
         <title>Flatium</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script>

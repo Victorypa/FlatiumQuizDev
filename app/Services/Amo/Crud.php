@@ -32,9 +32,11 @@ class Crud
                 'pipeline_id' => 1572109,
                 'responsible_user_id' => 2211916,
                 'custom_fields' => array(
-                    'contacts' => array(
-                        'id' => 28369113,
-                        'values' => array($this->person->email)
+                    array(
+                        'contacts' => array(
+                            'id' => 28369113,
+                            'values' => array($this->person->email)
+                        )
                     )
                 )
             )
