@@ -1763,8 +1763,10 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
-/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
+/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
 //
 //
 //
@@ -1890,9 +1892,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
   data: function data() {
     return {
       cards_booleans: [],
@@ -1919,23 +1937,23 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     cardsInit: function cardsInit() {
-      this.acards = _index_js__WEBPACK_IMPORTED_MODULE_0__["acards"];
-      this.bcards = _index_js__WEBPACK_IMPORTED_MODULE_0__["bcards"];
-      this.c1cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["c1cards"];
-      this.c2cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["c2cards"];
-      this.c3cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["c3cards"];
-      this.d1cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["d1cards"];
-      this.d2cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["d2cards"];
-      this.d3cards = _index_js__WEBPACK_IMPORTED_MODULE_0__["d3cards"];
-      this.cards_booleans = _index_js__WEBPACK_IMPORTED_MODULE_0__["cards_booleans"];
+      this.acards = _index_js__WEBPACK_IMPORTED_MODULE_1__["acards"];
+      this.bcards = _index_js__WEBPACK_IMPORTED_MODULE_1__["bcards"];
+      this.c1cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["c1cards"];
+      this.c2cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["c2cards"];
+      this.c3cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["c3cards"];
+      this.d1cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["d1cards"];
+      this.d2cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["d2cards"];
+      this.d3cards = _index_js__WEBPACK_IMPORTED_MODULE_1__["d3cards"];
+      this.cards_booleans = _index_js__WEBPACK_IMPORTED_MODULE_1__["cards_booleans"];
     },
     resultsInit: function resultsInit() {
-      this.K = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["K"];
-      this.SK = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SK"];
-      this.SKAN = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SKAN"];
-      this.CON = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["CON"];
-      this.ECO = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["ECO"];
-      this.LOFT = _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["LOFT"];
+      this.K = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["K"];
+      this.SK = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SK"];
+      this.SKAN = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SKAN"];
+      this.CON = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["CON"];
+      this.ECO = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["ECO"];
+      this.LOFT = _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["LOFT"];
     },
     addACard: function addACard(uuid) {
       this.selected_uuids.push(uuid);
@@ -6666,7 +6684,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6fe4c2a5] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n          animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.two[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.2s;\n          animation-delay: 1.2s;\n}\n.fade-in.three[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.image-wrapper[data-v-6fe4c2a5] {\n  display: flex;\n  justify-content: center;\n  background-color: #fff;\n  z-index: 999;\n}\n.image-card[data-v-6fe4c2a5] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-6fe4c2a5]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-6fe4c2a5] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-6fe4c2a5] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-6fe4c2a5] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6fe4c2a5] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6fe4c2a5] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-6fe4c2a5] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6fe4c2a5 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6fe4c2a5] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n          animation: fadeIn-data-v-6fe4c2a5 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.two[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.2s;\n          animation-delay: 1.2s;\n}\n.fade-in.three[data-v-6fe4c2a5] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.logo[data-v-6fe4c2a5] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-6fe4c2a5] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-6fe4c2a5] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-6fe4c2a5] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-6fe4c2a5] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-6fe4c2a5]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-6fe4c2a5]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-6fe4c2a5] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-6fe4c2a5] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-6fe4c2a5] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6fe4c2a5] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6fe4c2a5] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-6fe4c2a5] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -38053,386 +38071,414 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "content-center" }, [
-    _vm.cards_booleans
-      ? _c(
-          "div",
-          { staticClass: "container" },
-          [
-            _vm.cards_booleans.a
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Я бы описал свой стиль как ...\n            "
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "progress-bar__wrapper" },
+      [
+        _c("progress-bar", {
+          attrs: { "bar-color": "#aad7ea ", val: "60", text: "60%" }
+        })
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "content-center" }, [
+      _vm.cards_booleans
+        ? _c(
+            "div",
+            { staticClass: "container" },
+            [
+              _vm.cards_booleans.a
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Я бы описал свой стиль как ...\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.acards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addACard(card.uuid)
+                                  }
+                                }
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.acards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addACard(card.uuid)
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.b
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    При выборе мебели и домашнего декора, я предпочитаю ...\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.bcards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addBCard(card.uuid)
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.b
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                При выборе мебели и домашнего декора, я предпочитаю ...\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.bcards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addBCard(card.uuid)
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.c1
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какое изображение домашнего декора вам больше нравятся?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.c1cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addCCard(card.uuid, "c1")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.c1
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.c1cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addCCard(card.uuid, "c1")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.c2
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какое изображение домашнего декора вам больше нравятся?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.c2cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addCCard(card.uuid, "c2")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.c2
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.c2cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addCCard(card.uuid, "c2")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.c3
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какое изображение домашнего декора вам больше нравятся?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.c3cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addCCard(card.uuid, "c3")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.c3
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какое изображение домашнего декора вам больше нравятся?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.c3cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addCCard(card.uuid, "c3")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.d1
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какие цветовые решения в вашем доме, вы предпочитаете?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.d1cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addDCard(card.uuid, "d1")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.d1
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.d1cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addDCard(card.uuid, "d1")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.d2
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какие цветовые решения в вашем доме, вы предпочитаете?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.d2cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addDCard(card.uuid, "d2")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.d2
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.d2cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addDCard(card.uuid, "d2")
+                  ]
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.cards_booleans.d3
+                ? [
+                    _c("h1", { staticClass: "main-caption" }, [
+                      _vm._v(
+                        "\n                    Какие цветовые решения в вашем доме, вы предпочитаете?\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "image-wrapper" },
+                      [
+                        _vm._l(_vm.d3cards, function(card) {
+                          return [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "image-card",
+                                class: card.classname,
+                                on: {
+                                  click: function($event) {
+                                    _vm.addDCard(card.uuid, "d3")
+                                  }
                                 }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.cards_booleans.d3
-              ? [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                Какие цветовые решения в вашем доме, вы предпочитаете?\n            "
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    alt: "Более классический",
+                                    src: card.path
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "image-text" }, [
+                                  _vm._v(_vm._s(card.name))
+                                ])
+                              ]
+                            )
+                          ]
+                        })
+                      ],
+                      2
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "image-wrapper" },
-                    [
-                      _vm._l(_vm.d3cards, function(card) {
-                        return [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "image-card",
-                              class: card.classname,
-                              on: {
-                                click: function($event) {
-                                  _vm.addDCard(card.uuid, "d3")
-                                }
-                              }
-                            },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  alt: "Более классический",
-                                  src: card.path
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("h4", { staticClass: "image-text" }, [
-                                _vm._v(_vm._s(card.name))
-                              ])
-                            ]
-                          )
-                        ]
-                      })
-                    ],
-                    2
-                  )
-                ]
-              : _vm._e()
-          ],
-          2
-        )
-      : _vm._e()
+                  ]
+                : _vm._e()
+            ],
+            2
+          )
+        : _vm._e()
+    ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c("div", { staticClass: "logo__img" }, [
+        _c("img", {
+          attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
+        })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -39524,6 +39570,382 @@ function normalizeComponent (
   }
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/vue-simple-progress/dist/vue-simple-progress.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * vue-simple-progress v1.1.0 (https://github.com/dzwillia/vue-simple-progress)
+ * (c) 2018 David Z. Williams
+ * Released under the MIT License.
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else {}
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.VueSimpleProgress = undefined;
+
+var _Progress = __webpack_require__(1);
+
+var _Progress2 = _interopRequireDefault(_Progress);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+if (typeof window !== 'undefined' && window.Vue) {
+  Vue.component('vue-simple-progress', _Progress2.default);
+}
+
+exports.VueSimpleProgress = _Progress2.default;
+exports.default = _Progress2.default;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(2)(
+  /* script */
+  __webpack_require__(3),
+  /* template */
+  __webpack_require__(4),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// this module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  scopeId,
+  cssModules
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  // inject cssModules
+  if (cssModules) {
+    var computed = Object.create(options.computed || null)
+    Object.keys(cssModules).forEach(function (key) {
+      var module = cssModules[key]
+      computed[key] = function () { return module }
+    })
+    options.computed = computed
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+
+var isNumber = function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+};
+
+exports.default = {
+  props: {
+    'val': {
+      default: 0
+    },
+    'max': {
+      default: 100
+    },
+    'size': {
+      default: 3
+    },
+    'bg-color': {
+      type: String,
+      default: '#eee'
+    },
+    'bar-color': {
+      type: String,
+      default: '#2196f3' },
+    'bar-transition': {
+      type: String,
+      default: 'all 0.5s ease'
+    },
+    'spacing': {
+      type: Number,
+      default: 4
+    },
+    'text': {
+      type: String,
+      default: ''
+    },
+    'text-position': {
+      type: String,
+      default: 'bottom' },
+    'font-size': {
+      type: Number,
+      default: 13
+    },
+    'text-fg-color': {
+      type: String,
+      default: '#222'
+    }
+  },
+  computed: {
+    pct: function pct() {
+      var pct = this.val / this.max * 100;
+      pct = pct.toFixed(2);
+      return Math.min(pct, this.max);
+    },
+    size_px: function size_px() {
+      switch (this.size) {
+        case 'tiny':
+          return 2;
+        case 'small':
+          return 4;
+        case 'medium':
+          return 8;
+        case 'large':
+          return 12;
+        case 'big':
+          return 16;
+        case 'huge':
+          return 32;
+        case 'massive':
+          return 64;
+      }
+
+      return isNumber(this.size) ? this.size : 32;
+    },
+    text_padding: function text_padding() {
+      switch (this.size) {
+        case 'tiny':
+        case 'small':
+        case 'medium':
+        case 'large':
+        case 'big':
+        case 'huge':
+        case 'massive':
+          return Math.min(Math.max(Math.ceil(this.size_px / 8), 3), 12);
+      }
+
+      return isNumber(this.spacing) ? this.spacing : 4;
+    },
+    text_font_size: function text_font_size() {
+      switch (this.size) {
+        case 'tiny':
+        case 'small':
+        case 'medium':
+        case 'large':
+        case 'big':
+        case 'huge':
+        case 'massive':
+          return Math.min(Math.max(Math.ceil(this.size_px * 1.4), 11), 32);
+      }
+
+      return isNumber(this.fontSize) ? this.fontSize : 13;
+    },
+    progress_style: function progress_style() {
+      var style = {
+        'background': this.bgColor
+      };
+
+      if (this.textPosition == 'middle' || this.textPosition == 'inside') {
+        style['position'] = 'relative';
+        style['min-height'] = this.size_px + 'px';
+        style['z-index'] = '-2';
+      }
+
+      return style;
+    },
+    bar_style: function bar_style() {
+      var style = {
+        'background': this.barColor,
+        'width': this.pct + '%',
+        'height': this.size_px + 'px',
+        'transition': this.barTransition
+      };
+
+      if (this.textPosition == 'middle' || this.textPosition == 'inside') {
+        style['position'] = 'absolute';
+        style['top'] = '0';
+        style['height'] = '100%';
+        style['min-height'] = this.size_px + 'px', style['z-index'] = '-1';
+      }
+
+      return style;
+    },
+    text_style: function text_style() {
+      var style = {
+        'color': this.textFgColor,
+        'font-size': this.text_font_size + 'px',
+        'text-align': 'center'
+      };
+
+      if (this.textPosition == 'top' || this.textPosition == 'middle' || this.textPosition == 'inside') style['padding-bottom'] = this.text_padding + 'px';
+      if (this.textPosition == 'bottom' || this.textPosition == 'middle' || this.textPosition == 'inside') style['padding-top'] = this.text_padding + 'px';
+
+      return style;
+    }
+  }
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.text.length > 0 && _vm.textPosition == 'top') ? _c('div', {
+    staticClass: "vue-simple-progress-text",
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e(), _vm._v(" "), _c('div', {
+    staticClass: "vue-simple-progress",
+    style: (_vm.progress_style)
+  }, [(_vm.text.length > 0 && _vm.textPosition == 'middle') ? _c('div', {
+    staticClass: "vue-simple-progress-text",
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e(), _vm._v(" "), (_vm.text.length > 0 && _vm.textPosition == 'inside') ? _c('div', {
+    staticStyle: {
+      "position": "relative",
+      "left": "-9999px"
+    },
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e(), _vm._v(" "), _c('div', {
+    staticClass: "vue-simple-progress-bar",
+    style: (_vm.bar_style)
+  }, [(_vm.text.length > 0 && _vm.textPosition == 'inside') ? _c('div', {
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e()])]), _vm._v(" "), (_vm.text.length > 0 && _vm.textPosition == 'bottom') ? _c('div', {
+    staticClass: "vue-simple-progress-text",
+    style: (_vm.text_style)
+  }, [_vm._v(_vm._s(_vm.text))]) : _vm._e()])
+},staticRenderFns: []}
+
+/***/ })
+/******/ ])["default"];
+});
 
 /***/ }),
 
