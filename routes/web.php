@@ -16,6 +16,10 @@ Route::group(['prefix' => 'cards'], function () {
 
 Route::get('/redirect', 'RedirectController@redirect');
 
+Route::group(['middleware' => 'auth', 'prefix' => 'panel', 'namespace' => 'panel'], function () {
+    Route::get('/', 'PanelController@index');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

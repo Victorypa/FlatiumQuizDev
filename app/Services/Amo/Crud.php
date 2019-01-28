@@ -33,11 +33,20 @@ class Crud
                 'responsible_user_id' => 2211916,
                 'custom_fields' => array(
                     array(
-                        'contacts' => array(
-                            'id' => 28369113,
-                            'values' => array($this->person->email)
+                        'id' => 276835,
+                        'values' => array(
+                            'value' => 'номер телефона',
+                            'enum' => $this->person->phone
+                        ),
+                    ),
+                    array(
+                        'id' => 276837,
+                        'values' => array(
+                            'value' =>  'email',
+                            'enum' => $this->person->email
                         )
                     )
+
                 )
             )
         );
