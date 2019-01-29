@@ -27,7 +27,7 @@ class Crud
 
         $lead['add'] = array(
             array(
-                'name' => $this->person->email . '  ' . $this->person->name,
+                'name' => $this->person->name,
                 'tags' => $this->person->card->result,
                 'pipeline_id' => 1572109,
                 'responsible_user_id' => 2211916,
@@ -42,7 +42,7 @@ class Crud
         ]);
 
         $this->updateContact($this->person, json_decode($response->getBody())->_embedded->items[0]->id);
-        // return json_decode($response->getBody());s
+        // return json_decode($response->getBody());
     }
 
     protected function updateContact($person, $lead_id)
@@ -56,18 +56,23 @@ class Crud
                 'lead_id' => (int) $lead_id,
                 'custom_fields' => array(
                     array(
-                        'id' => 276835,
+                        'id' => 432593,
                         'values' => array(
                             array(
                                 'value' => "номер телефона",
                                 'enum' => $person->phone
                             ),
+                        )
+                    ),
+                    array(
+                        'id' => 925259,
+                        'values' => array(
                             array(
                                 'value' => "email",
                                 'enum' => $person->email
-                            )
+                            ),
                         )
-                    ),
+                    )
                 )
             )
         );
