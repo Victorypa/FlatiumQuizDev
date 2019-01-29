@@ -3,7 +3,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 Vue.component('info-form', require('./pages/Form/InfoForm').default);
-Vue.component('card', require('./pages/Cards/Card').default);
+Vue.component('cards', require('./pages/Cards/Cards').default);
 Vue.component('room', require('./pages/Room/Room').default);
 Vue.component('redirect', require('./pages/Redirect/Redirect').default);
 Vue.component('panel', require('./pages/Panel/Panel').default);
