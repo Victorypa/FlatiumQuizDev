@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="progress-bar__wrapper">
-          <progress-bar bar-color="#aad7ea " val="10"></progress-bar>
+          <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
     </div>
 
       <div class="content-center">
@@ -168,7 +168,9 @@ import ProgressBar from 'vue-simple-progress'
               SKAN: [],
               CON: [],
               ECO: [],
-              LOFT: []
+              LOFT: [],
+
+              progress_value: 10
           }
       },
 
@@ -205,6 +207,11 @@ import ProgressBar from 'vue-simple-progress'
               this.selected_uuids.push(uuid)
               this.cards_booleans.a = false
               this.cards_booleans.b = true
+              this.progress_value += 10
+          },
+
+          incrementProgress () {
+              this.progress_value += 10
           },
 
           addBCard (uuid) {
@@ -220,6 +227,7 @@ import ProgressBar from 'vue-simple-progress'
               if (this.selected_uuids.includes('A3')) {
                   this.cards_booleans.c3 = true
               }
+              this.progress_value += 10
           },
 
           addCCard (uuid, group) {
@@ -238,6 +246,7 @@ import ProgressBar from 'vue-simple-progress'
                       this.cards_booleans.d3 = true
                       break;
               }
+              this.progress_value += 10
           },
 
           addDCard (uuid, group) {
@@ -257,6 +266,7 @@ import ProgressBar from 'vue-simple-progress'
 
               }
               this.resultsFiltering(this.selected_uuids.join(''))
+              this.progress_value += 10
           },
 
           resultsFiltering (data) {
