@@ -327,8 +327,24 @@
   }
 
 }
-// .content-center {
-//   padding: 30px 0;
-// }
+
+@media (min-width: 700px) {
+  .content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5%;
+    height: 100vh;
+  }
+}
+@media (max-width: 700px) {
+  .image-wrapper  {
+    flex-wrap: wrap;
+  }
+  .image-card {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+}
 
 </style>
