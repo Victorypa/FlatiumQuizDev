@@ -2034,7 +2034,7 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (response) {
         setTimeout(function () {
           window.location.href = "/cards/".concat(response.data.id, "/rooms");
-        }, 1000);
+        }, 500);
       });
     }
   }
@@ -2249,8 +2249,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
         case 'phone':
           if (this.person.name !== '' && this.person.email) {
             var card_id = window.location.pathname.match(/\d+/g).toString();
-            axios.post("/cards/".concat(card_id, "/form/store"), this.person).then(function (response) {
-              window.location.href = '/redirect';
+            axios.post("/cards/".concat(card_id, "/form/store"), this.person).then(function (response) {// window.location.href = '/redirect'
             });
           }
 

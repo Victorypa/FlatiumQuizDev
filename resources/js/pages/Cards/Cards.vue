@@ -234,7 +234,7 @@
               }).then(response => {
                   setTimeout(() => {
                       window.location.href = `/cards/${response.data.id}/rooms`
-                  }, 1000)
+                  }, 500)
               })
           }
       }
