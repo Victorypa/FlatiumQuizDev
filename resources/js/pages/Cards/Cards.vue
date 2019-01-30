@@ -253,15 +253,15 @@
 }
 
 .fade-in.one {
-  animation-delay: 0.7s;
+  animation-delay: 0.3s;
 }
 
 .fade-in.two {
-  animation-delay: 1.2s;
+  animation-delay: 1.6s;
 }
 
 .fade-in.three {
-  animation-delay: 1.6s;
+  animation-delay: 0.8s;
 }
 
 .logo {
@@ -277,7 +277,7 @@
 
 .progress-bar {
   &__wrapper {
-    margin-top: 30px;
+    margin: 30px 0;
   }
 }
 
@@ -331,8 +331,8 @@
   }
 
 }
-.content-center {
-  padding: 30px 0;
-}
+// .content-center {
+//   padding: 30px 0;
+// }
 
 </style>

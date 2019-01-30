@@ -24,8 +24,7 @@
                                required
                                autofocus
                                >
-                               <label class="full-name">Полное имя</label>
-                        <!-- <div class="input-info">*Пожалуйста, введите свое имя и фамилию, чтобы продолжить</div> -->
+                               <label class="full-name" @click.prevent="click">Полное имя</label>
                     </div>
 
                     <div class="button-wrapper">
@@ -40,17 +39,16 @@
 
             <div v-if="booleans.email">
                 <h1 class="main-caption">
-                  Укажите свой E-mail адрес,<br> чтобы получить результат тестирования
+                  Укажите свой E-mail адрес, чтобы получить результат тестирования
                 </h1>
                 <form @submit.prevent="go('email')">
                     <div class="form-wrapper">
                       <input type="email"
-                             placeholder="Ваша почта"
                              v-model="person.email"
                              required
                              autofocus
                              >
-                      <!-- <div class="input-info">*Пожалуйста, введите всвой E-mail адрес, чтобы продолжить</div> -->
+                            <label class="full-name" @click.prevent="click">Ваша почта</label>
                     </div>
                     <div class="button-wrapper">
                         <button type="submit"
@@ -64,17 +62,18 @@
 
             <div v-if="booleans.phone">
                 <h1 class="main-caption">
-                    Укажите свой телефон,<br> если вы хотите проконсультироваться <br> по вопросу ремонта <br>  или услуг интерьерного стилиста.
+                  Укажите свой телефон, для получения консультации
                 </h1>
 
                 <form @submit.prevent="go('phone')">
                     <div class="form-wrapper">
                         <vue-tel-input v-model="person.phone"
-                                       placeholder="Ваш номер телефона"
+                                        placeholder = ""
                                        :preferredCountries="['ru', 'us', 'ua']"
                                        autofocus
                                        >
                        </vue-tel-input>
+                        <label class="full-name full-name--tel" @click.prevent="click">Введите номер телефона</label>
                     </div>
 
                     <div class="button-wrapper">
@@ -84,7 +83,7 @@
                            Далее
                        </button>
                        <button type="submit"
-                               class="primary-button"
+                               class="primary-button primary-button--disabled"
                                @submit.prevent="go('phone')"
                                >
                                Пропустить
@@ -127,6 +126,16 @@
         },
 
         methods: {
+          click (e) {
+            console.log(this.person.name, this.person.name === '');
+            if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
+              return
+            } else {
+              e.target.style.top = '-6px'
+              e.target.style.fontSize = '14px'
+            }
+
+          },
             go (type) {
                 switch (type) {
                     case 'name':
@@ -187,6 +196,27 @@ margin: 0 auto;
   }
 }
 
+.vue-tel-input {
+  position: relative;
+  display: flex;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  text-indent: 0;
+  letter-spacing: .025em;
+  outline: none;
+  padding: 14.4px;
+  box-shadow: none !important;
+  transition: border .15s ease-in-out;
+  width: 100%;
+  &:focus-within {
+      border: 2px solid #eee !important;
+  }
+}
+
 input {
 display: block;
 border: 2px solid #eee;
@@ -207,7 +237,7 @@ width: 100%;
 .full-name {
 position: absolute;
 top: 20px;
-left: 20px;
+left: 16px;
 background: #fff;
 border-radius: 8px;
 color: #ccc;
@@ -218,11 +248,15 @@ letter-spacing: .1em;
 padding: 0 9.6px;
 transition:0.2s ease all;
 text-transform: uppercase;
+  &--tel {
+    top: -6px;
+  }
 }
 
+
 input:focus ~ label 		{
-top:-6px;
-font-size:14px;
+  top:-6px;
+  font-size:14px;
 }
 
 .input-info {
@@ -231,8 +265,6 @@ color: #738494;
 margin-top: 10px;
 text-align: right;
 }
-
-
 
 .login-here {
 color: #738494;
@@ -248,6 +280,7 @@ color: #738494;
 display: inline-block;
 margin-left: 4px;
 }
+
 .login-here a:hover {
 text-decoration: none;
 }
@@ -267,33 +300,33 @@ padding: 0 30px;
 letter-spacing: .025em;
 
 border: 0;
-border-radius: 2px;
+border-radius: 5px;
 
 line-height: 42px;
 outline: none;
 cursor: pointer;
-
+&--disabled {
+  background-color: #ccc;
+}
 }
 
 .primary-button:hover {
-background-color: #2e3854;
+  background-color: #2e3854;
 }
 
 .content-center {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
-.vue-tel-input {
-  box-shadow: none !important;
-  border: 1px solid black;
+.dropdown .open {
   &:focus {
-      border: 1px solid black;
+    outline: none !important;
   }
 
 }
 
-.dropdown {
-  outline: none;
+.dropdown:hover:focus {
+  outline: none !important;
 }
 
 @media (min-width: 700px) {

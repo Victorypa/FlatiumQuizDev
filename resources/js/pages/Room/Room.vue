@@ -149,43 +149,43 @@ import ProgressBar from 'vue-simple-progress'
   opacity:0;  /* make things invisible upon start */;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
-  animation-duration:1s;
+  animation-duration: 0.7s;
 }
 
 .fade-in.one {
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 
 .fade-in.two {
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .fade-in.three {
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 
 .fade-in.four {
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 
 .fade-in.five {
-  animation-delay: 2.5s;
+  animation-delay: 0.7s;
 }
 
 .fade-in.six {
-  animation-delay: 3s;
+  animation-delay: 0.8s;
 }
 
 .fade-in.seven {
-  animation-delay: 3.5s;
+  animation-delay: 0.9s;
 }
 
 .fade-in.eight {
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 
 .fade-in.nine {
-  animation-delay: 4.5s;
+  animation-delay: 1.1s;
 }
 
 svg {
@@ -206,7 +206,7 @@ height: auto;
 
 .progress-bar {
   &__wrapper {
-    margin-top: 30px;
+    margin: 30px 0;
   }
 }
 
@@ -227,9 +227,10 @@ height: auto;
 }
 .main-caption {
   max-width: 600px;
+  margin-bottom: 30px;
 }
 .content-center {
-  padding: 50px 0;
+  margin: 50px 0;
 }
 
 .fill-color {
@@ -300,7 +301,7 @@ transition: stroke .15s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    // height: 100vh;
   }
 }
 @media (max-width: 700px) {
