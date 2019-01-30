@@ -43,19 +43,19 @@
   opacity:0;  /* make things invisible upon start */;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
-  animation-duration:1s;
+  animation-duration: 0.7s;
 }
 
 .fade-in.one {
-  animation-delay: 0.7s;
+  animation-delay: 0.2s;
 }
 
 .fade-in.two {
-  animation-delay: 1.2s;
+  animation-delay: 0.6s;
 }
 
 .fade-in.three {
-  animation-delay: 1.6s;
+  animation-delay: 0.8s;
 }
 
 .logo {

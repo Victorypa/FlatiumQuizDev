@@ -2200,7 +2200,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -2226,6 +2225,16 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
     };
   },
   methods: {
+    click: function click(e) {
+      console.log(this.person.name, this.person.name === '');
+
+      if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
+        return;
+      } else {
+        e.target.style.top = '-6px';
+        e.target.style.fontSize = '14px';
+      }
+    },
     go: function go(type) {
       switch (type) {
         case 'name':
@@ -6783,7 +6792,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.2s;\n          animation-delay: 1.2s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.logo[data-v-df4199c4] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-df4199c4] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-df4199c4] {\n  padding: 30px 0;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.logo[data-v-df4199c4] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-df4199c4] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}", ""]);
 
 // exports
 
@@ -6802,7 +6811,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-49d9c7e8] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n          animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.two[data-v-49d9c7e8] {\n  -webkit-animation-delay: 1.2s;\n          animation-delay: 1.2s;\n}\n.fade-in.three[data-v-49d9c7e8] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.logo[data-v-49d9c7e8] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-49d9c7e8] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-49d9c7e8] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-49d9c7e8] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-49d9c7e8] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-49d9c7e8]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-49d9c7e8]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-49d9c7e8] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-49d9c7e8] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-49d9c7e8] {\n  padding: 30px 0;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-49d9c7e8] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n          animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.three[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.logo[data-v-49d9c7e8] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-49d9c7e8] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-49d9c7e8] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-49d9c7e8] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-49d9c7e8] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-49d9c7e8]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-49d9c7e8]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-49d9c7e8] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-49d9c7e8] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-49d9c7e8] {\n  padding: 30px 0;\n}", ""]);
 
 // exports
 
@@ -6821,7 +6830,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\n.logo[data-v-19da4664] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-19da4664] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-19da4664] {\n  margin-top: 30px;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 20px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\n  text-align: center;\n}\n.primary-button[data-v-19da4664] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-19da4664]:hover {\n  background-color: #2e3854;\n}\n.content-center[data-v-19da4664] {\n  padding: 100px 0;\n}\n.vue-tel-input[data-v-19da4664] {\n  box-shadow: none !important;\n  border: 1px solid black;\n}\n.vue-tel-input[data-v-19da4664]:focus {\n  border: 1px solid black;\n}\n.dropdown[data-v-19da4664] {\n  outline: none;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
+exports.push([module.i, ".form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\n.logo[data-v-19da4664] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-19da4664] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-19da4664] {\n  margin-top: 30px;\n}\n.vue-tel-input[data-v-19da4664] {\n  position: relative;\n  display: flex;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  box-shadow: none !important;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.vue-tel-input[data-v-19da4664]:focus-within {\n  border: 2px solid #eee !important;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 16px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\n.full-name--tel[data-v-19da4664] {\n  top: -6px;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\n  text-align: center;\n}\n.primary-button[data-v-19da4664] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 5px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button--disabled[data-v-19da4664] {\n  background-color: #ccc;\n}\n.primary-button[data-v-19da4664]:hover {\n  background-color: #2e3854;\n}\n.content-center[data-v-19da4664] {\n  padding: 100px 0;\n}\n.dropdown .open[data-v-19da4664]:focus {\n  outline: none !important;\n}\n.dropdown[data-v-19da4664]:hover:focus {\n  outline: none !important;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
 
 // exports
 
@@ -6859,7 +6868,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-3958fef6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.two[data-v-3958fef6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.three[data-v-3958fef6] {\n  -webkit-animation-delay: 1.5s;\n          animation-delay: 1.5s;\n}\n.fade-in.four[data-v-3958fef6] {\n  -webkit-animation-delay: 2s;\n          animation-delay: 2s;\n}\n.fade-in.five[data-v-3958fef6] {\n  -webkit-animation-delay: 2.5s;\n          animation-delay: 2.5s;\n}\n.fade-in.six[data-v-3958fef6] {\n  -webkit-animation-delay: 3s;\n          animation-delay: 3s;\n}\n.fade-in.seven[data-v-3958fef6] {\n  -webkit-animation-delay: 3.5s;\n          animation-delay: 3.5s;\n}\n.fade-in.eight[data-v-3958fef6] {\n  -webkit-animation-delay: 4s;\n          animation-delay: 4s;\n}\n.fade-in.nine[data-v-3958fef6] {\n  -webkit-animation-delay: 4.5s;\n          animation-delay: 4.5s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n}\n.content-center[data-v-3958fef6] {\n  padding: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #2e3854;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-3958fef6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-3958fef6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-3958fef6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-3958fef6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-3958fef6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-3958fef6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-3958fef6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-3958fef6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-3958fef6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #2e3854;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -38599,9 +38608,19 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
-                    _c("label", { staticClass: "full-name" }, [
-                      _vm._v("Полное имя")
-                    ])
+                    _c(
+                      "label",
+                      {
+                        staticClass: "full-name",
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.click($event)
+                          }
+                        }
+                      },
+                      [_vm._v("Полное имя")]
+                    )
                   ]),
                   _vm._v(" "),
                   _vm._m(1)
@@ -38612,7 +38631,11 @@ var render = function() {
         _vm._v(" "),
         _vm.booleans.email
           ? _c("div", [
-              _vm._m(2),
+              _c("h1", { staticClass: "main-caption" }, [
+                _vm._v(
+                  "\n                Укажите свой E-mail адрес, чтобы получить результат тестирования\n              "
+                )
+              ]),
               _vm._v(" "),
               _c(
                 "form",
@@ -38635,12 +38658,7 @@ var render = function() {
                           expression: "person.email"
                         }
                       ],
-                      attrs: {
-                        type: "email",
-                        placeholder: "Ваша почта",
-                        required: "",
-                        autofocus: ""
-                      },
+                      attrs: { type: "email", required: "", autofocus: "" },
                       domProps: { value: _vm.person.email },
                       on: {
                         input: function($event) {
@@ -38650,10 +38668,24 @@ var render = function() {
                           _vm.$set(_vm.person, "email", $event.target.value)
                         }
                       }
-                    })
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      {
+                        staticClass: "full-name",
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.click($event)
+                          }
+                        }
+                      },
+                      [_vm._v("Ваша почта")]
+                    )
                   ]),
                   _vm._v(" "),
-                  _vm._m(3)
+                  _vm._m(2)
                 ]
               )
             ])
@@ -38661,7 +38693,11 @@ var render = function() {
         _vm._v(" "),
         _vm.booleans.phone
           ? _c("div", [
-              _vm._m(4),
+              _c("h1", { staticClass: "main-caption" }, [
+                _vm._v(
+                  "\n                Укажите свой телефон, для получения консультации\n              "
+                )
+              ]),
               _vm._v(" "),
               _c(
                 "form",
@@ -38680,7 +38716,7 @@ var render = function() {
                     [
                       _c("vue-tel-input", {
                         attrs: {
-                          placeholder: "Ваш номер телефона",
+                          placeholder: "",
                           preferredCountries: ["ru", "us", "ua"],
                           autofocus: ""
                         },
@@ -38691,7 +38727,21 @@ var render = function() {
                           },
                           expression: "person.phone"
                         }
-                      })
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "full-name full-name--tel",
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.click($event)
+                            }
+                          }
+                        },
+                        [_vm._v("Введите номер телефона")]
+                      )
                     ],
                     1
                   ),
@@ -38713,7 +38763,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "primary-button",
+                        staticClass: "primary-button primary-button--disabled",
                         attrs: { type: "submit" },
                         on: {
                           submit: function($event) {
@@ -38766,36 +38816,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h1", { staticClass: "main-caption" }, [
-      _vm._v("\n                Укажите свой E-mail адрес,"),
-      _c("br"),
-      _vm._v(" чтобы получить результат тестирования\n              ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "button-wrapper" }, [
       _c(
         "button",
         { staticClass: "primary-button", attrs: { type: "submit" } },
         [_vm._v("\n                         Далее\n                     ")]
       )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h1", { staticClass: "main-caption" }, [
-      _vm._v("\n                  Укажите свой телефон,"),
-      _c("br"),
-      _vm._v(" если вы хотите проконсультироваться "),
-      _c("br"),
-      _vm._v(" по вопросу ремонта "),
-      _c("br"),
-      _vm._v("  или услуг интерьерного стилиста.\n              ")
     ])
   }
 ]
@@ -52109,8 +52135,8 @@ var LOFT = ['A3B3C1D1', 'A3B3C1D2', 'A3B3C1D3', 'A3B3C2D1', 'A3B3C2D2', 'A3B3C2D
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
