@@ -1,12 +1,7 @@
 <template>
 
   <div>
-
-    <div class="logo">
-      <div class="logo__img">
-        <img src="/storage/quiz/logo.svg" alt="Flatium-logo">
-      </div>
-    </div>
+    <app-header></app-header>
     <div class="progress-bar__wrapper">
           <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
     </div>
@@ -30,6 +25,7 @@
                     <div class="button-wrapper">
                         <button type="submit"
                                 class="primary-button"
+                                id="name"
                                 >
                            Далее
                        </button>
@@ -53,6 +49,7 @@
                     <div class="button-wrapper">
                         <button type="submit"
                                 class="primary-button"
+                                id="email"
                                 >
                            Далее
                        </button>
@@ -79,12 +76,14 @@
                     <div class="button-wrapper">
                         <button type="submit"
                                 class="primary-button"
+                                id="phone"
                                 >
                            Далее
                        </button>
                        <button type="submit"
                                class="primary-button primary-button--disabled"
                                @submit.prevent="go('phone')"
+                               id="phone_pass"
                                >
                                Пропустить
                       </button>
@@ -158,7 +157,7 @@
 
                             axios.post(`/cards/${card_id}/form/store`, this.person)
                                  .then(response => {
-                                     // window.location.href = '/redirect'
+                                     window.location.href = '/redirect'
                                  })
                         }
                         break;

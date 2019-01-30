@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div class="logo">
-      <div class="logo__img">
-        <img src="/storage/quiz/logo.svg" alt="Flatium-logo">
-      </div>
-    </div>
+    <app-header></app-header>
     <div class="progress-bar__wrapper">
           <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
     </div>
