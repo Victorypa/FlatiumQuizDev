@@ -10,14 +10,14 @@
         <div class="result__info">
           {{ data[0].description }}
         </div>
-      <div class="result__share">
+      <!-- <div class="result__share">
         Покажи результат своим друзьям
         <div class="result__socials">
             <a class="result__link result__link--vk" href="#">VK</a>
             <a class="result__link result__link--tw" href="#">Twitter</a>
             <a class="result__link result__link--fb" href="#"></a>
         </div>
-      </div>
+      </div> -->
       </div>
       <button type="button"
          name="button"

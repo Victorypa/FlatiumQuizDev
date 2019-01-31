@@ -70,7 +70,7 @@ class Crud
             array(
                 'name' => $this->person->name,
                 'tags' => $this->person->card->result,
-                'pipeline_id' => 1028320,
+                'pipeline_id' => 1572109,
                 'contacts_id' => $contact_id,
                 'responsible_user_id' => 2211916,
             )
