@@ -23,13 +23,55 @@ class Crud
     {
         $this->login();
 
+        $link = 'https://flatium.amocrm.ru/api/v2/contacts';
+
+        $contacts['add'] = array(
+            array(
+                'name' => $this->person->name,
+                'responsible_user_id' => 2211916,
+                'custom_fields' => array(
+                    array(
+                        'id' => 432595,
+                        'values' => array(
+                            array(
+                                 'value' => $this->person->email,
+                                 'enum' => "WORK"
+                            ),
+                        )
+                    ),
+                    array(
+                        'id' => 432593,
+                        'values' => array(
+                            array(
+                                'value' => $this->person->phone,
+                                'enum' => "WORK"
+                            )
+                        )
+                    )
+                )
+            )
+        );
+
+        $response = $this->client->request('POST', $link, [
+            'headers' => [
+                'Content-Type' => 'application/json'
+            ],
+            'body' => json_encode($contacts)
+        ]);
+
+        $this->createLead(json_decode($response->getBody())->_embedded->items[0]->id);
+    }
+
+    protected function createLead($contact_id)
+    {
         $link = 'https://flatium.amocrm.ru/api/v2/leads';
 
         $lead['add'] = array(
             array(
                 'name' => $this->person->name,
                 'tags' => $this->person->card->result,
-                'pipeline_id' => 1572109,
+                'pipeline_id' => 1028320,
+                'contacts_id' => $contact_id,
                 'responsible_user_id' => 2211916,
             )
         );
@@ -39,49 +81,6 @@ class Crud
                 'Content-Type' => 'application/json'
             ],
             'body' => json_encode($lead)
-        ]);
-
-        $this->updateContact($this->person, json_decode($response->getBody())->_embedded->items[0]->id);
-        // return json_decode($response->getBody());
-    }
-
-    protected function updateContact($person, $lead_id)
-    {
-        $link = 'https://flatium.amocrm.ru/api/v2/contacts';
-
-        $contacts['add'] = array(
-            array(
-                'name' => $person->name,
-                'company_name' => $person->name,
-                'lead_id' => (int) $lead_id,
-                'custom_fields' => array(
-                    array(
-                        'id' => 432593,
-                        'values' => array(
-                            array(
-                                'value' => "номер телефона",
-                                'enum' => $person->phone
-                            ),
-                        )
-                    ),
-                    array(
-                        'id' => 925259,
-                        'values' => array(
-                            array(
-                                'value' => "email",
-                                'enum' => $person->email
-                            ),
-                        )
-                    )
-                )
-            )
-        );
-
-        $this->client->request('POST', $link, [
-            'headers' => [
-                'Content-Type' => 'application/json'
-            ],
-            'body' => json_encode($contacts)
         ]);
     }
 

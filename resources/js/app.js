@@ -9,6 +9,9 @@ Vue.component('redirect', require('./pages/Redirect/Redirect').default);
 Vue.component('panel', require('./pages/Panel/Panel').default);
 Vue.component('result', require('./pages/Result/Result').default);
 
+
+Vue.component('app-header', require('./components/Header/Header').default);
+
 const app = new Vue({
     el: '#app',
 });
