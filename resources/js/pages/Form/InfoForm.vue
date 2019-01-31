@@ -305,13 +305,14 @@ border-radius: 5px;
 line-height: 42px;
 outline: none;
 cursor: pointer;
+transition: .15s ease-in-out;
 &--disabled {
   background-color: #ccc;
 }
 }
 
 .primary-button:hover {
-  background-color: #2e3854;
+  background-color: #aad7ea;
 }
 
 .content-center {
@@ -322,7 +323,6 @@ cursor: pointer;
   &:focus {
     outline: none !important;
   }
-
 }
 
 .dropdown:hover:focus {

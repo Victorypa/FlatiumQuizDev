@@ -331,8 +331,5 @@
   }
 
 }
-// .content-center {
-//   padding: 30px 0;
-// }
 
 </style>
