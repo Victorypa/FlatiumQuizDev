@@ -21,10 +21,16 @@
       </div>
       <button type="button"
          name="button"
-         class="result__button"
+         class="primary-button"
          @click="redirect(data[0])"
          >
           Смотреть стиль
+      </button>
+      <button type="button"
+              name="button"
+              class="primary-button"
+              onclick="window.location.href='https://flatium.ru/calculator '">
+        Рассчитать
       </button>
     </div>
 </template>
@@ -44,6 +50,20 @@
 
 <style lang="scss" scoped>
 .result {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    background-image: url('/storage/results/Loft.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+  }
+
   &__card {
     max-width: 765px;
     width: 100%;
@@ -53,7 +73,7 @@
     background-color: #fff;
 
     padding: 50px 0;
-    margin: 15px;
+    margin: 35px;
     box-shadow: 0 0 76px rgba(61,61,61,0.75);
     span {
       color: #00afd8;
@@ -65,12 +85,12 @@
     font-size: 36px;
     letter-spacing: 0px;
     line-height: 43px;
-    font-family: "Rubik";
+    // font-family: "Rubik";
     font-weight: 400;
     text-align: center;
   }
   &__desc {
-    width: 60%;
+    width: 65%;
 
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
@@ -101,25 +121,38 @@
       content: url('/storage/results/vk-social-network-logo.svg');
     }
   }
-  &__button {
-    width: 170px;
-    height: 49px;
-    background-color: #009ec2;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
 }
+
 .logo {
   position: absolute;
 
   width: 120px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 6%;
 
   &__img {
     width: 100%;
     height: 100%;
+  }
+}
+
+.primary-button {
+height: 42px;
+font-size: 15px;
+font-weight: 400;
+background-color: #0a0c12;
+color: #fff;
+margin: 20px 0;
+padding: 0 30px;
+letter-spacing: .025em;
+border: 0;
+border-radius: 2px;
+line-height: 42px;
+outline: none;
+cursor: pointer;
+transition: .15s ease-in-out;
+  &:hover {
+    background-color: #00a4d8;
   }
 }
 
