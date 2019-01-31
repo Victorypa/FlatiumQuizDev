@@ -1,11 +1,12 @@
 <template>
   <div>
     <app-header></app-header>
-    <div class="result__wrapper">
-        <result></result>
-    </div>
+    <template v-if="data.length">
+        <div class="result__wrapper" :style="{ backgroundImage: 'url(' + data[0].image + ')' }">
+            <result :data="data"></result>
+        </div>
+    </template>
   </div>
-
 
 </template>
 
@@ -16,7 +17,10 @@
   export default {
     data () {
       return {
-        results: []
+        results: [],
+        result: [],
+
+        data: []
       }
     },
 
@@ -25,12 +29,18 @@
     },
 
     mounted () {
-      this.init()
+      this.getResult()
     },
 
     methods: {
-      init () {
-        this.results = results
+      getResult () {
+          this.results = results
+
+          axios.get(`/cards/${window.location.pathname.match(/\d+/g).toString()}`)
+               .then(response => {
+                   this.result = response.data
+                   this.data = this.results.filter(item => item.type === this.result.result)
+               })
       }
     }
   }
@@ -43,11 +53,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/storage/results/Loft.jpg');
     background-position: center;
     height: 100vh;
   }
-
 }
 .logo {
   position: absolute;

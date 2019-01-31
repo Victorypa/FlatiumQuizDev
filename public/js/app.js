@@ -2405,23 +2405,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      results: []
+      results: [],
+      result: [],
+      data: []
     };
   },
   components: {
     Result: _partials_Result__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   mounted: function mounted() {
-    this.init();
+    this.getResult();
   },
   methods: {
-    init: function init() {
+    getResult: function getResult() {
+      var _this = this;
+
       this.results = _index_js__WEBPACK_IMPORTED_MODULE_0__["results"];
+      axios.get("/cards/".concat(window.location.pathname.match(/\d+/g).toString())).then(function (response) {
+        _this.result = response.data;
+        _this.data = _this.results.filter(function (item) {
+          return item.type === _this.result.result;
+        });
+      });
     }
   }
 });
@@ -2464,7 +2475,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['data']
+});
 
 /***/ }),
 
@@ -6965,7 +6978,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".result__wrapper[data-v-3cc709c4] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background-image: url(\"/storage/results/Loft.jpg\");\n  background-position: center;\n  height: 100vh;\n}\n.logo[data-v-3cc709c4] {\n  position: absolute;\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3cc709c4] {\n  width: 100%;\n  height: 100%;\n}", ""]);
+exports.push([module.i, ".result__wrapper[data-v-3cc709c4] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background-position: center;\n  height: 100vh;\n}\n.logo[data-v-3cc709c4] {\n  position: absolute;\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3cc709c4] {\n  width: 100%;\n  height: 100%;\n}", ""]);
 
 // exports
 
@@ -39205,9 +39218,21 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("div", { staticClass: "result__wrapper" }, [_c("result")], 1)
+      _vm.data.length
+        ? [
+            _c(
+              "div",
+              {
+                staticClass: "result__wrapper",
+                style: { backgroundImage: "url(" + _vm.data[0].image + ")" }
+              },
+              [_c("result", { attrs: { data: _vm.data } })],
+              1
+            )
+          ]
+        : _vm._e()
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []
@@ -39232,68 +39257,64 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "result__card" }, [
+    _c("div", { staticClass: "result__title" }, [
+      _c("span", [_vm._v("Ваш стиль")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "result__name" }, [
+        _vm._v("\n    " + _vm._s(_vm.data[0].title) + "\n  ")
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "result__desc" }, [
+      _c("div", { staticClass: "result__info" }, [
+        _vm._v("\n      " + _vm._s(_vm.data[0].description) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "result__button",
+        attrs: { type: "button", name: "button" }
+      },
+      [_vm._v("\n    Смотреть стиль\n  ")]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "result__card" }, [
-      _c("div", { staticClass: "result__title" }, [
-        _c("span", [_vm._v("Ваш стиль")]),
+    return _c("div", { staticClass: "result__share" }, [
+      _vm._v("\n    Покажи результат своим друзьям\n    "),
+      _c("div", { staticClass: "result__socials" }, [
+        _c(
+          "a",
+          {
+            staticClass: "result__link result__link--vk",
+            attrs: { href: "#" }
+          },
+          [_vm._v("VK")]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "result__name" }, [_vm._v("\n    ЛОФТ\n  ")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "result__desc" }, [
-        _c("div", { staticClass: "result__info" }, [
-          _vm._v(
-            "\n      Стиль прекрасно подойдет свободолюбивым и творческим личностям, для которых важно наличие большого пространства и «воздуха» для жизни."
-          ),
-          _c("br"),
-          _vm._v(
-            "Лофт как стиль интерьера возник в середине 20 века. Его родиной принято считать индустриальную часть Манхэттена. Лофт появился в результате финансового кризиса – заводы и фабрики, расположенные в городской черте, были вынуждены перенести производство в пригороды из-за резкого повышения стоимости аренды земли.\n    "
-          )
-        ]),
+        _c(
+          "a",
+          {
+            staticClass: "result__link result__link--tw",
+            attrs: { href: "#" }
+          },
+          [_vm._v("Twitter")]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "result__share" }, [
-          _vm._v("\n    Покажи результат своим друзьям\n    "),
-          _c("div", { staticClass: "result__socials" }, [
-            _c(
-              "a",
-              {
-                staticClass: "result__link result__link--vk",
-                attrs: { href: "#" }
-              },
-              [_vm._v("VK")]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "result__link result__link--tw",
-                attrs: { href: "#" }
-              },
-              [_vm._v("Twitter")]
-            ),
-            _vm._v(" "),
-            _c("a", {
-              staticClass: "result__link result__link--fb",
-              attrs: { href: "#" }
-            })
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "result__button",
-          attrs: { type: "button", name: "button" }
-        },
-        [_vm._v("\n    Смотреть стиль\n  ")]
-      )
+        _c("a", {
+          staticClass: "result__link result__link--fb",
+          attrs: { href: "#" }
+        })
+      ])
     ])
   }
 ]
@@ -52531,45 +52552,43 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************!*\
   !*** ./resources/js/pages/Results/index.js ***!
   \*********************************************/
-/*! exports provided: results, booleans */
+/*! exports provided: results */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "results", function() { return results; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "booleans", function() { return booleans; });
 var results = [{
-  type: '',
+  type: 'LOFT',
   image: '/storage/results/Loft.jpg',
   title: 'ЛОФТ',
   description: 'Стиль прекрасно подойдет свободолюбивым и творческим личностям, для которых важно наличие большого пространства и «воздуха» для жизни. <br> Лофт как стиль интерьера возник в середине 20 века. Его родиной принято считать индустриальную часть Манхэттена. Лофт появился в результате финансового кризиса – заводы и фабрики, расположенные в городской черте, были вынуждены перенести производство в пригороды из-за резкого повышения стоимости аренды земли.'
 }, {
-  type: '',
+  type: 'SK',
   image: '/storage/results/Neoclassic.jpg',
   title: 'СОВРЕМЕННАЯ КЛАССИКА',
   description: 'Современная классика подходит тем людям, которые любят спокойную обстановку без эксцентричности и ценят изысканную строгость в оформлении интерьера. А еще современную классику предпочитают те, кто не желает зависеть от быстро меняющихся трендов. Современная классика, или неоклассика – это переосмысление античной гармонии и представление ее в «облегченном» виде, без лишней громоздкости. В 19 веке, преимущественно в Англии и Франции, неоклассика стала альтернативой модерну.'
 }, {
-  type: '',
+  type: 'CON',
   image: '/storage/results/Contemporary.jpg',
   title: 'КОНТЕМПОРАРИ',
   description: 'Контемпорари выбирают приверженцы современных тенденций в оформлении жилища, которые ценят комфорт, функциональность и сдержанную эклектику. Контемпорари – один из самых популярных стилей интерьера на сегодняшний день. Как следует из названия (contemporary – «современный»), этот подход к оформлению отражает дух текущего момента. Главная черта стиля – отсутствие жестких рамок и эклектизм. В контемпорари-интерьере могут гармонично сочетаться элементы самых разных стилей – от минимализма и хай-тека до ар-деко. '
 }, {
-  type: '',
+  type: 'ECO',
   image: '/storage/results/Eco-loft.jpg',
   title: 'ЭКО-ЛОФТ',
   description: 'Стиль эко-лофт выбирают те люди, которым нравится концепция лофта как такового, но которые при этом хотели бы уйти от излишнего акцента на индустриальной тематике. Эко-лофт – «экологичная» разновидность стиля лофт. Этот подход к дизайну просторных помещений получил распространение в последние годы, вместе с трендом на экологическую «зеленую» тему. Стилю присущи все характерные черты лофта – необработанные стены в первозданном виде, отсутствие перегородок, коммуникации, ставленные на виду (вентиляционные короба, электропроводка).'
 }, {
-  type: '',
+  type: 'SKAN',
   image: '/storage/results/Scandi.jpg',
   title: 'СКАНДИНАВСКИЙ',
   description: 'Этот стиль выбирают практичные домовладельцы, стремящиеся к сдержанности, функциональности и основательности. В скандинавском стиле воплощаются представления северных народов о том, каким должно быть уютное жилье. Эстетика скандинавского дизайна сформировалась в 30-50-е годы прошлого века в северноевропейских странах. Скандинавский стиль интерьера прост и лаконичен. Хорошая освещенность, свободное пространство, доминирование светлых цветов с небольшим количеством ярких акцентов, скромный декор – неотъемлемые черты стиля.'
 }, {
-  type: '',
+  type: 'K',
   image: '/storage/results/Classic.jpg',
   title: 'КЛАССИКА',
   description: 'Классический стиль выбирают люди с консервативным вкусом, желающие облагородить жилище в соответствии со своими представлениями о красоте и эстетике. Каноны классического стиля сложились во времена Ренессанса. Стиль дворцовых комнат 16 века – образец классики, который, претерпевая небольшие изменения, дошел до наших дней. Классика – это то самое «вечное», беспроигрышный вариант, к которому можно обратиться в случае, если хочется окружить себя изящной роскошью, не подверженную веяниям моды.'
 }];
-var booleans = [];
 
 /***/ }),
 

@@ -3,12 +3,12 @@
       <div class="result__title">
         <span>Ваш стиль</span>
       <div class="result__name">
-        ЛОФТ
+        {{ data[0].title }}
       </div>
       </div>
       <div class="result__desc">
         <div class="result__info">
-          Стиль прекрасно подойдет свободолюбивым и творческим личностям, для которых важно наличие большого пространства и «воздуха» для жизни.<br>Лофт как стиль интерьера возник в середине 20 века. Его родиной принято считать индустриальную часть Манхэттена. Лофт появился в результате финансового кризиса – заводы и фабрики, расположенные в городской черте, были вынуждены перенести производство в пригороды из-за резкого повышения стоимости аренды земли.
+          {{ data[0].description }}
         </div>
       <div class="result__share">
         Покажи результат своим друзьям
@@ -27,7 +27,7 @@
 
 <script>
     export default {
-
+        props: ['data']
     }
 </script>
 
@@ -76,10 +76,10 @@
       padding: 20px 0;
   }
   &__link {
-content: '';
-width: 25px;
-height: 15px;
-fill: #a5a5a5;
+    content: '';
+    width: 25px;
+    height: 15px;
+    fill: #a5a5a5;
 
     &--vk {
       content: url('/storage/results/vk-social-network-logo.svg');
