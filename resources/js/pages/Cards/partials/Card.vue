@@ -58,17 +58,6 @@
   animation-delay: 0.8s;
 }
 
-.logo {
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 6%;
-
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .progress-bar {
   &__wrapper {
     margin-top: 30px;

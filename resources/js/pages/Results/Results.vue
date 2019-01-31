@@ -1,6 +1,11 @@
 <template>
   <div>
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
+    <div class="logo">
+      <a href="https://www.flatium.ru" class="logo__img">
+        <img src="/storage/quiz/logo.svg" alt="Flatium-logo">
+    </a>
+    </div>
     <template v-if="data.length">
         <div class="result__wrapper" :style="{ backgroundImage: 'url(' + data[0].image + ')' }">
             <result :data="data"></result>
@@ -153,14 +158,12 @@ transition: .15s ease-in-out;
   }
 }
 
-
 @media only screen and (min-device-width: 500px)  {
   .result {
     &__wrapper {
-      height: 100vh;
+      min-height: 100vh;
+
     }
   }
 }
-
-
 </style>
