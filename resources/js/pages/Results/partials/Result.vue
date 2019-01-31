@@ -1,9 +1,4 @@
 <template>
-  <div>
-    <app-header></app-header>
-
-    <div class="result__wrapper">
-
     <div class="result__card">
       <div class="result__title">
         <span>Ваш стиль</span>
@@ -28,46 +23,17 @@
         Смотреть стиль
       </button>
     </div>
-    </div>
-  </div>
-
-
 </template>
 
 <script>
-  import { results } from './index.js'
+    export default {
 
-  export default {
-    data () {
-      return {
-        results: []
-      }
-    },
-
-    mounted () {
-      this.init()
-    },
-
-    methods: {
-      init () {
-        this.results = results
-      }
     }
-  }
 </script>
+
 
 <style lang="scss" scoped>
 .result {
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/storage/results/Loft.jpg');
-    background-position: center;
-    height: 100vh;
-  }
-
   &__card {
     max-width: 765px;
     width: 100%;
@@ -147,15 +113,4 @@ fill: #a5a5a5;
   }
 }
 
-
-
 </style>
-<template>
-  <p>Results</p>
-</template>
-
-<script>
-  export default {
-
-  }
-</script>
