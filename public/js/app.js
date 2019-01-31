@@ -1754,6 +1754,27 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Header/Header.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Header/Header.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Panel/partials/Navigation.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Panel/partials/Navigation.vue?vue&type=script&lang=js& ***!
@@ -1811,10 +1832,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
 /* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
 /* harmony import */ var _partials_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/Card */ "./resources/js/pages/Cards/partials/Card.vue");
-//
-//
-//
-//
 //
 //
 //
@@ -2034,7 +2051,7 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (response) {
         setTimeout(function () {
           window.location.href = "/cards/".concat(response.data.id, "/rooms");
-        }, 1000);
+        }, 500);
       });
     }
   }
@@ -2101,7 +2118,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_3__);
-//
 //
 //
 //
@@ -2378,10 +2394,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
 //
 //
 //
@@ -6792,7 +6804,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.logo[data-v-df4199c4] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-df4199c4] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.logo[data-v-df4199c4] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-df4199c4] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n@media (min-width: 700px) {\n.content-center[data-v-df4199c4] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-df4199c4] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-df4199c4] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -6811,7 +6823,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-49d9c7e8] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n          animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.three[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.logo[data-v-49d9c7e8] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-49d9c7e8] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-49d9c7e8] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-49d9c7e8] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-49d9c7e8] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-49d9c7e8]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-49d9c7e8]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-49d9c7e8] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-49d9c7e8] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-49d9c7e8] {\n  padding: 30px 0;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-49d9c7e8] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n          animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.three[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.logo[data-v-49d9c7e8] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-49d9c7e8] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-49d9c7e8] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-49d9c7e8] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-49d9c7e8] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-49d9c7e8]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-49d9c7e8]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-49d9c7e8] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-49d9c7e8] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-49d9c7e8] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-49d9c7e8] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-49d9c7e8] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-49d9c7e8] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -38213,6 +38225,47 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Header/Header.vue?vue&type=template&id=770cded8&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Header/Header.vue?vue&type=template&id=770cded8& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c(
+        "a",
+        { staticClass: "logo__img", attrs: { href: "https://www.flatium.ru" } },
+        [
+          _c("img", {
+            attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
+          })
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Panel/partials/Navigation.vue?vue&type=template&id=7e662c2a&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Panel/partials/Navigation.vue?vue&type=template&id=7e662c2a& ***!
@@ -38332,139 +38385,130 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "progress-bar__wrapper" },
-      [
-        _c("progress-bar", {
-          attrs: { "bar-color": "#aad7ea ", val: _vm.progress_value }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "content-center" }, [
+  return _c(
+    "div",
+    [
+      _c("app-header"),
+      _vm._v(" "),
       _c(
         "div",
-        { staticClass: "container" },
+        { staticClass: "progress-bar__wrapper" },
         [
-          _vm.cards_booleans.a
-            ? _c("card", {
-                attrs: {
-                  title: "Я бы описал свой стиль как...",
-                  type: "A",
-                  cards: _vm.acards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.b
-            ? _c("card", {
-                attrs: {
-                  title:
-                    "При выборе мебели и домашнего декора, я предпочитаю ...",
-                  type: "B",
-                  cards: _vm.bcards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.c1
-            ? _c("card", {
-                attrs: {
-                  title:
-                    "Какое изображение домашнего декора вам больше нравятся?",
-                  type: "C1",
-                  cards: _vm.c1cards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.c2
-            ? _c("card", {
-                attrs: {
-                  title:
-                    "Какое изображение домашнего декора вам больше нравятся?",
-                  type: "C2",
-                  cards: _vm.c2cards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.c3
-            ? _c("card", {
-                attrs: {
-                  title:
-                    "Какое изображение домашнего декора вам больше нравятся?",
-                  type: "C3",
-                  cards: _vm.c3cards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.d1
-            ? _c("card", {
-                attrs: {
-                  title:
-                    "Какие цветовые решения в вашем доме, вы предпочитаете?",
-                  type: "D1",
-                  cards: _vm.d1cards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.d2
-            ? _c("card", {
-                attrs: {
-                  title:
-                    "Какие цветовые решения в вашем доме, вы предпочитаете?",
-                  type: "D2",
-                  cards: _vm.d2cards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cards_booleans.d3
-            ? _c("card", {
-                attrs: {
-                  title:
-                    "Какие цветовые решения в вашем доме, вы предпочитаете?",
-                  type: "D3",
-                  cards: _vm.d3cards
-                },
-                on: { "selected-card": _vm.AddCard }
-              })
-            : _vm._e()
+          _c("progress-bar", {
+            attrs: { "bar-color": "#aad7ea ", val: _vm.progress_value }
+          })
         ],
         1
-      )
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
-      _c("div", { staticClass: "logo__img" }, [
-        _c("img", {
-          attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
-        })
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-center" }, [
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _vm.cards_booleans.a
+              ? _c("card", {
+                  attrs: {
+                    title: "Я бы описал свой стиль как...",
+                    type: "A",
+                    cards: _vm.acards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.b
+              ? _c("card", {
+                  attrs: {
+                    title:
+                      "При выборе мебели и домашнего декора, я предпочитаю ...",
+                    type: "B",
+                    cards: _vm.bcards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.c1
+              ? _c("card", {
+                  attrs: {
+                    title:
+                      "Какое изображение домашнего декора вам больше нравятся?",
+                    type: "C1",
+                    cards: _vm.c1cards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.c2
+              ? _c("card", {
+                  attrs: {
+                    title:
+                      "Какое изображение домашнего декора вам больше нравятся?",
+                    type: "C2",
+                    cards: _vm.c2cards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.c3
+              ? _c("card", {
+                  attrs: {
+                    title:
+                      "Какое изображение домашнего декора вам больше нравятся?",
+                    type: "C3",
+                    cards: _vm.c3cards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.d1
+              ? _c("card", {
+                  attrs: {
+                    title:
+                      "Какие цветовые решения в вашем доме, вы предпочитаете?",
+                    type: "D1",
+                    cards: _vm.d1cards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.d2
+              ? _c("card", {
+                  attrs: {
+                    title:
+                      "Какие цветовые решения в вашем доме, вы предпочитаете?",
+                    type: "D2",
+                    cards: _vm.d2cards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.cards_booleans.d3
+              ? _c("card", {
+                  attrs: {
+                    title:
+                      "Какие цветовые решения в вашем доме, вы предпочитаете?",
+                    type: "D3",
+                    cards: _vm.d3cards
+                  },
+                  on: { "selected-card": _vm.AddCard }
+                })
+              : _vm._e()
+          ],
+          1
+        )
       ])
-    ])
-  }
-]
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -38548,191 +38592,72 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "progress-bar__wrapper" },
-      [
-        _c("progress-bar", {
-          attrs: { "bar-color": "#aad7ea ", val: _vm.progress_value }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "content-center" }, [
-      _c("div", { staticClass: "container" }, [
-        _vm.booleans.name
-          ? _c("div", [
-              _c("h1", { staticClass: "main-caption" }, [
-                _vm._v("\n                Как вас зовут?\n              ")
-              ]),
-              _vm._v(" "),
-              _c(
-                "form",
-                {
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      _vm.go("name")
-                    }
-                  }
-                },
-                [
-                  _c("div", { staticClass: "form-wrapper" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.person.name,
-                          expression: "person.name"
-                        }
-                      ],
-                      attrs: {
-                        type: "text",
-                        value: "",
-                        required: "",
-                        autofocus: ""
-                      },
-                      domProps: { value: _vm.person.name },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.person, "name", $event.target.value)
-                        }
+  return _c(
+    "div",
+    [
+      _c("app-header"),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "progress-bar__wrapper" },
+        [
+          _c("progress-bar", {
+            attrs: { "bar-color": "#aad7ea ", val: _vm.progress_value }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-center" }, [
+        _c("div", { staticClass: "container" }, [
+          _vm.booleans.name
+            ? _c("div", [
+                _c("h1", { staticClass: "main-caption" }, [
+                  _vm._v("\n                Как вас зовут?\n              ")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "form",
+                  {
+                    on: {
+                      submit: function($event) {
+                        $event.preventDefault()
+                        _vm.go("name")
                       }
-                    }),
-                    _vm._v(" "),
-                    _c(
-                      "label",
-                      {
-                        staticClass: "full-name",
-                        on: {
-                          click: function($event) {
-                            $event.preventDefault()
-                            return _vm.click($event)
-                          }
-                        }
-                      },
-                      [_vm._v("Полное имя")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(1)
-                ]
-              )
-            ])
-          : _vm._e(),
-        _vm._v(" "),
-        _vm.booleans.email
-          ? _c("div", [
-              _c("h1", { staticClass: "main-caption" }, [
-                _vm._v(
-                  "\n                Укажите свой E-mail адрес, чтобы получить результат тестирования\n              "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "form",
-                {
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      _vm.go("email")
                     }
-                  }
-                },
-                [
-                  _c("div", { staticClass: "form-wrapper" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.person.email,
-                          expression: "person.email"
-                        }
-                      ],
-                      attrs: { type: "email", required: "", autofocus: "" },
-                      domProps: { value: _vm.person.email },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
+                  },
+                  [
+                    _c("div", { staticClass: "form-wrapper" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.person.name,
+                            expression: "person.name"
                           }
-                          _vm.$set(_vm.person, "email", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c(
-                      "label",
-                      {
-                        staticClass: "full-name",
-                        on: {
-                          click: function($event) {
-                            $event.preventDefault()
-                            return _vm.click($event)
-                          }
-                        }
-                      },
-                      [_vm._v("Ваша почта")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(2)
-                ]
-              )
-            ])
-          : _vm._e(),
-        _vm._v(" "),
-        _vm.booleans.phone
-          ? _c("div", [
-              _c("h1", { staticClass: "main-caption" }, [
-                _vm._v(
-                  "\n                Укажите свой телефон, для получения консультации\n              "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "form",
-                {
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      _vm.go("phone")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "form-wrapper" },
-                    [
-                      _c("vue-tel-input", {
+                        ],
                         attrs: {
-                          placeholder: "",
-                          preferredCountries: ["ru", "us", "ua"],
+                          type: "text",
+                          value: "",
+                          required: "",
                           autofocus: ""
                         },
-                        model: {
-                          value: _vm.person.phone,
-                          callback: function($$v) {
-                            _vm.$set(_vm.person, "phone", $$v)
-                          },
-                          expression: "person.phone"
+                        domProps: { value: _vm.person.name },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.person, "name", $event.target.value)
+                          }
                         }
                       }),
                       _vm._v(" "),
                       _c(
                         "label",
                         {
-                          staticClass: "full-name full-name--tel",
+                          staticClass: "full-name",
                           on: {
                             click: function($event) {
                               $event.preventDefault()
@@ -38740,66 +38665,178 @@ var render = function() {
                             }
                           }
                         },
-                        [_vm._v("Введите номер телефона")]
+                        [_vm._v("Полное имя")]
                       )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "button-wrapper" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "primary-button",
-                        attrs: { type: "submit" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                         Далее\n                     "
-                        )
-                      ]
-                    ),
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "primary-button primary-button--disabled",
-                        attrs: { type: "submit" },
+                    _vm._m(0)
+                  ]
+                )
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.booleans.email
+            ? _c("div", [
+                _c("h1", { staticClass: "main-caption" }, [
+                  _vm._v(
+                    "\n                Укажите свой E-mail адрес, чтобы получить результат тестирования\n              "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "form",
+                  {
+                    on: {
+                      submit: function($event) {
+                        $event.preventDefault()
+                        _vm.go("email")
+                      }
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "form-wrapper" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.person.email,
+                            expression: "person.email"
+                          }
+                        ],
+                        attrs: { type: "email", required: "", autofocus: "" },
+                        domProps: { value: _vm.person.email },
                         on: {
-                          submit: function($event) {
-                            $event.preventDefault()
-                            _vm.go("phone")
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.person, "email", $event.target.value)
                           }
                         }
-                      },
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "full-name",
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.click($event)
+                            }
+                          }
+                        },
+                        [_vm._v("Ваша почта")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(1)
+                  ]
+                )
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.booleans.phone
+            ? _c("div", [
+                _c("h1", { staticClass: "main-caption" }, [
+                  _vm._v(
+                    "\n                Укажите свой телефон, для получения консультации\n              "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "form",
+                  {
+                    on: {
+                      submit: function($event) {
+                        $event.preventDefault()
+                        _vm.go("phone")
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "form-wrapper" },
                       [
-                        _vm._v(
-                          "\n                             Пропустить\n                    "
+                        _c("vue-tel-input", {
+                          attrs: {
+                            placeholder: "",
+                            preferredCountries: ["ru", "us", "ua"],
+                            autofocus: ""
+                          },
+                          model: {
+                            value: _vm.person.phone,
+                            callback: function($$v) {
+                              _vm.$set(_vm.person, "phone", $$v)
+                            },
+                            expression: "person.phone"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "label",
+                          {
+                            staticClass: "full-name full-name--tel",
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.click($event)
+                              }
+                            }
+                          },
+                          [_vm._v("Введите номер телефона")]
                         )
-                      ]
-                    )
-                  ])
-                ]
-              )
-            ])
-          : _vm._e()
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "button-wrapper" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "primary-button",
+                          attrs: { type: "submit", id: "phone" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                         Далее\n                     "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "primary-button primary-button--disabled",
+                          attrs: { type: "submit", id: "phone_pass" },
+                          on: {
+                            submit: function($event) {
+                              $event.preventDefault()
+                              _vm.go("phone")
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                             Пропустить\n                    "
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            : _vm._e()
+        ])
       ])
-    ])
-  ])
+    ],
+    1
+  )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
-      _c("div", { staticClass: "logo__img" }, [
-        _c("img", {
-          attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
-        })
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -38807,7 +38844,10 @@ var staticRenderFns = [
     return _c("div", { staticClass: "button-wrapper" }, [
       _c(
         "button",
-        { staticClass: "primary-button", attrs: { type: "submit" } },
+        {
+          staticClass: "primary-button",
+          attrs: { type: "submit", id: "name" }
+        },
         [_vm._v("\n                         Далее\n                     ")]
       )
     ])
@@ -38819,7 +38859,10 @@ var staticRenderFns = [
     return _c("div", { staticClass: "button-wrapper" }, [
       _c(
         "button",
-        { staticClass: "primary-button", attrs: { type: "submit" } },
+        {
+          staticClass: "primary-button",
+          attrs: { type: "submit", id: "email" }
+        },
         [_vm._v("\n                         Далее\n                     ")]
       )
     ])
@@ -38974,669 +39017,664 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", {}, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "progress-bar__wrapper" },
-      [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "60" } })],
-      1
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "content-center" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("h1", { staticClass: "main-caption" }, [
-          _vm._v(
-            "\n         В какой комнате вы хотели бы сделать ремонт? Можете выбрать несколько комнат или во всей квартире или доме.\n      "
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-wrapper" }, [
-          _c("div", { staticClass: "image-card fade-in one" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Гостиная") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Гостиная")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "52",
-                      height: "30",
-                      viewBox: "0 0 52 30",
-                      xmlns: "http://www.w3.org/2000/svg"
-                    }
-                  },
-                  [
-                    _c("title", [_vm._v("living room")]),
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          transform: "translate(1 1)",
-                          fill: "none",
-                          "fill-rule": "evenodd"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            stroke: "#FFF",
-                            "stroke-width": "1.5",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
-                            d:
-                              "M6.713 16.66h36.016V.592H6.712zm36.017.001h6.647v-6.61H42.73zm-42.73 0h6.648v-6.61H0z"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            stroke: "#FFF",
-                            "stroke-width": "1.5",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
-                            d: "M0 23.49h49.442v-6.829H0zm6 0v4.71m36-4.71v4.71"
-                          }
-                        }),
-                        _c("ellipse", {
-                          attrs: {
-                            fill: "#FFF",
-                            cx: "14",
-                            cy: "5",
-                            rx: "1",
-                            ry: "1"
-                          }
-                        }),
-                        _c("ellipse", {
-                          attrs: {
-                            fill: "#FFF",
-                            cx: "25",
-                            cy: "5",
-                            rx: "1",
-                            ry: "1"
-                          }
-                        }),
-                        _c("ellipse", {
-                          attrs: {
-                            fill: "#FFF",
-                            cx: "36",
-                            cy: "5",
-                            rx: "1",
-                            ry: "1"
-                          }
-                        }),
-                        _c("ellipse", {
-                          attrs: {
-                            fill: "#FFF",
-                            cx: "36",
-                            cy: "12",
-                            rx: "1",
-                            ry: "1"
-                          }
-                        }),
-                        _c("ellipse", {
-                          attrs: {
-                            fill: "#FFF",
-                            cx: "25",
-                            cy: "12",
-                            rx: "1",
-                            ry: "1"
-                          }
-                        }),
-                        _c("ellipse", {
-                          attrs: {
-                            fill: "#FFF",
-                            cx: "14",
-                            cy: "12",
-                            rx: "1",
-                            ry: "1"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Гостиная")])
-              ]
+  return _c(
+    "div",
+    {},
+    [
+      _c("app-header"),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "progress-bar__wrapper" },
+        [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "60" } })],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-center" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("h1", { staticClass: "main-caption" }, [
+            _vm._v(
+              "\n         В какой комнате вы хотели бы сделать ремонт? Можете выбрать несколько комнат или во всей квартире или доме.\n      "
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in two" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Столовая") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Столовая")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "42",
-                      height: "39",
-                      viewBox: "0 0 42 39",
-                      xmlns: "http://www.w3.org/2000/svg"
+          _c("div", { staticClass: "image-wrapper" }, [
+            _c("div", { staticClass: "image-card fade-in one" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Гостиная") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Гостиная")
                     }
-                  },
-                  [
-                    _c("title", [_vm._v("dinning room")]),
-                    _c("path", {
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
                       attrs: {
-                        d:
-                          "M8.479 21h24.824M21 21.44v16.636M16.515 38h8.752M1 16.506v21.57m10.98 0V27.29H1m40-10.784v21.57m-10.84 0V27.29h10.98M21 1.603v6.73m-4.95 4.844a4.843 4.843 0 1 1 9.683 0h-9.684zm5.797 0v.562a.956.956 0 1 1-1.912 0v-.562",
-                        stroke: "#D0D6DB",
-                        "stroke-width": "1.5",
-                        fill: "none",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round"
+                        width: "52",
+                        height: "30",
+                        viewBox: "0 0 52 30",
+                        xmlns: "http://www.w3.org/2000/svg"
                       }
-                    })
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Столовая")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in three" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Спальня") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Спальня")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "51",
-                      height: "30",
-                      viewBox: "0 0 51 30",
-                      xmlns: "http://www.w3.org/2000/svg"
+                    },
+                    [
+                      _c("title", [_vm._v("living room")]),
+                      _c(
+                        "g",
+                        {
+                          attrs: {
+                            transform: "translate(1 1)",
+                            fill: "none",
+                            "fill-rule": "evenodd"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              stroke: "#FFF",
+                              "stroke-width": "1.5",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              d:
+                                "M6.713 16.66h36.016V.592H6.712zm36.017.001h6.647v-6.61H42.73zm-42.73 0h6.648v-6.61H0z"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              stroke: "#FFF",
+                              "stroke-width": "1.5",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              d:
+                                "M0 23.49h49.442v-6.829H0zm6 0v4.71m36-4.71v4.71"
+                            }
+                          }),
+                          _c("ellipse", {
+                            attrs: {
+                              fill: "#FFF",
+                              cx: "14",
+                              cy: "5",
+                              rx: "1",
+                              ry: "1"
+                            }
+                          }),
+                          _c("ellipse", {
+                            attrs: {
+                              fill: "#FFF",
+                              cx: "25",
+                              cy: "5",
+                              rx: "1",
+                              ry: "1"
+                            }
+                          }),
+                          _c("ellipse", {
+                            attrs: {
+                              fill: "#FFF",
+                              cx: "36",
+                              cy: "5",
+                              rx: "1",
+                              ry: "1"
+                            }
+                          }),
+                          _c("ellipse", {
+                            attrs: {
+                              fill: "#FFF",
+                              cx: "36",
+                              cy: "12",
+                              rx: "1",
+                              ry: "1"
+                            }
+                          }),
+                          _c("ellipse", {
+                            attrs: {
+                              fill: "#FFF",
+                              cx: "25",
+                              cy: "12",
+                              rx: "1",
+                              ry: "1"
+                            }
+                          }),
+                          _c("ellipse", {
+                            attrs: {
+                              fill: "#FFF",
+                              cx: "14",
+                              cy: "12",
+                              rx: "1",
+                              ry: "1"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Гостиная")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in two" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Столовая") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Столовая")
                     }
-                  },
-                  [
-                    _c("title", [_vm._v("bedroom")]),
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          stroke: "#D0D6DB",
-                          "stroke-width": "1.5",
-                          fill: "none",
-                          "fill-rule": "evenodd",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M47.217 11.105l2.666 2.639a.753.753 0 0 1 .224.535v8.453H1.602V14.28c0-.2.081-.393.224-.535l2.667-2.639a.771.771 0 0 1 .54-.221h41.643a.77.77 0 0 1 .54.221zM3 23v6.264M49 23v6.264M5.51 10.883H46.2V1.692H5.51z"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M6.567 7.166c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046H6.567zm21.345 0c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046h-17.23z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Спальня")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in four" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Детская") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Детская")
                   }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "41",
-                      height: "35",
-                      viewBox: "0 0 41 35",
-                      xmlns: "http://www.w3.org/2000/svg"
-                    }
-                  },
-                  [
-                    _c("title", [_vm._v("Page 1")]),
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          stroke: "#D0D6DB",
-                          fill: "none",
-                          "fill-rule": "evenodd",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M1.728 21.993c10.552 9.817 26.932 9.817 37.484 0 .277-.258.728-.055.728.323v2.752c0 .354-.141.698-.397.944-10.647 10.234-27.499 10.234-38.146 0A1.31 1.31 0 0 1 1 25.068v-2.752c0-.378.451-.58.728-.323zm28.373-5.598s2.727-1.162 4.09 1.754l2.261-1.745s-1.39-2.588-4.223-2.588c-2.835 0-3.705 1.874-3.705 1.874",
-                            "stroke-width": "1.5"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M9.388 27.035c1.076-3.793 5.63-6.641 11.082-6.641 5.453 0 10.007 2.848 11.082 6.642",
-                            "stroke-width": "1.5"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M35.177 25.106s-3.166-6.849-4.883-8.538c-1.717-1.69-4.823-.735-8.665-.735-3.843 0-3.924-1.308-4.497-3.848C14.844 2.633 6.697 2.18 6.697 2.18L5.452 1l-.089 1.96c-.317.476-2.427 4.368-3.367 5.742-.25.366-.45.78-.45 1.257 0 1.118.907 2.025 2.025 2.025.433 0 .904-.208 1.164-.369 1.01-.625 4.068-2.293 4.068-2.293 1.571 3.732.344 7.65.344 7.65-1.068 1.474-4.013 7.721-4.013 7.721",
-                            "stroke-width": "1.5"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M18.103 14.796s.72-3.923-.943-7.165c-1.662-3.243-5.411-6.246-11.303-6.246"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d: "M4.555 6.992a.635.635 0 1 1 1.272 0",
-                            "stroke-width": ".5"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d: "M2.29 8.254s2.479.799 2.932 3.037",
-                            "stroke-width": "1.5"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: { d: "M4.822 10.246s4.626-4.312 5.28-7.142" }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d: "M8.545 8.771S7.604 5.5 5.363 2.961",
-                            "stroke-width": "1.5"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Детская")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in five" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Кабинет") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Кабинет")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "54",
-                      height: "27",
-                      viewBox: "0 0 54 27",
-                      xmlns: "http://www.w3.org/2000/svg"
-                    }
-                  },
-                  [
-                    _c("title", [_vm._v("office")]),
-                    _c("path", {
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
                       attrs: {
-                        d:
-                          "M30 17h19V1H30zM1 1h52M5 1v25.2M49 9v17.2M36 5h7m-7 8h7M30 9h19",
-                        "stroke-width": "1.5",
-                        stroke: "#D0D6DB",
-                        fill: "none",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round"
+                        width: "42",
+                        height: "39",
+                        viewBox: "0 0 42 39",
+                        xmlns: "http://www.w3.org/2000/svg"
                       }
-                    })
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Кабинет")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in six" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Кухня") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Кухня")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "49",
-                      height: "35",
-                      viewBox: "0 0 49 35",
-                      xmlns: "http://www.w3.org/2000/svg"
-                    }
-                  },
-                  [
-                    _c("title", [_vm._v("Page 1")]),
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          stroke: "#D0D6DB",
-                          "stroke-width": "1.5",
-                          fill: "none",
-                          "fill-rule": "evenodd",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: { d: "M1 33.853h24.69V7.496H1z" }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M25.689 33.853h21.87V7.496h-21.87zM1 12h24.69M4.837 30h17.015V16.14H4.837zm3.496-12h10.023M7 8.9v2.017M11 8.9v2.017M15 8.9v2.017M19 8.9v2.017m17-3.42v26.356m-2-15.887v3.098m4-3.098v3.098"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M32.643 2.122c0-.695-.561-1.259-1.253-1.259-.692 0-1.253.564-1.253 1.259v5.375m0-2.382h-.99v-.757"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Кухня")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in seven" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Санузел") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Санузел")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "49",
-                      height: "33",
-                      viewBox: "0 0 49 33",
-                      xmlns: "http://www.w3.org/2000/svg"
-                    }
-                  },
-                  [
-                    _c("title", [_vm._v("Page 1")]),
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          stroke: "#D0D6DB",
-                          "stroke-width": "1.5",
-                          fill: "none",
-                          "fill-rule": "evenodd",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M21.699 14.165h26.454zM1.6 14h10.358M9.065 32h31.623M2.927 14.165s.308 10.632 7.865 17.839m36.034-17.839s-.308 10.632-7.865 17.839m-27.003-7.291h9.74V12.164h-9.74zm0-3.713H21.7M37.05 6.398c0-2.654 2.179-4.806 4.866-4.806s4.98 2.152 4.98 4.806c0 1.708-.376 5.031-2.47 7.767"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M34.779 8.645c0-1.24 1.016-2.244 2.271-2.244s2.272 1.004 2.272 2.244h-4.544z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Санузел")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in eight" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Прочее") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Прочее")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "icon-svg",
-                    attrs: {
-                      width: "16",
-                      height: "40",
-                      viewBox: "0 0 16 40",
-                      xmlns: "http://www.w3.org/2000/svg"
-                    }
-                  },
-                  [
-                    _c("title", [_vm._v("Page 1")]),
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          stroke: "#D0D6DB",
-                          "stroke-width": "1.5",
-                          fill: "none",
-                          "fill-rule": "evenodd",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M1.942 39.2l1.306-15.405h9.023L13.577 39.2zM7 13.031v10.764m3.327-16.279c0 1.404-1.15 2.543-2.568 2.543-1.418 0-2.568-1.139-2.568-2.543 0-1.405 1.15-2.544 2.568-2.544 1.418 0 2.568 1.139 2.568 2.544z"
-                          }
-                        }),
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M14.519 7.516c0 1.065-1.884 1.64-2.386 2.5-.519.888-.097 2.785-.993 3.299-.868.497-2.305-.799-3.38-.799-1.077 0-2.513 1.296-3.382.799-.896-.514-.474-2.411-.993-3.299C2.883 9.156 1 8.581 1 7.516c0-1.066 1.883-1.64 2.385-2.5.52-.888.098-2.786.993-3.3.869-.497 2.306.799 3.382.799 1.075 0 2.512-1.296 3.38-.798.896.513.474 2.41.993 3.298.502.86 2.386 1.435 2.386 2.5zm-5.507 9.458a4.213 4.213 0 0 0-1.218 3.54 4.304 4.304 0 0 0 3.573-1.207 4.213 4.213 0 0 0 1.218-3.54 4.305 4.305 0 0 0-3.573 1.207z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [_vm._v("Прочее")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in nine" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-card",
-                class: { active: _vm.selected_rooms.includes("Вся квартира") },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    _vm.addRoom("Вся квартира")
-                  }
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticStyle: { "enable-background": "new 0 0 612 612" },
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                      x: "0px",
-                      y: "0px",
-                      width: "50px",
-                      height: "50px",
-                      viewBox: "0 0 612 612",
-                      "xml:space": "preserve"
-                    }
-                  },
-                  [
-                    _c("g", [
+                    },
+                    [
+                      _c("title", [_vm._v("dinning room")]),
                       _c("path", {
-                        staticClass: "fill-color",
                         attrs: {
                           d:
-                            "M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                      c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                      s-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                      v-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                      c0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                      c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                      v-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                      c7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z"
+                            "M8.479 21h24.824M21 21.44v16.636M16.515 38h8.752M1 16.506v21.57m10.98 0V27.29H1m40-10.784v21.57m-10.84 0V27.29h10.98M21 1.603v6.73m-4.95 4.844a4.843 4.843 0 1 1 9.683 0h-9.684zm5.797 0v.562a.956.956 0 1 1-1.912 0v-.562",
+                          stroke: "#D0D6DB",
+                          "stroke-width": "1.5",
+                          fill: "none",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
                         }
                       })
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "image-text" }, [
-                  _vm._v("Вся квартира")
-                ])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "button-wrapper" }, [
-            _c(
-              "button",
-              {
-                staticClass: "primary-button",
-                attrs: { type: "submit" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.save($event)
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Столовая")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in three" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Спальня") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Спальня")
+                    }
                   }
-                }
-              },
-              [_vm._v("\n               Далее\n           ")]
-            )
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
+                      attrs: {
+                        width: "51",
+                        height: "30",
+                        viewBox: "0 0 51 30",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }
+                    },
+                    [
+                      _c("title", [_vm._v("bedroom")]),
+                      _c(
+                        "g",
+                        {
+                          attrs: {
+                            stroke: "#D0D6DB",
+                            "stroke-width": "1.5",
+                            fill: "none",
+                            "fill-rule": "evenodd",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M47.217 11.105l2.666 2.639a.753.753 0 0 1 .224.535v8.453H1.602V14.28c0-.2.081-.393.224-.535l2.667-2.639a.771.771 0 0 1 .54-.221h41.643a.77.77 0 0 1 .54.221zM3 23v6.264M49 23v6.264M5.51 10.883H46.2V1.692H5.51z"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M6.567 7.166c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046H6.567zm21.345 0c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046h-17.23z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Спальня")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in four" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Детская") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Детская")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
+                      attrs: {
+                        width: "41",
+                        height: "35",
+                        viewBox: "0 0 41 35",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }
+                    },
+                    [
+                      _c("title", [_vm._v("Page 1")]),
+                      _c(
+                        "g",
+                        {
+                          attrs: {
+                            stroke: "#D0D6DB",
+                            fill: "none",
+                            "fill-rule": "evenodd",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M1.728 21.993c10.552 9.817 26.932 9.817 37.484 0 .277-.258.728-.055.728.323v2.752c0 .354-.141.698-.397.944-10.647 10.234-27.499 10.234-38.146 0A1.31 1.31 0 0 1 1 25.068v-2.752c0-.378.451-.58.728-.323zm28.373-5.598s2.727-1.162 4.09 1.754l2.261-1.745s-1.39-2.588-4.223-2.588c-2.835 0-3.705 1.874-3.705 1.874",
+                              "stroke-width": "1.5"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M9.388 27.035c1.076-3.793 5.63-6.641 11.082-6.641 5.453 0 10.007 2.848 11.082 6.642",
+                              "stroke-width": "1.5"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M35.177 25.106s-3.166-6.849-4.883-8.538c-1.717-1.69-4.823-.735-8.665-.735-3.843 0-3.924-1.308-4.497-3.848C14.844 2.633 6.697 2.18 6.697 2.18L5.452 1l-.089 1.96c-.317.476-2.427 4.368-3.367 5.742-.25.366-.45.78-.45 1.257 0 1.118.907 2.025 2.025 2.025.433 0 .904-.208 1.164-.369 1.01-.625 4.068-2.293 4.068-2.293 1.571 3.732.344 7.65.344 7.65-1.068 1.474-4.013 7.721-4.013 7.721",
+                              "stroke-width": "1.5"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M18.103 14.796s.72-3.923-.943-7.165c-1.662-3.243-5.411-6.246-11.303-6.246"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d: "M4.555 6.992a.635.635 0 1 1 1.272 0",
+                              "stroke-width": ".5"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d: "M2.29 8.254s2.479.799 2.932 3.037",
+                              "stroke-width": "1.5"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: { d: "M4.822 10.246s4.626-4.312 5.28-7.142" }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d: "M8.545 8.771S7.604 5.5 5.363 2.961",
+                              "stroke-width": "1.5"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Детская")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in five" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Кабинет") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Кабинет")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
+                      attrs: {
+                        width: "54",
+                        height: "27",
+                        viewBox: "0 0 54 27",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }
+                    },
+                    [
+                      _c("title", [_vm._v("office")]),
+                      _c("path", {
+                        attrs: {
+                          d:
+                            "M30 17h19V1H30zM1 1h52M5 1v25.2M49 9v17.2M36 5h7m-7 8h7M30 9h19",
+                          "stroke-width": "1.5",
+                          stroke: "#D0D6DB",
+                          fill: "none",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Кабинет")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in six" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Кухня") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Кухня")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
+                      attrs: {
+                        width: "49",
+                        height: "35",
+                        viewBox: "0 0 49 35",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }
+                    },
+                    [
+                      _c("title", [_vm._v("Page 1")]),
+                      _c(
+                        "g",
+                        {
+                          attrs: {
+                            stroke: "#D0D6DB",
+                            "stroke-width": "1.5",
+                            fill: "none",
+                            "fill-rule": "evenodd",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: { d: "M1 33.853h24.69V7.496H1z" }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M25.689 33.853h21.87V7.496h-21.87zM1 12h24.69M4.837 30h17.015V16.14H4.837zm3.496-12h10.023M7 8.9v2.017M11 8.9v2.017M15 8.9v2.017M19 8.9v2.017m17-3.42v26.356m-2-15.887v3.098m4-3.098v3.098"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M32.643 2.122c0-.695-.561-1.259-1.253-1.259-.692 0-1.253.564-1.253 1.259v5.375m0-2.382h-.99v-.757"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Кухня")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in seven" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Санузел") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Санузел")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
+                      attrs: {
+                        width: "49",
+                        height: "33",
+                        viewBox: "0 0 49 33",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }
+                    },
+                    [
+                      _c("title", [_vm._v("Page 1")]),
+                      _c(
+                        "g",
+                        {
+                          attrs: {
+                            stroke: "#D0D6DB",
+                            "stroke-width": "1.5",
+                            fill: "none",
+                            "fill-rule": "evenodd",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M21.699 14.165h26.454zM1.6 14h10.358M9.065 32h31.623M2.927 14.165s.308 10.632 7.865 17.839m36.034-17.839s-.308 10.632-7.865 17.839m-27.003-7.291h9.74V12.164h-9.74zm0-3.713H21.7M37.05 6.398c0-2.654 2.179-4.806 4.866-4.806s4.98 2.152 4.98 4.806c0 1.708-.376 5.031-2.47 7.767"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M34.779 8.645c0-1.24 1.016-2.244 2.271-2.244s2.272 1.004 2.272 2.244h-4.544z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Санузел")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in eight" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: { active: _vm.selected_rooms.includes("Прочее") },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Прочее")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "icon-svg",
+                      attrs: {
+                        width: "16",
+                        height: "40",
+                        viewBox: "0 0 16 40",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }
+                    },
+                    [
+                      _c("title", [_vm._v("Page 1")]),
+                      _c(
+                        "g",
+                        {
+                          attrs: {
+                            stroke: "#D0D6DB",
+                            "stroke-width": "1.5",
+                            fill: "none",
+                            "fill-rule": "evenodd",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M1.942 39.2l1.306-15.405h9.023L13.577 39.2zM7 13.031v10.764m3.327-16.279c0 1.404-1.15 2.543-2.568 2.543-1.418 0-2.568-1.139-2.568-2.543 0-1.405 1.15-2.544 2.568-2.544 1.418 0 2.568 1.139 2.568 2.544z"
+                            }
+                          }),
+                          _c("path", {
+                            attrs: {
+                              d:
+                                "M14.519 7.516c0 1.065-1.884 1.64-2.386 2.5-.519.888-.097 2.785-.993 3.299-.868.497-2.305-.799-3.38-.799-1.077 0-2.513 1.296-3.382.799-.896-.514-.474-2.411-.993-3.299C2.883 9.156 1 8.581 1 7.516c0-1.066 1.883-1.64 2.385-2.5.52-.888.098-2.786.993-3.3.869-.497 2.306.799 3.382.799 1.075 0 2.512-1.296 3.38-.798.896.513.474 2.41.993 3.298.502.86 2.386 1.435 2.386 2.5zm-5.507 9.458a4.213 4.213 0 0 0-1.218 3.54 4.304 4.304 0 0 0 3.573-1.207 4.213 4.213 0 0 0 1.218-3.54 4.305 4.305 0 0 0-3.573 1.207z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [_vm._v("Прочее")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in nine" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
+                  class: {
+                    active: _vm.selected_rooms.includes("Вся квартира")
+                  },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.addRoom("Вся квартира")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticStyle: { "enable-background": "new 0 0 612 612" },
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                        x: "0px",
+                        y: "0px",
+                        width: "50px",
+                        height: "50px",
+                        viewBox: "0 0 612 612",
+                        "xml:space": "preserve"
+                      }
+                    },
+                    [
+                      _c("g", [
+                        _c("path", {
+                          staticClass: "fill-color",
+                          attrs: {
+                            d:
+                              "M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                      c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                      s-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                      v-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                      c0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                      c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                      v-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                      c7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z"
+                          }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [
+                    _vm._v("Вся квартира")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button-wrapper" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "primary-button",
+                  attrs: { type: "submit" },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      return _vm.save($event)
+                    }
+                  }
+                },
+                [_vm._v("\n               Далее\n           ")]
+              )
+            ])
           ])
         ])
       ])
-    ])
-  ])
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
-      _c("div", { staticClass: "logo__img" }, [
-        _c("img", {
-          attrs: { src: "/storage/quiz/logo.svg", alt: "Flatium-logo" }
-        })
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -51331,6 +51369,7 @@ Vue.component('cards', __webpack_require__(/*! ./pages/Cards/Cards */ "./resourc
 Vue.component('room', __webpack_require__(/*! ./pages/Room/Room */ "./resources/js/pages/Room/Room.vue").default);
 Vue.component('redirect', __webpack_require__(/*! ./pages/Redirect/Redirect */ "./resources/js/pages/Redirect/Redirect.vue").default);
 Vue.component('panel', __webpack_require__(/*! ./pages/Panel/Panel */ "./resources/js/pages/Panel/Panel.vue").default);
+Vue.component('app-header', __webpack_require__(/*! ./components/Header/Header */ "./resources/js/components/Header/Header.vue").default);
 var app = new Vue({
   el: '#app'
 });
@@ -51358,6 +51397,75 @@ window.axios.defaults.headers.common = {
   'X-CSRF-TOKEN': window.App.csrfToken,
   'X-Requested-With': 'XMLHttpRequest'
 };
+
+/***/ }),
+
+/***/ "./resources/js/components/Header/Header.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/components/Header/Header.vue ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Header_vue_vue_type_template_id_770cded8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue?vue&type=template&id=770cded8& */ "./resources/js/components/Header/Header.vue?vue&type=template&id=770cded8&");
+/* harmony import */ var _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.vue?vue&type=script&lang=js& */ "./resources/js/components/Header/Header.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Header_vue_vue_type_template_id_770cded8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Header_vue_vue_type_template_id_770cded8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Header/Header.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Header/Header.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/Header/Header.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Header.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Header/Header.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Header/Header.vue?vue&type=template&id=770cded8&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/Header/Header.vue?vue&type=template&id=770cded8& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_template_id_770cded8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Header.vue?vue&type=template&id=770cded8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Header/Header.vue?vue&type=template&id=770cded8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_template_id_770cded8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_template_id_770cded8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -51536,128 +51644,152 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d3cards", function() { return d3cards; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cards_booleans", function() { return cards_booleans; });
 var acards = [{
+  id: 'A1',
   uuid: 'A1',
   name: 'Более классический',
   path: '/storage/quiz/A/A1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'A2',
   uuid: 'A2',
   name: 'Что-то между',
   path: '/storage/quiz/A/A2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'A3',
   uuid: 'A3',
   name: 'Более современный',
   path: '/storage/quiz/A/A3.jpg',
   classname: 'fade-in three'
 }];
 var bcards = [{
+  id: 'B1',
   uuid: 'B1',
   name: 'Простые формы',
   path: '/storage/quiz/B/B1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'B2',
   uuid: 'B2',
   name: 'Изысканный стиль',
   path: '/storage/quiz/B/B2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'B3',
   uuid: 'B3',
   name: 'Брутальный стиль',
   path: '/storage/quiz/B/B3.jpg',
   classname: 'fade-in three'
 }];
 var c1cards = [{
+  id: 'C11',
   uuid: 'C1',
   name: '',
   path: '/storage/quiz/C1/C1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'C12',
   uuid: 'C2',
   name: '',
   path: '/storage/quiz/C1/C2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'C13',
   uuid: 'C3',
   name: '',
   path: '/storage/quiz/C1/C3.jpg',
   classname: 'fade-in three'
 }];
 var c2cards = [{
+  id: 'C21',
   uuid: 'C1',
   name: '',
   path: '/storage/quiz/C2/C1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'C22',
   uuid: 'C2',
   name: '',
   path: '/storage/quiz/C2/C2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'C23',
   uuid: 'C3',
   name: '',
   path: '/storage/quiz/C2/C3.jpg',
   classname: 'fade-in three'
 }];
 var c3cards = [{
+  id: 'C31',
   uuid: 'C1',
   name: '',
   path: '/storage/quiz/C3/C1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'C32',
   uuid: 'C2',
   name: '',
   path: '/storage/quiz/C3/C2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'C33',
   uuid: 'C3',
   name: '',
   path: '/storage/quiz/C3/C3.jpg',
   classname: 'fade-in three'
 }];
 var d1cards = [{
+  id: 'D11',
   uuid: 'D1',
   name: 'Чистые и нейтральные',
   path: '/storage/quiz/D1/D1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'D12',
   uuid: 'D2',
   name: 'Один цвет',
   path: '/storage/quiz/D1/D2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'D13',
   uuid: 'D3',
   name: 'Яркие и смелые',
   path: '/storage/quiz/D1/D3.jpg',
   classname: 'fade-in three'
 }];
 var d2cards = [{
+  id: 'D21',
   uuid: 'D1',
   name: 'Чистые и нейтральные',
   path: '/storage/quiz/D2/D1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'D22',
   uuid: 'D2',
   name: 'Один цвет',
   path: '/storage/quiz/D2/D2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'D23',
   uuid: 'D3',
   name: 'Яркие и смелые',
   path: '/storage/quiz/D2/D3.jpg',
   classname: 'fade-in three'
 }];
 var d3cards = [{
+  id: 'D31',
   uuid: 'D1',
   name: 'Чистые и нейтральные',
   path: '/storage/quiz/D3/D1.jpg',
   classname: 'fade-in one'
 }, {
+  id: 'D32',
   uuid: 'D2',
   name: 'Один цвет',
   path: '/storage/quiz/D3/D2.jpg',
   classname: 'fade-in two'
 }, {
+  id: 'D33',
   uuid: 'D3',
   name: 'Яркие и смелые',
   path: '/storage/quiz/D3/D3.jpg',
@@ -52135,8 +52267,8 @@ var LOFT = ['A3B3C1D1', 'A3B3C1D2', 'A3B3C1D3', 'A3B3C2D1', 'A3B3C2D2', 'A3B3C2D
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/vika/Desktop/FlatiumQuizLaravel/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/elijah/Desktop/work/FlatiumQuizDev/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div class="logo">
-      <div class="logo__img">
-        <img src="/storage/quiz/logo.svg" alt="Flatium-logo">
-      </div>
-    </div>
+    <app-header></app-header>
     <div class="progress-bar__wrapper">
           <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
     </div>
@@ -234,7 +230,7 @@
               }).then(response => {
                   setTimeout(() => {
                       window.location.href = `/cards/${response.data.id}/rooms`
-                  }, 1000)
+                  }, 500)
               })
           }
       }
@@ -330,6 +326,24 @@
   text-transform: uppercase;
   }
 
+}
+@media (min-width: 700px) {
+  .content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5%;
+    height: 100vh;
+  }
+}
+@media (max-width: 700px) {
+  .image-wrapper  {
+    flex-wrap: wrap;
+  }
+  .image-card {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
 }
 
 </style>
