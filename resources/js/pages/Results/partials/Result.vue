@@ -19,15 +19,25 @@
         </div>
       </div>
       </div>
-      <button type="button" name="button" class="result__button">
-        Смотреть стиль
+      <button type="button"
+         name="button"
+         class="result__button"
+         @click="redirect(data[0])"
+         >
+          Смотреть стиль
       </button>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['data']
+        props: ['data'],
+
+        methods: {
+            redirect (data) {
+                window.location.href = data.link
+            }
+        }
     }
 </script>
 
@@ -55,7 +65,7 @@
     font-size: 36px;
     letter-spacing: 0px;
     line-height: 43px;
-    // font-family: "Rubik";
+    font-family: "Rubik";
     font-weight: 400;
     text-align: center;
   }

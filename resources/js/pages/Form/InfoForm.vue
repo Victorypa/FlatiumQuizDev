@@ -157,7 +157,7 @@
 
                             axios.post(`/cards/${card_id}/form/store`, this.person)
                                  .then(response => {
-                                     window.location.href = '/redirect'
+                                     window.location.href = `/cards/${card_id}/result`
                                  })
                         }
                         break;
