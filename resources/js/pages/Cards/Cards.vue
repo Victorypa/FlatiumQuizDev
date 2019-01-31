@@ -327,7 +327,6 @@
   }
 
 }
-
 @media (min-width: 700px) {
   .content-center {
     display: flex;

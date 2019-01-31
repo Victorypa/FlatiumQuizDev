@@ -278,9 +278,10 @@ border-radius: 2px;
 line-height: 42px;
 outline: none;
 cursor: pointer;
+transition: .15s ease-in-out;
 }
 .primary-button:hover {
-background-color: #2e3854;
+  background-color: #aad7ea;
 }
 .button-wrapper {
 margin: 0 auto;
@@ -297,7 +298,6 @@ transition: stroke .15s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    // height: 100vh;
   }
 }
 @media (max-width: 700px) {
