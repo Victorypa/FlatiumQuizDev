@@ -17,6 +17,11 @@ class CardController extends Controller
         return view('cards.index');
     }
 
+    public function show(Card $card)
+    {
+        return $card;
+    }
+
     public function store(Request $request)
     {
         return Card::create($request->all());
