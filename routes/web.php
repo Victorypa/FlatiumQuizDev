@@ -16,6 +16,8 @@ Route::group(['prefix' => 'cards'], function () {
 
     Route::get('/{card}/form', 'Form\FormController@index');
     Route::post('/{card}/form/store', 'Form\FormController@store');
+
+    Route::get('/{card}/result', 'Result\ResultController@index');
 });
 
 Route::get('/redirect', 'RedirectController@redirect');

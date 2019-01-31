@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <template>
   <div>
     <app-header></app-header>
@@ -152,4 +150,12 @@ fill: #a5a5a5;
 
 
 </style>
->>>>>>> Stashed changes
+<template>
+  <p>Results</p>
+</template>
+
+<script>
+  export default {
+
+  }
+</script>
