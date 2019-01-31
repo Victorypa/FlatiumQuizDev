@@ -6978,7 +6978,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".result__wrapper[data-v-3cc709c4] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background-image: url(\"/storage/results/Loft.jpg\");\n  background-position: center;\n  height: 100vh;\n}\n.logo[data-v-3cc709c4] {\n  position: absolute;\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3cc709c4] {\n  width: 100%;\n  height: 100%;\n}", ""]);
+exports.push([module.i, ".result__wrapper[data-v-3cc709c4] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background-position: center;\n  height: 100vh;\n}\n.logo[data-v-3cc709c4] {\n  position: absolute;\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3cc709c4] {\n  width: 100%;\n  height: 100%;\n}", ""]);
 
 // exports
 
@@ -39218,18 +39218,21 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "result__wrapper" },
-        [
-          _vm.data.length
-            ? [_c("result", { attrs: { data: _vm.data } })]
-            : _vm._e()
-        ],
-        2
-      )
+      _vm.data.length
+        ? [
+            _c(
+              "div",
+              {
+                staticClass: "result__wrapper",
+                style: { backgroundImage: "url(" + _vm.data[0].image + ")" }
+              },
+              [_c("result", { attrs: { data: _vm.data } })],
+              1
+            )
+          ]
+        : _vm._e()
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []

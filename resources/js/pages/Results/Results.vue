@@ -1,11 +1,11 @@
 <template>
   <div>
     <app-header></app-header>
-    <div class="result__wrapper">
-        <template v-if="data.length">
+    <template v-if="data.length">
+        <div class="result__wrapper" :style="{ backgroundImage: 'url(' + data[0].image + ')' }">
             <result :data="data"></result>
-        </template>
-    </div>
+        </div>
+    </template>
   </div>
 
 </template>
@@ -53,7 +53,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/storage/results/Loft.jpg');
     background-position: center;
     height: 100vh;
   }
