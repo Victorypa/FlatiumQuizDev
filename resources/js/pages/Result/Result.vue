@@ -1,4 +1,156 @@
 <template>
+  <div>
+    <app-header></app-header>
+
+    <div class="result__wrapper">
+
+    <div class="result__card">
+      <div class="result__title">
+        <span>Ваш стиль</span>
+      <div class="result__name">
+        ЛОФТ
+      </div>
+      </div>
+      <div class="result__desc">
+        <div class="result__info">
+          Стиль прекрасно подойдет свободолюбивым и творческим личностям, для которых важно наличие большого пространства и «воздуха» для жизни.<br>Лофт как стиль интерьера возник в середине 20 века. Его родиной принято считать индустриальную часть Манхэттена. Лофт появился в результате финансового кризиса – заводы и фабрики, расположенные в городской черте, были вынуждены перенести производство в пригороды из-за резкого повышения стоимости аренды земли.
+        </div>
+      <div class="result__share">
+        Покажи результат своим друзьям
+        <div class="result__socials">
+            <a class="result__link result__link--vk" href="#">VK</a>
+            <a class="result__link result__link--tw" href="#">Twitter</a>
+            <a class="result__link result__link--fb" href="#"></a>
+        </div>
+      </div>
+      </div>
+      <button type="button" name="button" class="result__button">
+        Смотреть стиль
+      </button>
+    </div>
+    </div>
+  </div>
+
+
+</template>
+
+<script>
+  import { results } from './index.js'
+
+  export default {
+    data () {
+      return {
+        results: []
+      }
+    },
+
+    mounted () {
+      this.init()
+    },
+
+    methods: {
+      init () {
+        this.results = results
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+.result {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/storage/results/Loft.jpg');
+    background-position: center;
+    height: 100vh;
+  }
+
+  &__card {
+    max-width: 765px;
+    width: 100%;
+
+    text-align: center;
+
+    background-color: #fff;
+
+    padding: 50px 0;
+    margin: 15px;
+    box-shadow: 0 0 76px rgba(61,61,61,0.75);
+    span {
+      color: #00afd8;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+  &__name {
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 43px;
+    // font-family: "Rubik";
+    font-weight: 400;
+    text-align: center;
+  }
+  &__desc {
+    width: 60%;
+
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+
+    color: #4b4b4b;
+  }
+  &__info {
+      padding: 45px 0;
+  }
+  &__socials {
+      padding: 20px 0;
+  }
+  &__link {
+content: '';
+width: 25px;
+height: 15px;
+fill: #a5a5a5;
+
+    &--vk {
+      content: url('/storage/results/vk-social-network-logo.svg');
+    }
+    &--tw {
+      content: url('/storage/results/twitter-logo-silhouette.svg');
+    }
+    &--fb {
+      content: url('/storage/results/vk-social-network-logo.svg');
+    }
+  }
+  &__button {
+    width: 170px;
+    height: 49px;
+    background-color: #009ec2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
+.logo {
+  position: absolute;
+
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 6%;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+</style>
+<template>
   <p>Results</p>
 </template>
 
