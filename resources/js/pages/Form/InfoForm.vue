@@ -76,6 +76,7 @@
                     <div class="button-wrapper">
                         <button type="submit"
                                 class="primary-button"
+                                @submit.prevent="go('phone')"
                                 id="phone"
                                 >
                            Далее
