@@ -8,7 +8,7 @@
     <div class="content-center">
         <div class="container">
 
-            <div v-if="booleans.name">
+            <div v-if="booleans.name" class="fade-in">
                 <h1 class="main-caption">
                   Как вас зовут?
                 </h1>
@@ -33,7 +33,7 @@
                 </form>
             </div>
 
-            <div v-if="booleans.email">
+            <div v-if="booleans.email" class="fade-in">
                 <h1 class="main-caption">
                   Укажите свой E-mail адрес, чтобы получить результат тестирования
                 </h1>
@@ -57,13 +57,13 @@
                 </form>
             </div>
 
-            <div v-if="booleans.phone">
+            <div v-if="booleans.phone" class="fade-in">
                 <h1 class="main-caption">
                   Укажите свой телефон, для получения консультации
                 </h1>
 
                 <form @submit.prevent="go('phone')">
-                    <div class="form-wrapper">
+                    <div class="form-wrapper fade-in">
                         <vue-tel-input v-model="person.phone"
                                         placeholder = ""
                                        :preferredCountries="['ru', 'us', 'ua']"
@@ -171,6 +171,14 @@
 </script>
 
 <style lang="scss" scoped>
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.7s;
+}
 
 .form-wrapper {
 position: relative;

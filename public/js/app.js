@@ -2216,6 +2216,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -6960,7 +6961,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\n.logo[data-v-19da4664] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-19da4664] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-19da4664] {\n  margin-top: 30px;\n}\n.vue-tel-input[data-v-19da4664] {\n  position: relative;\n  display: flex;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  box-shadow: none !important;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.vue-tel-input[data-v-19da4664]:focus-within {\n  border: 2px solid #eee !important;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 16px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\n.full-name--tel[data-v-19da4664] {\n  top: -6px;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\n  text-align: center;\n}\n.primary-button[data-v-19da4664] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 5px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button--disabled[data-v-19da4664] {\n  background-color: #ccc;\n}\n.primary-button[data-v-19da4664]:hover {\n  background-color: #aad7ea;\n}\n.content-center[data-v-19da4664] {\n  padding: 100px 0;\n}\n.dropdown .open[data-v-19da4664]:focus {\n  outline: none !important;\n}\n.dropdown[data-v-19da4664]:hover:focus {\n  outline: none !important;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-19da4664 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-19da4664 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-19da4664] {\n  opacity: 0;\n  -webkit-animation: fadeIn-data-v-19da4664 ease-in 1;\n          animation: fadeIn-data-v-19da4664 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\n.logo[data-v-19da4664] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-19da4664] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-19da4664] {\n  margin-top: 30px;\n}\n.vue-tel-input[data-v-19da4664] {\n  position: relative;\n  display: flex;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  box-shadow: none !important;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.vue-tel-input[data-v-19da4664]:focus-within {\n  border: 2px solid #eee !important;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 16px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\n.full-name--tel[data-v-19da4664] {\n  top: -6px;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\n  text-align: center;\n}\n.primary-button[data-v-19da4664] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 5px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button--disabled[data-v-19da4664] {\n  background-color: #ccc;\n}\n.primary-button[data-v-19da4664]:hover {\n  background-color: #aad7ea;\n}\n.content-center[data-v-19da4664] {\n  padding: 100px 0;\n}\n.dropdown .open[data-v-19da4664]:focus {\n  outline: none !important;\n}\n.dropdown[data-v-19da4664]:hover:focus {\n  outline: none !important;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
 
 // exports
 
@@ -38827,7 +38828,7 @@ var render = function() {
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
           _vm.booleans.name
-            ? _c("div", [
+            ? _c("div", { staticClass: "fade-in" }, [
                 _c("h1", { staticClass: "main-caption" }, [
                   _vm._v("\n                Как вас зовут?\n              ")
                 ]),
@@ -38892,7 +38893,7 @@ var render = function() {
             : _vm._e(),
           _vm._v(" "),
           _vm.booleans.email
-            ? _c("div", [
+            ? _c("div", { staticClass: "fade-in" }, [
                 _c("h1", { staticClass: "main-caption" }, [
                   _vm._v(
                     "\n                Укажите свой E-mail адрес, чтобы получить результат тестирования\n              "
@@ -38954,7 +38955,7 @@ var render = function() {
             : _vm._e(),
           _vm._v(" "),
           _vm.booleans.phone
-            ? _c("div", [
+            ? _c("div", { staticClass: "fade-in" }, [
                 _c("h1", { staticClass: "main-caption" }, [
                   _vm._v(
                     "\n                Укажите свой телефон, для получения консультации\n              "
@@ -38974,7 +38975,7 @@ var render = function() {
                   [
                     _c(
                       "div",
-                      { staticClass: "form-wrapper" },
+                      { staticClass: "form-wrapper fade-in" },
                       [
                         _c("vue-tel-input", {
                           attrs: {
@@ -39013,7 +39014,13 @@ var render = function() {
                         "button",
                         {
                           staticClass: "primary-button",
-                          attrs: { type: "submit", id: "phone" }
+                          attrs: { type: "submit", id: "phone" },
+                          on: {
+                            submit: function($event) {
+                              $event.preventDefault()
+                              _vm.go("phone")
+                            }
+                          }
                         },
                         [
                           _vm._v(
