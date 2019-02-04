@@ -17,5 +17,11 @@ class UsersTableSeeder extends Seeder
             'email' => 'konstantin.golomazov@flatium.ru',
             'password' => bcrypt('secret')
         ]);
+
+        User::create([
+            'name' => 'elijah',
+            'email' => 'elijah@gmail.com',
+            'password' => bcrypt('secret')
+        ]);
     }
 }
