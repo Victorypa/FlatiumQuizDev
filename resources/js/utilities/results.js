@@ -41,7 +41,8 @@ export const SKAN = [
     'A2B2C2D2',
     'A2B2C3D1',
     'A2B2C3D2',
-    'A2B2C3D3'
+    'A2B2C3D3',
+    'A2B2C2D1'
 ]
 
 export const CON = [

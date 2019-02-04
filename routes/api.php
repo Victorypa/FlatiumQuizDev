@@ -10,3 +10,8 @@ Route::group(['namespace' => 'Person', 'prefix' => 'person'], function () {
 Route::group(['namespace' => 'Card', 'prefix' => 'card'], function () {
     Route::post('/store', 'CardController@store');
 });
+
+
+Route::group(['namespace' => 'Calculator', 'prefix' => 'calculator'], function () {
+    Route::post('/', 'CalculatorController@store');
+});
