@@ -21,6 +21,7 @@ class CreateCalculatorsTable extends Migration
             $table->string('category')->nullable();
             $table->string('phone')->nullable();
             $table->string('name')->nullable();
+            $table->string('price')->nullable();
             $table->timestamps();
         });
     }
