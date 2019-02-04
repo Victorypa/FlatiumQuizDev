@@ -94,8 +94,6 @@ class CalculatorController extends Controller
         $this->addContact($calculator);
     }
 
-
-
     protected function addContact($calculator)
     {
         $this->login();
@@ -125,6 +123,66 @@ class CalculatorController extends Controller
                 'Content-Type' => 'application/json'
             ],
             'body' => json_encode($contacts)
+        ]);
+
+        $this->createLead($calculator, json_decode($response->getBody())->_embedded->items[0]->id);
+    }
+
+    protected function createLead($calculator, $contact_id)
+    {
+        $link = 'https://flatium.amocrm.ru/api/v2/leads';
+        $remont_id;
+        switch ($calculator->type) {
+            case 'new':
+                $remont_id = 1164115;
+                break;
+            case 'total_new':
+                $remont_id = 1164113;
+                break;
+            case 'old':
+                $remont_id = 1164117;
+                break;
+            default:
+                return null;
+                break;
+        }
+
+        $lead['add'] = array(
+            array(
+                'name' => $calculator->name,
+                'pipeline_id' => 1587214,
+                'contacts_id' => $contact_id,
+                'responsible_user_id' => 1028320,
+                'sale' => $calculator->price,
+                'tags' => array(
+                    $calculator->style, $calculator->category
+                ),
+                'custom_fields' => array(
+                    array(
+                        'id' => 549969,
+                        'values' => array(
+                            array(
+                                'value' => $calculator->square
+                            )
+                        )
+                    ),
+                    array(
+                        'id' => 565041,
+                        'values' => array(
+                            array(
+                                'value' => $remont_id
+                            )
+                        )
+                    )
+                )
+            )
+        );
+
+        $response = $this->client->request('POST', $link, [
+            'headers' => [
+                'Content-Type' => 'application/json'
+            ],
+            'body' => json_encode($lead)
         ]);
     }
 
