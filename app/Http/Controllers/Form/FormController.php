@@ -26,8 +26,10 @@ class FormController extends Controller
 
     public function store(Card $card, Request $request)
     {
+        $pipelineId = 1572109;
+        
         $person = $card->people()->create($request->all());
 
-        (new Crud($this->client, $person))->create();
+        (new Crud($this->client, $person, $pipelineId))->create();
     }
 }

@@ -9,14 +9,16 @@ class Crud
 {
     protected $client;
     protected $person;
+    protected $pipelineId;
 
-    public function __construct(Client $client, Person $person)
+    public function __construct(Client $client, Person $person, $pipelineId)
     {
         $this->client = new Client([
             'cookies' => true
         ]);
 
         $this->person = $person;
+        $this->pipelineId = $pipelineId;
     }
 
     public function create()
@@ -70,7 +72,7 @@ class Crud
             array(
                 'name' => $this->person->name,
                 'tags' => $this->person->card->result,
-                'pipeline_id' => 1572109,
+                'pipeline_id' => $this->pipelineId,
                 'contacts_id' => $contact_id,
                 'responsible_user_id' => 2211916,
             )
