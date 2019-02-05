@@ -42,6 +42,6 @@ class ContactCreate extends ContactServiceAbstract
             'body' => json_encode($contacts)
         ]);
 
-        dump($response);
+        return json_decode($response->getBody())->_embedded->items[0];
     }
 }
