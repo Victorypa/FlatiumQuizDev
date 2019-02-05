@@ -10,10 +10,9 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::group(['prefix' => 'cards'], function () {
     Route::get('/', 'Card\CardController@index');
-    Route::get('/{card}', 'Card\CardController@show');
 
-    Route::get('/{card}/rooms', 'Room\RoomController@index');
-    Route::post('/{card}/rooms/store', 'Room\RoomController@store');
+    Route::get('/rooms', 'Room\RoomController@index');
+    Route::post('/rooms/store', 'Room\RoomController@store');
 
     Route::get('/{card}/form', 'Form\FormController@index');
     Route::post('/{card}/form/store', 'Form\FormController@store');

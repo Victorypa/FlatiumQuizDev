@@ -2049,8 +2049,9 @@ __webpack_require__.r(__webpack_exports__);
         'option': this.selected_uuids.join(''),
         'result': result
       }).then(function (response) {
+        console.log(response.data);
         setTimeout(function () {
-          window.location.href = "/cards/".concat(response.data.id, "/rooms");
+          window.location.href = "/cards/rooms?card_id=".concat(response.data.id);
         }, 500);
       });
     }
@@ -2640,11 +2641,10 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     save: function save() {
-      var card_id = window.location.pathname.match(/\d+/g).toString();
-      axios.post("/cards/".concat(card_id, "/rooms/store"), {
+      axios.post("/cards/rooms/store", {
+        'card_id': window.location.search.match(/\d+/g).toString(),
         'data': this.selected_rooms
-      }).then(function (response) {
-        window.location.href = "/cards/".concat(card_id, "/form");
+      }).then(function (response) {// window.location.href = `/cards/${card_id}/form`
       });
     }
   }

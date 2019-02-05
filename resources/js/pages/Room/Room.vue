@@ -105,9 +105,10 @@
 <script>
 import ProgressBar from 'vue-simple-progress'
     export default {
-      components: {
-        ProgressBar
-      },
+        components: {
+          ProgressBar
+        },
+
         data () {
             return {
                 selected_rooms: []
@@ -127,11 +128,11 @@ import ProgressBar from 'vue-simple-progress'
             },
 
             save () {
-                let card_id = window.location.pathname.match(/\d+/g).toString()
-                axios.post(`/cards/${card_id}/rooms/store`, {
+                axios.post(`/cards/rooms/store`, {
+                    'card_id': window.location.search.match(/\d+/g).toString(),
                     'data': this.selected_rooms
                 }).then(response => {
-                    window.location.href = `/cards/${card_id}/form`
+                    // window.location.href = `/cards/${card_id}/form`
                 })
             }
         }

@@ -8,17 +8,17 @@ use App\Http\Controllers\Controller;
 
 class RoomController extends Controller
 {
-    public function index(Card $card)
+    public function index()
     {
         return view('rooms.index');
     }
 
-    public function store(Card $card, Request $request)
+    public function store(Request $request)
     {
-        foreach ($request->data as $room) {
-            $card->rooms()->create([
-                'name' => $room
-            ]);
-        }
+        // foreach ($request->data as $room) {
+        //     $card->rooms()->create([
+        //         'name' => $room
+        //     ]);
+        // }
     }
 }
