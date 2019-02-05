@@ -20,6 +20,7 @@ class CardController extends Controller
     public function show(Card $card)
     {
         return $card;
+        // dd($card);
     }
 
     public function store(Request $request)

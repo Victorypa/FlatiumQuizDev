@@ -41,7 +41,7 @@
       getResult () {
           this.results = results
 
-          axios.get(`/cards/${window.location.pathname.match(/\d+/g).toString()}`)
+          axios.get(`/cards/${window.location.search.match(/\d+/g).toString()}`)
                .then(response => {
                    this.result = response.data
                    this.data = this.results.filter(item => item.type === this.result.result)

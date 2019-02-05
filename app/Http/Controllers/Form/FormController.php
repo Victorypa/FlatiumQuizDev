@@ -19,16 +19,20 @@ class FormController extends Controller
         ]);
     }
 
-    public function index(Card $card)
+    public function index()
     {
         return view('forms.index');
     }
 
-    public function store(Card $card, Request $request)
+    public function store(Request $request)
     {
+        $person = Card::where('id', $request->card_id)->first()->people()->create([
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email
+        ]);
+
         $pipelineId = 1572109;
-        
-        $person = $card->people()->create($request->all());
 
         (new Crud($this->client, $person, $pipelineId))->create();
     }

@@ -127,7 +127,6 @@
 
         methods: {
           click (e) {
-            console.log(this.person.name, this.person.name === '');
             if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
               return
             } else {
@@ -154,12 +153,16 @@
                         break;
                     case 'phone':
                         if (this.person.name !== '' && this.person.email) {
-                            let card_id = window.location.pathname.match(/\d+/g).toString()
+                            let card_id = window.location.search.match(/\d+/g).toString()
 
-                            axios.post(`/cards/${card_id}/form/store`, this.person)
-                                 .then(response => {
-                                     window.location.href = `/cards/${card_id}/result`
-                                 })
+                            axios.post(`/cards/form/store`, {
+                                'card_id': card_id,
+                                'name': this.person.name,
+                                'email': this.person.email,
+                                'phone': this.person.phone,
+                            }).then(response => {
+                                window.location.href = `/cards/result?card_id=${card_id}`
+                            })
                         }
                         break;
                     default:

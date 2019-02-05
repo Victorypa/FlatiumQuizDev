@@ -2244,8 +2244,6 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
   },
   methods: {
     click: function click(e) {
-      console.log(this.person.name, this.person.name === '');
-
       if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
         return;
       } else {
@@ -2275,9 +2273,14 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
 
         case 'phone':
           if (this.person.name !== '' && this.person.email) {
-            var card_id = window.location.pathname.match(/\d+/g).toString();
-            axios.post("/cards/".concat(card_id, "/form/store"), this.person).then(function (response) {
-              window.location.href = "/cards/".concat(card_id, "/result");
+            var card_id = window.location.search.match(/\d+/g).toString();
+            axios.post("/cards/form/store", {
+              'card_id': card_id,
+              'name': this.person.name,
+              'email': this.person.email,
+              'phone': this.person.phone
+            }).then(function (response) {
+              window.location.href = "/cards/result?card_id=".concat(card_id);
             });
           }
 
@@ -2434,7 +2437,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.results = _index_js__WEBPACK_IMPORTED_MODULE_0__["results"];
-      axios.get("/cards/".concat(window.location.pathname.match(/\d+/g).toString())).then(function (response) {
+      axios.get("/cards/".concat(window.location.search.match(/\d+/g).toString())).then(function (response) {
         _this.result = response.data;
         _this.data = _this.results.filter(function (item) {
           return item.type === _this.result.result;
@@ -2641,10 +2644,12 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     save: function save() {
+      var card_id = window.location.search.match(/\d+/g).toString();
       axios.post("/cards/rooms/store", {
-        'card_id': window.location.search.match(/\d+/g).toString(),
+        'card_id': card_id,
         'data': this.selected_rooms
-      }).then(function (response) {// window.location.href = `/cards/${card_id}/form`
+      }).then(function (response) {
+        window.location.href = "/cards/form?card_id=".concat(card_id);
       });
     }
   }
@@ -52817,7 +52822,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOFT", function() { return LOFT; });
 var SK = ['A1B1C1D1', 'A1B1C1D2', 'A1B1C1D3', 'A1B1C1D4', 'A1B1C1D5', 'A1B1C1D6', 'A1B1C1D7', 'A1B1C1D8', 'A1B3C1D3', 'A1B3C2D1', 'A1B3C2D2', 'A1B3C2D3', 'A1B2C1D1', 'A1B2C1D2', 'A1B2C1D3', 'A1B2C2D1', 'A1B2C2D2', 'A1B2C2D3', 'A1B1C3D1', 'A1B1C3D2', 'A1B1C3D3'];
 var K = ['A1B3C3D1', 'A1B3C3D2', 'A1B3C3D3', 'A1B2C3D1', 'A1B2C3D2', 'A1B2C3D3'];
-var SKAN = ['A2B1C1D1', 'A2B1C1D2', 'A2B1C1D3', 'A2B1C2D1', 'A2B1C2D2', 'A2B1C2D3', 'A2B2C2D2', 'A2B2C2D3', 'A2B2C3D1', 'A2B2C3D2', 'A2B2C3D3', 'A2B2C2D1'];
+var SKAN = ['A2B1C1D1', 'A2B1C1D2', 'A2B1C1D3', 'A2B1C2D1', 'A2B1C2D2', 'A2B1C2D3', 'A2B2C1D2', 'A2B2C2D2', 'A2B2C2D3', 'A2B2C3D1', 'A2B2C3D2', 'A2B2C3D3', 'A2B2C2D1'];
 var CON = ['A2B3C1D1', 'A2B3C1D2', 'A2B3C1D3', 'A2B3C2D1', 'A2B3C2D2', 'A2B3C2D3', 'A2B1C3D1', 'A2B1C3D2', 'A2B1C3D3', 'A2B3C3D1', 'A2B3C3D2', 'A2B3C3D3'];
 var ECO = ['A3B1C1D1', 'A3B1C1D2', 'A3B1C1D3', 'A3B1C2D1', 'A3B1C2D2', 'A3B1C2D3', 'A3B2C1D1', 'A3B2C1D2', 'A3B2C1D3', 'A3B2C2D1', 'A3B2C2D2', 'A3B2C2D3', 'A3B2C3D1', 'A3B2C3D2', 'A3B2C3D3'];
 var LOFT = ['A3B3C1D1', 'A3B3C1D2', 'A3B3C1D3', 'A3B3C2D1', 'A3B3C2D2', 'A3B3C2D3', 'A3B1C3D1', 'A3B1C3D2', 'A3B1C3D3', 'A3B3C3D1', 'A3B3C3D2', 'A3B3C3D3'];

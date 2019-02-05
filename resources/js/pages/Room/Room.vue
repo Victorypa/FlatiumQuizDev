@@ -128,11 +128,12 @@ import ProgressBar from 'vue-simple-progress'
             },
 
             save () {
+                let card_id = window.location.search.match(/\d+/g).toString()
                 axios.post(`/cards/rooms/store`, {
-                    'card_id': window.location.search.match(/\d+/g).toString(),
+                    'card_id': card_id,
                     'data': this.selected_rooms
                 }).then(response => {
-                    // window.location.href = `/cards/${card_id}/form`
+                    window.location.href = `/cards/form?card_id=${card_id}`
                 })
             }
         }
