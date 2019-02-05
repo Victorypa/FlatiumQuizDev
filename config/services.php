@@ -41,8 +41,14 @@ return [
     ],
 
     'amocrm' => [
-        'link' => env('AMO_LOGIN_LINK'),
-        'token' => env('AMO_TOKEN'),
-        'email' => env('AMO_EMAIL')
+        'auth' => [
+            'link' => env('AMO_LOGIN_LINK'),
+            'token' => env('AMO_TOKEN'),
+            'email' => env('AMO_EMAIL')
+        ],
+
+        'lead' => [
+            'create_link' => env('AMO_CREATE_LEAD_LINK')
+        ]
     ]
 ];

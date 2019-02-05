@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\Amo\Auth\Login;
+use App\Services\Amo\Leads\LeadCreate;
 
 class AmoController extends Controller
 {
     public function index()
     {
-        Login::login();
+        $data = [];
+        $pipelineId = 1;
+        (new LeadCreate($this->client, $data))->create();
     }
 }

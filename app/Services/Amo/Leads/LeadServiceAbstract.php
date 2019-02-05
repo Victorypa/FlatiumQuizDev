@@ -1,7 +1,9 @@
 <?php
 
+namespace App\Services\Amo\Leads;
+
+use GuzzleHttp\Client;
 use App\Services\Amo\ServiceAbstract;
-use App\Services\Amo\Auth\Login;
 
 abstract class LeadServiceAbstract extends ServiceAbstract
 {
@@ -9,15 +11,11 @@ abstract class LeadServiceAbstract extends ServiceAbstract
 
     protected $pipelineId;
 
-    public function __construct(Client $client, $data, $pipelineId)
+    public function __construct(Client $client, $data = [], $pipelineId = 1028320)
     {
         parent::__construct($client);
 
         $this->data = $data;
-        $this->pipelineId = $pipelineIdl;
-
-        Login::login();
+        $this->pipelineId = $pipelineId;
     }
-
-    abstract public function create();
 }
