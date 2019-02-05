@@ -2,7 +2,9 @@
 
 namespace App\Services\Amo\Contact;
 
-class Create
+use App\Services\Amo\ServiceAbstract;
+
+class Create extends ServiceAbstract
 {
-    
+
 }

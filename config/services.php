@@ -41,6 +41,7 @@ return [
     ],
 
     'amocrm' => [
+        'link' => env('AMO_LOGIN_LINK'),
         'token' => env('AMO_TOKEN'),
         'email' => env('AMO_EMAIL')
     ]

@@ -10,10 +10,12 @@ abstract class ServiceAbstract
 
     protected $data;
 
-    protected $pipelineId;
-
-    public function __construct()
+    public function __construct(Client $client, ...$data)
     {
+        $this->client = new Client([
+            'cookies' => true
+        ]);
 
+        $this->data = $data;
     }
 }

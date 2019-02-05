@@ -2,10 +2,17 @@
 
 namespace App\Services\Amo\Auth;
 
-class Login
+use App\Services\Amo\ServiceAbstract;
+
+class Login extends ServiceAbstract
 {
-    public static function login()
+    public function login()
     {
-        
+        // $this->client->request('POST', $link, [
+        //     'form_params' => [
+        //         'USER_LOGIN' => config('services.amocrm.email'),
+        //         'USER_HASH' => config('services.amocrm.token'),
+        //     ],
+        // ]);
     }
 }

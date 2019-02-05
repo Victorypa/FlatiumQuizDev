@@ -2,7 +2,12 @@
 
 namespace App\Services\Amo\Leads;
 
-class Create
+use App\Services\Amo\Leads\LeadServiceAbstract;
+
+class Create extends LeadServiceAbstract
 {
-    
+    public function create()
+    {
+
+    }
 }
