@@ -19,4 +19,16 @@ abstract class ServiceAbstract
     }
 
     abstract public function create(Array $data);
+
+    protected function request(Array $data, $link)
+    {
+        $response = $this->client->request('POST', $link, [
+            'headers' => [
+                'Content-Type' => 'application/json'
+            ],
+            'body' => json_encode($data)
+        ]);
+
+        return json_decode($response->getBody())->_embedded->items[0];
+    }
 }

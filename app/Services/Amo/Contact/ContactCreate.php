@@ -35,13 +35,8 @@ class ContactCreate extends ServiceAbstract
             )
         );
 
-        $response = $this->client->request('POST', config('services.amocrm.contact.create_link'), [
-            'headers' => [
-                'Content-Type' => 'application/json'
-            ],
-            'body' => json_encode($contacts)
-        ]);
-
-        return json_decode($response->getBody())->_embedded->items[0];
+        return $this->request($contacts, config('services.amocrm.contact.create_link'));
     }
+
+
 }
