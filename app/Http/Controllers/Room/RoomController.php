@@ -15,10 +15,10 @@ class RoomController extends Controller
 
     public function store(Request $request)
     {
-        // foreach ($request->data as $room) {
-        //     $card->rooms()->create([
-        //         'name' => $room
-        //     ]);
-        // }
+        foreach ($request->data as $room) {
+            Card::where('id', $request->card_id)->first()->rooms()->create([
+                'name' => $room
+            ]);
+        }
     }
 }
