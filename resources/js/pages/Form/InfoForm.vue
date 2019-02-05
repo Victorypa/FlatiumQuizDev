@@ -161,7 +161,7 @@
                                 'email': this.person.email,
                                 'phone': this.person.phone,
                             }).then(response => {
-                                window.location.href = `/cards/result?card_id=${card_id}`
+                                // window.location.href = `/cards/result?card_id=${card_id}`
                             })
                         }
                         break;
