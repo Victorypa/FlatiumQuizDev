@@ -33,3 +33,6 @@ Route::group(['middleware' => 'auth', 'prefix' => 'panel', 'namespace' => 'panel
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/test/amo', 'AmoController@index');

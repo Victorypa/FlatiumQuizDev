@@ -8,6 +8,7 @@ class Login extends ServiceAbstract
 {
     public function login()
     {
+        dump($this->data);
         // $this->client->request('POST', $link, [
         //     'form_params' => [
         //         'USER_LOGIN' => config('services.amocrm.email'),
