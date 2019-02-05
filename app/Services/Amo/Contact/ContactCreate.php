@@ -2,22 +2,22 @@
 
 namespace App\Services\Amo\Contact;
 
-use App\Services\Amo\Contact\ContactServiceAbstract;
+use App\Services\Amo\ServiceAbstract;
 
-class ContactCreate extends ContactServiceAbstract
+class ContactCreate extends ServiceAbstract
 {
-    public function create()
+    public function create($name = '', $email = '', $phone = '', $responsible_user_id = 2211916)
     {
         $contacts['add'] = array(
             array(
-                'name' => $this->name,
-                'responsible_user_id' => $this->responsible_user_id,
+                'name' => $name,
+                'responsible_user_id' => $responsible_user_id,
                 'custom_fields' => array(
                     array(
                         'id' => 432595,
                         'values' => array(
                             array(
-                                 'value' => $this->email,
+                                 'value' => $email,
                                  'enum' => "WORK"
                             ),
                         )
@@ -26,7 +26,7 @@ class ContactCreate extends ContactServiceAbstract
                         'id' => 432593,
                         'values' => array(
                             array(
-                                'value' => $this->phone,
+                                'value' => $phone,
                                 'enum' => "WORK"
                             )
                         )
