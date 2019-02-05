@@ -18,5 +18,5 @@ abstract class ServiceAbstract
         (new Auth($this->client))->login();
     }
 
-    abstract public function create();
+    abstract public function create(Array $data);
 }

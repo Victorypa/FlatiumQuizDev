@@ -10,7 +10,14 @@ class AmoController extends Controller
 {
     public function index()
     {
-        $data = [
+        $data1 = [
+            'name' => 'ivan',
+            'email' => 'test@gmail.com',
+            'phone' => 'test',
+            'responsible_user_id' => '2211916',
+        ];
+
+        $data2 = [
             'name' => 'big',
             'tags' => ['one', 'two'],
             'sale' => 100,
@@ -19,10 +26,10 @@ class AmoController extends Controller
             ]
         ];
 
-        $pipelineId = 1587214;
+        $pipeline_id = 1587214;
 
-        $contact = (new ContactCreate($this->client))->create('ivan', 'elijah@gmail.com', 'phone call');
-        dd($contact);
-        // (new LeadCreate($this->client, $data, $pipelineId, $contact->id))->create();
+        $contact = (new ContactCreate($this->client))->create($data1);
+
+        // (new LeadCreate($this->client))->create($data, $pipeline_id, $contact->id);
     }
 }

@@ -6,18 +6,18 @@ use App\Services\Amo\ServiceAbstract;
 
 class ContactCreate extends ServiceAbstract
 {
-    public function create($name = '', $email = '', $phone = '', $responsible_user_id = 2211916)
+    public function create(Array $data)
     {
         $contacts['add'] = array(
             array(
-                'name' => $name,
-                'responsible_user_id' => $responsible_user_id,
+                'name' => $data['name'],
+                'responsible_user_id' => $data['responsible_user_id'],
                 'custom_fields' => array(
                     array(
                         'id' => 432595,
                         'values' => array(
                             array(
-                                 'value' => $email,
+                                 'value' => $data['email'],
                                  'enum' => "WORK"
                             ),
                         )
@@ -26,7 +26,7 @@ class ContactCreate extends ServiceAbstract
                         'id' => 432593,
                         'values' => array(
                             array(
-                                'value' => $phone,
+                                'value' => $data['phone'],
                                 'enum' => "WORK"
                             )
                         )
