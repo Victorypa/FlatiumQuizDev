@@ -24,8 +24,10 @@ class FormController extends Controller
             'email' => $request->email
         ]);
 
-        (new Crud($this->client, $person, $pipelineId))->create();
+        $pipelineId = 1572109;
         
+        (new Crud($this->client, $person, $pipelineId))->create();
+
         // $contact = (new ContactCreate($this->client))->create([
         //     'name' => $person->name,
         //     'email' => $person->name,
