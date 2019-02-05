@@ -8,7 +8,9 @@ use App\Models\Person;
 class Crud
 {
     protected $client;
+
     protected $person;
+
     protected $pipelineId;
 
     public function __construct(Client $client, Person $person, $pipelineId)

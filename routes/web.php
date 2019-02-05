@@ -9,7 +9,7 @@ Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::group(['prefix' => 'cards'], function () {
-    Route::get('/', 'Card\CardController@index');
+    Route::get('/', 'Card\CardController@index')->name('cards.index');
 
     Route::get('/rooms', 'Room\RoomController@index');
     Route::post('/rooms/store', 'Room\RoomController@store');
