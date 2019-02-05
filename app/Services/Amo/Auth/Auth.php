@@ -4,13 +4,18 @@ namespace App\Services\Amo\Auth;
 
 use GuzzleHttp\Client;
 
-class Login
+class Auth
 {
-    public static function login()
-    {
-        $client = new Client;
+    protected $client;
 
-        return $client->request('POST', config('services.amocrm.auth.link'), [
+    public function __construct(Client $client)
+    {
+        $this->client = $client;
+    }
+
+    public function login()
+    {
+         $this->client->request('POST', config('services.amocrm.auth.link'), [
             'form_params' => [
                 'USER_LOGIN' => config('services.amocrm.auth.email'),
                 'USER_HASH' => config('services.amocrm.auth.token'),

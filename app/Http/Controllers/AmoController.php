@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\Amo\Leads\LeadCreate;
+use App\Services\Amo\Contact\ContactCreate;
 
 class AmoController extends Controller
 {
     public function index()
     {
-        $data = [];
-        $pipelineId = 1;
-        (new LeadCreate($this->client, $data))->create();
+        $data['add'] = array(
+            'some'
+        );
+
+        (new ContactCreate($this->client, 'elijah new', 'elijah@gmail.com', 'phone call'))->create();
     }
 }

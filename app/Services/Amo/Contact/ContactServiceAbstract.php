@@ -7,12 +7,21 @@ use App\Services\Amo\ServiceAbstract;
 
 abstract class ContactServiceAbstract extends ServiceAbstract
 {
-    protected $data;
+    protected $name;
 
-    public function __construct(Client $client, $data = [])
+    protected $email;
+
+    protected $phone;
+
+    protected $responsible_user_id;
+
+    public function __construct(Client $client, $name = '', $email = '', $phone = '', $responsible_user_id = 2211916)
     {
         parent::__construct($client);
 
-        $this->data = $data;
+        $this->name = $name;
+        $this->email = $email;
+        $this->phone = $phone;
+        $this->responsible_user_id = $responsible_user_id;
     }
 }

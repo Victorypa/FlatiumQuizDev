@@ -14,7 +14,7 @@ class Controller extends BaseController
 
     protected $client;
 
-    public function __construct()
+    public function __construct(Client $client)
     {
         $this->client = new Client([
             'cookies' => true

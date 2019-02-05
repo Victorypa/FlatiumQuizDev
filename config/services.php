@@ -47,8 +47,8 @@ return [
             'email' => env('AMO_EMAIL')
         ],
 
-        'lead' => [
-            'create_link' => env('AMO_CREATE_LEAD_LINK')
+        'contact' => [
+            'create_link' => env('AMO_CREATE_CONTACT_LINK')
         ]
     ]
 ];
