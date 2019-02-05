@@ -2279,7 +2279,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
               'name': this.person.name,
               'email': this.person.email,
               'phone': this.person.phone
-            }).then(function (response) {// window.location.href = `/cards/result?card_id=${card_id}`
+            }).then(function (response) {
+              window.location.href = "/cards/result?card_id=".concat(card_id);
             });
           }
 

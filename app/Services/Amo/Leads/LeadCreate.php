@@ -14,6 +14,7 @@ class LeadCreate extends ServiceAbstract
                 'tags' => $this->exists('tags', $data),
                 'sale' => $this->exists('sale', $data),
                 'pipeline_id' => $this->exists('pipeline_id', $data),
+                'contacts_id' => $this->exists('contacts_id', $data),
                 'responsible_user_id' => $this->exists('responsible_user_id', $data),
                 'tags' => $this->exists('tags', $data),
                 'custom_fields' => array_key_exists('custom_fields', $data) ? array(

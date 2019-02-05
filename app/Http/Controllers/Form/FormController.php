@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Form;
 use App\Models\Card\Card;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Services\Amo\Crud;
+use App\Services\Amo\Contact\ContactCreate;
+use App\Services\Amo\Leads\LeadCreate;
 
 class FormController extends Controller
 {
@@ -22,10 +23,20 @@ class FormController extends Controller
             'email' => $request->email
         ]);
 
-        $pipelineId = 1572109;
+        $contact = (new ContactCreate($this->client))->create([
+            'name' => $person->name,
+            'email' => $person->name,
+            'phone' => $person->phone
+        ]);
 
-        
-
-        (new Crud($this->client, $person, $pipelineId))->create();
+        if (!empty($contact)) {
+            (new LeadCreate($this->client))->create([
+                'name' => $person->name,
+                'tags' => $person->card->result,
+                'pipeline_id' => 1572109,
+                'contacts_id' => $contact->id,
+                'responsible_user_id' => 2211916
+            ]);
+        }
     }
 }
