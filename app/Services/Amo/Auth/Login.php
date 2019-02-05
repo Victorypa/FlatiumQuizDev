@@ -2,18 +2,19 @@
 
 namespace App\Services\Amo\Auth;
 
-use App\Services\Amo\ServiceAbstract;
+use GuzzleHttp\Client;
 
-class Login extends ServiceAbstract
+class Login
 {
-    public function login()
+    public static function login()
     {
-        dump($this->data);
-        // $this->client->request('POST', $link, [
-        //     'form_params' => [
-        //         'USER_LOGIN' => config('services.amocrm.email'),
-        //         'USER_HASH' => config('services.amocrm.token'),
-        //     ],
-        // ]);
+        $client = new Client;
+
+        return $client->request('POST', config('services.amocrm.link'), [
+            'form_params' => [
+                'USER_LOGIN' => config('services.amocrm.email'),
+                'USER_HASH' => config('services.amocrm.token'),
+            ],
+        ]);
     }
 }

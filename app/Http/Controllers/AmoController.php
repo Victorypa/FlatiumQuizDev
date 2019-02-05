@@ -9,6 +9,6 @@ class AmoController extends Controller
 {
     public function index()
     {
-        (new Login())
+        Login::login();
     }
 }

@@ -8,14 +8,10 @@ abstract class ServiceAbstract
 {
     protected $client;
 
-    protected $data;
-
-    public function __construct(Client $client, ...$data)
+    public function __construct(Client $client)
     {
         $this->client = new Client([
             'cookies' => true
         ]);
-
-        $this->data = $data;
     }
 }
