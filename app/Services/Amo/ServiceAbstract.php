@@ -31,4 +31,9 @@ abstract class ServiceAbstract
 
         return json_decode($response->getBody())->_embedded->items[0];
     }
+
+    protected function exists($key, Array $data)
+    {
+        return array_key_exists($key, $data) ? $data[$key] : null;
+    }
 }

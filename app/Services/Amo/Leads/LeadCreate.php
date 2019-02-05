@@ -6,40 +6,37 @@ use App\Services\Amo\ServiceAbstract;
 
 class LeadCreate extends ServiceAbstract
 {
-    public function create($data = [], $pipeline_id = 1587214, $contact_id)
+    public function create(Array $data)
     {
-        dd($data, $pipeline_id, $contact_id);
-        // $lead['add'] = array(
-        //     array(
-        //         'name' => $data['name'],
-        //         'tags' => $data['tags'],
-        //         'sale' => $data['sale'],
-        //         'pipeline_id' => $pipeline_id,
-        //         'responsible_user_id' => 2211916,
-        //         'tags' => $data['tags'],
-        //         'custom_fields' => array(
-        //             array(
-        //                 'id' => 549969,
-        //                 'values' => array(
-        //                     array(
-        //                         'value' => $data['custom_fields']['square']
-        //                     )
-        //                 )
-        //             ),
-        //             array(
-        //                 'id' => 565041,
-        //                 'values' => array(
-        //                     array(
-        //                         'value' => $data['custom_fields']['remont_id']
-        //                     )
-        //                 )
-        //             )
-        //         )
-        //     )
-        // );
-        //
-        //
-        // dd($lead);
+        $leads['add'] = array(
+            array(
+                'name' => $data['name'],
+                'tags' => $this->exists('tags', $data),
+                'sale' => $this->exists('sale', $data),
+                'pipeline_id' => $this->exists('pipeline_id', $data),
+                'responsible_user_id' => $this->exists('responsible_user_id', $data),
+                'tags' => $this->exists('tags', $data),
+                'custom_fields' => array_key_exists('custom_fields', $data) ? array(
+                    array(
+                        'id' => 549969,
+                        'values' => array(
+                            array(
+                                'value' => $this->exists('square', $data['custom_fields'])
+                            )
+                        )
+                    ),
+                    array(
+                        'id' => 565041,
+                        'values' => array(
+                            array(
+                                'value' => $this->exists('remont_id', $data['custom_fields'])
+                            )
+                        )
+                    )
+                ) : null
+            )
+        );
 
+        return $this->request($leads, config('services.amocrm.lead.create_link'));
     }
 }

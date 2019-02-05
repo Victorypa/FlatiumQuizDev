@@ -16,20 +16,23 @@ class AmoController extends Controller
             'phone' => 'test',
             'responsible_user_id' => '2211916',
         ];
-        //
-        // $data2 = [
-        //     'name' => 'big',
-        //     'tags' => ['one', 'two'],
-        //     'sale' => 100,
-        //     'custom_fields' => [
-        //         'square' => 1
-        //     ]
-        // ];
-        //
+
         // $pipeline_id = 1587214;
 
         $contact = (new ContactCreate($this->client))->create($data1);
-        dd($contact);
-        // (new LeadCreate($this->client))->create($data, $pipeline_id, $contact->id);
+
+        $data2 = [
+            'name' => 'big',
+            'tags' => ['one', 'two'],
+            'sale' => 100,
+            'pipeline_id' => 1587214,
+            'contact_id' => $contact->id,
+            'custom_fields' => [
+                // 'square' => 1,
+                // 'remont_id' => 111
+            ]
+        ];
+
+        (new LeadCreate($this->client))->create($data2);
     }
 }

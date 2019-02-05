@@ -49,6 +49,10 @@ return [
 
         'contact' => [
             'create_link' => env('AMO_CREATE_CONTACT_LINK')
+        ],
+
+        'lead' => [
+            'create_link' => env('AMO_CREATE_LEAD_LINK')
         ]
     ]
 ];

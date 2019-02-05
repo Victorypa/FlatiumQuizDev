@@ -11,13 +11,13 @@ class ContactCreate extends ServiceAbstract
         $contacts['add'] = array(
             array(
                 'name' => $data['name'],
-                'responsible_user_id' => $data['responsible_user_id'],
+                'responsible_user_id' => $this->exists('responsible_user_id', $data),
                 'custom_fields' => array(
                     array(
                         'id' => 432595,
                         'values' => array(
                             array(
-                                 'value' => $data['email'],
+                                 'value' => $this->exists('email', $data),
                                  'enum' => "WORK"
                             ),
                         )
@@ -26,7 +26,7 @@ class ContactCreate extends ServiceAbstract
                         'id' => 432593,
                         'values' => array(
                             array(
-                                'value' => $data['phone'],
+                                'value' => $this->exists('phone', $data),
                                 'enum' => "WORK"
                             )
                         )
@@ -37,6 +37,5 @@ class ContactCreate extends ServiceAbstract
 
         return $this->request($contacts, config('services.amocrm.contact.create_link'));
     }
-
 
 }
