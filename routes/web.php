@@ -22,7 +22,9 @@ Route::group(['prefix' => 'cards'], function () {
     Route::get('/{card}', 'Card\CardController@show');
 });
 
-Route::get('/redirect', 'RedirectController@redirect');
+Route::group(['prefix' => 'clicks', 'namespace' => 'Card\Click'], function () {
+    Route::post('/store', 'ClickController@store');
+});
 
 Route::group(['middleware' => 'auth', 'prefix' => 'panel', 'namespace' => 'Panel'], function () {
     Route::get('/', 'PanelController@index')->name('panel.index');

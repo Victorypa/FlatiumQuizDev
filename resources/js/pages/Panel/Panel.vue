@@ -1,7 +1,6 @@
 <template>
     <div>
         <Navigation></Navigation>
-
         <div class="container">
             <div class="row mt-4">
                 <div class="col-md-12">
@@ -88,10 +87,6 @@
             return {
                 sortByDate: false
             }
-        },
-
-        created () {
-
         },
 
         methods: {
