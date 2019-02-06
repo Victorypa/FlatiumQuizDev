@@ -3,6 +3,7 @@
 namespace App\Services\Amo;
 
 use GuzzleHttp\Client;
+use App\Services\Amo\Auth\Auth;
 
 abstract class ServiceAbstract
 {
@@ -13,6 +14,8 @@ abstract class ServiceAbstract
         $this->client = new Client([
             'cookies' => true
         ]);
+
+        (new Auth($this->client))->login();
     }
 
     abstract public function create(Array $data);
