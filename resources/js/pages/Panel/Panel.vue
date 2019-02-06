@@ -8,23 +8,21 @@
                     <table class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th class="cursor">
+                                <th class="cursor" @click.prevent="sortByDate = !sortByDate">
                                     Дата и время
                                     <span>
-                                        <i class="fa fa-long-arrow-down"></i>
+                                        <font-awesome-icon icon="coffee" />
                                     </span>
                                 </th>
                                 <th>Имя</th>
                                 <th>E-mail</th>
                                 <th>Телефон</th>
                                 <th>Выбор по комнатам</th>
-                                <th>
-                                    Результат
-                                </th>
+                                <th>Результат</th>
                             </tr>
                         </thead>
                         <tbody v-if="cards.length">
-                            <card v-for="card in cards" :card="card" :key="card.id"></card>
+                            <card v-for="card in filteredCards" :card="card" :key="card.id"></card>
                         </tbody>
                     </table>
                 </div>
@@ -47,12 +45,26 @@
 
         data () {
             return {
-
+                sortByDate: false
             }
         },
 
         created () {
 
+        },
+
+        methods: {
+
+        },
+
+        computed: {
+            filteredCards () {
+                let data = this.cards
+
+                this.sortByDate ? data = _.orderBy(data, ['created_at'], ['desc']) : data = _.orderBy(data, ['created_at'], ['asc'])
+
+                return data
+            }
         }
     }
 </script>

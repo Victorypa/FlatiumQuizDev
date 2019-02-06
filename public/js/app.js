@@ -11794,8 +11794,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -11805,9 +11803,19 @@ __webpack_require__.r(__webpack_exports__);
     Card: _partials_Card__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   data: function data() {
-    return {};
+    return {
+      sortByDate: false
+    };
   },
-  created: function created() {}
+  created: function created() {},
+  methods: {},
+  computed: {
+    filteredCards: function filteredCards() {
+      var data = this.cards;
+      this.sortByDate ? data = _.orderBy(data, ['created_at'], ['desc']) : data = _.orderBy(data, ['created_at'], ['asc']);
+      return data;
+    }
+  }
 });
 
 /***/ }),
@@ -66293,12 +66301,51 @@ var render = function() {
                 staticStyle: { width: "100%" }
               },
               [
-                _vm._m(0),
+                _c("thead", [
+                  _c("tr", [
+                    _c(
+                      "th",
+                      {
+                        staticClass: "cursor",
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            _vm.sortByDate = !_vm.sortByDate
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Дата и время\n                                "
+                        ),
+                        _c(
+                          "span",
+                          [
+                            _c("font-awesome-icon", {
+                              attrs: { icon: "coffee" }
+                            })
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Имя")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("E-mail")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Телефон")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Выбор по комнатам")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("Результат")])
+                  ])
+                ]),
                 _vm._v(" "),
                 _vm.cards.length
                   ? _c(
                       "tbody",
-                      _vm._l(_vm.cards, function(card) {
+                      _vm._l(_vm.filteredCards, function(card) {
                         return _c("card", {
                           key: card.id,
                           attrs: { card: card }
@@ -66316,37 +66363,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { staticClass: "cursor" }, [
-          _vm._v(
-            "\n                                Дата и время\n                                "
-          ),
-          _c("span", [_c("i", { staticClass: "fa fa-long-arrow-down" })])
-        ]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Имя")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("E-mail")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Телефон")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Выбор по комнатам")]),
-        _vm._v(" "),
-        _c("th", [
-          _vm._v(
-            "\n                                Результат\n                            "
-          )
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
