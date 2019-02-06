@@ -11,8 +11,10 @@ abstract class ServiceAbstract
 
     public function __construct(Client $client)
     {
+        $jar = new \GuzzleHttp\Cookie\CookieJar;
+
         $this->client = new Client([
-            'cookies' => true
+            'cookies' => $jar
         ]);
 
         (new Auth($this->client))->login();
