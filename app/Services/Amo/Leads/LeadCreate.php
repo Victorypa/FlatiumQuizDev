@@ -9,8 +9,6 @@ class LeadCreate extends ServiceAbstract
 {
     public function create(Array $data)
     {
-        (new Auth($this->client))->login();
-
         $leads['add'] = array(
             array(
                 'name' => $data['name'],
