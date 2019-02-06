@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <panel></panel>
+    <panel :cards="{{ $cards }}"></panel>
 @endsection

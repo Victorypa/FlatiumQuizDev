@@ -7,7 +7,8 @@ try {
     require('bootstrap');
 } catch (e) {}
 
-window.axios = require('axios');
+window.axios = require('axios')
+window.moment = require('moment')
 
 window.axios.defaults.headers.common = {
     'X-CSRF-TOKEN': window.App.csrfToken,

@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.5.22"
     },
     "dependencies": {
+        "moment": "^2.24.0",
         "normalize-scss": "^7.0.1",
         "vue-router": "^3.0.2",
         "vue-simple-progress": "^1.1.0",
