@@ -24,8 +24,6 @@ class FormController extends Controller
             'email' => $request->email
         ]);
 
-        $pipelineId = 1572109;
-
         $contact = (new ContactCreate($this->client))->create([
             'name' => $person->name,
             'email' => $person->name,
