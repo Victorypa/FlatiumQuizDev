@@ -2,12 +2,15 @@
 
 namespace App\Services\Amo\Contact;
 
+use App\Services\Amo\Auth\Auth;
 use App\Services\Amo\ServiceAbstract;
 
 class ContactCreate extends ServiceAbstract
 {
     public function create(Array $data)
     {
+        (new Auth($this->client))->login();
+
         $contacts['add'] = array(
             array(
                 'name' => $data['name'],

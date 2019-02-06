@@ -3,7 +3,6 @@
 namespace App\Services\Amo;
 
 use GuzzleHttp\Client;
-use App\Services\Amo\Auth\Auth;
 
 abstract class ServiceAbstract
 {
@@ -11,13 +10,9 @@ abstract class ServiceAbstract
 
     public function __construct(Client $client)
     {
-        $jar = new \GuzzleHttp\Cookie\CookieJar;
-
         $this->client = new Client([
-            'cookies' => $jar
+            'cookies' => true
         ]);
-
-        (new Auth($this->client))->login();
     }
 
     abstract public function create(Array $data);

@@ -2,12 +2,15 @@
 
 namespace App\Services\Amo\Leads;
 
+use App\Services\Amo\Auth\Auth;
 use App\Services\Amo\ServiceAbstract;
 
 class LeadCreate extends ServiceAbstract
 {
     public function create(Array $data)
     {
+        (new Auth($this->client))->login();
+
         $leads['add'] = array(
             array(
                 'name' => $data['name'],

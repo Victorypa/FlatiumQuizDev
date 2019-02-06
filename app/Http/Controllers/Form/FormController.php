@@ -34,14 +34,14 @@ class FormController extends Controller
             'phone' => $person->phone
         ]);
 
-        if (!empty($contact)) {
-            (new LeadCreate($this->client))->create([
-                'name' => $person->name,
-                'tags' => $person->card->result,
-                'pipeline_id' => 1572109,
-                'contacts_id' => $contact->id,
-                'responsible_user_id' => 2211916
-            ]);
-        }
+        // if (!empty($contact)) {
+        //     (new LeadCreate($this->client))->create([
+        //         'name' => $person->name,
+        //         'tags' => $person->card->result,
+        //         'pipeline_id' => 1572109,
+        //         'contacts_id' => $contact->id,
+        //         'responsible_user_id' => 2211916
+        //     ]);
+        // }
     }
 }
