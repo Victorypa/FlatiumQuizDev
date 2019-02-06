@@ -6,13 +6,14 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-5">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Профиль
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" @click.prevent="logout">Выход</a>
+                <a class="dropdown-item" href="/panel/results">Результаты</a>
+                <a class="dropdown-item" @click.prevent="logout">Выход</a>
             </div>
           </li>
         </ul>

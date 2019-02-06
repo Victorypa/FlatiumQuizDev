@@ -11261,6 +11261,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
     logout: function logout() {
@@ -11829,6 +11830,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -65686,7 +65690,7 @@ var render = function() {
         "div",
         { staticClass: "collapse navbar-collapse justify-content-end" },
         [
-          _c("ul", { staticClass: "navbar-nav" }, [
+          _c("ul", { staticClass: "navbar-nav mr-5" }, [
             _c("li", { staticClass: "nav-item dropdown" }, [
               _c(
                 "a",
@@ -65711,6 +65715,15 @@ var render = function() {
                   attrs: { "aria-labelledby": "navbarDropdown" }
                 },
                 [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "dropdown-item",
+                      attrs: { href: "/panel/results" }
+                    },
+                    [_vm._v("Результаты")]
+                  ),
+                  _vm._v(" "),
                   _c(
                     "a",
                     {
@@ -66438,7 +66451,7 @@ var render = function() {
             }),
             0
           )
-        : _vm._e(),
+        : _c("td", [_vm._v("\n        Не выбрано\n    ")]),
       _vm._v(" "),
       _c("td", [_vm._v(_vm._s(_vm.card.result))])
     ],

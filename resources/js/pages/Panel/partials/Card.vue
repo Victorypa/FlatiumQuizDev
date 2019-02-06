@@ -22,6 +22,9 @@
                 {{ room.name + ',' }}
             </span>
         </td>
+        <td v-else>
+            Не выбрано
+        </td>
 
         <td>{{ card.result }}</td>
     </tr>
