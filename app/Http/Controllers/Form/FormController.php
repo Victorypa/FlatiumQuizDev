@@ -30,11 +30,11 @@ class FormController extends Controller
         // (new Crud($this->client, $person, $pipelineId))->create();
         (new Auth($this->client))->login();
 
-        $contact = (new ContactCreate($this->client))->create([
-            'name' => $person->name,
-            'email' => $person->name,
-            'phone' => $person->phone
-        ]);
+        // $contact = (new ContactCreate($this->client))->create([
+        //     'name' => $person->name,
+        //     'email' => $person->name,
+        //     'phone' => $person->phone
+        // ]);
 
         // if (!empty($contact)) {
         //     (new LeadCreate($this->client))->create([
