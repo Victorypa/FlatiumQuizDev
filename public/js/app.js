@@ -11795,6 +11795,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -11809,7 +11850,13 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   created: function created() {},
-  methods: {},
+  methods: {
+    filterCard: function filterCard(type) {
+      return this.cards.filter(function (card) {
+        return card.result === type;
+      }).length;
+    }
+  },
   computed: {
     filteredCards: function filteredCards() {
       var data = this.cards;
@@ -66314,6 +66361,51 @@ var render = function() {
                 staticStyle: { width: "100%" }
               },
               [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [
+                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("SK")))])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("K")))])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("SKAN")))])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("CON")))])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("ECO")))])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("LOFT")))])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row mt-4" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c(
+              "table",
+              {
+                staticClass: "table table-striped table-bordered",
+                staticStyle: { width: "100%" }
+              },
+              [
                 _c("thead", [
                   _c("tr", [
                     _c(
@@ -66376,7 +66468,28 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_c("strong", [_vm._v("SK")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("K")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("SKAN")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("CON")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("ECO")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("LOFT")])])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
