@@ -24,8 +24,13 @@
         "vue-template-compiler": "^2.5.22"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.14",
+        "@fortawesome/free-solid-svg-icons": "^5.7.1",
+        "@fortawesome/vue-fontawesome": "^0.1.5",
+        "i": "^0.3.6",
         "moment": "^2.24.0",
         "normalize-scss": "^7.0.1",
+        "npm": "^6.7.0",
         "vue-router": "^3.0.2",
         "vue-simple-progress": "^1.1.0",
         "vue-tel-input": "^2.0.13"

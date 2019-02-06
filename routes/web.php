@@ -25,7 +25,7 @@ Route::group(['prefix' => 'cards'], function () {
 Route::get('/redirect', 'RedirectController@redirect');
 
 Route::group(['middleware' => 'auth', 'prefix' => 'panel', 'namespace' => 'Panel'], function () {
-    Route::get('/', 'PanelController@index');
+    Route::get('/', 'PanelController@index')->name('panel.index');
 });
 
 

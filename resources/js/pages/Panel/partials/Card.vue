@@ -1,6 +1,8 @@
 <template>
     <tr>
-        <td>{{ moment(card.created_at).format('DD-MM-YYYY') }}</td>
+        <td>
+            {{ moment(card.created_at).format('DD-MM-YYYY') }}
+        </td>
 
         <template v-if="card.people.length">
             <td>

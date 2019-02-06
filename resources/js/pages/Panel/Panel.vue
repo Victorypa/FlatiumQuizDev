@@ -8,12 +8,19 @@
                     <table class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Дата и время</th>
+                                <th class="cursor">
+                                    Дата и время
+                                    <span>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </th>
                                 <th>Имя</th>
                                 <th>E-mail</th>
                                 <th>Телефон</th>
                                 <th>Выбор по комнатам</th>
-                                <th>Результат</th>
+                                <th>
+                                    Результат
+                                </th>
                             </tr>
                         </thead>
                         <tbody v-if="cards.length">
@@ -49,3 +56,9 @@
         }
     }
 </script>
+
+<style scoped>
+    .cursor {
+        cursor: pointer;
+    }
+</style>
