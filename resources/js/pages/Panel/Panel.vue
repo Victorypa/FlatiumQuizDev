@@ -1,6 +1,7 @@
 <template>
     <div>
         <Navigation></Navigation>
+
         <div class="container">
             <div class="row mt-4">
                 <div class="col-md-12">
@@ -50,9 +51,6 @@
                             <tr>
                                 <th class="cursor" @click.prevent="sortByDate = !sortByDate">
                                     Дата и время
-                                    <span>
-                                        <font-awesome-icon icon="coffee" />
-                                    </span>
                                 </th>
                                 <th>Имя</th>
                                 <th>E-mail</th>

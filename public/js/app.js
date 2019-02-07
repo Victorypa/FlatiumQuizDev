@@ -11547,11 +11547,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['title', 'cards', 'type'],
   methods: {
+    handle: function handle(uuid, id, type) {
+      this.addCard(uuid, type);
+      this.addId(id);
+    },
     addCard: function addCard(uuid, type) {
       this.$emit('selected-card', {
         uuid: uuid,
         type: type
       });
+    },
+    addId: function addId(id) {
+      if (id) {
+        axios.post('/cards/clicks/store', {
+          'name': id
+        });
+      }
     }
   }
 });
@@ -11833,8 +11844,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -11875,8 +11884,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -65998,7 +66005,7 @@ var render = function() {
                 on: {
                   click: function($event) {
                     $event.preventDefault()
-                    _vm.addCard(card.uuid, _vm.type)
+                    _vm.handle(card.uuid, card.id, _vm.type)
                   }
                 }
               },
@@ -66419,16 +66426,7 @@ var render = function() {
                       },
                       [
                         _vm._v(
-                          "\n                                Дата и время\n                                "
-                        ),
-                        _c(
-                          "span",
-                          [
-                            _c("font-awesome-icon", {
-                              attrs: { icon: "coffee" }
-                            })
-                          ],
-                          1
+                          "\n                                Дата и время\n                            "
                         )
                       ]
                     ),
@@ -66520,35 +66518,15 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _vm.card.people.length
+      _vm.card.people[0]
         ? [
-            _c("td", [
-              _vm._v(
-                "\n            " +
-                  _vm._s(_vm.card.people[0].name) +
-                  "\n        "
-              )
-            ]),
+            _c("td", [_vm._v(_vm._s(_vm.card.people[0].name))]),
             _vm._v(" "),
-            _c("td", [
-              _vm._v(
-                "\n            " +
-                  _vm._s(_vm.card.people[0].email) +
-                  "\n        "
-              )
-            ]),
+            _c("td", [_vm._v(_vm._s(_vm.card.people[0].email))]),
             _vm._v(" "),
-            _vm.card.people[0].phone
-              ? _c("td", [
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.card.people[0].phone) +
-                      "\n        "
-                  )
-                ])
-              : _c("td", [_vm._v("Нет")])
+            _c("td", [_vm._v(_vm._s(_vm.card.people[0].phone))])
           ]
-        : _vm._e(),
+        : [_c("td"), _vm._v(" "), _c("td"), _vm._v(" "), _c("td")],
       _vm._v(" "),
       _vm.card.rooms.length
         ? _c(
@@ -66562,7 +66540,7 @@ var render = function() {
             }),
             0
           )
-        : _c("td", [_vm._v("\n        Не выбрано\n    ")]),
+        : _c("td", [_vm._v("\n         \n    ")]),
       _vm._v(" "),
       _c("td", [_vm._v(_vm._s(_vm.card.result))])
     ],
@@ -79571,14 +79549,15 @@ var cards_booleans = {
 /*!****************************************************!*\
   !*** ./resources/js/pages/Cards/partials/Card.vue ***!
   \****************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Card_vue_vue_type_template_id_49d9c7e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Card.vue?vue&type=template&id=49d9c7e8&scoped=true& */ "./resources/js/pages/Cards/partials/Card.vue?vue&type=template&id=49d9c7e8&scoped=true&");
 /* harmony import */ var _Card_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card.vue?vue&type=script&lang=js& */ "./resources/js/pages/Cards/partials/Card.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Card_vue_vue_type_style_index_0_id_49d9c7e8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card.vue?vue&type=style&index=0&id=49d9c7e8&lang=scss&scoped=true& */ "./resources/js/pages/Cards/partials/Card.vue?vue&type=style&index=0&id=49d9c7e8&lang=scss&scoped=true&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Card_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Card_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _Card_vue_vue_type_style_index_0_id_49d9c7e8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card.vue?vue&type=style&index=0&id=49d9c7e8&lang=scss&scoped=true& */ "./resources/js/pages/Cards/partials/Card.vue?vue&type=style&index=0&id=49d9c7e8&lang=scss&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -79610,7 +79589,7 @@ component.options.__file = "resources/js/pages/Cards/partials/Card.vue"
 /*!*****************************************************************************!*\
   !*** ./resources/js/pages/Cards/partials/Card.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

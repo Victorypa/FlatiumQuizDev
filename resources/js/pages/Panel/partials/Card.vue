@@ -4,17 +4,15 @@
             {{ moment(card.created_at).format('DD-MM-YYYY') }}
         </td>
 
-        <template v-if="card.people.length">
-            <td>
-                {{ card.people[0].name }}
-            </td>
-            <td>
-                {{ card.people[0].email }}
-            </td>
-            <td v-if="card.people[0].phone">
-                {{ card.people[0].phone }}
-            </td>
-            <td v-else>Нет</td>
+        <template v-if="card.people[0]">
+            <td >{{ card.people[0].name }}</td>
+            <td>{{ card.people[0].email }}</td>
+            <td>{{ card.people[0].phone }}</td>
+        </template>
+        <template v-else>
+            <td></td>
+            <td></td>
+            <td></td>
         </template>
 
         <td v-if="card.rooms.length">
@@ -23,7 +21,7 @@
             </span>
         </td>
         <td v-else>
-            Не выбрано
+            &nbsp;
         </td>
 
         <td>{{ card.result }}</td>

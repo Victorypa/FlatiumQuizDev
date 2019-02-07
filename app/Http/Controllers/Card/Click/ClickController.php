@@ -10,11 +10,11 @@ class ClickController extends Controller
 {
     public function index()
     {
-
+        return Click::get();
     }
 
     public function store(Request $request)
     {
-        dd($request->all());
+        return Click::create($request->all());
     }
 }
