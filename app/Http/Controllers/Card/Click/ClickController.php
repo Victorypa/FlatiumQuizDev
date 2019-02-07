@@ -10,7 +10,8 @@ class ClickController extends Controller
 {
     public function index()
     {
-        return Click::get();
+        $clicks = Click::get();
+        return view('panel.clicks.index', compact('clicks'));
     }
 
     public function store(Request $request)

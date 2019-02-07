@@ -16,6 +16,7 @@ class CreateClicksTable extends Migration
         Schema::create('clicks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('path');
             $table->timestamps();
         });
     }

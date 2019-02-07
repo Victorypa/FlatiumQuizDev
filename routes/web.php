@@ -29,8 +29,9 @@ Route::group(['prefix' => 'clicks', 'namespace' => 'Card\Click'], function () {
     Route::post('/store', 'ClickController@store');
 });
 
-Route::group(['middleware' => 'auth', 'prefix' => 'panel', 'namespace' => 'Panel'], function () {
-    Route::get('/', 'PanelController@index')->name('panel.index');
+Route::group(['middleware' => 'auth', 'prefix' => 'panel'], function () {
+    Route::get('/', 'Panel\PanelController@index')->name('panel.index');
+    Route::get('/clicks', 'Card\Click\ClickController@index');
 });
 
 
