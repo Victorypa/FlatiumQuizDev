@@ -26,7 +26,7 @@ class FormController extends Controller
 
         $contact = (new ContactCreate($this->client))->create([
             'name' => $person->name,
-            'email' => $person->name,
+            'email' => $person->email,
             'phone' => $person->phone
         ]);
 
