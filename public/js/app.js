@@ -11809,6 +11809,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -66488,7 +66495,7 @@ var render = function() {
               _c("thead", [
                 _c(
                   "tr",
-                  _vm._l(item.elements, function(element) {
+                  _vm._l(item.elements, function(element, index) {
                     return _c(
                       "th",
                       [
@@ -66499,22 +66506,45 @@ var render = function() {
                             on: {
                               click: function($event) {
                                 $event.preventDefault()
-                                _vm.show(element)
+                                _vm.show(element.name)
                               }
                             }
                           },
                           [
                             _vm._v(
                               "\n                            " +
-                                _vm._s(element) +
+                                _vm._s(element.name) +
                                 "\n                        "
                             )
                           ]
                         ),
                         _vm._v(" "),
-                        _c("modal", { attrs: { name: element } }, [
-                          _c("p", [_vm._v(_vm._s(element))])
-                        ])
+                        _c(
+                          "modal",
+                          {
+                            attrs: {
+                              name: element.name,
+                              height: "auto",
+                              scrollable: true
+                            }
+                          },
+                          [
+                            _c("div", { staticClass: "container" }, [
+                              _c("div", { staticClass: "row" }, [
+                                _c("img", {
+                                  attrs: {
+                                    src:
+                                      "/storage/quiz/" +
+                                      item.group +
+                                      "/" +
+                                      element.link,
+                                    alt: ""
+                                  }
+                                })
+                              ])
+                            ])
+                          ]
+                        )
                       ],
                       1
                     )
@@ -66528,7 +66558,7 @@ var render = function() {
                   "tr",
                   _vm._l(item.elements, function(element) {
                     return _c("td", [
-                      _c("strong", [_vm._v(_vm._s(_vm.filter(element)))])
+                      _c("strong", [_vm._v(_vm._s(_vm.filter(element.name)))])
                     ])
                   }),
                   0
@@ -80033,28 +80063,100 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "payload", function() { return payload; });
 var payload = [{
   'group': 'A',
-  'elements': ['A1', 'A2', 'A3']
+  'elements': [{
+    'name': 'A1',
+    'link': 'A1.jpg'
+  }, {
+    'name': 'A2',
+    'link': 'A2.jpg'
+  }, {
+    'name': 'A3',
+    'link': 'A3.jpg'
+  }]
 }, {
   'group': 'B',
-  'elements': ['B1', 'B2', 'B3']
+  'elements': [{
+    'name': 'B1',
+    'link': 'B1.jpg'
+  }, {
+    'name': 'B2',
+    'link': 'B2.jpg'
+  }, {
+    'name': 'B3',
+    'link': 'B3.jpg'
+  }]
 }, {
   'group': 'C1',
-  'elements': ['C11', 'C12', 'C13']
+  'elements': [{
+    'name': 'C11',
+    'link': 'C1.jpg'
+  }, {
+    'name': 'C12',
+    'link': 'C2.jpg'
+  }, {
+    'name': 'C13',
+    'link': 'C3.jpg'
+  }]
 }, {
   'group': 'C2',
-  'elements': ['C21', 'C22', 'C23']
+  'elements': [{
+    'name': 'C21',
+    'link': 'C1.jpg'
+  }, {
+    'name': 'C22',
+    'link': 'C2.jpg'
+  }, {
+    'name': 'C23',
+    'link': 'C3.jpg'
+  }]
 }, {
   'group': 'C3',
-  'elements': ['C31', 'C32', 'C33']
+  'elements': [{
+    'name': 'C31',
+    'link': 'C1.jpg'
+  }, {
+    'name': 'C32',
+    'link': 'C2.jpg'
+  }, {
+    'name': 'C33',
+    'link': 'C3.jpg'
+  }]
 }, {
   'group': 'D1',
-  'elements': ['D11', 'D12', 'D13']
+  'elements': [{
+    'name': 'D11',
+    'link': 'D1.jpg'
+  }, {
+    'name': 'D12',
+    'link': 'D2.jpg'
+  }, {
+    'name': 'D13',
+    'link': 'D3.jpg'
+  }]
 }, {
   'group': 'D2',
-  'elements': ['D21', 'D22', 'D23']
+  'elements': [{
+    'name': 'D21',
+    'link': 'D1.jpg'
+  }, {
+    'name': 'D22',
+    'link': 'D2.jpg'
+  }, {
+    'name': 'D23',
+    'link': 'D3.jpg'
+  }]
 }, {
   'group': 'D3',
-  'elements': ['D31', 'D32', 'D33']
+  'elements': [{
+    'name': 'D31',
+    'link': 'D1.jpg'
+  }, {
+    'name': 'D32',
+    'link': 'D2.jpg'
+  }, {
+    'name': 'D33',
+    'link': 'D3.jpg'
+  }]
 }];
 
 /***/ }),

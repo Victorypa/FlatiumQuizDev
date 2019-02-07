@@ -11,13 +11,20 @@
                    >
                 <thead>
                     <tr>
-                        <th v-for="element in item.elements">
-                            <strong class="cursor" @click.prevent="show(element)">
-                                {{ element }}
+                        <th v-for="(element, index) in item.elements">
+                            <strong class="cursor" @click.prevent="show(element.name)">
+                                {{ element.name }}
                             </strong>
 
-                            <modal :name="element">
-                                <p>{{ element }}</p>
+                            <modal :name="element.name"
+                                    height="auto"
+                                    :scrollable="true"
+                                    >
+                                <div class="container">
+                                    <div class="row">
+                                        <img :src="'/storage/quiz/' + item.group + '/' + element.link" alt="" >
+                                    </div>
+                                </div>
                             </modal>
                         </th>
                     </tr>
@@ -25,7 +32,7 @@
                 <tbody>
                     <tr>
                         <td v-for="element in item.elements">
-                            <strong>{{ filter(element) }}</strong>
+                            <strong>{{ filter(element.name) }}</strong>
                         </td>
                     </tr>
                 </tbody>
