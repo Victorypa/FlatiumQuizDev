@@ -11545,9 +11545,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['title', 'cards', 'type'],
   methods: {
-    handle: function handle(uuid, id, type) {
+    handle: function handle(uuid, id, path, type) {
       this.addCard(uuid, type);
-      this.addId(id);
+      this.addId(id, path);
     },
     addCard: function addCard(uuid, type) {
       this.$emit('selected-card', {
@@ -11555,10 +11555,11 @@ __webpack_require__.r(__webpack_exports__);
         type: type
       });
     },
-    addId: function addId(id) {
+    addId: function addId(id, path) {
       if (id) {
         axios.post('/cards/clicks/store', {
-          'name': id
+          'name': id,
+          'path': path
         });
       }
     }
@@ -66016,7 +66017,7 @@ var render = function() {
                 on: {
                   click: function($event) {
                     $event.preventDefault()
-                    _vm.handle(card.uuid, card.id, _vm.type)
+                    _vm.handle(card.uuid, card.id, card.path, _vm.type)
                   }
                 }
               },

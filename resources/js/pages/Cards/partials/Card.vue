@@ -7,7 +7,7 @@
             <template v-for="card in cards">
                 <a class="image-card"
                    :class="card.classname"
-                   @click.prevent="handle(card.uuid, card.id, type)"
+                   @click.prevent="handle(card.uuid, card.id, card.path, type)"
                    >
                   <img alt="Более классический" :src="card.path">
                   <h4 class="image-text">{{ card.name }}</h4>
@@ -26,19 +26,20 @@
         ],
 
         methods: {
-            handle (uuid, id, type) {
+            handle (uuid, id, path, type) {
                 this.addCard(uuid, type)
-                this.addId(id)
+                this.addId(id, path)
             },
 
             addCard (uuid, type) {
                 this.$emit('selected-card', {uuid, type})
             },
 
-            addId (id) {
+            addId (id, path) {
                 if (id) {
                     axios.post('/cards/clicks/store', {
-                        'name': id
+                        'name': id,
+                        'path': path
                     })
                 }
             }
