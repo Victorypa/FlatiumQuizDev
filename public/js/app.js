@@ -11776,20 +11776,245 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['clicks'],
   components: {
     Navigation: _components_Panel_partials_Navigation__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  created: function created() {
-    console.log(this.clicks);
-  },
   methods: {
     filter: function filter(type) {
       return this.clicks.filter(function (row) {
         return row.name === type;
       }).length;
+    }
+  },
+  computed: {
+    filteredClicks: function filteredClicks() {
+      var data = this.clicks;
+      return [{
+        'group': 'A',
+        'A1': this.filter('A1'),
+        'A2': this.filter('A2'),
+        'A3': this.filter('A3')
+      }, {
+        'group': 'B',
+        'B1': this.filter('B1'),
+        'B2': this.filter('B2'),
+        'B3': this.filter('B3')
+      }, {
+        'group': 'C1',
+        'C11': this.filter('C11'),
+        'C12': this.filter('C12'),
+        'C13': this.filter('C13')
+      }, {
+        'group': 'C2',
+        'C21': this.filter('C21'),
+        'C22': this.filter('C22'),
+        'C23': this.filter('C23')
+      }, {
+        'group': 'C3',
+        'C31': this.filter('C31'),
+        'C32': this.filter('C32'),
+        'C33': this.filter('C33')
+      }, {
+        'group': 'D1',
+        'D11': this.filter('D11'),
+        'D12': this.filter('D12'),
+        'D13': this.filter('D13')
+      }, {
+        'group': 'D2',
+        'D21': this.filter('D21'),
+        'D22': this.filter('D22'),
+        'D23': this.filter('D23')
+      }, {
+        'group': 'D3',
+        'D31': this.filter('D31'),
+        'D32': this.filter('D32'),
+        'D33': this.filter('D33')
+      }];
     }
   }
 });
@@ -66363,9 +66588,284 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("Navigation")], 1)
+  return _c(
+    "div",
+    [
+      _c("Navigation"),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("A1")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("A2")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("A3")))])])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _c("thead", [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("B1")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("B2")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("B3")))])])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _c("thead", [
+              _vm._m(2),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C11")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C12")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C13")))])])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _c("thead", [
+              _vm._m(3),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C21")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C22")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C23")))])])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _c("thead", [
+              _vm._m(4),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C31")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C32")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("C33")))])])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _c("thead", [
+              _vm._m(5),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D11")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D12")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D13")))])])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _c("thead", [
+              _vm._m(6),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D21")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D22")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D23")))])])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered",
+            staticStyle: { width: "100%" }
+          },
+          [
+            _c("thead", [
+              _vm._m(7),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D31")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D32")))])]),
+                _vm._v(" "),
+                _c("td", [_c("strong", [_vm._v(_vm._s(_vm.filter("D33")))])])
+              ])
+            ])
+          ]
+        )
+      ])
+    ],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_c("strong", [_vm._v("A1")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("A2")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("A3")])])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_c("strong", [_vm._v("B1")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("B2")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("B3")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_c("strong", [_vm._v("C11")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("C12")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("C13")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_c("strong", [_vm._v("C21")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("C22")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("C23")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_c("strong", [_vm._v("C31")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("C32")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("C33")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_c("strong", [_vm._v("D11")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("D12")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("D13")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_c("strong", [_vm._v("D21")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("D22")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("D23")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_c("strong", [_vm._v("D31")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("D32")])]),
+      _vm._v(" "),
+      _c("th", [_c("strong", [_vm._v("D33")])])
+    ])
+  }
+]
 render._withStripped = true
 
 
