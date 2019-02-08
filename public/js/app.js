@@ -66627,8 +66627,12 @@ var render = function() {
                   _c("td", [
                     _vm._v(
                       "\n                        " +
-                        _vm._s(calculator.price) +
-                        "\n                    "
+                        _vm._s(
+                          new Intl.NumberFormat("ru-Ru").format(
+                            calculator.price
+                          )
+                        ) +
+                        " Р\n                    "
                     )
                   ]),
                   _vm._v(" "),

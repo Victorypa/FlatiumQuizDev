@@ -37,7 +37,7 @@
                             {{ calculator.name }}
                         </td>
                         <td>
-                            {{ calculator.price }}
+                            {{ new Intl.NumberFormat('ru-Ru').format(calculator.price) }} Р
                         </td>
                         <td>
                             {{ moment(calculator.created_at).format('MM-DD-YYYY') }}
