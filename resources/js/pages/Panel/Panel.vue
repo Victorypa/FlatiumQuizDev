@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation></Navigation>
+        <navigation />
 
         <div class="container">
             <div class="row mt-4">
@@ -72,13 +72,12 @@
 
 <script>
     import Card from './partials/Card'
-    import Navigation from '../../components/Panel/partials/Navigation'
 
     export default {
         props: ['cards'],
 
         components: {
-            Navigation, Card
+            Card
         },
 
         data () {

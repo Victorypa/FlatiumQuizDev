@@ -1,9 +1,8 @@
 <template>
     <div>
-        <Navigation></Navigation>
+        <navigation />
 
         <div class="container">
-
             <table class="table table-striped table-bordered mt-3"
                    style="width:100%"
                    v-for="(item, index) in payload"
@@ -37,22 +36,15 @@
                     </tr>
                 </tbody>
             </table>
-
-
         </div>
     </div>
 </template>
 
 <script>
-    import Navigation from '../../../components/Panel/partials/Navigation'
     import { payload } from './index'
 
     export default {
         props: ['clicks'],
-
-        components: {
-            Navigation
-        },
 
         data () {
             return {
