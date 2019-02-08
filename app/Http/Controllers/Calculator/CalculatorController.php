@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers\Calculator;
 
-use GuzzleHttp\Client;
-use App\Services\Amo\Crud;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Calculator\Calculator;
-
 use App\Services\Amo\Leads\LeadCreate;
 use App\Services\Amo\Contact\ContactCreate;
 
@@ -68,6 +65,13 @@ class CalculatorController extends Controller
             ]
         ]
     ];
+
+    public function index()
+    {
+        return view('panel.calculator.index', [
+            'calculators' => Calculator::get()
+        ]);
+    }
 
     public function store(Request $request)
     {

@@ -11,6 +11,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/panel/clicks">Клики</a>
+                <a class="dropdown-item" href="/panel/calculators">Калькулятор</a>
                 <a class="dropdown-item" @click.prevent="logout">Выход</a>
             </div>
           </li>

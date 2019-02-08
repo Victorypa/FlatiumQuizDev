@@ -8,3 +8,4 @@ Vue.component('app-header', require('./components/Header/Header').default)
 
 Vue.component('panel', require('./pages/Panel/Panel').default)
 Vue.component('clicks', require('./pages/Panel/Clicks/Clicks').default)
+Vue.component('calculators', require('./pages/Panel/Calculators/Calculators').default)
