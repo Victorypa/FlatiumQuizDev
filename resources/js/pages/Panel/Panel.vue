@@ -8,33 +8,15 @@
                     <table class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th><strong>SK</strong></th>
-                                <th><strong>K</strong></th>
-                                <th><strong>SKAN</strong></th>
-                                <th><strong>CON</strong></th>
-                                <th><strong>ECO</strong></th>
-                                <th><strong>LOFT</strong></th>
+                                <th v-for="(type, index) in types">
+                                    <strong>{{ type }}</strong>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <strong>{{ filterCard('SK') }}</strong>
-                                </td>
-                                <td>
-                                    <strong>{{ filterCard('K') }}</strong>
-                                </td>
-                                <td>
-                                    <strong>{{ filterCard('SKAN') }}</strong>
-                                </td>
-                                <td>
-                                    <strong>{{ filterCard('CON') }}</strong>
-                                </td>
-                                <td>
-                                    <strong>{{ filterCard('ECO') }}</strong>
-                                </td>
-                                <td>
-                                    <strong>{{ filterCard('LOFT') }}</strong>
+                                <td v-for="(type, index) in types">
+                                    <strong>{{ filterCard(type) }}</strong>
                                 </td>
                             </tr>
                         </tbody>
@@ -72,6 +54,7 @@
 
 <script>
     import Card from './partials/Card'
+    import { types } from './index.js'
 
     export default {
         props: ['cards'],
@@ -82,7 +65,8 @@
 
         data () {
             return {
-                sortByDate: false
+                sortByDate: false,
+                types
             }
         },
 

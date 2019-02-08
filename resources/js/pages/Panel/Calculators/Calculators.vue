@@ -8,11 +8,42 @@
                     <tr>
                         <th v-for="(header, index) in headers">
                             <strong class="cursor">
-                                {{ header }}
+                                {{ header.ru }}
                             </strong>
                         </th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr v-for="calculator in calculators">
+                        <td>
+                            {{ calculator.id }}
+                        </td>
+                        <td>
+                            {{ calculator.square }}
+                        </td>
+                        <td>
+                            {{ calculator.type }}
+                        </td>
+                        <td>
+                            {{ calculator.style }}
+                        </td>
+                        <td>
+                            {{ calculator.category }}
+                        </td>
+                        <td>
+                            {{ calculator.phone }}
+                        </td>
+                        <td>
+                            {{ calculator.name }}
+                        </td>
+                        <td>
+                            {{ calculator.price }}
+                        </td>
+                        <td>
+                            {{ moment(calculator.created_at).format('MM-DD-YYYY') }}
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -26,16 +57,9 @@
 
         data () {
             return {
-                headers
+                headers,
+                moment
             }
         },
-
-        computed: {
-            filteredCalculators () {
-                let data = this.calculators
-
-
-            }
-        }
     }
 </script>

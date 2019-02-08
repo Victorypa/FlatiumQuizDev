@@ -11791,18 +11791,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['calculators'],
   data: function data() {
     return {
-      headers: _index_js__WEBPACK_IMPORTED_MODULE_0__["headers"]
+      headers: _index_js__WEBPACK_IMPORTED_MODULE_0__["headers"],
+      moment: moment
     };
-  },
-  computed: {
-    filteredCalculators: function filteredCalculators() {
-      var data = this.calculators;
-    }
   }
 });
 
@@ -11898,24 +11925,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _partials_Card__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/Card */ "./resources/js/pages/Panel/partials/Card.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Panel/index.js");
 //
 //
 //
@@ -11971,6 +11981,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['cards'],
   components: {
@@ -11978,7 +11989,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      sortByDate: false
+      sortByDate: false,
+      types: _index_js__WEBPACK_IMPORTED_MODULE_1__["types"]
     };
   },
   methods: {
@@ -66542,7 +66554,7 @@ var render = function() {
                     _c("strong", { staticClass: "cursor" }, [
                       _vm._v(
                         "\n                            " +
-                          _vm._s(header) +
+                          _vm._s(header.ru) +
                           "\n                        "
                       )
                     ])
@@ -66550,7 +66562,89 @@ var render = function() {
                 }),
                 0
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "tbody",
+              _vm._l(_vm.calculators, function(calculator) {
+                return _c("tr", [
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.id) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.square) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.type) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.style) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.category) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.phone) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.name) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(calculator.price) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.moment(calculator.created_at).format("MM-DD-YYYY")
+                        ) +
+                        "\n                    "
+                    )
+                  ])
+                ])
+              }),
+              0
+            )
           ]
         )
       ])
@@ -66715,34 +66809,26 @@ var render = function() {
                 staticStyle: { width: "100%" }
               },
               [
-                _vm._m(0),
+                _c("thead", [
+                  _c(
+                    "tr",
+                    _vm._l(_vm.types, function(type, index) {
+                      return _c("th", [_c("strong", [_vm._v(_vm._s(type))])])
+                    }),
+                    0
+                  )
+                ]),
                 _vm._v(" "),
                 _c("tbody", [
-                  _c("tr", [
-                    _c("td", [
-                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("SK")))])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("K")))])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("SKAN")))])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("CON")))])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("ECO")))])
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("strong", [_vm._v(_vm._s(_vm.filterCard("LOFT")))])
-                    ])
-                  ])
+                  _c(
+                    "tr",
+                    _vm._l(_vm.types, function(type, index) {
+                      return _c("td", [
+                        _c("strong", [_vm._v(_vm._s(_vm.filterCard(type)))])
+                      ])
+                    }),
+                    0
+                  )
                 ])
               ]
             )
@@ -66813,28 +66899,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_c("strong", [_vm._v("SK")])]),
-        _vm._v(" "),
-        _c("th", [_c("strong", [_vm._v("K")])]),
-        _vm._v(" "),
-        _c("th", [_c("strong", [_vm._v("SKAN")])]),
-        _vm._v(" "),
-        _c("th", [_c("strong", [_vm._v("CON")])]),
-        _vm._v(" "),
-        _c("th", [_c("strong", [_vm._v("ECO")])]),
-        _vm._v(" "),
-        _c("th", [_c("strong", [_vm._v("LOFT")])])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -80153,7 +80218,34 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "headers", function() { return headers; });
-var headers = ['Площадь', 'Тип', 'Стиль', 'Категория', 'Телефон', 'ФИО', 'Стоимость'];
+var headers = [{
+  'en': 'id',
+  'ru': '#'
+}, {
+  'en': 'square',
+  'ru': 'Площадь'
+}, {
+  'en': 'type',
+  'ru': 'Тип'
+}, {
+  'en': 'style',
+  'ru': 'Стиль'
+}, {
+  'en': 'category',
+  'ru': 'Категория'
+}, {
+  'en': 'phone',
+  'ru': 'Телефон'
+}, {
+  'en': 'name',
+  'ru': 'ФИО'
+}, {
+  'en': 'price',
+  'ru': 'Стоимость'
+}, {
+  'en': 'created_at',
+  'ru': 'Дата'
+}];
 
 /***/ }),
 
@@ -80438,6 +80530,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Panel_vue_vue_type_template_id_111b2aa0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Panel/index.js":
+/*!*******************************************!*\
+  !*** ./resources/js/pages/Panel/index.js ***!
+  \*******************************************/
+/*! exports provided: types */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "types", function() { return types; });
+var types = ['SK', 'K', 'SKAN', 'CON', 'ECO', 'LOFT'];
 
 /***/ }),
 
