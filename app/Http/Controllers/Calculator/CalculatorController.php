@@ -97,7 +97,10 @@ class CalculatorController extends Controller
                 'tags' => array($request->get('type'), $request->get('style'), $request->get('category')),
                 'pipeline_id' => $pipelineId,
                 'contacts_id' => $contact->id,
-                'responsible_user_id' => 2211916
+                'responsible_user_id' => 2211916,
+                'custom_fields' => array(
+                    'square' => $request->get('square')
+                )
             ]);
         }
     }
