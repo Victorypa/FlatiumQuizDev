@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <script>
             window.App = {!! json_encode([
@@ -29,7 +29,7 @@
             @yield('content')
         </div>
 
-        <script src="{{ secure_asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
         @yield('scripts')
 
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPTLKSR"

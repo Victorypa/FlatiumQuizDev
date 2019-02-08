@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Calculator\Calculator;
 
+use App\Services\Amo\Leads\LeadCreate;
+use App\Services\Amo\Contact\ContactCreate;
+
 class CalculatorController extends Controller
 {
     protected $mappings = [
@@ -66,15 +69,6 @@ class CalculatorController extends Controller
         ]
     ];
 
-    protected $client;
-
-    public function __construct()
-    {
-        $this->client = new Client([
-            'cookies' => true
-        ]);
-    }
-
     public function store(Request $request)
     {
         $pipelineId = 1028320;
@@ -91,110 +85,19 @@ class CalculatorController extends Controller
             'price' => $price * (int) $request->get('square')
         ]);
 
-        $this->addContact($calculator);
-    }
-
-    protected function addContact($calculator)
-    {
-        $this->login();
-
-        $link = 'https://flatium.amocrm.ru/api/v2/contacts';
-
-        $contacts['add'] = array(
-            array(
-                'name' => $calculator->name,
-                'responsible_user_id' => 2211916,
-                'custom_fields' => array(
-                    array(
-                        'id' => 432593,
-                        'values' => array(
-                            array(
-                                'value' => $calculator->phone,
-                                'enum' => "WORK"
-                            )
-                        )
-                    )
-                )
-            )
-        );
-
-        $response = $this->client->request('POST', $link, [
-            'headers' => [
-                'Content-Type' => 'application/json'
-            ],
-            'body' => json_encode($contacts)
+        $contact = (new ContactCreate($this->client))->create([
+            'name' => $request->get('name'),
+            'phone' => $request->get('phone')
         ]);
 
-        $this->createLead($calculator, json_decode($response->getBody())->_embedded->items[0]->id);
-    }
-
-    protected function createLead($calculator, $contact_id)
-    {
-        $link = 'https://flatium.amocrm.ru/api/v2/leads';
-        $remont_id;
-        switch ($calculator->type) {
-            case 'new':
-                $remont_id = 1164115;
-                break;
-            case 'total_new':
-                $remont_id = 1164113;
-                break;
-            case 'old':
-                $remont_id = 1164117;
-                break;
-            default:
-                return null;
-                break;
+        if (!empty($contact)) {
+            (new LeadCreate($this->client))->create([
+                'name' => $request->get('name'),
+                'tags' => array($request->get('type'), $request->get('style'), $request->get('category')),
+                'pipeline_id' => $pipelineId,
+                'contacts_id' => $contact->id,
+                'responsible_user_id' => 2211916
+            ]);
         }
-
-        $lead['add'] = array(
-            array(
-                'name' => $calculator->name,
-                'pipeline_id' => 1587214,
-                'contacts_id' => $contact_id,
-                'responsible_user_id' => 1028320,
-                'sale' => $calculator->price,
-                'tags' => array(
-                    $calculator->style, $calculator->category
-                ),
-                'custom_fields' => array(
-                    array(
-                        'id' => 549969,
-                        'values' => array(
-                            array(
-                                'value' => $calculator->square
-                            )
-                        )
-                    ),
-                    array(
-                        'id' => 565041,
-                        'values' => array(
-                            array(
-                                'value' => $remont_id
-                            )
-                        )
-                    )
-                )
-            )
-        );
-
-        $response = $this->client->request('POST', $link, [
-            'headers' => [
-                'Content-Type' => 'application/json'
-            ],
-            'body' => json_encode($lead)
-        ]);
-    }
-
-    protected function login()
-    {
-        $link= 'https://flatium.amocrm.ru/private/api/auth.php?type=json';
-
-        $this->client->request('POST', $link, [
-            'form_params' => [
-                'USER_LOGIN' => config('services.amocrm.email'),
-                'USER_HASH' => config('services.amocrm.token'),
-            ],
-        ]);
     }
 }
