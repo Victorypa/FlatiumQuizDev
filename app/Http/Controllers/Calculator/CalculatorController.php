@@ -73,7 +73,7 @@ class CalculatorController extends Controller
     {
         $pipelineId = 1028320;
 
-        $price = $this->mappings[$request->get('style')][$request->get('category')][$request->get('type')];
+        $price = $this->mappings[$request->get('style')][$request->get('category')][$request->get('type')] * $request->get('square');
 
         $calculator = Calculator::create([
             'square' => $request->get('square'),
@@ -93,6 +93,7 @@ class CalculatorController extends Controller
         if (!empty($contact)) {
             (new LeadCreate($this->client))->create([
                 'name' => $request->get('name'),
+                'sale' => $price,
                 'tags' => array($request->get('type'), $request->get('style'), $request->get('category')),
                 'pipeline_id' => $pipelineId,
                 'contacts_id' => $contact->id,
