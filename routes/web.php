@@ -4,11 +4,10 @@ Route::get('/', function () {
     return redirect('/cards');
 });
 
-Route::group(['middleware' => 'https'], function () {
-    Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-    Route::post('/login', 'Auth\LoginController@login');
-    Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
-});
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+
 
 Route::group(['prefix' => 'cards'], function () {
     Route::get('/', 'Card\CardController@index')->name('cards.index');
