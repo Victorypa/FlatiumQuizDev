@@ -3340,74 +3340,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['data'] //
   // methods: {
@@ -7994,7 +7926,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".result__wrapper[data-v-2f0f5870] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 30px;\n  background-image: url(\"/storage/results/Loft.jpg\");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  height: auto;\n}\n.result__card[data-v-2f0f5870] {\n  max-width: 765px;\n  width: 100%;\n  text-align: center;\n  background-color: #fff;\n  padding: 50px 0;\n  margin: 35px;\n  box-shadow: 0 0 76px rgba(61, 61, 61, 0.75);\n}\n.result__card span[data-v-2f0f5870] {\n  color: #00afd8;\n  font-size: 18px;\n  text-transform: uppercase;\n}\n.result__name[data-v-2f0f5870] {\n  font-size: 36px;\n  letter-spacing: 0px;\n  line-height: 43px;\n  font-weight: 400;\n  text-align: center;\n}\n.result__desc[data-v-2f0f5870] {\n  width: 65%;\n  margin: 0 auto;\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n  color: #4b4b4b;\n}\n.result__info[data-v-2f0f5870] {\n  padding: 45px 0;\n}\n.result__socials[data-v-2f0f5870] {\n  padding: 20px 0;\n}\n.result__link[data-v-2f0f5870] {\n  content: \"\";\n  width: 25px;\n  height: 15px;\n  fill: #a5a5a5;\n}\n.result__link--vk[data-v-2f0f5870] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n.result__link--tw[data-v-2f0f5870] {\n  content: url(\"/storage/results/twitter-logo-silhouette.svg\");\n}\n.result__link--fb[data-v-2f0f5870] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n.logo[data-v-2f0f5870] {\n  position: absolute;\n  width: 120px;\n  margin-top: 10px;\n  margin-left: 6%;\n}\n.logo__img[data-v-2f0f5870] {\n  width: 100%;\n  height: 100%;\n}\n.card-button[data-v-2f0f5870] {\n  width: 115px;\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n}\n.card-button__info[data-v-2f0f5870] {\n  font-size: 10px;\n  color: #4b4b4b;\n  line-height: 16px;\n  padding-top: 15px;\n}\n.card-button__info[data-v-2f0f5870]:hover {\n  color: #00afd8;\n}\n.card-button[data-v-2f0f5870]:focus {\n  outline: none;\n}\n@media (max-width: 500px) {\n.result__name[data-v-2f0f5870] {\n    font-size: 25px;\n}\n}", ""]);
+exports.push([module.i, ".result__wrapper[data-v-2f0f5870] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 30px;\n  background-image: url(\"/storage/results/Loft.jpg\");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  height: 100vh;\n}\n.result__card[data-v-2f0f5870] {\n  max-width: 765px;\n  width: 100%;\n  text-align: center;\n  background-color: #fff;\n  padding: 50px 0;\n  margin: 35px;\n  box-shadow: 0 0 76px rgba(61, 61, 61, 0.75);\n}\n.result__card span[data-v-2f0f5870] {\n  color: #00afd8;\n  font-size: 18px;\n  text-transform: uppercase;\n}\n.result__text[data-v-2f0f5870] {\n  display: block;\n  padding-bottom: 45px;\n}\n.result__name[data-v-2f0f5870] {\n  font-size: 36px;\n  letter-spacing: 0px;\n  line-height: 43px;\n  font-weight: 400;\n  text-align: center;\n}\n.result__desc[data-v-2f0f5870] {\n  width: 65%;\n  margin: 0 auto;\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n  color: #4b4b4b;\n}\n.result__info[data-v-2f0f5870] {\n  padding: 45px 0;\n}\n.result__socials[data-v-2f0f5870] {\n  padding: 20px 0;\n}\n.result__link[data-v-2f0f5870] {\n  content: \"\";\n  width: 25px;\n  height: 15px;\n  fill: #a5a5a5;\n}\n.result__link--vk[data-v-2f0f5870] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n.result__link--tw[data-v-2f0f5870] {\n  content: url(\"/storage/results/twitter-logo-silhouette.svg\");\n}\n.result__link--fb[data-v-2f0f5870] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n.logo[data-v-2f0f5870] {\n  position: absolute;\n  width: 120px;\n  margin-top: 10px;\n  margin-left: 6%;\n}\n.logo__img[data-v-2f0f5870] {\n  width: 100%;\n  height: 100%;\n}\n.card-button[data-v-2f0f5870] {\n  width: 115px;\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n}\n.card-button__info[data-v-2f0f5870] {\n  font-size: 10px;\n  color: #4b4b4b;\n  line-height: 16px;\n  padding-top: 15px;\n}\n.card-button__info[data-v-2f0f5870]:hover {\n  color: #00afd8;\n}\n.card-button[data-v-2f0f5870]:focus {\n  outline: none;\n}\n@media (max-width: 500px) {\n.result__name[data-v-2f0f5870] {\n    font-size: 25px;\n}\n.result__text[data-v-2f0f5870] {\n    display: none;\n}\n}\n.primary-button[data-v-2f0f5870] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  width: 200px;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 10px;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-2f0f5870]:hover {\n  background-color: #00a4d8;\n}", ""]);
 
 // exports
 
@@ -61375,509 +61307,43 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "result__desc" }, [
       _c("div", { staticClass: "result__info" }, [
-        _vm._v("\n      " + _vm._s(_vm.data[0].description) + "\n    ")
+        _vm._v("\n      " + _vm._s(_vm.data[0].description1) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "result__text" }, [
+        _vm._v("\n      " + _vm._s(_vm.data[0].description2) + "\n    ")
       ])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "card-button__wrapper" }, [
-      _c("button", { staticClass: "card-button", attrs: { type: "button" } }, [
-        _c(
-          "svg",
-          {
-            attrs: {
-              width: "56px",
-              height: "36px",
-              viewBox: "0 0 112 96",
-              version: "1.1",
-              xmlns: "http://www.w3.org/2000/svg",
-              "xmlns:xlink": "http://www.w3.org/1999/xlink"
-            }
-          },
-          [
-            _c("defs"),
-            _vm._v(" "),
-            _c(
-              "g",
-              {
-                attrs: {
-                  id: "Option-2---button-&-talkback-screens",
-                  stroke: "none",
-                  "stroke-width": "1",
-                  fill: "none",
-                  "fill-rule": "evenodd",
-                  "stroke-linecap": "round",
-                  "stroke-linejoin": "round"
-                }
-              },
-              [
-                _c(
-                  "g",
-                  {
-                    attrs: {
-                      id: "Kind-of-Home",
-                      transform: "translate(-306.000000, -370.000000)",
-                      stroke: "#00afd8"
-                    }
-                  },
-                  [
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          id: "home-kinds",
-                          transform: "translate(280.000000, 339.000000)"
-                        }
-                      },
-                      [
-                        _c("g", { attrs: { id: "Group-7" } }, [
-                          _c("g", { attrs: { id: "House" } }, [
-                            _c(
-                              "g",
-                              {
-                                attrs: {
-                                  transform: "translate(27.000000, 32.000000)"
-                                }
-                              },
-                              [
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M30.8466708,90.8055185 C32.9130798,90.8055185 34.5882353,92.3059664 34.5882353,94.1568627 L7.68627451,94.1568627 C7.67623132,92.6194741 8.35614952,91.1429022 9.57335988,90.0589408 C10.7905702,88.9749795 12.4429835,88.3745422 14.1592932,88.3925506",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M13.4509804,87.8620559 C14.685735,84.2933445 18.3910734,82.1208233 22.2054026,82.7291463 C26.0197319,83.3374693 28.8208761,86.5476677 28.8235294,90.3137255",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M101.934258,90.7856897 C104.006439,90.7856897 105.686275,92.2950153 105.686275,94.1568627 L78.7843137,94.1568627 C78.8048065,90.9807616 81.665355,88.4105695 85.2002625,88.3921569",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M84.5490196,87.8620559 C85.7837742,84.2933445 89.4891126,82.1208233 93.3034419,82.7291463 C97.1177711,83.3374693 99.9189153,86.5476677 99.9215686,90.3137255",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M11.5294118,88.3921569 L11.5294118,38.4313725",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M99.9215686,38.4313725 L99.9215686,84.5490196",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    id: "Rectangle-path",
-                                    x: "38.4313725",
-                                    y: "86.4705882",
-                                    width: "32.6666667",
-                                    height: "7.68627451"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    id: "Rectangle-path",
-                                    x: "46.1176471",
-                                    y: "57.6470588",
-                                    width: "19.2156863",
-                                    height: "28.8235294"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    id: "Rectangle-path",
-                                    x: "21.1372549",
-                                    y: "57.6470588",
-                                    width: "15.372549",
-                                    height: "15.372549"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    id: "Rectangle-path",
-                                    x: "74.9411765",
-                                    y: "57.6470588",
-                                    width: "15.372549",
-                                    height: "15.372549"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    id: "Rectangle-path",
-                                    x: "48.0392157",
-                                    y: "26.9019608",
-                                    width: "15.372549",
-                                    height: "13.4509804"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M55.7254902,1.92156863 L19.2156863,38.4313725",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M55.7254902,1.92156863 L92.2352941,38.4313725",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d:
-                                      "M82.627451,5.76470588 L59.5686275,5.76470588",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("polyline", {
-                                  attrs: {
-                                    id: "Shape",
-                                    points:
-                                      "92.7530821 38.4313725 103.764706 38.4313725 103.764706 5.76470588 92.2352941 5.76470588"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("polyline", {
-                                  attrs: {
-                                    id: "Shape",
-                                    points:
-                                      "19.2900186 38.4313725 7.68627451 38.4313725 7.68627451 5.76470588 51.8823529 5.76470588"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    id: "Rectangle-path",
-                                    x: "82.627451",
-                                    y: "0",
-                                    width: "9.60784314",
-                                    height: "13.4509804"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d: "M80.7058824,0 L94.1568627,0",
-                                    id: "Shape"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d: "M0,94.1568627 L109.529412,94.1568627",
-                                    id: "Shape"
-                                  }
-                                })
-                              ]
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ]
-                )
-              ]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(0)
-      ]),
-      _vm._v(" "),
-      _c("button", { staticClass: "card-button", attrs: { type: "button" } }, [
-        _c(
-          "svg",
-          {
-            attrs: {
-              width: "56px",
-              height: "36px",
-              viewBox: "0 0 90 92",
-              version: "1.1",
-              xmlns: "http://www.w3.org/2000/svg",
-              "xmlns:xlink": "http://www.w3.org/1999/xlink"
-            }
-          },
-          [
-            _c("defs"),
-            _vm._v(" "),
-            _c(
-              "g",
-              {
-                attrs: {
-                  id: "Option-2---button-&-talkback-screens",
-                  stroke: "none",
-                  "stroke-width": "1",
-                  fill: "none",
-                  "fill-rule": "evenodd",
-                  "stroke-linecap": "round",
-                  "stroke-linejoin": "round"
-                }
-              },
-              [
-                _c(
-                  "g",
-                  {
-                    attrs: {
-                      id: "Kind-of-Home",
-                      transform: "translate(-502.000000, -374.000000)",
-                      stroke: "#00afd8"
-                    }
-                  },
-                  [
-                    _c(
-                      "g",
-                      {
-                        attrs: {
-                          id: "home-kinds",
-                          transform: "translate(280.000000, 339.000000)"
-                        }
-                      },
-                      [
-                        _c(
-                          "g",
-                          {
-                            attrs: {
-                              id: "Group-7-Copy",
-                              transform: "translate(185.000000, 0.000000)"
-                            }
-                          },
-                          [
-                            _c("g", { attrs: { id: "Group-7" } }, [
-                              _c(
-                                "g",
-                                {
-                                  attrs: {
-                                    id: "Townhome",
-                                    transform: "translate(37.000000, 35.000000)"
-                                  }
-                                },
-                                [
-                                  _c("path", {
-                                    attrs: {
-                                      d:
-                                        "M27.335,87.5 C29.2679966,87.5 30.835,89.0670034 30.835,91 L5.775,91 C5.77494371,87.708196 8.43325231,85.0342503 11.725,85.015",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d:
-                                        "M11.725,84.98 C12.9766056,81.2669936 16.7292634,79.0031881 20.5974644,79.627651 C24.4656654,80.2521139 27.3153433,83.5817674 27.335,87.5",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d:
-                                        "M81.655,87.5 C83.5879966,87.5 85.155,89.0670034 85.155,91 L60.06,91 C60.06,87.6945758 62.7395758,85.015 66.045,85.015",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d:
-                                        "M66.045,84.98 C67.2988271,81.2608781 71.0613998,78.9967918 74.9346468,79.6307538 C78.8078938,80.2647157 81.6523057,83.6102143 81.655,87.535",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d: "M14.945,80.85 L14.945,25.025",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d: "M74.585,25.025 L74.585,79.59",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("rect", {
-                                    attrs: {
-                                      id: "Rectangle-path",
-                                      x: "38.5",
-                                      y: "75.635",
-                                      width: "12.53",
-                                      height: "15.4"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("rect", {
-                                    attrs: {
-                                      id: "Rectangle-path",
-                                      x: "39.9",
-                                      y: "16.59",
-                                      width: "9.73",
-                                      height: "9.73"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d: "M44.765,0.595 L19.985,25.025",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d: "M44.765,0.595 L69.545,25.025",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d: "M63.245,3.36 L47.6,3.36",
-                                      id: "Shape"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("polyline", {
-                                    attrs: {
-                                      id: "Shape",
-                                      points:
-                                        "69.545 25.025 77.35 25.025 77.35 3.36 63.245 3.36"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("polyline", {
-                                    attrs: {
-                                      id: "Shape",
-                                      points:
-                                        "19.985 25.025 12.18 25.025 12.18 3.36 41.93 3.36"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("rect", {
-                                    attrs: {
-                                      id: "Rectangle-path",
-                                      x: "25.97",
-                                      y: "35.245",
-                                      width: "14.56",
-                                      height: "11.865"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("rect", {
-                                    attrs: {
-                                      id: "Rectangle-path",
-                                      x: "49.035",
-                                      y: "35.245",
-                                      width: "14.56",
-                                      height: "11.865"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("rect", {
-                                    attrs: {
-                                      id: "Rectangle-path",
-                                      x: "25.97",
-                                      y: "54.565",
-                                      width: "14.56",
-                                      height: "11.865"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("rect", {
-                                    attrs: {
-                                      id: "Rectangle-path",
-                                      x: "49.035",
-                                      y: "54.565",
-                                      width: "14.56",
-                                      height: "11.865"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("path", {
-                                    attrs: {
-                                      d: "M88.935,91 L0.595,91",
-                                      id: "Shape"
-                                    }
-                                  })
-                                ]
-                              )
-                            ])
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                )
-              ]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(1)
-      ])
-    ])
+    _c(
+      "button",
+      {
+        staticClass: "primary-button",
+        attrs: { type: "button", name: "button" },
+        on: {
+          click: function($event) {
+            _vm.redirect(_vm.data[0])
+          }
+        }
+      },
+      [_vm._v("\n      Смотреть стиль\n  ")]
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "primary-button",
+        attrs: {
+          type: "button",
+          name: "button",
+          onclick: "window.location.href='https://flatium.ru/calculator '"
+        }
+      },
+      [_vm._v("\n    Рассчитать\n  ")]
+    )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-button__info" }, [
-      _vm._v("\n         Продолжить "),
-      _c("br"),
-      _vm._v(" и расчитать "),
-      _c("br"),
-      _vm._v(" ремонт\n       ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-button__info" }, [
-      _vm._v("\n            Продолжить "),
-      _c("br"),
-      _vm._v("и подобрать мебель "),
-      _c("br"),
-      _vm._v(" и декор\n            ")
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -75958,37 +75424,43 @@ var results = [{
   image: '/storage/results/Loft.jpg',
   title: 'ЛОФТ',
   link: 'https://flatium.ru/loft',
-  description: 'Стиль прекрасно подойдет свободолюбивым и творческим личностям, для которых важно наличие большого пространства и «воздуха» для жизни. <br> Лофт как стиль интерьера возник в середине 20 века. Его родиной принято считать индустриальную часть Манхэттена. Лофт появился в результате финансового кризиса – заводы и фабрики, расположенные в городской черте, были вынуждены перенести производство в пригороды из-за резкого повышения стоимости аренды земли.'
+  description1: 'Стиль прекрасно подойдет свободолюбивым и творческим личностям, для которых важно наличие большого пространства и «воздуха» для жизни.',
+  description2: 'Лофт как стиль интерьера возник в середине 20 века. Его родиной принято считать индустриальную часть Манхэттена. Лофт появился в результате финансового кризиса – заводы и фабрики, расположенные в городской черте, были вынуждены перенести производство в пригороды из-за резкого повышения стоимости аренды земли.'
 }, {
   type: 'SK',
   image: '/storage/results/Neoclassic.jpg',
   title: 'СОВРЕМЕННАЯ КЛАССИКА',
   link: 'https://flatium.ru/neoclassic',
-  description: 'Современная классика подходит тем людям, которые любят спокойную обстановку без эксцентричности и ценят изысканную строгость в оформлении интерьера. А еще современную классику предпочитают те, кто не желает зависеть от быстро меняющихся трендов. Современная классика, или неоклассика – это переосмысление античной гармонии и представление ее в «облегченном» виде, без лишней громоздкости. В 19 веке, преимущественно в Англии и Франции, неоклассика стала альтернативой модерну.'
+  description1: 'Современная классика подходит тем людям, которые любят спокойную обстановку без эксцентричности и ценят изысканную строгость в оформлении интерьера.',
+  description2: 'А еще современную классику предпочитают те, кто не желает зависеть от быстро меняющихся трендов. Современная классика, или неоклассика – это переосмысление античной гармонии и представление ее в «облегченном» виде, без лишней громоздкости. В 19 веке, преимущественно в Англии и Франции, неоклассика стала альтернативой модерну.'
 }, {
   type: 'CON',
   image: '/storage/results/Contemporary.jpg',
   title: 'КОНТЕМПОРАРИ',
   link: 'https://flatium.ru/contemporary',
-  description: 'Контемпорари выбирают приверженцы современных тенденций в оформлении жилища, которые ценят комфорт, функциональность и сдержанную эклектику. Контемпорари – один из самых популярных стилей интерьера на сегодняшний день. Как следует из названия (contemporary – «современный»), этот подход к оформлению отражает дух текущего момента. Главная черта стиля – отсутствие жестких рамок и эклектизм. В контемпорари-интерьере могут гармонично сочетаться элементы самых разных стилей – от минимализма и хай-тека до ар-деко. '
+  description1: 'Контемпорари выбирают приверженцы современных тенденций в оформлении жилища, которые ценят комфорт, функциональность и сдержанную эклектику.',
+  description2: 'Контемпорари – один из самых популярных стилей интерьера на сегодняшний день. Как следует из названия (contemporary – «современный»), этот подход к оформлению отражает дух текущего момента. Главная черта стиля – отсутствие жестких рамок и эклектизм. В контемпорари-интерьере могут гармонично сочетаться элементы самых разных стилей – от минимализма и хай-тека до ар-деко. '
 }, {
   type: 'ECO',
   image: '/storage/results/Eco-loft.jpg',
   title: 'ЭКО-ЛОФТ',
   link: 'https://flatium.ru/ecoloft',
-  description: 'Стиль эко-лофт выбирают те люди, которым нравится концепция лофта как такового, но которые при этом хотели бы уйти от излишнего акцента на индустриальной тематике. Эко-лофт – «экологичная» разновидность стиля лофт. Этот подход к дизайну просторных помещений получил распространение в последние годы, вместе с трендом на экологическую «зеленую» тему. Стилю присущи все характерные черты лофта – необработанные стены в первозданном виде, отсутствие перегородок, коммуникации, ставленные на виду (вентиляционные короба, электропроводка).'
+  description1: 'Стиль эко-лофт выбирают те люди, которым нравится концепция лофта как такового, но которые при этом хотели бы уйти от излишнего акцента на индустриальной тематике.',
+  description2: 'Эко-лофт – «экологичная» разновидность стиля лофт. Этот подход к дизайну просторных помещений получил распространение в последние годы, вместе с трендом на экологическую «зеленую» тему. Стилю присущи все характерные черты лофта – необработанные стены в первозданном виде, отсутствие перегородок, коммуникации, ставленные на виду (вентиляционные короба, электропроводка).'
 }, {
   type: 'SKAN',
   image: '/storage/results/Scandi.jpg',
   title: 'СКАНДИНАВСКИЙ',
   link: 'https://flatium.ru/scandi',
-  description: 'Этот стиль выбирают практичные домовладельцы, стремящиеся к сдержанности, функциональности и основательности. В скандинавском стиле воплощаются представления северных народов о том, каким должно быть уютное жилье. Эстетика скандинавского дизайна сформировалась в 30-50-е годы прошлого века в северноевропейских странах. Скандинавский стиль интерьера прост и лаконичен. Хорошая освещенность, свободное пространство, доминирование светлых цветов с небольшим количеством ярких акцентов, скромный декор – неотъемлемые черты стиля.'
+  description1: 'Этот стиль выбирают практичные домовладельцы, стремящиеся к сдержанности, функциональности и основательности.',
+  description2: ' В скандинавском стиле воплощаются представления северных народов о том, каким должно быть уютное жилье. Эстетика скандинавского дизайна сформировалась в 30-50-е годы прошлого века в северноевропейских странах. Скандинавский стиль интерьера прост и лаконичен. Хорошая освещенность, свободное пространство, доминирование светлых цветов с небольшим количеством ярких акцентов, скромный декор – неотъемлемые черты стиля.'
 }, {
   type: 'K',
   image: '/storage/results/Classic.jpg',
   title: 'КЛАССИКА',
   link: 'https://flatium.ru/classic',
-  description: 'Классический стиль выбирают люди с консервативным вкусом, желающие облагородить жилище в соответствии со своими представлениями о красоте и эстетике. Каноны классического стиля сложились во времена Ренессанса. Стиль дворцовых комнат 16 века – образец классики, который, претерпевая небольшие изменения, дошел до наших дней. Классика – это то самое «вечное», беспроигрышный вариант, к которому можно обратиться в случае, если хочется окружить себя изящной роскошью, не подверженную веяниям моды.'
+  description1: 'Классический стиль выбирают люди с консервативным вкусом, желающие облагородить жилище в соответствии со своими представлениями о красоте и эстетике.',
+  description2: 'Каноны классического стиля сложились во времена Ренессанса. Стиль дворцовых комнат 16 века – образец классики, который, претерпевая небольшие изменения, дошел до наших дней. Классика – это то самое «вечное», беспроигрышный вариант, к которому можно обратиться в случае, если хочется окружить себя изящной роскошью, не подверженную веяниям моды.'
 }];
 
 /***/ }),
