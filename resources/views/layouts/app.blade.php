@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+        <base href="https://test.flatium.ru/" />
+
         <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
         {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
 
