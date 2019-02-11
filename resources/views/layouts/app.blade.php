@@ -7,13 +7,21 @@
 
         <title>Flatium</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon" />
-        {{-- <link rel="shortcut icon" href="{{ secure_asset('images/favicon.ico') }}" type="image/x-icon" /> --}}
-
+        @if (env('APP_ENV') === 'production')
+            <link rel="shortcut icon" href="{{ secure_asset('images/favicon.ico') }}" type="image/x-icon" />
+        @else
+            <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon" />
+        @endif
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        {{-- <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}"> --}}
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+        @if (env('APP_ENV') === 'production')
+            <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+        @else
+            <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        @endif
+
+
         <script>
             window.App = {!! json_encode([
                 'csrfToken' => csrf_token()
@@ -31,8 +39,12 @@
             @yield('content')
         </div>
 
-        {{-- <script src="{{ secure_asset('js/app.js') }}"></script> --}}
-        <script src="{{ asset('js/app.js') }}"></script>
+        @if (env('APP_ENV') === 'production')
+            <script src="{{ secure_asset('js/app.js') }}"></script>
+        @else
+            <script src="{{ asset('js/app.js') }}"></script>
+        @endif
+
         @yield('scripts')
 
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPTLKSR"
