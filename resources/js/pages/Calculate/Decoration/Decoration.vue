@@ -1,21 +1,22 @@
 <template>
 <div class="">
       <app-header></app-header>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
+          <a class="nav-item nav-link" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
+          <!-- <a class="nav-item nav-link" id="nav-designer" data-toggle="tab" href="#nav-designer" role="tab" aria-controls="nav-designer" aria-selected="false">Подбор мебели</a>
+          <a class="nav-item nav-link" id="nav-package" data-toggle="tab" href="#nav-package" role="tab" aria-controls="nav-package" aria-selected="false">х</a> -->
+        </div>
+      </nav>
       <div class="content-center">
           <div class="container">
-            <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
-                <a class="nav-item nav-link" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
-                <!-- <a class="nav-item nav-link" id="nav-designer" data-toggle="tab" href="#nav-designer" role="tab" aria-controls="nav-designer" aria-selected="false">Подбор мебели</a>
-                <a class="nav-item nav-link" id="nav-package" data-toggle="tab" href="#nav-package" role="tab" aria-controls="nav-package" aria-selected="false">х</a> -->
-              </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
+
+            <!-- <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
               <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-            </div>
+            </div> -->
             <h1 class="main-caption">
               Расскажите какая текущая  отделка в помещении
             </h1>

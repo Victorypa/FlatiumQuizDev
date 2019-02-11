@@ -1994,6 +1994,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2177,6 +2178,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2190,6 +2192,154 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7712,6 +7862,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 // module
 exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-5296e3e6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-5296e3e6 ease-in 1;\n          animation: fadeIn-data-v-5296e3e6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-5296e3e6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-5296e3e6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-5296e3e6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-5296e3e6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-5296e3e6] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-5296e3e6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-5296e3e6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-5296e3e6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-5296e3e6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-5296e3e6] {\n  fill: #ccc;\n}\n.button-card[data-v-5296e3e6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-5296e3e6]:hover, .button-card.active[data-v-5296e3e6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-5296e3e6], .button-card.active .image-text[data-v-5296e3e6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-5296e3e6], .button-card.active .icon-svg [stroke][data-v-5296e3e6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-5296e3e6], .button-card.active .fill-color[data-v-5296e3e6] {\n  fill: #000;\n}\n.primary-button[data-v-5296e3e6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-5296e3e6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-5296e3e6] {\n  margin: 0 auto;\n}\nsvg[data-v-5296e3e6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-5296e3e6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-5296e3e6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-5296e3e6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-5296e3e6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-5296e3e6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-6a960122] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-6a960122] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-6a960122] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-6a960122] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-6a960122] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-6a960122] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-6a960122] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-6a960122] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-6a960122] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-6a960122] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-6a960122] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 10px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #738494;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n.primary-button[data-v-6a960122] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-6a960122]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-6a960122] {\n  margin: 0 auto;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -56159,6 +56328,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Cards/Cards.vue?vue&type=style&index=0&id=df4199c4&lang=scss&scoped=true&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Cards/Cards.vue?vue&type=style&index=0&id=df4199c4&lang=scss&scoped=true& ***!
@@ -57185,12 +57384,10 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
           _c("h1", { staticClass: "main-caption" }, [
             _vm._v(
               "\n              Когда бы вы хотели начать ремонт?\n            "
@@ -58155,12 +58352,12 @@ var render = function() {
                   ]
                 ),
                 _vm._v(" "),
-                _vm._m(2)
+                _vm._m(1)
               ])
             ])
           ]),
           _vm._v(" "),
-          _vm._m(3)
+          _vm._m(2)
         ])
       ])
     ],
@@ -58219,55 +58416,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "tab-content", attrs: { id: "nav-tabContent" } },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade show active",
-            attrs: {
-              id: "nav-home",
-              role: "tabpanel",
-              "aria-labelledby": "nav-home-tab"
-            }
-          },
-          [_vm._v("...")]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade",
-            attrs: {
-              id: "nav-profile",
-              role: "tabpanel",
-              "aria-labelledby": "nav-profile-tab"
-            }
-          },
-          [_vm._v("...")]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade",
-            attrs: {
-              id: "nav-contact",
-              role: "tabpanel",
-              "aria-labelledby": "nav-contact-tab"
-            }
-          },
-          [_vm._v("...")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "image-text" }, [
       _vm._v("Когда-нибудь "),
       _c("br"),
@@ -58315,12 +58463,10 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
           _c("h1", { staticClass: "main-caption" }, [
             _vm._v(
               "\n              Расскажите какая текущая  отделка в помещении\n            "
@@ -59152,7 +59298,7 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _vm._m(2)
+            _vm._m(1)
           ])
         ])
       ])
@@ -59212,55 +59358,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "tab-content", attrs: { id: "nav-tabContent" } },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade show active",
-            attrs: {
-              id: "nav-home",
-              role: "tabpanel",
-              "aria-labelledby": "nav-home-tab"
-            }
-          },
-          [_vm._v("...")]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade",
-            attrs: {
-              id: "nav-profile",
-              role: "tabpanel",
-              "aria-labelledby": "nav-profile-tab"
-            }
-          },
-          [_vm._v("...")]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "tab-pane fade",
-            attrs: {
-              id: "nav-contact",
-              role: "tabpanel",
-              "aria-labelledby": "nav-contact-tab"
-            }
-          },
-          [_vm._v("...")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "button-wrapper" }, [
       _c(
         "button",
@@ -59276,10 +59373,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122& ***!
-  \***************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -59291,9 +59388,825 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("working")])
+  return _c(
+    "div",
+    {},
+    [
+      _c("app-header"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-center" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("h1", { staticClass: "main-caption" }, [
+            _vm._v(
+              "\n              Как бы вы оценили свой уровень, как дизайнера?\n            "
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-wrapper" }, [
+            _c("div", { staticClass: "image-card fade-in one" }, [
+              _c("button", { staticClass: "button-card active" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "91px",
+                      height: "109px",
+                      viewBox: "0 0 91 109",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                    }
+                  },
+                  [
+                    _c("defs"),
+                    _vm._v(" "),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Option-2---button-&-talkback-screens",
+                          stroke: "none",
+                          "stroke-width": "1",
+                          fill: "none",
+                          "fill-rule": "evenodd"
+                        }
+                      },
+                      [
+                        _c(
+                          "g",
+                          {
+                            attrs: {
+                              id: "Design-Preferences-Copy",
+                              transform: "translate(-306.000000, -347.000000)"
+                            }
+                          },
+                          [
+                            _c(
+                              "g",
+                              {
+                                attrs: {
+                                  id: "Expert",
+                                  transform: "translate(224.000000, 270.000000)"
+                                }
+                              },
+                              [
+                                _c("g", { attrs: { id: "Group" } }, [
+                                  _c(
+                                    "g",
+                                    {
+                                      attrs: {
+                                        id: "Expert_Icon",
+                                        transform:
+                                          "translate(82.000000, 78.000000)"
+                                      }
+                                    },
+                                    [
+                                      _c("polyline", {
+                                        attrs: {
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                          points:
+                                            "48.7549993 34.7349995 48.7549993 50.7774993 39.4549994 50.7774993"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M31.3174996,61.7049991 C39.9199994,67.0524991 50.8474993,67.0524991 59.4499992,61.7049991",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("circle", {
+                                        attrs: {
+                                          id: "Oval",
+                                          fill: "#738494",
+                                          "fill-rule": "nonzero",
+                                          cx: "61.3099991",
+                                          cy: "34.9674995",
+                                          r: "3.25499996"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("circle", {
+                                        attrs: {
+                                          id: "Oval",
+                                          fill: "#738494",
+                                          "fill-rule": "nonzero",
+                                          cx: "29.6899996",
+                                          cy: "34.9674995",
+                                          r: "3.25499996"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("circle", {
+                                        attrs: {
+                                          id: "Oval",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                          cx: "29.6899996",
+                                          cy: "34.9674995",
+                                          r: "12.7874998"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("circle", {
+                                        attrs: {
+                                          id: "Oval",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                          cx: "61.3099991",
+                                          cy: "34.9674995",
+                                          r: "12.7874998"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M48.7549993,34.9674995 L42.2449994,34.9674995",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M72.934999,79.8399989 C83.3974988,71.702499 90.1399988,58.9149992 90.1399988,44.7324994 C90.1399988,20.0874997 70.144999,0.0924999714 45.4999994,0.0924999714 C44.8024994,0.0924999714 43.8724994,0.0924999714 43.1749994,0.324999968 C66.6574991,1.48749995 85.4899988,21.0174997 85.4899988,44.7324994 C85.4899988,59.1474992 78.7474989,71.934999 68.0524991,80.0724989",
+                                          id: "Shape",
+                                          fill: "#E6E7E8",
+                                          "fill-rule": "nonzero"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M18.2974997,80.3049989 C7.83499988,72.167499 0.859999975,59.3799992 0.859999975,44.9649994 C0.859999975,20.3199997 20.8549997,0.324999968 45.4999994,0.324999968 C70.144999,0.324999968 90.1399988,20.3199997 90.1399988,44.9649994 C90.1399988,59.1474992 83.6299988,71.702499 73.399999,79.8399989",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M49.2199993,85.6524988 L45.0349994,85.6524988 C46.8949993,85.6524988 48.2899993,87.0474988 48.2899993,88.9074988 L48.2899993,97.9749986 C48.2899993,99.8349986 46.8949993,101.229999 45.0349994,101.229999 L49.2199993,101.229999 C51.0799993,101.229999 52.4749993,99.8349986 52.4749993,97.9749986 L52.4749993,88.9074988 C52.2424993,87.0474988 50.8474993,85.6524988 49.2199993,85.6524988 Z",
+                                          id: "Shape",
+                                          fill: "#E6E7E8",
+                                          "fill-rule": "nonzero"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M40.1524994,99.1374986 L22.2499997,107.042499 C19.9249997,108.204998 17.1349998,106.344999 17.1349998,103.787499 L17.1349998,83.0949988 C17.1349998,80.5374989 19.9249997,78.6774989 22.2499997,79.8399989 L40.1524994,87.7449988",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M40.1524994,93.3249987 L33.6424995,93.3249987",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M52.2424993,93.3249987 L58.7524992,93.3249987",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M48.9874993,100.997499 L43.4074994,100.997499 C41.5474994,100.997499 40.1524994,99.6024986 40.1524994,97.7424986 L40.1524994,88.6749988 C40.1524994,86.8149988 41.5474994,85.4199988 43.4074994,85.4199988 L48.9874993,85.4199988 C50.8474993,85.4199988 52.2424993,86.8149988 52.2424993,88.6749988 L52.2424993,97.9749986 C52.0099993,99.6024986 50.6149993,100.997499 48.9874993,100.997499 Z",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M70.144999,79.6074989 C71.307499,80.3049989 72.237499,81.4674989 72.237499,82.8624988 L72.237499,103.554999 C72.237499,104.949999 71.307499,106.344999 70.144999,106.809999 C72.469999,107.972498 75.259999,106.112499 75.259999,103.554999 L75.259999,82.8624988 C75.259999,80.3049989 72.469999,78.6774989 70.144999,79.6074989 Z",
+                                          id: "Shape",
+                                          fill: "#E6E7E8",
+                                          "fill-rule": "nonzero"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("path", {
+                                        attrs: {
+                                          d:
+                                            "M52.2424993,99.1374986 L70.144999,107.042499 C72.469999,108.204998 75.259999,106.344999 75.259999,103.787499 L75.259999,83.0949988 C75.259999,80.5374989 72.469999,78.6774989 70.144999,79.8399989 L52.2424993,87.7449988",
+                                          id: "Shape",
+                                          stroke: "#738494",
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round"
+                                        }
+                                      })
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [_vm._v("Эксперт")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-subtitle" }, [
+                  _vm._v(
+                    "\n                      Я хорошо разбираюсь в стилях и могу помочь дизайнеру найти идеальные вещи.\n                    "
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in two" }, [
+              _c("button", { staticClass: "button-card" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "117px",
+                      height: "126px",
+                      viewBox: "0 0 117 126",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("Open_Ideas_Icon")]),
+                    _vm._v(" "),
+                    _c("desc", [_vm._v("Created with Sketch.")]),
+                    _vm._v(" "),
+                    _c("defs"),
+                    _vm._v(" "),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Option-2---button-&-talkback-screens",
+                          stroke: "none",
+                          "stroke-width": "1",
+                          fill: "none",
+                          "fill-rule": "evenodd"
+                        }
+                      },
+                      [
+                        _c(
+                          "g",
+                          {
+                            attrs: {
+                              id: "Design-Preferences-Copy-2",
+                              transform: "translate(-585.000000, -331.000000)"
+                            }
+                          },
+                          [
+                            _c(
+                              "g",
+                              {
+                                attrs: {
+                                  id: "Open",
+                                  transform: "translate(512.000000, 270.000000)"
+                                }
+                              },
+                              [
+                                _c(
+                                  "g",
+                                  {
+                                    attrs: {
+                                      id: "Open_Ideas_Icon",
+                                      transform:
+                                        "translate(74.000000, 62.000000)"
+                                    }
+                                  },
+                                  [
+                                    _c("circle", {
+                                      attrs: {
+                                        id: "Oval",
+                                        fill: "#738494",
+                                        "fill-rule": "nonzero",
+                                        cx: "26.5",
+                                        cy: "74.5",
+                                        r: "2.5"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("circle", {
+                                      attrs: {
+                                        id: "Oval",
+                                        fill: "#738494",
+                                        "fill-rule": "nonzero",
+                                        cx: "52.5",
+                                        cy: "74.5",
+                                        r: "2.5"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M55,96 C55,96 50.969697,111.274162 36,107.35771",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("polyline", {
+                                      attrs: {
+                                        id: "Shape",
+                                        stroke: "#000000",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        points: "39 79 39 92 31 92"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("circle", {
+                                      attrs: {
+                                        id: "Oval",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        cx: "49.5",
+                                        cy: "79.5",
+                                        r: "10.5"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("circle", {
+                                      attrs: {
+                                        id: "Oval",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        cx: "22.5",
+                                        cy: "79.5",
+                                        r: "10.5"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d: "M38,79 L33,79",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("rect", {
+                                      attrs: {
+                                        id: "Rectangle-path",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        x: "77",
+                                        y: "26",
+                                        width: "12",
+                                        height: "12"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("rect", {
+                                      attrs: {
+                                        id: "Rectangle-path",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        x: "89",
+                                        y: "26",
+                                        width: "7",
+                                        height: "12"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("polygon", {
+                                      attrs: {
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        points:
+                                          "87.6623377 22 90 27 77.3376623 27 75 22"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("polygon", {
+                                      attrs: {
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        points: "91.6 22 89 27 96.6 27 99 22"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d: "M87,13 L87,17",
+                                        id: "Shape",
+                                        stroke: "#F8B1B0",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d: "M81,14 L82.4,17",
+                                        id: "Shape",
+                                        stroke: "#F8B1B0",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d: "M93.4,14 L92,17",
+                                        id: "Shape",
+                                        stroke: "#F8B1B0",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M64.7743056,42.96875 C61.71875,38.5763889 60,33.2291667 60,27.5 C60,12.4131944 72.2222222,0 87.5,0 C102.777778,0 115,12.2222222 115,27.5 C115,42.7777778 102.777778,55 87.5,55 C82.1527778,55 77.1875,53.4722222 72.9861111,50.7986111 L64.9652778,50.7986111 L64.9652778,42.96875 L64.7743056,42.96875 Z",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M35.8811881,51 C35.3168317,51 34.5643564,51 34,51.1901042 C53,52.140625 68.2376238,68.109375 68.2376238,87.5 C68.2376238,107.080729 53,122.859375 34,123.809896 C34.5643564,123.809896 35.3168317,124 35.8811881,124 C55.8217822,124 72,107.651042 72,87.5 C72,67.3489583 55.8217822,51 35.8811881,51 Z",
+                                        id: "Shape",
+                                        fill: "#E6E7E8",
+                                        "fill-rule": "nonzero"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("circle", {
+                                      attrs: {
+                                        id: "Oval",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        cx: "36.5",
+                                        cy: "87.5",
+                                        r: "36.5"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [
+                  _vm._v("Кое-что понимаю.")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-subtitle" }, [
+                  _vm._v(
+                    "\n                  Я примерно знаю, что мне нравится. Но мне хочется экспертного мнения и идей.\n                "
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in three" }, [
+              _c("button", { staticClass: "button-card" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "95px",
+                      height: "110px",
+                      viewBox: "0 0 95 110",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("No_Clue_Icon")]),
+                    _vm._v(" "),
+                    _c("desc", [_vm._v("Created with Sketch.")]),
+                    _vm._v(" "),
+                    _c("defs"),
+                    _vm._v(" "),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Option-2---button-&-talkback-screens",
+                          stroke: "none",
+                          "stroke-width": "1",
+                          fill: "none",
+                          "fill-rule": "evenodd"
+                        }
+                      },
+                      [
+                        _c(
+                          "g",
+                          {
+                            attrs: {
+                              id: "Design-Preferences-Copy",
+                              transform: "translate(-880.000000, -347.000000)"
+                            }
+                          },
+                          [
+                            _c(
+                              "g",
+                              {
+                                attrs: {
+                                  id: "No-clue",
+                                  transform: "translate(800.000000, 270.000000)"
+                                }
+                              },
+                              [
+                                _c("g", { attrs: { id: "Group-2" } }, [
+                                  _c("g", { attrs: { id: "Group-3" } }, [
+                                    _c(
+                                      "g",
+                                      {
+                                        attrs: {
+                                          id: "No_Clue_Icon",
+                                          transform:
+                                            "translate(81.000000, 77.000000)"
+                                        }
+                                      },
+                                      [
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M43.6104342,82.2147815 L59.6226079,78.8182598 C61.8060861,78.3330424 63.5043469,76.3921729 63.2617382,74.4513033 C63.0191295,71.7826077 60.5930426,69.8417382 57.924347,70.3269555 L28.5686952,76.8773902 C28.0834778,76.8773902 27.8408692,76.6347815 28.0834778,76.1495642 C29.2965213,72.9956512 32.2078256,63.0486948 24.6869562,56.9834775 C23.4739127,56.0130427 22.0182605,55.770434 20.8052171,56.2556514 C18.8643475,57.2260862 18.1365215,59.4095644 18.8643475,61.3504339 C23.4739127,74.2086946 6.24869554,76.1495642 7.21913031,91.4339118 C7.94695639,101.380868 16.923478,108.901738 26.8704344,108.901738 C34.8765212,108.659129 38.2730429,107.203477 41.9121733,105.990433 C44.0956515,105.262607 45.5513037,103.321738 45.0660863,101.138259 C44.8234776,99.925216 44.0956515,99.1973899 43.1252168,98.4695639 C45.308695,97.9843465 46.7643472,95.8008682 46.2791298,93.61739 C46.0365211,92.1617379 44.8234776,90.9486944 43.3678255,90.463477 C45.7939124,89.9782596 47.2495645,87.5521727 46.7643472,85.3686945 C46.2791298,83.9130423 45.0660863,82.6999989 43.6104342,82.2147815 Z",
+                                            id: "Shape",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M23.231304,15.9826085 C23.231304,15.9826085 34.1486952,10.6452172 44.8234776,15.9826085",
+                                            id: "Shape",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M52.8295645,19.8643475 C52.8295645,19.8643475 63.2617382,15.0121737 75.1495642,21.077391",
+                                            id: "Shape",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M58.1669557,62.3208687 C58.1669557,62.3208687 49.1904341,54.5573905 37.0599995,56.2556514",
+                                            id: "Shape",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("circle", {
+                                          attrs: {
+                                            id: "Oval",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round",
+                                            cx: "30.0243474",
+                                            cy: "36.846956",
+                                            r: "13.3434781"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("circle", {
+                                          attrs: {
+                                            id: "Oval",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round",
+                                            cx: "63.0191295",
+                                            cy: "36.846956",
+                                            r: "13.3434781"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M49.9182602,36.846956 L43.1252168,36.846956",
+                                            id: "Shape",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("circle", {
+                                          attrs: {
+                                            id: "Oval",
+                                            fill: "#738494",
+                                            "fill-rule": "nonzero",
+                                            cx: "30.0243474",
+                                            cy: "36.846956",
+                                            r: "3.39652169"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("circle", {
+                                          attrs: {
+                                            id: "Oval",
+                                            fill: "#738494",
+                                            "fill-rule": "nonzero",
+                                            cx: "63.2617382",
+                                            cy: "36.846956",
+                                            r: "3.39652169"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M46.5217385,0.455652154 C45.7939124,0.455652154 44.8234776,0.455652154 44.0956515,0.698260846 C68.5991295,1.91130431 88.2504335,22.2904345 88.2504335,47.0365211 C88.2504335,72.0252164 68.5991295,92.1617379 44.0956515,93.3747813 C44.8234776,93.3747813 45.7939124,93.61739 46.5217385,93.61739 C72.2382599,93.61739 93.1026074,72.7530425 93.1026074,47.0365211 C93.1026074,21.3199997 72.2382599,0.455652154 46.5217385,0.455652154 Z",
+                                            id: "Shape",
+                                            fill: "#E6E7E8",
+                                            "fill-rule": "nonzero"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M12.0713042,78.3330424 C4.55043469,70.0843469 0.183478231,59.1669557 0.183478231,47.2791298 C0.183478231,21.5626084 21.0478258,0.698260846 46.7643472,0.698260846 C72.4808685,0.698260846 93.3452161,21.5626084 93.3452161,47.2791298 C93.3452161,72.0252164 74.1791294,92.1617379 49.9182602,93.61739 L46.5217385,93.8599987",
+                                            id: "Shape",
+                                            stroke: "#738494",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round"
+                                          }
+                                        })
+                                      ]
+                                    )
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [
+                  _vm._v("Совсем не разбираюсь")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-subtitle" }, [
+                  _vm._v(
+                    "\n                      Серьезно, помогите мне, пожалуйста\n                    "
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(1)
+          ])
+        ])
+      ])
+    ],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("nav", [
+      _c(
+        "div",
+        {
+          staticClass: "nav nav-tabs",
+          attrs: { id: "nav-tab", role: "tablist" }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "nav-item nav-link active",
+              attrs: {
+                id: "nav-result",
+                "data-toggle": "tab",
+                href: "#nav-result",
+                role: "tab",
+                "aria-controls": "nav-result",
+                "aria-selected": "true"
+              }
+            },
+            [_vm._v("Ваш стиль")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "nav-item nav-link",
+              attrs: {
+                id: "nav-needs",
+                "data-toggle": "tab",
+                href: "#nav-needs",
+                role: "tab",
+                "aria-controls": "nav-needs",
+                "aria-selected": "false"
+              }
+            },
+            [_vm._v("Рассчёт ремонта")]
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "button-wrapper" }, [
+      _c(
+        "button",
+        { staticClass: "primary-button", attrs: { type: "submit" } },
+        [_vm._v("\n                     Далее\n                 ")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -73719,9 +74632,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _DesignSkills_vue_vue_type_template_id_6a960122___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DesignSkills.vue?vue&type=template&id=6a960122& */ "./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&");
+/* harmony import */ var _DesignSkills_vue_vue_type_template_id_6a960122_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DesignSkills.vue?vue&type=template&id=6a960122&scoped=true& */ "./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&scoped=true&");
 /* harmony import */ var _DesignSkills_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DesignSkills.vue?vue&type=script&lang=js& */ "./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _DesignSkills_vue_vue_type_style_index_0_id_6a960122_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true& */ "./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -73729,13 +74644,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _DesignSkills_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _DesignSkills_vue_vue_type_template_id_6a960122___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _DesignSkills_vue_vue_type_template_id_6a960122___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _DesignSkills_vue_vue_type_template_id_6a960122_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _DesignSkills_vue_vue_type_template_id_6a960122_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "6a960122",
   null
   
 )
@@ -73761,19 +74676,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&":
-/*!*********************************************************************************************!*\
-  !*** ./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122& ***!
-  \*********************************************************************************************/
+/***/ "./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true&":
+/*!************************************************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_style_index_0_id_6a960122_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=style&index=0&id=6a960122&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_style_index_0_id_6a960122_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_style_index_0_id_6a960122_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_style_index_0_id_6a960122_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_style_index_0_id_6a960122_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_style_index_0_id_6a960122_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&scoped=true&":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&scoped=true& ***!
+  \*********************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_template_id_6a960122___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DesignSkills.vue?vue&type=template&id=6a960122& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_template_id_6a960122___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_template_id_6a960122_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DesignSkills.vue?vue&type=template&id=6a960122&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Design/DesignSkills.vue?vue&type=template&id=6a960122&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_template_id_6a960122_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_template_id_6a960122___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignSkills_vue_vue_type_template_id_6a960122_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

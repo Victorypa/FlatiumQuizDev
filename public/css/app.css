@@ -10533,6 +10533,10 @@ body {
   height: 100%;
 }
 
+.nav-tabs {
+  margin: 15px 3%;
+}
+
 .nav-tabs .nav-link {
   text-transform: uppercase;
   color: #ccc;
