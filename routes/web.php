@@ -45,7 +45,5 @@ Route::group(['middleware' => 'auth', 'prefix' => 'panel'], function () {
 
 // Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 
 Route::get('/test/amo', 'AmoController@index');
