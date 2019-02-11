@@ -5,6 +5,12 @@ Vue.component('room', require('./pages/Room/Room').default)
 Vue.component('redirect', require('./pages/Redirect/Redirect').default)
 Vue.component('results', require('./pages/Results/Results').default)
 
+Vue.component('decoration', require('./pages/Calculate/Decoration/Decoration').default)
+Vue.component('design-skills', require('./pages/Calculate/Design/DesignSkills').default)
+Vue.component('material-category', require('./pages/Calculate/Materials/MaterialCategory').default)
+Vue.component('square-count', require('./pages/Calculate/Square/SquareCount').default)
+Vue.component('start-date', require('./pages/Calculate/Date/StartDate').default)
+
 // Global Partials
 Vue.component('app-header', require('./components/Header/Header').default)
 Vue.component('navigation', require('./components/Panel/partials/Navigation').default)
