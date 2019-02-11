@@ -51,3 +51,11 @@ padding-bottom: 20px;
     height: 100%;
   }
 }
+
+.nav-tabs .nav-link {
+  text-transform: uppercase;
+  color: #ccc;
+  &.active {
+    color: #00afd8;
+  }
+}

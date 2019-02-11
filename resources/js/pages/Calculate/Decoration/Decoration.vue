@@ -5,10 +5,10 @@
           <div class="container">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Style Result</a>
-                <a class="nav-item nav-link" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Your needs</a>
-                <!-- <a class="nav-item nav-link" id="nav-designer" data-toggle="tab" href="#nav-designer" role="tab" aria-controls="nav-designer" aria-selected="false">Select designer</a>
-                <a class="nav-item nav-link" id="nav-package" data-toggle="tab" href="#nav-package" role="tab" aria-controls="nav-package" aria-selected="false">Select package</a> -->
+                <a class="nav-item nav-link active" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
+                <a class="nav-item nav-link" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
+                <!-- <a class="nav-item nav-link" id="nav-designer" data-toggle="tab" href="#nav-designer" role="tab" aria-controls="nav-designer" aria-selected="false">Подбор мебели</a>
+                <a class="nav-item nav-link" id="nav-package" data-toggle="tab" href="#nav-package" role="tab" aria-controls="nav-package" aria-selected="false">х</a> -->
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -221,15 +221,6 @@ export default {
   animation-delay: 1.1s;
 }
 
-.nav {
-  &-link {
-    a {
-      color: #aad7ea !important;
-      text-transform: uppercase !important;
-    }
-  }
-}
-
 svg {
 fill: #a1adb7;
 height: auto;
@@ -243,12 +234,6 @@ height: auto;
   &__img {
     width: 100%;
     height: 100%;
-  }
-}
-
-.progress-bar {
-  &__wrapper {
-    margin: 30px 0;
   }
 }
 

@@ -1832,6 +1832,168 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -7518,6 +7680,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-1ab32f3e {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-1ab32f3e {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-1ab32f3e] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-1ab32f3e ease-in 1;\n          animation: fadeIn-data-v-1ab32f3e ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-1ab32f3e] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-1ab32f3e] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-1ab32f3e] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-1ab32f3e] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-1ab32f3e] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-1ab32f3e] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-1ab32f3e] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-1ab32f3e] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-1ab32f3e] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-1ab32f3e] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-1ab32f3e] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-1ab32f3e] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-1ab32f3e] {\n  display: flex;\n  justify-content: space-around;\n  margin: 0 auto;\n}\n.image-card[data-v-1ab32f3e] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-1ab32f3e] {\n  padding-top: 22px;\n  font-size: 8px;\n}\n.main-caption[data-v-1ab32f3e] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-1ab32f3e] {\n  margin: 50px 0;\n}\n.button-card[data-v-1ab32f3e] {\n  padding: 0px 20px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-1ab32f3e]:hover, .button-card.active[data-v-1ab32f3e] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-1ab32f3e], .button-card.active .image-text[data-v-1ab32f3e] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-1ab32f3e], .button-card.active .icon-svg [stroke][data-v-1ab32f3e] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-1ab32f3e], .button-card.active .fill-color[data-v-1ab32f3e] {\n  fill: #000;\n}\n.primary-button[data-v-1ab32f3e] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-1ab32f3e]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-1ab32f3e] {\n  text-align: center;\n}\n@media (min-width: 700px) {\n.content-center[data-v-1ab32f3e] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 800px) {\n.image-wrapper[data-v-1ab32f3e] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-1ab32f3e] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-1ab32f3e] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true&":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true& ***!
@@ -7530,7 +7711,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-5296e3e6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-5296e3e6 ease-in 1;\n          animation: fadeIn-data-v-5296e3e6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-5296e3e6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-5296e3e6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\n.nav-link a[data-v-5296e3e6] {\n  color: #aad7ea !important;\n  text-transform: uppercase !important;\n}\nsvg[data-v-5296e3e6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-5296e3e6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-5296e3e6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-5296e3e6] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-5296e3e6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-5296e3e6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-5296e3e6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-5296e3e6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-5296e3e6] {\n  fill: #ccc;\n}\n.button-card[data-v-5296e3e6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-5296e3e6]:hover, .button-card.active[data-v-5296e3e6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-5296e3e6], .button-card.active .image-text[data-v-5296e3e6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-5296e3e6], .button-card.active .icon-svg [stroke][data-v-5296e3e6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-5296e3e6], .button-card.active .fill-color[data-v-5296e3e6] {\n  fill: #000;\n}\n.primary-button[data-v-5296e3e6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-5296e3e6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-5296e3e6] {\n  margin: 0 auto;\n}\nsvg[data-v-5296e3e6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-5296e3e6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-5296e3e6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-5296e3e6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-5296e3e6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-5296e3e6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-5296e3e6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-5296e3e6 ease-in 1;\n          animation: fadeIn-data-v-5296e3e6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-5296e3e6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-5296e3e6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-5296e3e6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-5296e3e6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-5296e3e6] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-5296e3e6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-5296e3e6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-5296e3e6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-5296e3e6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-5296e3e6] {\n  fill: #ccc;\n}\n.button-card[data-v-5296e3e6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-5296e3e6]:hover, .button-card.active[data-v-5296e3e6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-5296e3e6], .button-card.active .image-text[data-v-5296e3e6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-5296e3e6], .button-card.active .icon-svg [stroke][data-v-5296e3e6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-5296e3e6], .button-card.active .fill-color[data-v-5296e3e6] {\n  fill: #000;\n}\n.primary-button[data-v-5296e3e6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-5296e3e6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-5296e3e6] {\n  margin: 0 auto;\n}\nsvg[data-v-5296e3e6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-5296e3e6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-5296e3e6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-5296e3e6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-5296e3e6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-5296e3e6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -55918,6 +56099,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../../node_modules/vue-loader/lib??vue-loader-options!./StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true& ***!
@@ -56953,10 +57164,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e& ***!
-  \**********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56968,9 +57179,1115 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("working")])
+  return _c(
+    "div",
+    {},
+    [
+      _c("app-header"),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-center" }, [
+        _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("h1", { staticClass: "main-caption" }, [
+            _vm._v(
+              "\n              Когда бы вы хотели начать ремонт?\n            "
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "image-wrapper" }, [
+            _c("div", { staticClass: "image-card fade-in one" }, [
+              _c("button", { staticClass: "button-card active" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "125px",
+                      height: "118px",
+                      viewBox: "0 0 125 118",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                    }
+                  },
+                  [
+                    _c("defs"),
+                    _vm._v(" "),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Option-2---button-&-talkback-screens",
+                          stroke: "none",
+                          "stroke-width": "1",
+                          fill: "none",
+                          "fill-rule": "evenodd"
+                        }
+                      },
+                      [
+                        _c(
+                          "g",
+                          {
+                            attrs: {
+                              id: "Timeline-Copy",
+                              transform: "translate(-163.000000, -359.000000)"
+                            }
+                          },
+                          [
+                            _c(
+                              "g",
+                              {
+                                attrs: {
+                                  id: "Group-3",
+                                  transform:
+                                    "translate(-668.000000, -403.000000)"
+                                }
+                              },
+                              [
+                                _c(
+                                  "g",
+                                  {
+                                    attrs: {
+                                      id: "ASAP_Icon",
+                                      transform:
+                                        "translate(832.000000, 763.000000)"
+                                    }
+                                  },
+                                  [
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.0086759,45.1952076 L30.6940715,45.1952076",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3794671,45.1952076 L62.0648626,45.1952076",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.0086759,61.9440198 L30.6940715,61.9440198",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3794671,61.9440198 L62.0648626,61.9440198",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.0086759,78.9586862 L30.6940715,78.9586862",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3794671,78.9586862 L62.0648626,78.9586862",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M77.7502582,95.7074985 L93.4356538,95.7074985",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.0086759,95.7074985 L30.6940715,95.7074985",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3794671,95.7074985 L62.0648626,95.7074985",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("rect", {
+                                      attrs: {
+                                        id: "Rectangle-path",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        x: "0.120842801",
+                                        y: "7.97562487",
+                                        width: "108.202644",
+                                        height: "108.202644"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M0.120842801,26.0537079 L108.323487,26.0537079",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M30.6940715,0 L30.6940715,15.6853956",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M77.7502582,0 L77.7502582,15.6853956",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M118.425945,74.7050196 C121.084487,70.7172072 122.679612,66.1976864 122.679612,60.8806032 C122.679612,47.3220409 111.779591,36.4220202 98.2210287,36.4220202 C84.6624664,36.4220202 73.7624458,47.3220409 73.7624458,60.8806032 C73.7624458,74.4391655 84.6624664,85.3391861 98.2210287,85.3391861 C103.006404,85.3391861 107.525924,84.0099153 111.247883,81.6172278 L118.425945,81.6172278 L118.425945,74.7050196 Z",
+                                        id: "Shape",
+                                        stroke: "#F8B1B0",
+                                        "stroke-width": "1.5",
+                                        fill: "#FFFFFF",
+                                        "fill-rule": "nonzero",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "g",
+                                      {
+                                        attrs: {
+                                          id: "Group",
+                                          transform:
+                                            "translate(96.094195, 47.853749)"
+                                        }
+                                      },
+                                      [
+                                        _c("path", {
+                                          attrs: {
+                                            d:
+                                              "M2.1268333,0.797562487 L2.1268333,15.9512497",
+                                            id: "Shape",
+                                            stroke: "#1C2233",
+                                            "stroke-linecap": "round",
+                                            "stroke-linejoin": "round"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("circle", {
+                                          attrs: {
+                                            id: "Oval",
+                                            fill: "#1C2233",
+                                            "fill-rule": "nonzero",
+                                            cx: "2.1268333",
+                                            cy: "21.268333",
+                                            r: "1.59512497"
+                                          }
+                                        })
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [
+                  _vm._v("Срочно. Хотелось сделать это еще вчера")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in two" }, [
+              _c("button", { staticClass: "button-card" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "125px",
+                      height: "119px",
+                      viewBox: "0 0 125 119",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                    }
+                  },
+                  [
+                    _c("title", [_vm._v("Soonish_Icon")]),
+                    _vm._v(" "),
+                    _c("desc", [_vm._v("Created with Sketch.")]),
+                    _vm._v(" "),
+                    _c("defs"),
+                    _vm._v(" "),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Option-2---button-&-talkback-screens",
+                          stroke: "none",
+                          "stroke-width": "1",
+                          fill: "none",
+                          "fill-rule": "evenodd"
+                        }
+                      },
+                      [
+                        _c(
+                          "g",
+                          {
+                            attrs: {
+                              id: "Timeline-Copy",
+                              transform: "translate(-439.000000, -357.000000)"
+                            }
+                          },
+                          [
+                            _c(
+                              "g",
+                              {
+                                attrs: {
+                                  id: "Group-3",
+                                  transform:
+                                    "translate(-668.000000, -403.000000)"
+                                }
+                              },
+                              [
+                                _c(
+                                  "g",
+                                  {
+                                    attrs: {
+                                      id: "Soonish_Icon",
+                                      transform:
+                                        "translate(1108.000000, 761.000000)"
+                                    }
+                                  },
+                                  [
+                                    _c("rect", {
+                                      attrs: {
+                                        id: "Rectangle-path",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        x: "0",
+                                        y: "8.26024845",
+                                        width: "108.449068",
+                                        height: "108.449068"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M0,26.3795031 L108.449068,26.3795031",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M30.6428571,0.532919255 L30.6428571,16.2540373",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M14.9217391,45.5645963 L30.6428571,45.5645963",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3639752,45.5645963 L62.0850932,45.5645963",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M14.9217391,62.6180124 L30.6428571,62.6180124",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3639752,62.6180124 L62.0850932,62.6180124",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M14.9217391,79.4049689 L30.6428571,79.4049689",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3639752,79.4049689 L62.0850932,79.4049689",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M77.8062112,96.1919255 L93.5273292,96.1919255",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M14.9217391,96.1919255 L30.6428571,96.1919255",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M46.3639752,96.1919255 L62.0850932,96.1919255",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M77.8062112,0.532919255 L77.8062112,16.2540373",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "1.5",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M118.308075,75.1416149 C120.972671,71.1447205 122.571429,66.6149068 122.571429,61.2857143 C122.571429,47.6962733 111.646584,36.7714286 98.0571429,36.7714286 C84.4677019,36.7714286 73.5428571,47.6962733 73.5428571,61.2857143 C73.5428571,74.8751553 84.4677019,85.8 98.0571429,85.8 C102.853416,85.8 107.38323,84.4677019 111.113665,82.0695652 L118.308075,82.0695652 L118.308075,75.1416149 Z",
+                                        id: "Shape",
+                                        stroke: "#F8B1B0",
+                                        "stroke-width": "1.5",
+                                        fill: "#FFFFFF",
+                                        "fill-rule": "nonzero",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M109.514907,49.5614907 L86.8658385,49.5614907",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "0.7021",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M107.38323,51.1602484 L107.38323,49.2950311 L88.9975155,49.2950311 L88.9975155,51.1602484 C88.9975155,54.8906832 91.3956522,58.3546584 94.8596273,59.6869565 C95.9254658,60.2198758 96.7248447,61.0192547 96.7248447,62.0850932 C96.7248447,63.1509317 95.9254658,64.2167702 94.8596273,64.4832298 C91.3956522,65.815528 88.9975155,69.0130435 88.9975155,73.0099379 L88.9975155,74.8751553 L107.38323,74.8751553 L107.38323,73.0099379 C107.38323,69.2795031 104.985093,65.815528 101.521118,64.4832298 C100.45528,63.9503106 99.6559006,63.1509317 99.6559006,62.0850932 C99.6559006,61.0192547 100.45528,59.9534161 101.521118,59.6869565 C104.985093,58.3546584 107.38323,55.1571429 107.38323,51.1602484 Z",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        fill: "#FFFFFF",
+                                        "fill-rule": "nonzero",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M92.7279503,52.4925466 C92.9944099,54.6242236 94.3267081,56.489441 96.4583851,57.2888199 C97.257764,57.5552795 97.7906832,58.0881988 97.7906832,58.8875776 L97.7906832,64.4832298 L98.5900621,64.4832298 L98.5900621,58.8875776 C98.5900621,58.0881988 99.1229814,57.5552795 99.9223602,57.2888199 C102.054037,56.7559006 103.386335,54.8906832 103.652795,52.4925466 C103.652795,52.226087 103.386335,51.9596273 103.119876,51.9596273 L93.2608696,51.9596273 C92.9944099,51.9596273 92.7279503,52.226087 92.7279503,52.4925466 Z",
+                                        id: "Shape",
+                                        fill: "#D1D3D4",
+                                        "fill-rule": "nonzero"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M90.3298137,74.8751553 C90.3298137,74.8751553 93.7937888,70.078882 98.5900621,70.078882 C103.119876,70.078882 106.850311,74.8751553 106.850311,74.8751553 L90.3298137,74.8751553 Z",
+                                        id: "Shape",
+                                        fill: "#D1D3D4",
+                                        "fill-rule": "nonzero"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M109.514907,74.8751553 L86.8658385,74.8751553",
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        "stroke-width": "0.7021",
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [
+                  _vm._v("В ближайщее ремя но не более 2 недель.")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in three" }, [
+              _c("button", { staticClass: "button-card" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "112px",
+                      height: "119px",
+                      viewBox: "0 0 112 119",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                    }
+                  },
+                  [
+                    _c("defs"),
+                    _vm._v(" "),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Option-2---button-&-talkback-screens",
+                          stroke: "none",
+                          "stroke-width": "1",
+                          fill: "none",
+                          "fill-rule": "evenodd",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c(
+                          "g",
+                          {
+                            attrs: {
+                              id: "Timeline-Copy",
+                              transform: "translate(-723.000000, -347.000000)",
+                              "stroke-width": "1.5"
+                            }
+                          },
+                          [
+                            _c(
+                              "g",
+                              {
+                                attrs: {
+                                  id: "Group-3",
+                                  transform:
+                                    "translate(-668.000000, -403.000000)"
+                                }
+                              },
+                              [
+                                _c(
+                                  "g",
+                                  {
+                                    attrs: {
+                                      id: "Exact_Date_Icon",
+                                      transform:
+                                        "translate(1392.000000, 751.000000)"
+                                    }
+                                  },
+                                  [
+                                    _c("rect", {
+                                      attrs: {
+                                        id: "Rectangle-path",
+                                        stroke: "#1C2233",
+                                        x: "0.582010582",
+                                        y: "8.26940035",
+                                        width: "108.569224",
+                                        height: "108.569224"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M0.582010582,26.4087302 L109.417989,26.4087302",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M31.5255732,0.5335097 L31.5255732,16.2720459",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.787037,45.6150794 L31.5255732,45.6150794",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.787037,62.6873898 L31.5255732,62.6873898",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M78.4744268,62.6873898 L94.212963,62.6873898",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M78.4744268,45.6150794 L94.212963,45.6150794",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.787037,79.4929453 L31.5255732,79.4929453",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M78.4744268,79.4929453 L94.212963,79.4929453",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M78.4744268,96.2985009 L94.212963,96.2985009",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M15.787037,96.2985009 L31.5255732,96.2985009",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M47.2641093,79.4929453 L62.7358907,79.4929453",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M47.2641093,96.8320106 L62.7358907,96.8320106",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M47.2641093,62.6873898 L62.7358907,62.6873898",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M47.2641093,45.6150794 L62.7358907,45.6150794",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M78.4744268,0.5335097 L78.4744268,16.2720459",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("circle", {
+                                      attrs: {
+                                        id: "Oval",
+                                        stroke: "#F8B1B0",
+                                        fill: "#FFFFFF",
+                                        "fill-rule": "nonzero",
+                                        cx: "55",
+                                        cy: "70.9567901",
+                                        r: "15.4717813"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("polyline", {
+                                      attrs: {
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        points:
+                                          "47.5308642 71.7570547 52.3324515 76.558642 62.202381 66.6887125"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "image-text" }, [
+                  _vm._v("С определенной даты. Получение ключей, отпуск и т.д.")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in four" }, [
+              _c("button", { staticClass: "button-card" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "111px",
+                      height: "119px",
+                      viewBox: "0 0 111 119",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                    }
+                  },
+                  [
+                    _c("defs"),
+                    _vm._v(" "),
+                    _c(
+                      "g",
+                      {
+                        attrs: {
+                          id: "Option-2---button-&-talkback-screens",
+                          stroke: "none",
+                          "stroke-width": "1",
+                          fill: "none",
+                          "fill-rule": "evenodd",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c(
+                          "g",
+                          {
+                            attrs: {
+                              id: "Timeline-Copy",
+                              transform: "translate(-998.000000, -345.000000)",
+                              "stroke-width": "1.5"
+                            }
+                          },
+                          [
+                            _c(
+                              "g",
+                              {
+                                attrs: {
+                                  id: "Group-3",
+                                  transform:
+                                    "translate(-668.000000, -403.000000)"
+                                }
+                              },
+                              [
+                                _c(
+                                  "g",
+                                  {
+                                    attrs: {
+                                      id: "Sometime-in-the-Future",
+                                      transform:
+                                        "translate(1667.000000, 749.000000)"
+                                    }
+                                  },
+                                  [
+                                    _c("circle", {
+                                      attrs: {
+                                        id: "Oval",
+                                        stroke: "#F8B1B0",
+                                        cx: "54.8320652",
+                                        cy: "71.7690217",
+                                        r: "26.9766304"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("rect", {
+                                      attrs: {
+                                        id: "Rectangle-path",
+                                        stroke: "#1C2233",
+                                        x: "0.585869565",
+                                        y: "8.44184783",
+                                        width: "108.465761",
+                                        height: "108.465761"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M0.585869565,26.6570652 L109.078261,26.6570652",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M31.3173913,0.585869565 L31.3173913,16.2711957",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M78.3467391,0.585869565 L78.3467391,16.2711957",
+                                        id: "Shape",
+                                        stroke: "#1C2233"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("polyline", {
+                                      attrs: {
+                                        id: "Shape",
+                                        stroke: "#1C2233",
+                                        points:
+                                          "41.836413 71.8755435 50.4380435 80.4771739 67.8277174 63.0875"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _vm._m(2)
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(3)
+        ])
+      ])
+    ],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("nav", [
+      _c(
+        "div",
+        {
+          staticClass: "nav nav-tabs",
+          attrs: { id: "nav-tab", role: "tablist" }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "nav-item nav-link active",
+              attrs: {
+                id: "nav-result",
+                "data-toggle": "tab",
+                href: "#nav-result",
+                role: "tab",
+                "aria-controls": "nav-result",
+                "aria-selected": "true"
+              }
+            },
+            [_vm._v("Ваш стиль")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "nav-item nav-link",
+              attrs: {
+                id: "nav-needs",
+                "data-toggle": "tab",
+                href: "#nav-needs",
+                role: "tab",
+                "aria-controls": "nav-needs",
+                "aria-selected": "false"
+              }
+            },
+            [_vm._v("Рассчёт ремонта")]
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "tab-content", attrs: { id: "nav-tabContent" } },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "tab-pane fade show active",
+            attrs: {
+              id: "nav-home",
+              role: "tabpanel",
+              "aria-labelledby": "nav-home-tab"
+            }
+          },
+          [_vm._v("...")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "tab-pane fade",
+            attrs: {
+              id: "nav-profile",
+              role: "tabpanel",
+              "aria-labelledby": "nav-profile-tab"
+            }
+          },
+          [_vm._v("...")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "tab-pane fade",
+            attrs: {
+              id: "nav-contact",
+              role: "tabpanel",
+              "aria-labelledby": "nav-contact-tab"
+            }
+          },
+          [_vm._v("...")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "image-text" }, [
+      _vm._v("Когда-нибудь "),
+      _c("br"),
+      _vm._v(" в будущем "),
+      _c("br")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "button-wrapper" }, [
+      _c(
+        "button",
+        { staticClass: "primary-button", attrs: { type: "submit" } },
+        [_vm._v("\n                   Далее\n               ")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -57869,7 +59186,7 @@ var staticRenderFns = [
                 "aria-selected": "true"
               }
             },
-            [_vm._v("Style Result")]
+            [_vm._v("Ваш стиль")]
           ),
           _vm._v(" "),
           _c(
@@ -57885,7 +59202,7 @@ var staticRenderFns = [
                 "aria-selected": "false"
               }
             },
-            [_vm._v("Your needs")]
+            [_vm._v("Рассчёт ремонта")]
           )
         ]
       )
@@ -72228,9 +73545,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _StartDate_vue_vue_type_template_id_1ab32f3e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StartDate.vue?vue&type=template&id=1ab32f3e& */ "./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&");
+/* harmony import */ var _StartDate_vue_vue_type_template_id_1ab32f3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true& */ "./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true&");
 /* harmony import */ var _StartDate_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StartDate.vue?vue&type=script&lang=js& */ "./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _StartDate_vue_vue_type_style_index_0_id_1ab32f3e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true& */ "./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -72238,13 +73557,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _StartDate_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _StartDate_vue_vue_type_template_id_1ab32f3e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _StartDate_vue_vue_type_template_id_1ab32f3e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _StartDate_vue_vue_type_template_id_1ab32f3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _StartDate_vue_vue_type_template_id_1ab32f3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "1ab32f3e",
   null
   
 )
@@ -72270,19 +73589,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true&":
+/*!*******************************************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true& ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_style_index_0_id_1ab32f3e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../../node_modules/vue-loader/lib??vue-loader-options!./StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=style&index=0&id=1ab32f3e&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_style_index_0_id_1ab32f3e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_style_index_0_id_1ab32f3e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_style_index_0_id_1ab32f3e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_style_index_0_id_1ab32f3e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_style_index_0_id_1ab32f3e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true& ***!
+  \****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_template_id_1ab32f3e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./StartDate.vue?vue&type=template&id=1ab32f3e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_template_id_1ab32f3e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_template_id_1ab32f3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Date/StartDate.vue?vue&type=template&id=1ab32f3e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_template_id_1ab32f3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_template_id_1ab32f3e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StartDate_vue_vue_type_template_id_1ab32f3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
