@@ -86,7 +86,7 @@ class CalculatorController extends Controller
             'category' => $request->get('category'),
             'phone' => $request->get('phone'),
             'name' => $request->get('name'),
-            'price' => $price * (int) $request->get('square')
+            'price' => $price
         ]);
 
         $contact = (new ContactCreate($this->client))->create([
