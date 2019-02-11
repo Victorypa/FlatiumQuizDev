@@ -10534,15 +10534,29 @@ body {
 }
 
 .nav-tabs {
-  margin: 15px 3%;
+  margin-top: 15px;
+  background: #f8f8f8;
+  box-shadow: inset 0 15px 15px -15px #ccc;
+}
+
+.nav-tabs a {
+  box-shadow: inset 0 15px 15px -15px #ccc;
+  transition: 0.5s;
+}
+
+.nav-tabs a:hover {
+  text-decoration: underline;
 }
 
 .nav-tabs .nav-link {
   text-transform: uppercase;
   color: #ccc;
+  border: none;
+  padding: 15px;
 }
 
 .nav-tabs .nav-link.active {
   color: #00afd8;
+  border: none;
 }
 
