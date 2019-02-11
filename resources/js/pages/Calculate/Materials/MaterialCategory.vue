@@ -147,16 +147,6 @@ export default {
 .fade-in.three {
   animation-delay: 0.5s;
 }
-.logo {
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 3%;
-
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
-}
 
 .image {
   &-wrapper {

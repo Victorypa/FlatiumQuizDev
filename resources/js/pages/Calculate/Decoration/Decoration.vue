@@ -203,44 +203,9 @@
   animation-delay: 0.5s;
 }
 
-.fade-in.four {
-  animation-delay: 0.6s;
-}
-
-.fade-in.five {
-  animation-delay: 0.7s;
-}
-
-.fade-in.six {
-  animation-delay: 0.8s;
-}
-
-.fade-in.seven {
-  animation-delay: 0.9s;
-}
-
-.fade-in.eight {
-  animation-delay: 1s;
-}
-
-.fade-in.nine {
-  animation-delay: 1.1s;
-}
-
 svg {
 fill: #a1adb7;
 height: auto;
-}
-
-.logo {
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 3%;
-
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .image {
