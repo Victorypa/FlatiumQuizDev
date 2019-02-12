@@ -71,8 +71,8 @@ height: auto;
   &-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 600px;
+  justify-content: center;
+  max-width: 800px;
   margin: 0 auto;
   }
   &-card {
@@ -80,6 +80,15 @@ height: auto;
   display: block;
   font-size: 14px;
   text-decoration: none;
+  }
+  &-text {
+    margin-top: 50px;
+    font-size: 12px;
+    color: #1c2233;
+    letter-spacing: 2px;
+    line-height: 1.9;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 .main-caption {
@@ -103,7 +112,7 @@ font-weight: 400;
 height: 300px;
 letter-spacing: .11em;
 text-transform: uppercase;
-width: 175px;
+width: 230px;
 transition-duration: .2s;
 box-sizing: border-box;
 outline: none;
