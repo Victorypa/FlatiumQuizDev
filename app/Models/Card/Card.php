@@ -6,6 +6,7 @@ use App\Models\Person;
 use App\Models\Room\Room;
 use App\Models\Card\Square\Square;
 use App\Models\Card\Date\StartDate;
+use App\Models\Card\Design\DesignSkill;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Card\Decoration\Decoration;
 use App\Models\Card\Material\MaterialCategory;
@@ -42,5 +43,10 @@ class Card extends Model
     public function start_dates()
     {
         return $this->hasMany(StartDate::class);
+    }
+
+    public function design_skills()
+    {
+        return $this->hasMany(DesignSkill::class);
     }
 }

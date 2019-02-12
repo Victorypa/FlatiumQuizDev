@@ -15,6 +15,10 @@ class DesignSkillsController extends Controller
 
     public function store(Request $request)
     {
+        $design_skill = Card::where('id', $request->card_id)->first()->design_skills()->create([
+            'type' => $request->type
+        ]);
 
+        return $design_skill;
     }
 }
