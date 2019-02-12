@@ -265,7 +265,7 @@ text-transform: uppercase;
 }
 
 
-input:focus ~ label 		{
+input:focus ~ label {
   top:-6px;
   font-size:14px;
 }
@@ -294,40 +294,6 @@ margin-left: 4px;
 
 .login-here a:hover {
 text-decoration: none;
-}
-
-.button-wrapper {
-text-align: center;
-}
-.primary-button {
-height: 42px;
-font-size: 15px;
-font-weight: 400;
-background-color: #0a0c12;
-color: #fff;
-
-margin: 20px 0;
-padding: 0 30px;
-letter-spacing: .025em;
-
-border: 0;
-border-radius: 5px;
-
-line-height: 42px;
-outline: none;
-cursor: pointer;
-transition: .15s ease-in-out;
-&--disabled {
-  background-color: #ccc;
-}
-}
-
-.primary-button:hover {
-  background-color: #aad7ea;
-}
-
-.content-center {
-  padding: 100px 0;
 }
 
 .dropdown .open {

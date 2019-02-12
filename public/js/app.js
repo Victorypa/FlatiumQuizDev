@@ -2528,10 +2528,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vue_slider_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-slider-component */ "./node_modules/vue-slider-component/dist/index.js");
-/* harmony import */ var vue_slider_component__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_slider_component__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_slider_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-slider-component */ "./node_modules/vue-slider-component/dist/index.js");
+/* harmony import */ var vue_slider_component__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_slider_component__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2559,7 +2557,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2568,8 +2573,10 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   components: {
-    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a,
-    vueSlider: vue_slider_component__WEBPACK_IMPORTED_MODULE_1___default.a
+    vueSlider: vue_slider_component__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
+  methods: {
+    submit: function submit() {}
   }
 });
 
@@ -2594,6 +2601,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      volumn: 10
+    };
+  },
+  components: {
+    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
+  methods: {}
+});
 
 /***/ }),
 
@@ -8106,7 +8145,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-19da4664 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-19da4664 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-19da4664] {\n  opacity: 0;\n  -webkit-animation: fadeIn-data-v-19da4664 ease-in 1;\n          animation: fadeIn-data-v-19da4664 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\n.logo[data-v-19da4664] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-19da4664] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-19da4664] {\n  margin-top: 30px;\n}\n.vue-tel-input[data-v-19da4664] {\n  position: relative;\n  display: flex;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  box-shadow: none !important;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.vue-tel-input[data-v-19da4664]:focus-within {\n  border: 2px solid #eee !important;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 16px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\n.full-name--tel[data-v-19da4664] {\n  top: -6px;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.button-wrapper[data-v-19da4664] {\n  text-align: center;\n}\n.primary-button[data-v-19da4664] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 5px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button--disabled[data-v-19da4664] {\n  background-color: #ccc;\n}\n.primary-button[data-v-19da4664]:hover {\n  background-color: #aad7ea;\n}\n.content-center[data-v-19da4664] {\n  padding: 100px 0;\n}\n.dropdown .open[data-v-19da4664]:focus {\n  outline: none !important;\n}\n.dropdown[data-v-19da4664]:hover:focus {\n  outline: none !important;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-19da4664 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-19da4664 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-19da4664] {\n  opacity: 0;\n  -webkit-animation: fadeIn-data-v-19da4664 ease-in 1;\n          animation: fadeIn-data-v-19da4664 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.form-wrapper[data-v-19da4664] {\n  position: relative;\n  margin: 0 auto;\n}\n.logo[data-v-19da4664] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-19da4664] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-19da4664] {\n  margin-top: 30px;\n}\n.vue-tel-input[data-v-19da4664] {\n  position: relative;\n  display: flex;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  box-shadow: none !important;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.vue-tel-input[data-v-19da4664]:focus-within {\n  border: 2px solid #eee !important;\n}\ninput[data-v-19da4664] {\n  display: block;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.full-name[data-v-19da4664] {\n  position: absolute;\n  top: 20px;\n  left: 16px;\n  background: #fff;\n  border-radius: 8px;\n  color: #ccc;\n  font-weight: 400;\n  font-size: 11px;\n  text-indent: 0;\n  letter-spacing: 0.1em;\n  padding: 0 9.6px;\n  transition: 0.2s ease all;\n  text-transform: uppercase;\n}\n.full-name--tel[data-v-19da4664] {\n  top: -6px;\n}\ninput:focus ~ label[data-v-19da4664] {\n  top: -6px;\n  font-size: 14px;\n}\n.input-info[data-v-19da4664] {\n  font-size: 13px;\n  color: #738494;\n  margin-top: 10px;\n  text-align: right;\n}\n.login-here[data-v-19da4664] {\n  color: #738494;\n  font-weight: 400;\n  font-size: 12px;\n  line-height: 1.9;\n  padding: 18px 0 12px;\n  text-align: center;\n}\n.login-here a[data-v-19da4664] {\n  color: #738494;\n  display: inline-block;\n  margin-left: 4px;\n}\n.login-here a[data-v-19da4664]:hover {\n  text-decoration: none;\n}\n.dropdown .open[data-v-19da4664]:focus {\n  outline: none !important;\n}\n.dropdown[data-v-19da4664]:hover:focus {\n  outline: none !important;\n}\n@media (min-width: 700px) {\n.content-center[data-v-19da4664] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n    padding: 0;\n}\n.form-wrapper[data-v-19da4664], .main-caption[data-v-19da4664] {\n    width: 50%;\n}\n}", ""]);
 
 // exports
 
@@ -60750,53 +60789,76 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation"),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "progress-bar__wrapper" },
-        [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "20" } })],
-        1
-      ),
+      _c("calculate-progressbar"),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
-          _c("form", [
-            _c(
-              "div",
-              { staticClass: "form-group" },
-              [
-                _c("h1", { staticClass: "main-caption" }, [
-                  _vm._v(
-                    "\n                Укажите площадь помещения\n                "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "mobile-input",
-                  attrs: { type: "number", name: "", value: "" }
-                }),
-                _vm._v(" "),
-                _c("vue-slider", {
-                  ref: "slider",
-                  staticClass: "vue-slider",
-                  model: {
-                    value: _vm.value,
-                    callback: function($$v) {
-                      _vm.value = $$v
-                    },
-                    expression: "value"
-                  }
-                })
-              ],
-              1
-            )
-          ])
+          _c(
+            "form",
+            {
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.submit()
+                }
+              }
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "form-group" },
+                [
+                  _c("h1", { staticClass: "main-caption" }, [
+                    _vm._v(
+                      "\n                    Укажите площадь помещения\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "mobile-input",
+                    attrs: { type: "number", name: "", value: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("vue-slider", {
+                    ref: "slider",
+                    staticClass: "vue-slider",
+                    model: {
+                      value: _vm.value,
+                      callback: function($$v) {
+                        _vm.value = $$v
+                      },
+                      expression: "value"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ]
+          )
         ])
       ])
     ],
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("div", { staticClass: "button-wrapper" }, [
+        _c(
+          "button",
+          { staticClass: "primary-button", attrs: { type: "submit" } },
+          [_vm._v("\n                         Далее\n                     ")]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -60869,6 +60931,39 @@ var staticRenderFns = [
     ])
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=template&id=3337d8db&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=template&id=3337d8db& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "progress-bar__wrapper" },
+    [
+      _c("progress-bar", {
+        attrs: { "bar-color": "#aad7ea ", val: _vm.volumn }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -75220,6 +75315,7 @@ Vue.component('start-date', __webpack_require__(/*! ./pages/Calculate/Date/Start
 
 Vue.component('app-header', __webpack_require__(/*! ./components/Header/Header */ "./resources/js/components/Header/Header.vue").default);
 Vue.component('app-navigation', __webpack_require__(/*! ./pages/Calculate/partials/Navigation */ "./resources/js/pages/Calculate/partials/Navigation.vue").default);
+Vue.component('calculate-progressbar', __webpack_require__(/*! ./pages/Calculate/partials/ProgressBar */ "./resources/js/pages/Calculate/partials/ProgressBar.vue").default);
 Vue.component('navigation', __webpack_require__(/*! ./components/Panel/partials/Navigation */ "./resources/js/components/Panel/partials/Navigation.vue").default); // Panel
 
 Vue.component('panel', __webpack_require__(/*! ./pages/Panel/Panel */ "./resources/js/pages/Panel/Panel.vue").default);
@@ -75865,6 +75961,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navigation_vue_vue_type_template_id_4012d86f___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navigation_vue_vue_type_template_id_4012d86f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/partials/ProgressBar.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/pages/Calculate/partials/ProgressBar.vue ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ProgressBar_vue_vue_type_template_id_3337d8db___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProgressBar.vue?vue&type=template&id=3337d8db& */ "./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=template&id=3337d8db&");
+/* harmony import */ var _ProgressBar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProgressBar.vue?vue&type=script&lang=js& */ "./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ProgressBar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ProgressBar_vue_vue_type_template_id_3337d8db___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ProgressBar_vue_vue_type_template_id_3337d8db___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/Calculate/partials/ProgressBar.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ProgressBar.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=template&id=3337d8db&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=template&id=3337d8db& ***!
+  \**********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBar_vue_vue_type_template_id_3337d8db___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ProgressBar.vue?vue&type=template&id=3337d8db& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/partials/ProgressBar.vue?vue&type=template&id=3337d8db&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBar_vue_vue_type_template_id_3337d8db___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBar_vue_vue_type_template_id_3337d8db___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

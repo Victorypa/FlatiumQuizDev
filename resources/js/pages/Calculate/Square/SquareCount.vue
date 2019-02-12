@@ -4,19 +4,27 @@
 
       <app-navigation></app-navigation>
 
-      <div class="progress-bar__wrapper">
-        <progress-bar bar-color="#aad7ea " val="20"></progress-bar>
-      </div>
+     <calculate-progressbar></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
-              <form>
+              <form @submit.prevent="submit()">
                 <div class="form-group">
                   <h1 class="main-caption">
-                  Укажите площадь помещения
+                      Укажите площадь помещения
                   </h1>
                   <input type="number" class="mobile-input" name="" value="">
                   <vue-slider ref="slider" v-model="value" class="vue-slider"></vue-slider>
+                </div>
+
+                <div class="form-group">
+                    <div class="button-wrapper">
+                        <button type="submit"
+                                class="primary-button"
+                                >
+                           Далее
+                       </button>
+                    </div>
                 </div>
               </form>
           </div>
@@ -26,7 +34,6 @@
 </template>
 
 <script>
-    import ProgressBar from 'vue-simple-progress'
     import vueSlider from 'vue-slider-component'
 
     export default {
@@ -36,10 +43,15 @@
         }
       },
 
-        components: {
-          ProgressBar,
-          vueSlider
-        },
+      components: {
+        vueSlider
+      },
+
+      methods: {
+          submit () {
+
+          }
+      }
 }
 </script>
 
@@ -74,4 +86,5 @@ width: 100%;
   display: none;
 }
 }
+
 </style>

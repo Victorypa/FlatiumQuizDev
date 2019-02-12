@@ -14,6 +14,8 @@ Vue.component('start-date', require('./pages/Calculate/Date/StartDate').default)
 // Global Partials
 Vue.component('app-header', require('./components/Header/Header').default)
 Vue.component('app-navigation', require('./pages/Calculate/partials/Navigation').default)
+Vue.component('calculate-progressbar', require('./pages/Calculate/partials/ProgressBar').default)
+
 Vue.component('navigation', require('./components/Panel/partials/Navigation').default)
 
 // Panel
