@@ -59,9 +59,12 @@
 
       methods: {
           submit () {
+              let card_id = window.location.search.match(/\d+/g).toString()
               axios.post(`/cards/square/store`, {
-                  'card_id': window.location.search.match(/\d+/g).toString(),
+                  'card_id': card_id,
                   'area': this.area
+              }).then(response => {
+                  window.location.href = `/cards/decoration?card_id=${card_id}`
               })
           }
       }

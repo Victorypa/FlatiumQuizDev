@@ -2587,9 +2587,12 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
+      var card_id = window.location.search.match(/\d+/g).toString();
       axios.post("/cards/square/store", {
-        'card_id': window.location.search.match(/\d+/g).toString(),
+        'card_id': card_id,
         'area': this.area
+      }).then(function (response) {
+        window.location.href = "/cards/decoration?card_id=".concat(card_id);
       });
     }
   }
