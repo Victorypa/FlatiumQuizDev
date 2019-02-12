@@ -32,6 +32,7 @@ margin: 0 auto;
 
 
 .main-caption {
+font-family: 'Rubik', sans-serif;
 text-align: center;
 font-weight: 400;
 
@@ -103,9 +104,15 @@ transition: .15s ease-in-out;
 }
 }
 
-.primary-button:hover {
-  background-color: #aad7ea;
+.primary-button {
+  &:hover {
+    background-color: #007bff;
+  }
+  &:focus {
+    outline: none;
+  }
 }
+
 
 .content-center {
   padding: 100px 0;

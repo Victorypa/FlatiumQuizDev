@@ -92,6 +92,15 @@ width: 100%;
 
 .content-center {
   margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5%;
+  height: 100vh;
+}
+
+.vue-slider-component {
+    margin: 50px 0;
 }
 
 @media (max-width: 768px) {
@@ -101,6 +110,7 @@ width: 100%;
 .vue-slider {
   padding: 40px;
   display: none;
+
 }
 }
 
