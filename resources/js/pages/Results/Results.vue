@@ -1,14 +1,9 @@
 <template>
   <div>
-          <app-header></app-header>
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
-              <a class="nav-item nav-link" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
-              <!-- <a class="nav-item nav-link" id="nav-designer" data-toggle="tab" href="#nav-designer" role="tab" aria-controls="nav-designer" aria-selected="false">Подбор мебели</a>
-              <a class="nav-item nav-link" id="nav-package" data-toggle="tab" href="#nav-package" role="tab" aria-controls="nav-package" aria-selected="false">х</a> -->
-            </div>
-          </nav>
+    <app-header></app-header>
+
+    <app-navigation></app-navigation>
+
     <!-- <div class="logo">
       <a href="https://www.flatium.ru" class="logo__img">
         <img src="/storage/quiz/logo.svg" alt="Flatium-logo">

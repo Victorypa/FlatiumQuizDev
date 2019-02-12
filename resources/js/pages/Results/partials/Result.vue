@@ -32,22 +32,32 @@
       <button type="button"
               name="button"
               class="primary-button"
-              onclick="window.location.href='https://flatium.ru/calculator '">
+              @click="redirectToSquareCount(card_id)"
+              >
         Рассчитать
       </button>
-
     </div>
 </template>
 
 <script>
     export default {
         props: ['data'],
-        //
-        // methods: {
-        //     redirect (data) {
-        //         window.location.href = data.link
-        //     }
-        // }
+
+        data () {
+            return {
+                card_id: window.location.search.match(/\d+/g).toString()
+            }
+        },
+
+        methods: {
+            redirect (data) {
+                window.location.href = data.link
+            },
+
+            redirectToSquareCount (card_id) {
+                window.location.href = `/cards/square?card_id=${card_id}`
+            }
+        }
     }
 </script>
 

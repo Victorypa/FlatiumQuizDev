@@ -7,5 +7,5 @@ require('./plugins')
 require('./components')
 
 const app = new Vue({
-    el: '#app',
+    el: '#app'
 });

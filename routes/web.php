@@ -20,7 +20,7 @@ Route::group(['prefix' => 'cards'], function () {
 
     Route::get('/result', 'Result\ResultController@index');
 
-    Route::get('/square-count', 'Square\SquareCountController@index');
+    Route::get('/square', 'Square\SquareCountController@index');
     Route::get('/decoration', 'Decoration\DecorationController@index');
     Route::get('/material-category', 'Material\MaterialCategoryController@index');
     Route::get('/start-date', 'Date\StartDateController@index');

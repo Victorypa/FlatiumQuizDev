@@ -4,6 +4,7 @@ namespace App\Models\Card;
 
 use App\Models\Person;
 use App\Models\Room\Room;
+use App\Models\Card\Square\Square;
 use Illuminate\Database\Eloquent\Model;
 
 class Card extends Model
@@ -18,5 +19,10 @@ class Card extends Model
     public function people()
     {
         return $this->hasMany(Person::class);
+    }
+
+    public function square()
+    {
+        return $this->hasOne(Square::class);
     }
 }

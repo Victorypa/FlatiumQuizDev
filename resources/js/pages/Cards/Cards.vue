@@ -89,57 +89,16 @@
       },
       data () {
           return {
-              cards_booleans: [],
-              acards: [],
-              bcards: [],
-              c1cards: [],
-              c2cards: [],
-              c3cards: [],
-              d1cards: [],
-              d2cards: [],
-              d3cards: [],
+              acards, bcards, c1cards, c2cards, c3cards,
+              d1cards, d2cards, d3cards, cards_booleans,
+              SK, K, SKAN, CON, ECO, LOFT,
+
               selected_uuids: [],
-
-              SK: [],
-              K: [],
-              SKAN: [],
-              CON: [],
-              ECO: [],
-              LOFT: [],
-
               progress_value: 10
           }
       },
 
-
-
-      mounted () {
-          this.cardsInit()
-          this.resultsInit()
-      },
-
       methods: {
-          cardsInit () {
-              this.acards = acards
-              this.bcards = bcards
-              this.c1cards = c1cards
-              this.c2cards = c2cards
-              this.c3cards = c3cards
-              this.d1cards = d1cards
-              this.d2cards = d2cards
-              this.d3cards = d3cards
-              this.cards_booleans = cards_booleans
-          },
-
-          resultsInit () {
-              this.K = K
-              this.SK = SK
-              this.SKAN = SKAN
-              this.CON = CON
-              this.ECO = ECO
-              this.LOFT = LOFT
-          },
-
          AddCard (data) {
              this.progress_value += 10
              this.selected_uuids.push(data.uuid)
