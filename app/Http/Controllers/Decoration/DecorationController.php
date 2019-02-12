@@ -11,4 +11,9 @@ class DecorationController extends Controller
     {
         return view('calculate.decoration.index');
     }
+
+    public function store(Request $request)
+    {
+
+    }
 }

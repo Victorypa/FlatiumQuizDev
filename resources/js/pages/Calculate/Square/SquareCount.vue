@@ -15,6 +15,7 @@
                   </h1>
                   <input type="number"
                          class="mobile-input"
+                         required
                          v-model="square"
                          >
 

@@ -11,4 +11,9 @@ class StartDateController extends Controller
     {
         return view('calculate.date.start.index');
     }
+
+    public function store(Request $request)
+    {
+
+    }
 }

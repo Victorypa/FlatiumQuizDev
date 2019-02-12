@@ -11,4 +11,9 @@ class DesignSkillsController extends Controller
     {
         return view('calculate.design.skills.index');
     }
+
+    public function store(Request $request)
+    {
+
+    }
 }

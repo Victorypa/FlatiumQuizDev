@@ -11,4 +11,9 @@ class MaterialCategoryController extends Controller
     {
         return view('calculate.material.category.index');
     }
+
+    public function store(Request $request)
+    {
+
+    }
 }

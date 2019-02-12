@@ -2574,6 +2574,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -60835,7 +60836,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "mobile-input",
-                    attrs: { type: "number" },
+                    attrs: { type: "number", required: "" },
                     domProps: { value: _vm.square },
                     on: {
                       input: function($event) {

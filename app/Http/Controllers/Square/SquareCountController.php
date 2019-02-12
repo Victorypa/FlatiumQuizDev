@@ -11,4 +11,9 @@ class SquareCountController extends Controller
     {
         return view('calculate.square.count.index');
     }
+
+    public function store(Request $request)
+    {
+
+    }
 }
