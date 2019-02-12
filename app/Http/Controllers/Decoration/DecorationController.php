@@ -15,6 +15,10 @@ class DecorationController extends Controller
 
     public function store(Request $request)
     {
+        $decoration = Card::where('id', $request->card_id)->first()->decorations()->create([
+            'type' => $request->type
+        ]);
 
+        return $decoration;
     }
 }

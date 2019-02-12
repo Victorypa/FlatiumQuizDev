@@ -2056,11 +2056,17 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     selectDecoration: function selectDecoration(decoration) {
+      var _this = this;
+
       var card_id = window.location.search.match(/\d+/g).toString();
       axios.post("/cards/decoration/store", {
         'card_id': card_id,
         'type': decoration
-      }).then(function (response) {});
+      }).then(function (response) {
+        _this.$refs.progressbar.increment(10);
+
+        window.location.href = "/cards/material-category?card_id=".concat(card_id);
+      });
     }
   }
 });
@@ -2254,18 +2260,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -59561,68 +59555,16 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _vm._m(0),
+      _c("app-navigation"),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "progress-bar__wrapper" },
-        [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "40" } })],
-        1
-      ),
+      _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
-      _vm._m(1)
+      _vm._m(0)
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("nav", [
-      _c(
-        "div",
-        {
-          staticClass: "nav nav-tabs",
-          attrs: { id: "nav-tab", role: "tablist" }
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass: "nav-item nav-link",
-              attrs: {
-                id: "nav-result",
-                "data-toggle": "tab",
-                href: "#nav-result",
-                role: "tab",
-                "aria-controls": "nav-result",
-                "aria-selected": "true"
-              }
-            },
-            [_vm._v("Ваш стиль")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-item nav-link active",
-              attrs: {
-                id: "nav-needs",
-                "data-toggle": "tab",
-                href: "#nav-needs",
-                role: "tab",
-                "aria-controls": "nav-needs",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Рассчёт ремонта")]
-          )
-        ]
-      )
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

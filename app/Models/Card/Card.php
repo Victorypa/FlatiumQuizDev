@@ -5,7 +5,7 @@ namespace App\Models\Card;
 use App\Models\Person;
 use App\Models\Room\Room;
 use App\Models\Card\Square\Square;
-use App\Models\Decoration\Decoration;
+use App\Models\Card\Decoration\Decoration;
 use Illuminate\Database\Eloquent\Model;
 
 class Card extends Model

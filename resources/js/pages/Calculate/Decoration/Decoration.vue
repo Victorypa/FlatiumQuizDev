@@ -42,7 +42,8 @@
                     'card_id': card_id,
                     'type': decoration
                 }).then(response => {
-                    
+                    this.$refs.progressbar.increment(10)
+                    window.location.href = `/cards/material-category?card_id=${card_id}`
                 })
             }
         }
