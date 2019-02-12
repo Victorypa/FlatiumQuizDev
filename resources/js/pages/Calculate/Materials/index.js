@@ -1,67 +1,67 @@
 export const categories = [
     {
-        name: '',
-        svg: ``,
+        name: 'Стандарт',
         comments: [
             {
-                title: ''
+                title: 'Некоторые комплектующие:'
             },
             {
-                title: ''
+                title: '- Ламинат Tarkett Germany'
             },
             {
-                title: ''
+                title: '- Бумажные обои МОФ'
             },
             {
-                title: ''
+                title: '- Тумба с раковиной Triton Локо'
             },
             {
-                title: ''
+                title: '- Глухое дверное полотно Фортунато '
             },
-        ]
+        ],
+        svg: '/storage/categories/standard.svg',
     },
 
     {
-        name: '',
-        svg: ``,
+        name: 'Комфорт',
         comments: [
             {
-                title: ''
+                title: 'Некоторые комплектующие:'
             },
             {
-                title: ''
+                title: '- Ламинат Tarkett Artisan'
             },
             {
-                title: ''
+                title: '- Флизелиновые обои Rasсh'
             },
             {
-                title: ''
+                title: '- Тумба с раковиной Sanflor Софи'
             },
             {
-                title: ''
+                title: '- Межкомнатная дверь Profildoors, эмаль'
             },
-        ]
+        ],
+        svg: '/storage/categories/comfort.svg',
     },
 
     {
-        name: '',
-        svg: ``,
+        name: 'Премиум',
         comments: [
             {
-                title: ''
+                title: 'Некоторые комплектующие:'
             },
             {
-                title: ''
+                title: '- Паркетная доска Polarwood Space'
             },
             {
-                title: ''
+                title: '- Акцентная стена из декор. штукатурки'
             },
             {
-                title: ''
+                title: '- Флизелиновые обои Виктория Стенова'
             },
             {
-                title: ''
+                title: '- Тумба с раковиной Jacob Delafon Struktura'
             },
-        ]
+        ],
+        svg: `/storage/categories/premium.svg`,
     },
 ]

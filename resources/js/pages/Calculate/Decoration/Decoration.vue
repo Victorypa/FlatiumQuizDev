@@ -1,5 +1,5 @@
 <template>
-<div class="">
+    <div>
       <app-header></app-header>
 
       <app-navigation></app-navigation>
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-</div>
+    </div>
 
 </template>
 
@@ -60,18 +60,6 @@
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;
-}
-
-.fade-in.one {
-  animation-delay: 0.2s;
-}
-
-.fade-in.two {
-  animation-delay: 0.4s;
-}
-
-.fade-in.three {
-  animation-delay: 0.6s;
 }
 
 svg {

@@ -2258,78 +2258,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Calculate/Materials/index.js");
 //
 //
 //
@@ -2369,8 +2298,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
+  data: function data() {
+    return {
+      categories: _index_js__WEBPACK_IMPORTED_MODULE_0__["categories"]
+    };
   }
 });
 
@@ -7914,7 +7845,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-5296e3e6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-5296e3e6 ease-in 1;\n          animation: fadeIn-data-v-5296e3e6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\nsvg[data-v-5296e3e6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-5296e3e6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-5296e3e6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-5296e3e6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-5296e3e6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-5296e3e6] {\n  fill: #ccc;\n}\n.button-card[data-v-5296e3e6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-5296e3e6]:hover, .button-card.active[data-v-5296e3e6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-5296e3e6], .button-card.active .image-text[data-v-5296e3e6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-5296e3e6], .button-card.active .icon-svg [stroke][data-v-5296e3e6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-5296e3e6], .button-card.active .fill-color[data-v-5296e3e6] {\n  fill: #000;\n}\nsvg[data-v-5296e3e6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-5296e3e6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-5296e3e6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-5296e3e6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-5296e3e6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-5296e3e6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-5296e3e6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-5296e3e6 ease-in 1;\n          animation: fadeIn-data-v-5296e3e6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-5296e3e6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-5296e3e6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-5296e3e6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-5296e3e6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-5296e3e6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-5296e3e6] {\n  fill: #ccc;\n}\n.button-card[data-v-5296e3e6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-5296e3e6]:hover, .button-card.active[data-v-5296e3e6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-5296e3e6], .button-card.active .image-text[data-v-5296e3e6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-5296e3e6], .button-card.active .icon-svg [stroke][data-v-5296e3e6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-5296e3e6], .button-card.active .fill-color[data-v-5296e3e6] {\n  fill: #000;\n}\nsvg[data-v-5296e3e6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-5296e3e6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-5296e3e6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-5296e3e6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-5296e3e6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-5296e3e6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -7952,7 +7883,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-7bf1344c] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-7bf1344c ease-in 1;\n          animation: fadeIn-data-v-7bf1344c ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-7bf1344c] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-7bf1344c] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-7bf1344c] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.image-wrapper[data-v-7bf1344c] {\n  display: flex;\n  justify-content: space-between;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-card[data-v-7bf1344c] {\n  margin: 0 10px 20px;\n  display: block;\n  flex-basis: 300px;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-7bf1344c] {\n  padding-top: 30px;\n}\n.image-subtitle[data-v-7bf1344c] {\n  text-transform: none;\n  font-size: 10px;\n  padding-top: 40px;\n  line-height: 16px;\n  color: #738494;\n}\n.image-subtitle ul[data-v-7bf1344c] {\n  text-align: center;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n.main-caption[data-v-7bf1344c] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-7bf1344c] {\n  margin: 50px 0;\n}\n.button-card[data-v-7bf1344c] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  min-height: 350px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 100%;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-7bf1344c]:hover, .button-card.active[data-v-7bf1344c] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-7bf1344c], .button-card:hover .image-subtitle[data-v-7bf1344c], .button-card.active .image-text[data-v-7bf1344c], .button-card.active .image-subtitle[data-v-7bf1344c] {\n  color: #000;\n}\n.primary-button[data-v-7bf1344c] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-7bf1344c]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-7bf1344c] {\n  margin: 0 auto;\n}\n@media (min-width: 700px) {\n.content-center[data-v-7bf1344c] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-7bf1344c] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-7bf1344c] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-7bf1344c] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-7bf1344c] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-7bf1344c ease-in 1;\n          animation: fadeIn-data-v-7bf1344c ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.image-wrapper[data-v-7bf1344c] {\n  display: flex;\n  justify-content: space-between;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-card[data-v-7bf1344c] {\n  margin: 0 10px 20px;\n  display: block;\n  flex-basis: 300px;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-7bf1344c] {\n  padding-top: 30px;\n}\n.image-subtitle[data-v-7bf1344c] {\n  text-transform: none;\n  font-size: 10px;\n  padding-top: 40px;\n  line-height: 16px;\n  color: #738494;\n}\n.image-subtitle ul[data-v-7bf1344c] {\n  text-align: center;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n.main-caption[data-v-7bf1344c] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-7bf1344c] {\n  margin: 50px 0;\n}\n.button-card[data-v-7bf1344c] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  min-height: 350px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 100%;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-7bf1344c]:hover, .button-card.active[data-v-7bf1344c] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-7bf1344c], .button-card:hover .image-subtitle[data-v-7bf1344c], .button-card.active .image-text[data-v-7bf1344c], .button-card.active .image-subtitle[data-v-7bf1344c] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-7bf1344c] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-7bf1344c] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-7bf1344c] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-7bf1344c] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -58626,7 +58557,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {},
     [
       _c("app-header"),
       _vm._v(" "),
@@ -58638,7 +58568,7 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("h1", { staticClass: "main-caption" }, [
             _vm._v(
-              "\n              Расскажите какая текущая  отделка в помещении\n            "
+              "\n          Расскажите какая текущая  отделка в помещении\n        "
             )
           ]),
           _vm._v(" "),
@@ -59559,179 +59489,58 @@ var render = function() {
       _vm._v(" "),
       _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "content-center" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("h1", { staticClass: "main-caption" }, [
+            _vm._v(
+              "\n              Выберете категорию материалов по вашему бюджету\n            "
+            )
+          ]),
+          _vm._v(" "),
+          _vm.categories.length
+            ? _c(
+                "div",
+                { staticClass: "image-wrapper" },
+                _vm._l(_vm.categories, function(category) {
+                  return _c("div", { staticClass: "image-card fade-in" }, [
+                    _c("button", { staticClass: "button-card" }, [
+                      _c("div", { staticClass: "image-picture" }, [
+                        _c("img", {
+                          attrs: { alt: category.name, src: category.svg }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", {
+                        staticClass: "image-text",
+                        domProps: { textContent: _vm._s(category.name) }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "image-subtitle" }, [
+                      category.comments.length
+                        ? _c(
+                            "ul",
+                            _vm._l(category.comments, function(comment) {
+                              return _c("li", {
+                                domProps: { textContent: _vm._s(comment.title) }
+                              })
+                            }),
+                            0
+                          )
+                        : _vm._e()
+                    ])
+                  ])
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ])
     ],
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "content-center" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("h1", { staticClass: "main-caption" }, [
-          _vm._v(
-            "\n              Выберете категорию материалов по вашему бюджету\n            "
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "image-wrapper" }, [
-          _c("div", { staticClass: "image-card fade-in one" }, [
-            _c("button", { staticClass: "button-card active" }, [
-              _c("div", { staticClass: "image-picture" }, [
-                _c("img", {
-                  attrs: {
-                    src:
-                      "https://s3.amazonaws.com/static.havenly.com/user-profile-images/Clean_Slate.svg",
-                    alt: "material-one"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Стандарт")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-subtitle" }, [
-              _c("ul", [
-                _c("li", [
-                  _vm._v(
-                    "\n                        Некоторые комплектующие:\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Ламинат Tarkett Germany\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Бумажные обои МОФ\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Тумба с раковиной Triton Локо\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "-\n                         Глухое дверное полотно Фортунато "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in two" }, [
-            _c("button", { staticClass: "button-card" }, [
-              _c("div", { staticClass: "image-picture" }, [
-                _c("img", {
-                  attrs: {
-                    src:
-                      "https://s3.amazonaws.com/static.havenly.com/user-profile-images/Partway_There.svg",
-                    alt: "material-second"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Комфорт")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-subtitle" }, [
-              _c("ul", [
-                _c("li", [
-                  _vm._v(
-                    "\n                        Некоторые комплектующие:\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Ламинат Tarkett Artisan\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Флизелиновые обои Rasсh\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Тумба с раковиной Sanflor Софи\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                         - Межкомнатная дверь Profildoors, эмаль\n                        "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-card fade-in three" }, [
-            _c("button", { staticClass: "button-card" }, [
-              _c("div", { staticClass: "image-picture" }, [
-                _c("img", {
-                  attrs: {
-                    src:
-                      "https://s3.amazonaws.com/static.havenly.com/user-profile-images/Finishing_Touches.svg",
-                    alt: "material-third"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "image-text" }, [_vm._v("Премиум")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-subtitle" }, [
-              _c("ul", [
-                _c("li", [
-                  _vm._v(
-                    "\n                        Некоторые комплектующие:\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Паркетная доска Polarwood Space\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Акцентная стена из декор. штукатурки\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                        - Флизелиновые обои Виктория Стенова\n                      "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n                         - Тумба с раковиной Jacob Delafon Struktura\n                        "
-                  )
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -74821,6 +74630,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MaterialCategory_vue_vue_type_template_id_7bf1344c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/Materials/index.js":
+/*!*********************************************************!*\
+  !*** ./resources/js/pages/Calculate/Materials/index.js ***!
+  \*********************************************************/
+/*! exports provided: categories */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "categories", function() { return categories; });
+var categories = [{
+  name: 'Стандарт',
+  comments: [{
+    title: 'Некоторые комплектующие:'
+  }, {
+    title: '- Ламинат Tarkett Germany'
+  }, {
+    title: '- Бумажные обои МОФ'
+  }, {
+    title: '- Тумба с раковиной Triton Локо'
+  }, {
+    title: '- Глухое дверное полотно Фортунато '
+  }],
+  svg: '/storage/categories/standard.svg'
+}, {
+  name: 'Комфорт',
+  comments: [{
+    title: 'Некоторые комплектующие:'
+  }, {
+    title: '- Ламинат Tarkett Artisan'
+  }, {
+    title: '- Флизелиновые обои Rasсh'
+  }, {
+    title: '- Тумба с раковиной Sanflor Софи'
+  }, {
+    title: '- Межкомнатная дверь Profildoors, эмаль'
+  }],
+  svg: '/storage/categories/comfort.svg'
+}, {
+  name: 'Премиум',
+  comments: [{
+    title: 'Некоторые комплектующие:'
+  }, {
+    title: '- Паркетная доска Polarwood Space'
+  }, {
+    title: '- Акцентная стена из декор. штукатурки'
+  }, {
+    title: '- Флизелиновые обои Виктория Стенова'
+  }, {
+    title: '- Тумба с раковиной Jacob Delafon Struktura'
+  }],
+  svg: "/storage/categories/premium.svg"
+}];
 
 /***/ }),
 

@@ -11,89 +11,19 @@
             <h1 class="main-caption">
               Выберете категорию материалов по вашему бюджету
             </h1>
-            <div class="image-wrapper">
-              <div class="image-card fade-in one">
-                  <button class="button-card active">
-                    <div class="image-picture">
-                      <img src="https://s3.amazonaws.com/static.havenly.com/user-profile-images/Clean_Slate.svg" alt="material-one">
-                    </div>
-                      <div class="image-text">Стандарт</div>
-
-                  </button>
-                  <div class="image-subtitle">
-                    <ul>
-                      <li>
-                        Некоторые комплектующие:
-                      </li>
-                      <li>
-                        - Ламинат Tarkett Germany
-                      </li>
-                      <li>
-                        - Бумажные обои МОФ
-                      </li>
-                      <li>
-                        - Тумба с раковиной Triton Локо
-                      </li>
-                      <li>-
-                         Глухое дверное полотно Фортунато </li>
-                    </ul>
-                  </div>
-              </div>
-
-              <div class="image-card fade-in two">
+            <div class="image-wrapper" v-if="categories.length">
+              <div class="image-card fade-in" v-for="category in categories">
                   <button class="button-card">
                     <div class="image-picture">
-                      <img src="https://s3.amazonaws.com/static.havenly.com/user-profile-images/Partway_There.svg" alt="material-second">
+                      <img :alt="category.name"
+                           :src="category.svg">
                     </div>
-                    <div class="image-text">Комфорт</div>
-
+                    <div class="image-text" v-text="category.name"></div>
                   </button>
-                  <div class="image-subtitle">
-                    <ul>
-                      <li>
-                        Некоторые комплектующие:
-                      </li>
-                      <li>
-                        - Ламинат Tarkett Artisan
-                      </li>
-                      <li>
-                        - Флизелиновые обои Rasсh
-                      </li>
-                      <li>
-                        - Тумба с раковиной Sanflor Софи
-                      </li>
-                      <li>
-                         - Межкомнатная дверь Profildoors, эмаль
-                        </li>
-                    </ul>
-                  </div>
-              </div>
 
-              <div class="image-card fade-in three">
-                  <button class="button-card">
-                    <div class="image-picture">
-                      <img src="https://s3.amazonaws.com/static.havenly.com/user-profile-images/Finishing_Touches.svg" alt="material-third">
-                    </div>
-                  <div class="image-text">Премиум</div>
-
-                  </button>
                   <div class="image-subtitle">
-                    <ul>
-                      <li>
-                        Некоторые комплектующие:
-                      </li>
-                      <li>
-                        - Паркетная доска Polarwood Space
-                      </li>
-                      <li>
-                        - Акцентная стена из декор. штукатурки
-                      </li>
-                      <li>
-                        - Флизелиновые обои Виктория Стенова
-                      </li>
-                      <li>
-                         - Тумба с раковиной Jacob Delafon Struktura
-                        </li>
+                    <ul v-if="category.comments.length">
+                      <li v-for="comment in category.comments" v-text="comment.title" />
                     </ul>
                   </div>
               </div>
@@ -106,12 +36,14 @@
 </template>
 
 <script>
-import ProgressBar from 'vue-simple-progress'
-export default {
-  components: {
-    ProgressBar,
-  },
-}
+    import { categories } from './index.js'
+    export default {
+        data () {
+            return {
+                categories
+            }
+        }
+    }
 </script>
 
 <style lang="scss" scoped>
@@ -122,18 +54,6 @@ export default {
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;
-}
-
-.fade-in.one {
-  animation-delay: 0.2s;
-}
-
-.fade-in.two {
-  animation-delay: 0.4s;
-}
-
-.fade-in.three {
-  animation-delay: 0.5s;
 }
 
 .image {
@@ -199,29 +119,6 @@ cursor: pointer;
     color: #000;
     }
   }
-}
-
-.primary-button {
-height: 42px;
-font-size: 15px;
-font-weight: 400;
-background-color: #0a0c12;
-color: #fff;
-margin: 20px 0;
-padding: 0 30px;
-letter-spacing: .025em;
-border: 0;
-border-radius: 2px;
-line-height: 42px;
-outline: none;
-cursor: pointer;
-transition: .15s ease-in-out;
-}
-.primary-button:hover {
-  background-color: #aad7ea;
-}
-.button-wrapper {
-margin: 0 auto;
 }
 
 @media (min-width: 700px) {
