@@ -1,6 +1,7 @@
 export const categories = [
     {
         name: 'Стандарт',
+        value: 'standard',
         comments: [
             {
                 title: 'Некоторые комплектующие:'
@@ -18,11 +19,12 @@ export const categories = [
                 title: '- Глухое дверное полотно Фортунато '
             },
         ],
-        svg: '/storage/categories/standard.svg',
+        svg: '/storage/categories/standard.svg'
     },
 
     {
         name: 'Комфорт',
+        value: 'comfort',
         comments: [
             {
                 title: 'Некоторые комплектующие:'
@@ -40,11 +42,12 @@ export const categories = [
                 title: '- Межкомнатная дверь Profildoors, эмаль'
             },
         ],
-        svg: '/storage/categories/comfort.svg',
+        svg: '/storage/categories/comfort.svg'
     },
 
     {
         name: 'Премиум',
+        value: 'premium',
         comments: [
             {
                 title: 'Некоторые комплектующие:'
@@ -62,6 +65,6 @@ export const categories = [
                 title: '- Тумба с раковиной Jacob Delafon Struktura'
             },
         ],
-        svg: `/storage/categories/premium.svg`,
+        svg: `/storage/categories/premium.svg`
     },
 ]

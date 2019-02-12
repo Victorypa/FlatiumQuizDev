@@ -13,12 +13,17 @@
             </h1>
             <div class="image-wrapper" v-if="categories.length">
               <div class="image-card fade-in" v-for="category in categories">
-                  <button class="button-card">
-                    <div class="image-picture">
-                      <img :alt="category.name"
-                           :src="category.svg">
-                    </div>
-                    <div class="image-text" v-text="category.name"></div>
+                  <button class="button-card"
+                          @click.prevent="selectedCategory(category.value)"
+                          >
+                            <div class="image-picture">
+                              <img :alt="category.name"
+                                   :src="category.svg">
+                            </div>
+                            <div class="image-text"
+                                 v-text="category.name"
+                                 >
+                            </div>
                   </button>
 
                   <div class="image-subtitle">
@@ -41,6 +46,19 @@
         data () {
             return {
                 categories
+            }
+        },
+
+        methods: {
+            selectedCategory (type) {
+                let card_id = window.location.search.match(/\d+/g).toString()
+                axios.post('/cards/material-category/store', {
+                    'card_id': card_id,
+                    'type': type
+                }).then(response => {
+                    this.$refs.progressbar.increment(10)
+                    window.location.href = `/cards/start-date?card_id=${card_id}`
+                })
             }
         }
     }

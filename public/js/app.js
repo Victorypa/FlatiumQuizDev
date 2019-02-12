@@ -2296,12 +2296,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       categories: _index_js__WEBPACK_IMPORTED_MODULE_0__["categories"]
     };
+  },
+  methods: {
+    selectedCategory: function selectedCategory(type) {
+      var _this = this;
+
+      var card_id = window.location.search.match(/\d+/g).toString();
+      axios.post('/cards/material-category/store', {
+        'card_id': card_id,
+        'type': type
+      }).then(function (response) {
+        _this.$refs.progressbar.increment(10);
+
+        window.location.href = "/cards/start-date?card_id=".concat(card_id);
+      });
+    }
   }
 });
 
@@ -59503,18 +59523,30 @@ var render = function() {
                 { staticClass: "image-wrapper" },
                 _vm._l(_vm.categories, function(category) {
                   return _c("div", { staticClass: "image-card fade-in" }, [
-                    _c("button", { staticClass: "button-card" }, [
-                      _c("div", { staticClass: "image-picture" }, [
-                        _c("img", {
-                          attrs: { alt: category.name, src: category.svg }
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button-card",
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.selectedCategory(category.value)
+                          }
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "image-picture" }, [
+                          _c("img", {
+                            attrs: { alt: category.name, src: category.svg }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", {
+                          staticClass: "image-text",
+                          domProps: { textContent: _vm._s(category.name) }
                         })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", {
-                        staticClass: "image-text",
-                        domProps: { textContent: _vm._s(category.name) }
-                      })
-                    ]),
+                      ]
+                    ),
                     _vm._v(" "),
                     _c("div", { staticClass: "image-subtitle" }, [
                       category.comments.length
@@ -74645,6 +74677,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "categories", function() { return categories; });
 var categories = [{
   name: 'Стандарт',
+  value: 'standard',
   comments: [{
     title: 'Некоторые комплектующие:'
   }, {
@@ -74659,6 +74692,7 @@ var categories = [{
   svg: '/storage/categories/standard.svg'
 }, {
   name: 'Комфорт',
+  value: 'comfort',
   comments: [{
     title: 'Некоторые комплектующие:'
   }, {
@@ -74673,6 +74707,7 @@ var categories = [{
   svg: '/storage/categories/comfort.svg'
 }, {
   name: 'Премиум',
+  value: 'premium',
   comments: [{
     title: 'Некоторые комплектующие:'
   }, {

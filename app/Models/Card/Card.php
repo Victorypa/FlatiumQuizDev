@@ -5,8 +5,9 @@ namespace App\Models\Card;
 use App\Models\Person;
 use App\Models\Room\Room;
 use App\Models\Card\Square\Square;
-use App\Models\Card\Decoration\Decoration;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Card\Decoration\Decoration;
+use App\Models\Card\Material\MaterialCategory;
 
 class Card extends Model
 {
@@ -30,5 +31,10 @@ class Card extends Model
     public function decorations()
     {
         return $this->hasMany(Decoration::class);
+    }
+
+    public function material_categories()
+    {
+        return $this->hasMany(MaterialCategory::class);
     }
 }
