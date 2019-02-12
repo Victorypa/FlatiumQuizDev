@@ -1868,7 +1868,19 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    selected: function selected(type) {}
+    selected: function selected(type) {
+      var _this = this;
+
+      var card_id = window.location.search.match(/\d+/g).toString();
+      axios.post('/cards/start-date/store', {
+        'card_id': card_id,
+        'type': type
+      }).then(function (response) {
+        _this.$refs.progressbar.increment(10);
+
+        window.location.href = "/cards/design-skills?card_id=".concat(card_id);
+      });
+    }
   }
 });
 
