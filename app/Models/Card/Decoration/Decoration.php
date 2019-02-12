@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Card\Square;
+namespace App\Models\Card\Decoration;
 
 use App\Models\Card\Card;
 use Illuminate\Database\Eloquent\Model;
 
-class Square extends Model
+class Decoration extends Model
 {
     protected $guarded = [];
 

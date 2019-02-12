@@ -21,8 +21,8 @@ class Card extends Model
         return $this->hasMany(Person::class);
     }
 
-    public function square()
+    public function squares()
     {
-        return $this->hasOne(Square::class);
+        return $this->hasMany(Square::class);
     }
 }

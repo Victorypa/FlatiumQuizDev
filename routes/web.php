@@ -21,19 +21,19 @@ Route::group(['prefix' => 'cards'], function () {
     Route::get('/result', 'Result\ResultController@index');
 
     Route::get('/square', 'Square\SquareCountController@index');
-    Route::post('/square', 'Square\SquareCountController@store');
+    Route::post('/square/store', 'Square\SquareCountController@store');
 
     Route::get('/decoration', 'Decoration\DecorationController@index');
-    Route::post('/decoration', 'Decoration\DecorationController@store');
+    Route::post('/decoration/store', 'Decoration\DecorationController@store');
 
     Route::get('/material-category', 'Material\MaterialCategoryController@index');
-    Route::post('/material-category', 'Material\MaterialCategoryController@store');
+    Route::post('/material-category/store', 'Material\MaterialCategoryController@store');
 
     Route::get('/start-date', 'Date\StartDateController@index');
-    Route::post('/start-date', 'Date\StartDateController@store');
+    Route::post('/start-date/store', 'Date\StartDateController@store');
 
     Route::get('/design-skills', 'Design\DesignSkillsController@index');
-    Route::post('/design-skills', 'Design\DesignSkillsController@store');
+    Route::post('/design-skills/store', 'Design\DesignSkillsController@store');
 
 
     Route::get('/clicks', 'Card\Click\ClickController@index');

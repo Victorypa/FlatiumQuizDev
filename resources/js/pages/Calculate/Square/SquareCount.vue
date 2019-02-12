@@ -16,11 +16,11 @@
                   <input type="number"
                          class="mobile-input"
                          required
-                         v-model="square"
+                         v-model="area"
                          >
 
                   <vue-slider ref="slider"
-                              v-model="square"
+                              v-model="area"
                               class="vue-slider"
                               >
                  </vue-slider>
@@ -49,7 +49,7 @@
     export default {
       data () {
         return {
-            square: 30
+            area: 30
         }
       },
 
@@ -59,7 +59,10 @@
 
       methods: {
           submit () {
-              console.log(this.square);
+              axios.post(`/cards/square/store`, {
+                  'card_id': window.location.search.match(/\d+/g).toString(),
+                  'area': this.area
+              })
           }
       }
 }

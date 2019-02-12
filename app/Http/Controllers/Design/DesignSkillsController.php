@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Design;
 
+use App\Models\Card\Card;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

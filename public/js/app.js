@@ -2579,7 +2579,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      square: 30
+      area: 30
     };
   },
   components: {
@@ -2587,7 +2587,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
-      console.log(this.square);
+      axios.post("/cards/square/store", {
+        'card_id': window.location.search.match(/\d+/g).toString(),
+        'area': this.area
+      });
     }
   }
 });
@@ -60831,19 +60834,19 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.square,
-                        expression: "square"
+                        value: _vm.area,
+                        expression: "area"
                       }
                     ],
                     staticClass: "mobile-input",
                     attrs: { type: "number", required: "" },
-                    domProps: { value: _vm.square },
+                    domProps: { value: _vm.area },
                     on: {
                       input: function($event) {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.square = $event.target.value
+                        _vm.area = $event.target.value
                       }
                     }
                   }),
@@ -60852,11 +60855,11 @@ var render = function() {
                     ref: "slider",
                     staticClass: "vue-slider",
                     model: {
-                      value: _vm.square,
+                      value: _vm.area,
                       callback: function($$v) {
-                        _vm.square = $$v
+                        _vm.area = $$v
                       },
-                      expression: "square"
+                      expression: "area"
                     }
                   })
                 ],
