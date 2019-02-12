@@ -1,34 +1,26 @@
 <template>
 <div class="">
       <app-header></app-header>
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
-          <a class="nav-item nav-link active" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
-          <!-- <a class="nav-item nav-link" id="nav-designer" data-toggle="tab" href="#nav-designer" role="tab" aria-controls="nav-designer" aria-selected="false">Подбор мебели</a>
-          <a class="nav-item nav-link" id="nav-package" data-toggle="tab" href="#nav-package" role="tab" aria-controls="nav-package" aria-selected="false">х</a> -->
-        </div>
-      </nav>
-      <div class="progress-bar__wrapper">
-            <progress-bar bar-color="#aad7ea " val="30"></progress-bar>
-      </div>
+
+      <app-navigation></app-navigation>
+
+      <calculate-progressbar ref="progressbar"></calculate-progressbar>
+
       <div class="content-center">
           <div class="container">
-
-            <!-- <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-            </div> -->
             <h1 class="main-caption">
               Расскажите какая текущая  отделка в помещении
             </h1>
-            <div class="image-wrapper">
-              <div class="image-card fade-in one">
-                  <button class="button-card active">
-                    <svg width="112px" height="96px" viewBox="0 0 112 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-                        <defs></defs>
+            <div class="image-wrapper" v-for>
+
+            </div>
+
+            <div class="image-wrapper">
+
+              <div class="image-card fade-in one">
+                  <button class="button-card">
+                    <svg width="112px" height="96px" viewBox="0 0 112 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Option-2---button-&amp;-talkback-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                             <g id="Kind-of-Home" transform="translate(-306.000000, -370.000000)" stroke="#738494">
                                 <g id="home-kinds" transform="translate(280.000000, 339.000000)">
@@ -173,11 +165,8 @@
 </template>
 
 <script>
-    import ProgressBar from 'vue-simple-progress'
     export default {
-      components: {
-        ProgressBar,
-      }
+
     }
 </script>
 
@@ -200,7 +189,7 @@
 }
 
 .fade-in.three {
-  animation-delay: 0.5s;
+  animation-delay: 0.6s;
 }
 
 svg {
@@ -265,29 +254,6 @@ cursor: pointer;
   }
 }
 
-
-.primary-button {
-height: 42px;
-font-size: 15px;
-font-weight: 400;
-background-color: #0a0c12;
-color: #fff;
-margin: 20px 0;
-padding: 0 30px;
-letter-spacing: .025em;
-border: 0;
-border-radius: 2px;
-line-height: 42px;
-outline: none;
-cursor: pointer;
-transition: .15s ease-in-out;
-}
-.primary-button:hover {
-  background-color: #aad7ea;
-}
-.button-wrapper {
-margin: 0 auto;
-}
 svg {
 margin-bottom: 20px;
 }

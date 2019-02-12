@@ -2019,8 +2019,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2187,20 +2185,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
-  }
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -2587,11 +2572,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
+      var _this = this;
+
       var card_id = window.location.search.match(/\d+/g).toString();
       axios.post("/cards/square/store", {
         'card_id': card_id,
         'area': this.area
       }).then(function (response) {
+        _this.$refs.progressbar.increment(10);
+
         window.location.href = "/cards/decoration?card_id=".concat(card_id);
       });
     }
@@ -2649,7 +2638,11 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
   },
-  methods: {}
+  methods: {
+    increment: function increment(value) {
+      this.volumn += value;
+    }
+  }
 });
 
 /***/ }),
@@ -8049,7 +8042,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-5296e3e6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-5296e3e6 ease-in 1;\n          animation: fadeIn-data-v-5296e3e6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\nsvg[data-v-5296e3e6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-5296e3e6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-5296e3e6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-5296e3e6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-5296e3e6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-5296e3e6] {\n  fill: #ccc;\n}\n.button-card[data-v-5296e3e6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-5296e3e6]:hover, .button-card.active[data-v-5296e3e6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-5296e3e6], .button-card.active .image-text[data-v-5296e3e6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-5296e3e6], .button-card.active .icon-svg [stroke][data-v-5296e3e6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-5296e3e6], .button-card.active .fill-color[data-v-5296e3e6] {\n  fill: #000;\n}\n.primary-button[data-v-5296e3e6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-5296e3e6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-5296e3e6] {\n  margin: 0 auto;\n}\nsvg[data-v-5296e3e6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-5296e3e6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-5296e3e6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-5296e3e6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-5296e3e6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-5296e3e6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-5296e3e6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-5296e3e6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-5296e3e6 ease-in 1;\n          animation: fadeIn-data-v-5296e3e6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-5296e3e6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\nsvg[data-v-5296e3e6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-5296e3e6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-5296e3e6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-5296e3e6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-5296e3e6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-5296e3e6] {\n  fill: #ccc;\n}\n.button-card[data-v-5296e3e6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-5296e3e6]:hover, .button-card.active[data-v-5296e3e6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-5296e3e6], .button-card.active .image-text[data-v-5296e3e6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-5296e3e6], .button-card.active .icon-svg [stroke][data-v-5296e3e6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-5296e3e6], .button-card.active .fill-color[data-v-5296e3e6] {\n  fill: #000;\n}\nsvg[data-v-5296e3e6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-5296e3e6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-5296e3e6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-5296e3e6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-5296e3e6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-5296e3e6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -58765,14 +58758,9 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _vm._m(0),
+      _c("app-navigation"),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "progress-bar__wrapper" },
-        [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "30" } })],
-        1
-      ),
+      _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -58782,9 +58770,11 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
+          _c("div", { staticClass: "image-wrapper" }),
+          _vm._v(" "),
           _c("div", { staticClass: "image-wrapper" }, [
             _c("div", { staticClass: "image-card fade-in one" }, [
-              _c("button", { staticClass: "button-card active" }, [
+              _c("button", { staticClass: "button-card" }, [
                 _c(
                   "svg",
                   {
@@ -58798,8 +58788,6 @@ var render = function() {
                     }
                   },
                   [
-                    _c("defs"),
-                    _vm._v(" "),
                     _c(
                       "g",
                       {
@@ -59607,7 +59595,7 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _vm._m(1)
+            _vm._m(0)
           ])
         ])
       ])
@@ -59616,53 +59604,6 @@ var render = function() {
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("nav", [
-      _c(
-        "div",
-        {
-          staticClass: "nav nav-tabs",
-          attrs: { id: "nav-tab", role: "tablist" }
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass: "nav-item nav-link",
-              attrs: {
-                id: "nav-result",
-                "data-toggle": "tab",
-                href: "#nav-result",
-                role: "tab",
-                "aria-controls": "nav-result",
-                "aria-selected": "true"
-              }
-            },
-            [_vm._v("Ваш стиль")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-item nav-link active",
-              attrs: {
-                id: "nav-needs",
-                "data-toggle": "tab",
-                href: "#nav-needs",
-                role: "tab",
-                "aria-controls": "nav-needs",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Рассчёт ремонта")]
-          )
-        ]
-      )
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -60807,7 +60748,7 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar"),
+      _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [

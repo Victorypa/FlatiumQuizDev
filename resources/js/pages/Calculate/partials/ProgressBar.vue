@@ -19,7 +19,9 @@
         },
 
         methods: {
-
+            increment (value) {
+                this.volumn += value
+            }
         }
     }
 </script>
