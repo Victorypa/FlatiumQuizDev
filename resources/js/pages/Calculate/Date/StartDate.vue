@@ -1,34 +1,20 @@
 <template>
 <div class="">
-      <app-header></app-header>
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link " id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
-          <a class="nav-item nav-link active" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
-          <!-- <a class="nav-item nav-link" id="nav-designer" data-toggle="tab" href="#nav-designer" role="tab" aria-controls="nav-designer" aria-selected="false">Подбор мебели</a>
-          <a class="nav-item nav-link" id="nav-package" data-toggle="tab" href="#nav-package" role="tab" aria-controls="nav-package" aria-selected="false">х</a> -->
-        </div>
-      </nav>
-      <div class="progress-bar__wrapper">
-            <progress-bar bar-color="#aad7ea " val="60"></progress-bar>
+    <app-header></app-header>
 
-      </div>
-      <!-- <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-      </div> -->
+    <app-navigation></app-navigation>
+
+    <calculate-progressbar ref="progressbar"></calculate-progressbar>
+
       <div class="content-center">
           <div class="container">
-
             <h1 class="main-caption">
               Когда бы вы хотели начать ремонт?
             </h1>
             <div class="image-wrapper">
-              <div class="image-card fade-in one">
-                  <button class="button-card active">
+              <div class="image-card fade-in">
+                  <button class="button-card">
                     <svg width="125px" height="118px" viewBox="0 0 125 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
                         <g id="Option-2---button-&amp;-talkback-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Timeline-Copy" transform="translate(-163.000000, -359.000000)">
                                 <g id="Group-3" transform="translate(-668.000000, -403.000000)">
@@ -171,11 +157,8 @@
 </template>
 
 <script>
-    import ProgressBar from 'vue-simple-progress'
     export default {
-      components: {
-        ProgressBar,
-      }
+
     }
 </script>
 
@@ -189,41 +172,6 @@
   animation-duration: 0.7s;
 }
 
-.fade-in.one {
-  animation-delay: 0.2s;
-}
-
-.fade-in.two {
-  animation-delay: 0.4s;
-}
-
-.fade-in.three {
-  animation-delay: 0.5s;
-}
-
-.fade-in.four {
-  animation-delay: 0.6s;
-}
-
-.fade-in.five {
-  animation-delay: 0.7s;
-}
-
-.fade-in.six {
-  animation-delay: 0.8s;
-}
-
-.fade-in.seven {
-  animation-delay: 0.9s;
-}
-
-.fade-in.eight {
-  animation-delay: 1s;
-}
-
-.fade-in.nine {
-  animation-delay: 1.1s;
-}
 
 svg {
 fill: #a1adb7;
@@ -284,30 +232,6 @@ height: auto;
         fill:#000;
       }
     }
-}
-
-
-.primary-button {
-height: 42px;
-font-size: 15px;
-font-weight: 400;
-background-color: #0a0c12;
-color: #fff;
-margin: 20px 0;
-padding: 0 30px;
-letter-spacing: .025em;
-border: 0;
-border-radius: 2px;
-line-height: 42px;
-outline: none;
-cursor: pointer;
-transition: .15s ease-in-out;
-}
-.primary-button:hover {
-  background-color: #aad7ea;
-}
-.button-wrapper {
-    text-align: center;
 }
 
 @media (min-width: 700px) {
