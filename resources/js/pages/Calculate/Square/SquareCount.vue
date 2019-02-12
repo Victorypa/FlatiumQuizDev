@@ -13,8 +13,17 @@
                   <h1 class="main-caption">
                       Укажите площадь помещения
                   </h1>
-                  <input type="number" class="mobile-input" name="" value="">
-                  <vue-slider ref="slider" v-model="value" class="vue-slider"></vue-slider>
+                  <input type="number"
+                         class="mobile-input"
+                         v-model="square"
+                         >
+
+                  <vue-slider ref="slider"
+                              v-model="square"
+                              class="vue-slider"
+                              >
+                 </vue-slider>
+
                 </div>
 
                 <div class="form-group">
@@ -39,7 +48,7 @@
     export default {
       data () {
         return {
-          value: 10
+            square: 30
         }
       },
 
@@ -49,7 +58,7 @@
 
       methods: {
           submit () {
-
+              console.log(this.square);
           }
       }
 }

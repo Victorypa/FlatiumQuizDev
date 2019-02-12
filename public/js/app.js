@@ -2565,18 +2565,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      value: 10
+      square: 30
     };
   },
   components: {
     vueSlider: vue_slider_component__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   methods: {
-    submit: function submit() {}
+    submit: function submit() {
+      console.log(this.square);
+    }
   }
 });
 
@@ -60815,19 +60826,36 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.square,
+                        expression: "square"
+                      }
+                    ],
                     staticClass: "mobile-input",
-                    attrs: { type: "number", name: "", value: "" }
+                    attrs: { type: "number" },
+                    domProps: { value: _vm.square },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.square = $event.target.value
+                      }
+                    }
                   }),
                   _vm._v(" "),
                   _c("vue-slider", {
                     ref: "slider",
                     staticClass: "vue-slider",
                     model: {
-                      value: _vm.value,
+                      value: _vm.square,
                       callback: function($$v) {
-                        _vm.value = $$v
+                        _vm.square = $$v
                       },
-                      expression: "value"
+                      expression: "square"
                     }
                   })
                 ],
