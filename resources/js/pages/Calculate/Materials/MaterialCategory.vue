@@ -52,11 +52,16 @@
         methods: {
             selectedCategory (type) {
                 let card_id = window.location.search.match(/\d+/g).toString()
-                axios.post('/cards/material-category/store', {
-                    'card_id': card_id,
-                    'type': type
+
+                axios.post('/cards/clicks/store', {
+                    'name': type
                 }).then(response => {
-                    window.location.href = `/cards/start-date?card_id=${card_id}`
+                    axios.post('/cards/material-category/store', {
+                        'card_id': card_id,
+                        'type': type
+                    }).then(response => {
+                        window.location.href = `/cards/start-date?card_id=${card_id}`
+                    })
                 })
             }
         }

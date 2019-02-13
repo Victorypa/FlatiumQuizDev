@@ -38,11 +38,15 @@
             selectDecoration (decoration) {
                 let card_id = window.location.search.match(/\d+/g).toString()
 
-                axios.post(`/cards/decoration/store`, {
-                    'card_id': card_id,
-                    'type': decoration
-                }).then(response => {
-                    window.location.href = `/cards/material-category?card_id=${card_id}`
+                axios.post('/cards/clicks/store', {
+                    'name': decoration
+                }).then(resposne => {
+                    axios.post(`/cards/decoration/store`, {
+                        'card_id': card_id,
+                        'type': decoration
+                    }).then(response => {
+                        window.location.href = `/cards/material-category?card_id=${card_id}`
+                    })
                 })
             }
         }

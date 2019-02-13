@@ -43,11 +43,15 @@
             selected (type) {
                 let card_id = window.location.search.match(/\d+/g).toString()
 
-                axios.post('/cards/design-skills/store', {
-                    card_id,
-                    type
+                axios.post('/cards/clicks/store', {
+                    'name': type
                 }).then(response => {
-                    window.location.href = `/cards/calculate-result?card_id=${card_id}`
+                    axios.post('/cards/design-skills/store', {
+                        card_id,
+                        type
+                    }).then(response => {
+                        window.location.href = `/cards/calculate-result?card_id=${card_id}`
+                    })
                 })
             }
         }

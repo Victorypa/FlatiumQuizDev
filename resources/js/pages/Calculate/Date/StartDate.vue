@@ -21,8 +21,6 @@
                           <div class="image-text">{{ block.title }}</div>
                   </button>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -44,11 +42,15 @@
             selected (type) {
                 let card_id = window.location.search.match(/\d+/g).toString()
 
-                axios.post('/cards/start-date/store', {
-                    'card_id': card_id,
-                    'type': type
+                axios.post('/cards/clicks/store', {
+                    'name': type
                 }).then(response => {
-                    window.location.href = `/cards/design-skills?card_id=${card_id}`
+                    axios.post('/cards/start-date/store', {
+                        'card_id': card_id,
+                        'type': type
+                    }).then(response => {
+                        window.location.href = `/cards/design-skills?card_id=${card_id}`
+                    })
                 })
             }
         }

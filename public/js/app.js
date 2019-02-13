@@ -1815,8 +1815,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1827,11 +1825,15 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     selected: function selected(type) {
       var card_id = window.location.search.match(/\d+/g).toString();
-      axios.post('/cards/start-date/store', {
-        'card_id': card_id,
-        'type': type
+      axios.post('/cards/clicks/store', {
+        'name': type
       }).then(function (response) {
-        window.location.href = "/cards/design-skills?card_id=".concat(card_id);
+        axios.post('/cards/start-date/store', {
+          'card_id': card_id,
+          'type': type
+        }).then(function (response) {
+          window.location.href = "/cards/design-skills?card_id=".concat(card_id);
+        });
       });
     }
   }
@@ -1886,11 +1888,15 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     selectDecoration: function selectDecoration(decoration) {
       var card_id = window.location.search.match(/\d+/g).toString();
-      axios.post("/cards/decoration/store", {
-        'card_id': card_id,
-        'type': decoration
-      }).then(function (response) {
-        window.location.href = "/cards/material-category?card_id=".concat(card_id);
+      axios.post('/cards/clicks/store', {
+        'name': decoration
+      }).then(function (resposne) {
+        axios.post("/cards/decoration/store", {
+          'card_id': card_id,
+          'type': decoration
+        }).then(function (response) {
+          window.location.href = "/cards/material-category?card_id=".concat(card_id);
+        });
       });
     }
   }
@@ -1949,11 +1955,15 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     selected: function selected(type) {
       var card_id = window.location.search.match(/\d+/g).toString();
-      axios.post('/cards/design-skills/store', {
-        card_id: card_id,
-        type: type
+      axios.post('/cards/clicks/store', {
+        'name': type
       }).then(function (response) {
-        window.location.href = "/cards/calculate-result?card_id=".concat(card_id);
+        axios.post('/cards/design-skills/store', {
+          card_id: card_id,
+          type: type
+        }).then(function (response) {
+          window.location.href = "/cards/calculate-result?card_id=".concat(card_id);
+        });
       });
     }
   }
@@ -2023,11 +2033,15 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     selectedCategory: function selectedCategory(type) {
       var card_id = window.location.search.match(/\d+/g).toString();
-      axios.post('/cards/material-category/store', {
-        'card_id': card_id,
-        'type': type
+      axios.post('/cards/clicks/store', {
+        'name': type
       }).then(function (response) {
-        window.location.href = "/cards/start-date?card_id=".concat(card_id);
+        axios.post('/cards/material-category/store', {
+          'card_id': card_id,
+          'type': type
+        }).then(function (response) {
+          window.location.href = "/cards/start-date?card_id=".concat(card_id);
+        });
       });
     }
   }
