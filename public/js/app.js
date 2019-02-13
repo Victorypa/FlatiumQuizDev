@@ -1869,15 +1869,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     selected: function selected(type) {
-      var _this = this;
-
       var card_id = window.location.search.match(/\d+/g).toString();
       axios.post('/cards/start-date/store', {
         'card_id': card_id,
         'type': type
       }).then(function (response) {
-        _this.$refs.progressbar.increment(10);
-
         window.location.href = "/cards/design-skills?card_id=".concat(card_id);
       });
     }
@@ -1932,15 +1928,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     selectDecoration: function selectDecoration(decoration) {
-      var _this = this;
-
       var card_id = window.location.search.match(/\d+/g).toString();
       axios.post("/cards/decoration/store", {
         'card_id': card_id,
         'type': decoration
       }).then(function (response) {
-        _this.$refs.progressbar.increment(10);
-
         window.location.href = "/cards/material-category?card_id=".concat(card_id);
       });
     }
@@ -2071,15 +2063,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     selectedCategory: function selectedCategory(type) {
-      var _this = this;
-
       var card_id = window.location.search.match(/\d+/g).toString();
       axios.post('/cards/material-category/store', {
         'card_id': card_id,
         'type': type
       }).then(function (response) {
-        _this.$refs.progressbar.increment(10);
-
         window.location.href = "/cards/start-date?card_id=".concat(card_id);
       });
     }
@@ -2156,15 +2144,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
-      var _this = this;
-
       var card_id = window.location.search.match(/\d+/g).toString();
       axios.post("/cards/square/store", {
         'card_id': card_id,
         'area': this.area
       }).then(function (response) {
-        _this.$refs.progressbar.increment(10);
-
         window.location.href = "/cards/decoration?card_id=".concat(card_id);
       });
     }
@@ -2214,18 +2198,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      volumn: 10
-    };
-  },
+  props: ['volumn'],
   components: {
     ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
-  },
-  methods: {
-    increment: function increment(value) {
-      this.volumn += value;
-    }
   }
 });
 
@@ -57258,7 +57233,7 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
+      _c("calculate-progressbar", { attrs: { volumn: 80 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -57335,7 +57310,7 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
+      _c("calculate-progressbar", { attrs: { volumn: 40 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -57412,7 +57387,7 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
+      _c("calculate-progressbar", { attrs: { volumn: 100 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -57496,7 +57471,7 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
+      _c("calculate-progressbar", { attrs: { volumn: 60 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -57590,7 +57565,7 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
+      _c("calculate-progressbar", { attrs: { volumn: 20 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [

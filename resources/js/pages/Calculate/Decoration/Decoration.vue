@@ -4,7 +4,7 @@
 
       <app-navigation></app-navigation>
 
-      <calculate-progressbar ref="progressbar"></calculate-progressbar>
+      <calculate-progressbar :volumn="40"></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
@@ -42,7 +42,6 @@
                     'card_id': card_id,
                     'type': decoration
                 }).then(response => {
-                    this.$refs.progressbar.increment(10)
                     window.location.href = `/cards/material-category?card_id=${card_id}`
                 })
             }
