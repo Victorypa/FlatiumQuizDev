@@ -24,7 +24,7 @@
 </template>
 
 <script>
-    import { translations } from '../index.js'
+    import { translations } from '../../../../utilities/translations.js'
 
     export default {
         props: ['price'],

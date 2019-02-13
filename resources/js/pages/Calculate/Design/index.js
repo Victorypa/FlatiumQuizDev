@@ -1,6 +1,6 @@
 export const designs = [
     {
-        title: 'Совсем не разбираюсь',
+        title: 'Совсем не разбираюсь.',
         description: 'Серьезно, помогите мне, пожалуйста',
         value: 'junior',
         svg: `
@@ -66,7 +66,7 @@ export const designs = [
         `
     },
     {
-        title: 'Эксперт',
+        title: 'Эксперт.',
         description: 'Я хорошо разбираюсь в стилях и могу помочь дизайнеру найти идеальные вещи.',
         value: 'senior',
         svg: `

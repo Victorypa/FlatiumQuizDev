@@ -59,6 +59,7 @@
     import Card from './partials/Card'
     import { types } from './index.js'
 
+
     export default {
         props: ['cards'],
 

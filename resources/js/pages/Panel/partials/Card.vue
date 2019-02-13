@@ -34,28 +34,28 @@
         </td>
 
         <td v-if="card.decorations[0]">
-            {{ card.decorations[0].type }}
+            {{ translations[card.decorations[0].type] }}
         </td>
         <td v-else>
             &nbsp;
         </td>
 
         <td v-if="card.material_categories[0]">
-            {{ card.material_categories[0].type }}
+            {{ translations[card.material_categories[0].type] }}
         </td>
         <td v-else>
             &nbsp;
         </td>
 
         <td v-if="card.start_dates[0]">
-            {{ card.start_dates[0].type }}
+            {{ translations[card.start_dates[0].type] }}
         </td>
         <td v-else>
             &nbsp;
         </td>
 
         <td v-if="card.design_skills[0]">
-            {{ card.design_skills[0].type }}
+            {{ translations[card.design_skills[0].type] }}
         </td>
         <td v-else>
             &nbsp;
@@ -64,12 +64,14 @@
 </template>
 
 <script>
+    import { translations } from '../../../utilities/translations.js'
+
     export default {
         props: ['card'],
 
         data () {
             return {
-                moment
+                moment, translations
             }
         }
     }

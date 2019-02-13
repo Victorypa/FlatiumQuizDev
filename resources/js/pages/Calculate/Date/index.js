@@ -1,6 +1,6 @@
 export const blocks = [
     {
-        title: 'Срочно. Хотелось сделать это еще вчера',
+        title: 'Срочно. Хотелось сделать это еще вчера.',
         value: 'one',
         svg: `
         <svg width="125px" height="118px" viewBox="0 0 125 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -103,7 +103,7 @@ export const blocks = [
         `
     },
     {
-        title: 'Когда-нибудь в будущем',
+        title: 'Когда-нибудь в будущем.',
         value: 'four',
         svg: `
         <svg width="111px" height="119px" viewBox="0 0 111 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
