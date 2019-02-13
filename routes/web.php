@@ -35,6 +35,8 @@ Route::group(['prefix' => 'cards'], function () {
     Route::get('/design-skills', 'Design\DesignSkillsController@index');
     Route::post('/design-skills/store', 'Design\DesignSkillsController@store');
 
+    Route::get('/calculate-result', 'CalculateResult\CalculateResultController@index');
+
 
     Route::get('/clicks', 'Card\Click\ClickController@index');
     Route::post('/clicks/store', 'Card\Click\ClickController@store');

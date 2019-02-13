@@ -1995,7 +1995,9 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('/cards/design-skills/store', {
         card_id: card_id,
         type: type
-      }).then(function (response) {});
+      }).then(function (response) {
+        window.location.href = "/cards/calculate-result?card_id=".concat(card_id);
+      });
     }
   }
 });

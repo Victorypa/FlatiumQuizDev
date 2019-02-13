@@ -47,7 +47,7 @@
                     card_id,
                     type
                 }).then(response => {
-
+                    window.location.href = `/cards/calculate-result?card_id=${card_id}`
                 })
             }
         }
