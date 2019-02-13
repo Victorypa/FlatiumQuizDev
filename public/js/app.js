@@ -2944,7 +2944,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['prices'],
@@ -58595,50 +58594,76 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c(
+      "table",
+      {
+        staticClass: "table table-striped table-bordered mt-3",
+        staticStyle: { width: "100%" }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm.prices.length
+          ? _c(
+              "tbody",
+              _vm._l(_vm.prices, function(price) {
+                return _c("tr", [
+                  _c("td", [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.translations[price.style]) +
+                        "\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.translations[price.category]) +
+                        "\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.translations[price.type]) +
+                        "\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(price.price) +
+                        " Р\n                "
+                    )
+                  ])
+                ])
+              }),
+              0
+            )
+          : _vm._e()
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered mt-3",
-          staticStyle: { width: "100%" }
-        },
-        [
-          _c("thead", [
-            _c("tr", [
-              _c("th", [_c("strong", [_vm._v("Стиль")])]),
-              _vm._v(" "),
-              _c("th", [_c("strong", [_vm._v("Категория")])]),
-              _vm._v(" "),
-              _c("th", [_c("strong", [_vm._v("Тип")])]),
-              _vm._v(" "),
-              _c("th", [_c("strong", [_vm._v("Цена")])])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tbody", [
-            _c("tr", [
-              _c("td", [
-                _vm._v("\n                    LOFT\n                ")
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _vm._v("\n                    standard\n                ")
-              ]),
-              _vm._v(" "),
-              _c("td", [_vm._v("\n                    old\n                ")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("\n                    100\n                ")])
-            ])
-          ])
-        ]
-      )
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_c("strong", [_vm._v("Стиль")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("Категория")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("Тип")])]),
+        _vm._v(" "),
+        _c("th", [_c("strong", [_vm._v("Цена")])])
+      ])
     ])
   }
 ]
@@ -73788,9 +73813,9 @@ var translations = {
   'standard': 'Стандарт',
   'comfort': 'Комфорт',
   'premium': 'Премиум',
-  'new': '',
-  'total_new': '',
-  'old': ''
+  'new': 'Новостройка с белыми стенами',
+  'total_new': 'Новостройка без отделки',
+  'old': 'Вторичное жилье со старой отделкой'
 };
 
 /***/ }),

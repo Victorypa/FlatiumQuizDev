@@ -17,21 +17,20 @@
                     </th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody v-if="prices.length">
+                <tr v-for="price in prices">
                     <td>
-                        LOFT
+                        {{ translations[price.style] }}
                     </td>
                     <td>
-                        standard
+                        {{ translations[price.category] }}
                     </td>
                     <td>
-                        old
+                        {{ translations[price.type] }}
                     </td>
                     <td>
-                        100
+                        {{ price.price }} Р
                     </td>
-
                 </tr>
             </tbody>
         </table>
