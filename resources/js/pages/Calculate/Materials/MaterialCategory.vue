@@ -141,9 +141,6 @@ cursor: pointer;
   border-color: #1c2233;
   box-shadow: 0 15px 22px 0 rgba(28,34,51,.2);
   transform: scale(1.025);
-    // .image-text, .image-subtitle {
-    // color: #000;
-    // }
   }
 }
 
@@ -154,21 +151,28 @@ cursor: pointer;
     align-items: center;
     justify-content: center;
   }
+}
 
+@media (min-width: 1320px) {
   .image-subtitle {
     opacity: 0;
     transition: 0.5s;
   }
 
   .image-card {
-    &:first-child:hover {
-      .image-subtitle {
-        position: absolute;
-        left: 5%;
-        top: 30%;
-          opacity: 1;
+    &:first-child {
+    .image-subtitle {
+      position: absolute;
+      left: 5%;
+      top: 30%;
+    }
+      &:hover {
+        .image-subtitle {
+            opacity: 1;
+        }
       }
     }
+
     &:nth-child(2):hover   {
       .image-subtitle {
           opacity: 1;
@@ -183,9 +187,8 @@ cursor: pointer;
       }
     }
   }
-
-
 }
+
 @media (max-width: 700px) {
 .image-wrapper  {
 flex-wrap: wrap;
