@@ -264,7 +264,6 @@ text-transform: uppercase;
   }
 }
 
-
 input:focus ~ label {
   top:-6px;
   font-size:14px;
