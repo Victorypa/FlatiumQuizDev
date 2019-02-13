@@ -2878,6 +2878,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3027,6 +3032,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -58660,7 +58670,17 @@ var render = function() {
                   _vm._v(" "),
                   _c("th", [_vm._v("Выбор по комнатам")]),
                   _vm._v(" "),
-                  _c("th", [_vm._v("Результат")])
+                  _c("th", [_vm._v("Результат")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Площадь")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Отделка")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Категория материалов")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Дата начала")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Уровень дизайна")])
                 ])
               ]),
               _vm._v(" "),
@@ -58897,7 +58917,17 @@ var render = function() {
           )
         : _c("td", [_vm._v("\n         \n    ")]),
       _vm._v(" "),
-      _c("td", [_vm._v(_vm._s(_vm.card.result))])
+      _c("td", [_vm._v(_vm._s(_vm.card.result))]),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td")
     ],
     2
   )

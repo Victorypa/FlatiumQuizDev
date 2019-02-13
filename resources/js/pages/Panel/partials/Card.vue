@@ -25,6 +25,11 @@
         </td>
 
         <td>{{ card.result }}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
 </template>
 
