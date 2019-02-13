@@ -3,5 +3,5 @@
 @section('content')
     @include('panel.partials._navigation')
 
-    <panel :cards="{{ $cards }}"></panel>
+    <panel :cards="{{ $cards }}" :squares="{{ $squares }}"></panel>
 @endsection

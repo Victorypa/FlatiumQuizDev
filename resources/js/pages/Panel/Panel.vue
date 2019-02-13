@@ -6,6 +6,29 @@
                     <table class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
+                                <th>
+                                    <strong>Средняя площадь</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>{{ averageSquare }} кв.м</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <table class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
                                 <th v-for="(type, index) in types">
                                     <strong>{{ type }}</strong>
                                 </th>
@@ -61,7 +84,7 @@
 
 
     export default {
-        props: ['cards'],
+        props: ['cards', 'squares'],
 
         components: {
             Card
@@ -87,6 +110,16 @@
                 this.sortByDate ? data = _.orderBy(data, ['created_at'], ['desc']) : data = _.orderBy(data, ['created_at'], ['asc'])
 
                 return data
+            },
+
+            averageSquare () {
+                let total = 0
+
+                this.squares.forEach(item => {
+                    total +=  parseInt(item.area)
+                })
+
+                return (total / this.squares.length)
             }
         }
     }

@@ -2883,10 +2883,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['cards'],
+  props: ['cards', 'squares'],
   components: {
     Card: _partials_Card__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
@@ -2908,6 +2931,13 @@ __webpack_require__.r(__webpack_exports__);
       var data = this.cards;
       this.sortByDate ? data = _.orderBy(data, ['created_at'], ['desc']) : data = _.orderBy(data, ['created_at'], ['asc']);
       return data;
+    },
+    averageSquare: function averageSquare() {
+      var total = 0;
+      this.squares.forEach(function (item) {
+        total += parseInt(item.area);
+      });
+      return total / this.squares.length;
     }
   }
 });
@@ -58638,6 +58668,31 @@ var render = function() {
               staticStyle: { width: "100%" }
             },
             [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [
+                    _c("strong", [_vm._v(_vm._s(_vm.averageSquare) + " кв.м")])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row mt-4" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c(
+            "table",
+            {
+              staticClass: "table table-striped table-bordered",
+              staticStyle: { width: "100%" }
+            },
+            [
               _c("thead", [
                 _c(
                   "tr",
@@ -58733,7 +58788,16 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [_c("th", [_c("strong", [_vm._v("Средняя площадь")])])])
+    ])
+  }
+]
 render._withStripped = true
 
 
