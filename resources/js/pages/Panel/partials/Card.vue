@@ -25,11 +25,41 @@
         </td>
 
         <td>{{ card.result }}</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+
+        <td v-if="card.squares[0]">
+            {{ card.squares[0].area }} кв.м
+        </td>
+        <td v-else>
+            &nbsp;
+        </td>
+
+        <td v-if="card.decorations[0]">
+            {{ card.decorations[0].type }}
+        </td>
+        <td v-else>
+            &nbsp;
+        </td>
+
+        <td v-if="card.material_categories[0]">
+            {{ card.material_categories[0].type }}
+        </td>
+        <td v-else>
+            &nbsp;
+        </td>
+
+        <td v-if="card.start_dates[0]">
+            {{ card.start_dates[0].type }}
+        </td>
+        <td v-else>
+            &nbsp;
+        </td>
+
+        <td v-if="card.design_skills[0]">
+            {{ card.design_skills[0].type }}
+        </td>
+        <td v-else>
+            &nbsp;
+        </td>
     </tr>
 </template>
 

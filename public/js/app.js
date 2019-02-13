@@ -3067,6 +3067,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['card'],
   data: function data() {
@@ -58919,15 +58949,47 @@ var render = function() {
       _vm._v(" "),
       _c("td", [_vm._v(_vm._s(_vm.card.result))]),
       _vm._v(" "),
-      _c("td"),
+      _vm.card.squares[0]
+        ? _c("td", [
+            _vm._v(
+              "\n        " + _vm._s(_vm.card.squares[0].area) + " кв.м\n    "
+            )
+          ])
+        : _c("td", [_vm._v("\n         \n    ")]),
       _vm._v(" "),
-      _c("td"),
+      _vm.card.decorations[0]
+        ? _c("td", [
+            _vm._v(
+              "\n        " + _vm._s(_vm.card.decorations[0].type) + "\n    "
+            )
+          ])
+        : _c("td", [_vm._v("\n         \n    ")]),
       _vm._v(" "),
-      _c("td"),
+      _vm.card.material_categories[0]
+        ? _c("td", [
+            _vm._v(
+              "\n        " +
+                _vm._s(_vm.card.material_categories[0].type) +
+                "\n    "
+            )
+          ])
+        : _c("td", [_vm._v("\n         \n    ")]),
       _vm._v(" "),
-      _c("td"),
+      _vm.card.start_dates[0]
+        ? _c("td", [
+            _vm._v(
+              "\n        " + _vm._s(_vm.card.start_dates[0].type) + "\n    "
+            )
+          ])
+        : _c("td", [_vm._v("\n         \n    ")]),
       _vm._v(" "),
-      _c("td")
+      _vm.card.design_skills[0]
+        ? _c("td", [
+            _vm._v(
+              "\n        " + _vm._s(_vm.card.design_skills[0].type) + "\n    "
+            )
+          ])
+        : _c("td", [_vm._v("\n         \n    ")])
     ],
     2
   )
