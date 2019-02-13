@@ -15,10 +15,8 @@ class StartDateController extends Controller
 
     public function store(Request $request)
     {
-        $start_date = Card::where('id', $request->card_id)->first()->start_dates()->create([
+        Card::where('id', $request->card_id)->first()->start_dates()->create([
             'type' => $request->type
         ]);
-
-        return $start_date;
     }
 }

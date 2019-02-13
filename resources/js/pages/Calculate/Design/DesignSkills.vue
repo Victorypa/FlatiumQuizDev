@@ -18,8 +18,8 @@
                           @click.prevent="selected(design.value)"
                           >
                       <div v-html="design.svg"></div>
-                    <div class="image-text" v-text="design.title"></div>
-                    <div class="image-subtitle" v-text="design.description"></div>
+                      <div class="image-text" v-text="design.title"></div>
+                      <div class="image-subtitle" v-text="design.description"></div>
                   </button>
               </div>
             </div>
@@ -44,10 +44,10 @@
                 let card_id = window.location.search.match(/\d+/g).toString()
 
                 axios.post('/cards/design-skills/store', {
-                    'card_id': card_id,
-                    'type': type
+                    card_id,
+                    type
                 }).then(response => {
-                    alert('all finished, waiting')
+
                 })
             }
         }
@@ -58,7 +58,7 @@
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
-  opacity:0;  /* make things invisible upon start */;
+  opacity: 0;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;

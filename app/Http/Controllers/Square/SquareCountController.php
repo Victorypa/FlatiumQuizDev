@@ -15,10 +15,8 @@ class SquareCountController extends Controller
 
     public function store(Request $request)
     {
-        $square = Card::where('id', $request->card_id)->first()->squares()->create([
+        Card::where('id', $request->card_id)->first()->squares()->create([
             'area' => $request->area
         ]);
-
-        return $square;
     }
 }

@@ -15,10 +15,8 @@ class MaterialCategoryController extends Controller
 
     public function store(Request $request)
     {
-        $category = Card::where('id', $request->card_id)->first()->material_categories()->create([
+        Card::where('id', $request->card_id)->first()->material_categories()->create([
             'type' => $request->type
         ]);
-
-        return $category;
     }
 }
