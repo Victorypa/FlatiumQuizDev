@@ -9,8 +9,7 @@ class PriceController extends Controller
 {
     public function index()
     {
-        dd('price index');
-        return view();
+        return view('panel.prices.index');
     }
 
     public function store(Request $request)
