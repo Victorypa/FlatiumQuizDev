@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <clicks :clicks="{{ $clicks }}"></clicks>
+    @include('panel.partials._navigation')
+
+    <clicks :clicks="{{ $clicks }}" />
 @endsection

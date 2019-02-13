@@ -1,42 +1,38 @@
 <template>
-    <div>
-        <navigation />
+    <div class="container">
+        <table class="table table-striped table-bordered mt-3"
+               style="width:100%"
+               v-for="(item, index) in payload"
+               :key="index"
+               >
+            <thead>
+                <tr>
+                    <th v-for="(element, index) in item.elements">
+                        <strong class="cursor" @click.prevent="show(element.name)">
+                            {{ element.name }}
+                        </strong>
 
-        <div class="container">
-            <table class="table table-striped table-bordered mt-3"
-                   style="width:100%"
-                   v-for="(item, index) in payload"
-                   :key="index"
-                   >
-                <thead>
-                    <tr>
-                        <th v-for="(element, index) in item.elements">
-                            <strong class="cursor" @click.prevent="show(element.name)">
-                                {{ element.name }}
-                            </strong>
-
-                            <modal :name="element.name"
-                                    height="auto"
-                                    :scrollable="true"
-                                    >
-                                <div class="container">
-                                    <div class="row">
-                                        <img :src="'/storage/quiz/' + item.group + '/' + element.link" alt="" >
-                                    </div>
+                        <modal :name="element.name"
+                                height="auto"
+                                :scrollable="true"
+                                >
+                            <div class="container">
+                                <div class="row">
+                                    <img :src="'/storage/quiz/' + item.group + '/' + element.link" alt="" >
                                 </div>
-                            </modal>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td v-for="element in item.elements">
-                            <strong>{{ filter(element.name) }}</strong>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                            </div>
+                        </modal>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td v-for="element in item.elements">
+                        <strong>{{ filter(element.name) }}</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </template>
 

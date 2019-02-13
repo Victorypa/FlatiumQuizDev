@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <calculators :calculators="{{ $calculators }}"></calculators>
+    @include('panel.partials._navigation')
+
+    <calculators :calculators="{{ $calculators }}" />
 @endsection

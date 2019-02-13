@@ -50,8 +50,10 @@ Route::group(['prefix' => 'clicks', 'namespace' => 'Card\Click'], function () {
 
 Route::group(['middleware' => 'auth', 'prefix' => 'panel'], function () {
     Route::get('/', 'Panel\PanelController@index')->name('panel.index');
-    Route::get('/clicks', 'Card\Click\ClickController@index');
-    Route::get('/calculators', 'Calculator\CalculatorController@index');
+    Route::get('/clicks', 'Card\Click\ClickController@index')->name('clicks.index');
+    Route::get('/calculators', 'Calculator\CalculatorController@index')->name('calculators.index');
+
+    Route::get('/prices', 'Price\PriceController@index')->name('prices.index');
 });
 
 
