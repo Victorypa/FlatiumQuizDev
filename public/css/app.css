@@ -10672,10 +10672,6 @@ body {
   line-height: 1.65;
 }
 
-body * {
-  border: 1px solid red;
-}
-
 .container {
   max-width: 1150px;
   margin: 0 auto;

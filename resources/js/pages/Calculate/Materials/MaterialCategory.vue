@@ -65,6 +65,9 @@
 </script>
 
 <style lang="scss" scoped>
+.container {
+  position: relative;
+}
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
@@ -146,7 +149,6 @@ cursor: pointer;
 
 @media (min-width: 700px) {
   .content-center {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,7 +165,7 @@ cursor: pointer;
     &:first-child {
     .image-subtitle {
       position: absolute;
-      left: 5%;
+      left: -2%;
       top: 30%;
     }
       &:hover {
@@ -181,7 +183,7 @@ cursor: pointer;
     &:nth-child(3):hover  {
       .image-subtitle {
         position: absolute;
-        right: 2%;
+        right: -4%;
         top: 30%;
           opacity: 1;
       }
