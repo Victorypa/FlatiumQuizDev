@@ -3,5 +3,5 @@
 @section('content')
     @include('panel.partials._navigation')
 
-    <p>prices</p>
+    <calculator-prices :prices="{{ $prices }}" />
 @endsection

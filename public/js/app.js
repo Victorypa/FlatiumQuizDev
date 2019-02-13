@@ -2895,6 +2895,71 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Panel/Prices/Prices.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Panel/Prices/Prices.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Panel/Prices/index.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['prices'],
+  data: function data() {
+    return {
+      translations: _index_js__WEBPACK_IMPORTED_MODULE_0__["translations"]
+    };
+  },
+  created: function created() {
+    console.log(this.translations['LOFT']);
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Panel/partials/Card.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Panel/partials/Card.vue?vue&type=script&lang=js& ***!
@@ -7533,7 +7598,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-1ab32f3e {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-1ab32f3e {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-1ab32f3e] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-1ab32f3e ease-in 1;\n          animation: fadeIn-data-v-1ab32f3e ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-1ab32f3e] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-1ab32f3e] {\n  display: flex;\n  justify-content: space-around;\n  margin: 0 auto;\n}\n.image-card[data-v-1ab32f3e] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-1ab32f3e] {\n  padding-top: 22px;\n  font-size: 8px;\n}\n.main-caption[data-v-1ab32f3e] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-1ab32f3e] {\n  margin: 50px 0;\n}\n.button-card[data-v-1ab32f3e] {\n  padding: 0px 20px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-1ab32f3e]:hover, .button-card.active[data-v-1ab32f3e] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-1ab32f3e], .button-card.active .image-text[data-v-1ab32f3e] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-1ab32f3e], .button-card.active .icon-svg [stroke][data-v-1ab32f3e] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-1ab32f3e], .button-card.active .fill-color[data-v-1ab32f3e] {\n  fill: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-1ab32f3e] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 800px) {\n.image-wrapper[data-v-1ab32f3e] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-1ab32f3e] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-1ab32f3e] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-1ab32f3e {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-1ab32f3e {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-1ab32f3e] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-1ab32f3e ease-in 1;\n          animation: fadeIn-data-v-1ab32f3e ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-1ab32f3e] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-1ab32f3e] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  margin: 0 auto;\n}\n.image-card[data-v-1ab32f3e] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-1ab32f3e] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.main-caption[data-v-1ab32f3e] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-1ab32f3e] {\n  margin: 50px 0;\n}\n.button-card[data-v-1ab32f3e] {\n  padding: 0px 20px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 250px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-1ab32f3e]:hover, .button-card.active[data-v-1ab32f3e] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-1ab32f3e], .button-card.active .image-text[data-v-1ab32f3e] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-1ab32f3e], .button-card.active .icon-svg [stroke][data-v-1ab32f3e] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-1ab32f3e], .button-card.active .fill-color[data-v-1ab32f3e] {\n  fill: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-1ab32f3e] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 800px) {\n.image-wrapper[data-v-1ab32f3e] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-1ab32f3e] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-1ab32f3e] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -7571,7 +7636,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-6a960122] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-6a960122] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 10px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #738494;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 175px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-6a960122] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-6a960122] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-content[data-v-6a960122] {\n  height: 125px;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-card:last-child .image-content[data-v-6a960122] {\n  padding-top: 15px;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 12px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #1c2233;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 240px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -7590,7 +7655,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-7bf1344c] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-7bf1344c ease-in 1;\n          animation: fadeIn-data-v-7bf1344c ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.image-wrapper[data-v-7bf1344c] {\n  display: flex;\n  justify-content: space-between;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-card[data-v-7bf1344c] {\n  margin: 0 10px 20px;\n  display: block;\n  flex-basis: 300px;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-7bf1344c] {\n  padding-top: 30px;\n}\n.image-subtitle[data-v-7bf1344c] {\n  text-transform: none;\n  font-size: 10px;\n  padding-top: 40px;\n  line-height: 16px;\n  color: #738494;\n}\n.image-subtitle ul[data-v-7bf1344c] {\n  text-align: center;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n.main-caption[data-v-7bf1344c] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-7bf1344c] {\n  margin: 50px 0;\n}\n.button-card[data-v-7bf1344c] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  min-height: 350px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 100%;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-7bf1344c]:hover, .button-card.active[data-v-7bf1344c] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-7bf1344c], .button-card:hover .image-subtitle[data-v-7bf1344c], .button-card.active .image-text[data-v-7bf1344c], .button-card.active .image-subtitle[data-v-7bf1344c] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-7bf1344c] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-7bf1344c] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-7bf1344c] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-7bf1344c] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, ".container[data-v-7bf1344c] {\n  position: relative;\n}\n@-webkit-keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-7bf1344c {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-7bf1344c] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-7bf1344c ease-in 1;\n          animation: fadeIn-data-v-7bf1344c ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.image-wrapper[data-v-7bf1344c] {\n  display: flex;\n  justify-content: space-between;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-card[data-v-7bf1344c] {\n  margin: 0 10px 20px;\n  display: block;\n  flex-basis: 300px;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-text[data-v-7bf1344c] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-7bf1344c] {\n  text-transform: none;\n  font-size: 10px;\n  padding-top: 40px;\n  line-height: 16px;\n  color: #1c2233;\n  line-height: 1.9;\n}\n.image-subtitle ul[data-v-7bf1344c] {\n  text-align: center;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n.main-caption[data-v-7bf1344c] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-7bf1344c] {\n  margin: 50px 0;\n}\n.button-card[data-v-7bf1344c] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  min-height: 350px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 100%;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-7bf1344c]:hover, .button-card.active[data-v-7bf1344c] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n@media (min-width: 700px) {\n.content-center[data-v-7bf1344c] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (min-width: 1320px) {\n.image-subtitle[data-v-7bf1344c] {\n    opacity: 0;\n    transition: 0.5s;\n}\n.image-card:first-child .image-subtitle[data-v-7bf1344c] {\n    position: absolute;\n    left: -2%;\n    top: 30%;\n}\n.image-card:first-child:hover .image-subtitle[data-v-7bf1344c] {\n    opacity: 1;\n}\n.image-card:nth-child(2):hover .image-subtitle[data-v-7bf1344c] {\n    opacity: 1;\n}\n.image-card:nth-child(3):hover .image-subtitle[data-v-7bf1344c] {\n    position: absolute;\n    right: -4%;\n    top: 30%;\n    opacity: 1;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-7bf1344c] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-7bf1344c] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-7bf1344c] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -57268,6 +57333,7 @@ var render = function() {
                       },
                       [
                         _c("div", {
+                          staticClass: "image-content",
                           domProps: { innerHTML: _vm._s(design.svg) }
                         }),
                         _vm._v(" "),
@@ -58508,6 +58574,74 @@ var render = function() {
   ])
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Panel/Prices/Prices.vue?vue&type=template&id=5ea5c4eb&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Panel/Prices/Prices.vue?vue&type=template&id=5ea5c4eb& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c(
+        "table",
+        {
+          staticClass: "table table-striped table-bordered mt-3",
+          staticStyle: { width: "100%" }
+        },
+        [
+          _c("thead", [
+            _c("tr", [
+              _c("th", [_c("strong", [_vm._v("Стиль")])]),
+              _vm._v(" "),
+              _c("th", [_c("strong", [_vm._v("Категория")])]),
+              _vm._v(" "),
+              _c("th", [_c("strong", [_vm._v("Тип")])]),
+              _vm._v(" "),
+              _c("th", [_c("strong", [_vm._v("Цена")])])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tbody", [
+            _c("tr", [
+              _c("td", [
+                _vm._v("\n                    LOFT\n                ")
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _vm._v("\n                    standard\n                ")
+              ]),
+              _vm._v(" "),
+              _c("td", [_vm._v("\n                    old\n                ")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("\n                    100\n                ")])
+            ])
+          ])
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -71940,6 +72074,7 @@ Vue.component('calculate-progressbar', __webpack_require__(/*! ./pages/Calculate
 Vue.component('panel', __webpack_require__(/*! ./pages/Panel/Panel */ "./resources/js/pages/Panel/Panel.vue").default);
 Vue.component('clicks', __webpack_require__(/*! ./pages/Panel/Clicks/Clicks */ "./resources/js/pages/Panel/Clicks/Clicks.vue").default);
 Vue.component('calculators', __webpack_require__(/*! ./pages/Panel/Calculators/Calculators */ "./resources/js/pages/Panel/Calculators/Calculators.vue").default);
+Vue.component('calculator-prices', __webpack_require__(/*! ./pages/Panel/Prices/Prices */ "./resources/js/pages/Panel/Prices/Prices.vue").default);
 
 /***/ }),
 
@@ -73564,6 +73699,99 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Panel_vue_vue_type_template_id_111b2aa0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Panel/Prices/Prices.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/pages/Panel/Prices/Prices.vue ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Prices_vue_vue_type_template_id_5ea5c4eb___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Prices.vue?vue&type=template&id=5ea5c4eb& */ "./resources/js/pages/Panel/Prices/Prices.vue?vue&type=template&id=5ea5c4eb&");
+/* harmony import */ var _Prices_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Prices.vue?vue&type=script&lang=js& */ "./resources/js/pages/Panel/Prices/Prices.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Prices_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Prices_vue_vue_type_template_id_5ea5c4eb___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Prices_vue_vue_type_template_id_5ea5c4eb___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/Panel/Prices/Prices.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Panel/Prices/Prices.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/pages/Panel/Prices/Prices.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Prices_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Prices.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Panel/Prices/Prices.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Prices_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Panel/Prices/Prices.vue?vue&type=template&id=5ea5c4eb&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/pages/Panel/Prices/Prices.vue?vue&type=template&id=5ea5c4eb& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Prices_vue_vue_type_template_id_5ea5c4eb___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Prices.vue?vue&type=template&id=5ea5c4eb& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Panel/Prices/Prices.vue?vue&type=template&id=5ea5c4eb&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Prices_vue_vue_type_template_id_5ea5c4eb___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Prices_vue_vue_type_template_id_5ea5c4eb___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/Panel/Prices/index.js":
+/*!**************************************************!*\
+  !*** ./resources/js/pages/Panel/Prices/index.js ***!
+  \**************************************************/
+/*! exports provided: translations */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "translations", function() { return translations; });
+var translations = {
+  'LOFT': 'Лофт',
+  'SK': 'Скандинавский',
+  'K': 'Классика',
+  'standard': 'Стандарт',
+  'comfort': 'Комфорт',
+  'premium': 'Премиум',
+  'new': '',
+  'total_new': '',
+  'old': ''
+};
 
 /***/ }),
 

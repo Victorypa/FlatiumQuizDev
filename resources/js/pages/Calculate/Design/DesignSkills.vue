@@ -17,7 +17,7 @@
                   <button class="button-card"
                           @click.prevent="selected(design.value)"
                           >
-                      <div v-html="design.svg"></div>
+                      <div class="image-content" v-html="design.svg"></div>
                       <div class="image-text" v-text="design.title"></div>
                       <div class="image-subtitle" v-text="design.description"></div>
                   </button>
@@ -58,7 +58,7 @@
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
-  opacity: 0;
+  opacity:0;  /* make things invisible upon start */;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;
@@ -84,26 +84,45 @@ height: auto;
   &-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 600px;
+  justify-content: center;
+  max-width: 800px;
   margin: 0 auto;
+  }
+  &-content {
+    height: 125px;
+
+
   }
   &-card {
   margin: 0 10px 20px;
   display: block;
   font-size: 14px;
   text-decoration: none;
+  &:last-child {
+    .image-content {
+          padding-top: 15px;
+    }
+
+  }
   }
   &-text {
-  padding-top: 30px;
+    padding-top: 30px;
+    font-size: 12px;
+    color: #1c2233;
+    letter-spacing: 2px;
+    line-height: 1.9;
+    margin-top: 14px;
+    text-align: center;
+    text-transform: uppercase;
   }
   &-subtitle {
   text-transform: none;
-  font-size: 10px;
+  font-size: 12px;
   padding-top: 14px;
   line-height: 16px;
-  color: #738494;
+    color: #1c2233;
 }
+
 
 }
 .main-caption {
@@ -124,7 +143,7 @@ font-weight: 400;
 height: 300px;
 letter-spacing: .11em;
 text-transform: uppercase;
-width: 175px;
+width: 240px;
 transition-duration: .2s;
 box-sizing: border-box;
 outline: none;
