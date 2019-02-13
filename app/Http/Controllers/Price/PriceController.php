@@ -11,12 +11,17 @@ class PriceController extends Controller
     public function index()
     {
         return view('panel.prices.index', [
-            'prices' => Price::get()
+            'prices' => Price::orderBy('style', 'asc')->get()
         ]);
     }
 
     public function store(Request $request)
     {
 
+    }
+
+    public function update(Price $price, Request $request)
+    {
+        $price->update($request->all());
     }
 }

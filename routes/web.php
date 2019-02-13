@@ -54,6 +54,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'panel'], function () {
     Route::get('/calculators', 'Calculator\CalculatorController@index')->name('calculators.index');
 
     Route::get('/prices', 'Price\PriceController@index')->name('prices.index');
+    Route::patch('/prices/{price}', 'Price\PriceController@update');
+
 });
 
 
