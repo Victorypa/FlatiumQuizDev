@@ -9,18 +9,16 @@
         <td>
             {{ translations[price.type] }}
         </td>
-        <td class="clickable">
-            <span v-if="!show" @click="show = !show">
-                {{ currentPrice }} Р
-            </span>
-            <span v-else>
-                <form @submit.prevent="updatePrice(price.id)">
-                    <input type="text"
-                           v-model="currentPrice"
-                           />
-                    <button type="submit" class="btn btn-sm btn-primary">Сохранить</button>
-                </form>
-            </span>
+        <td class="clickable" v-if="!show" @click="show = !show">
+            {{ currentPrice }} Р
+        </td>
+        <td v-else>
+            <form @submit.prevent="updatePrice(price.id)">
+                <input type="text"
+                       v-model="currentPrice"
+                       />
+                <button type="submit" class="btn btn-sm btn-primary">Сохранить</button>
+            </form>
         </td>
     </tr>
 </template>

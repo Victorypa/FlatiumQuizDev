@@ -2979,8 +2979,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['price'],
@@ -58769,68 +58767,63 @@ var render = function() {
       _vm._v("\n        " + _vm._s(_vm.translations[_vm.price.type]) + "\n    ")
     ]),
     _vm._v(" "),
-    _c("td", { staticClass: "clickable" }, [
-      !_vm.show
-        ? _c(
-            "span",
+    !_vm.show
+      ? _c(
+          "td",
+          {
+            staticClass: "clickable",
+            on: {
+              click: function($event) {
+                _vm.show = !_vm.show
+              }
+            }
+          },
+          [_vm._v("\n        " + _vm._s(_vm.currentPrice) + " Р\n    ")]
+        )
+      : _c("td", [
+          _c(
+            "form",
             {
               on: {
-                click: function($event) {
-                  _vm.show = !_vm.show
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.updatePrice(_vm.price.id)
                 }
               }
             },
             [
-              _vm._v(
-                "\n            " + _vm._s(_vm.currentPrice) + " Р\n        "
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.currentPrice,
+                    expression: "currentPrice"
+                  }
+                ],
+                attrs: { type: "text" },
+                domProps: { value: _vm.currentPrice },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.currentPrice = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-sm btn-primary",
+                  attrs: { type: "submit" }
+                },
+                [_vm._v("Сохранить")]
               )
             ]
           )
-        : _c("span", [
-            _c(
-              "form",
-              {
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.updatePrice(_vm.price.id)
-                  }
-                }
-              },
-              [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.currentPrice,
-                      expression: "currentPrice"
-                    }
-                  ],
-                  attrs: { type: "text" },
-                  domProps: { value: _vm.currentPrice },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.currentPrice = $event.target.value
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-sm btn-primary",
-                    attrs: { type: "submit" }
-                  },
-                  [_vm._v("Сохранить")]
-                )
-              ]
-            )
-          ])
-    ])
+        ])
   ])
 }
 var staticRenderFns = []
