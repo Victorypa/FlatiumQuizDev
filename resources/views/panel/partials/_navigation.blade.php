@@ -8,8 +8,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                 <a class="dropdown-item" href="{{ route('clicks.index') }}">Карточки</a>
-                <a class="dropdown-item" href="">Площадь</a>
-                <a class="dropdown-item" href="">Отделка</a>
+                <a class="dropdown-item" href="{{ route('decoration.clicks') }}">Отделка</a>
                 <a class="dropdown-item" href="">Категория материалов</a>
                 <a class="dropdown-item" href="">Дата Начала</a>
                 <a class="dropdown-item" href="">Уровень Дизайна</a>
