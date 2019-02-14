@@ -9,6 +9,7 @@ Vue.component('design-skills', require('./pages/Calculate/Design/DesignSkills').
 Vue.component('material-category', require('./pages/Calculate/Materials/MaterialCategory').default)
 Vue.component('square-count', require('./pages/Calculate/Square/SquareCount').default)
 Vue.component('start-date', require('./pages/Calculate/Date/StartDate').default)
+Vue.component('calculate-result', require('./pages/Calculate/Result/Result').default)
 
 // Global Partials
 Vue.component('app-header', require('./components/Header/Header').default)
