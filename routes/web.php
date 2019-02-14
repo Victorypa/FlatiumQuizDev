@@ -58,6 +58,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'panel'], function () {
 
     Route::get('/decorations/clicks', 'Card\Click\DecorationController@index')->name('decoration.clicks');
     Route::get('/material-category/clicks', 'Card\Click\MaterialCategoryController@index')->name('material_category.clicks');
+    Route::get('/start-date/clicks', 'Card\Click\StartDateController@index')->name('start_date.clicks');
     Route::get('/design-skills/clicks', 'Card\Click\DesignSkillController@index')->name('design_skill.clicks');
 });
 

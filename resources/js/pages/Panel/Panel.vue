@@ -119,7 +119,7 @@
                     total +=  parseInt(item.area)
                 })
 
-                return (total / this.squares.length)
+                return parseFloat((total / this.squares.length)).toFixed(2)
             }
         }
     }

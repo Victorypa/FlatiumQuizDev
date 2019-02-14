@@ -9,9 +9,9 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                 <a class="dropdown-item" href="{{ route('clicks.index') }}">Карточки</a>
                 <a class="dropdown-item" href="{{ route('decoration.clicks') }}">Отделка</a>
-                <a class="dropdown-item" href="">Категория материалов</a>
-                <a class="dropdown-item" href="">Дата Начала</a>
-                <a class="dropdown-item" href="">Уровень Дизайна</a>
+                <a class="dropdown-item" href="{{ route('material_category.clicks') }}">Категория материалов</a>
+                <a class="dropdown-item" href="{{ route('start_date.clicks') }}">Дата Начала</a>
+                <a class="dropdown-item" href="{{ route('design_skill.clicks') }}">Уровень Дизайна</a>
             </div>
         </li>
 

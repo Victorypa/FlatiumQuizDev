@@ -2975,7 +2975,7 @@ __webpack_require__.r(__webpack_exports__);
       this.squares.forEach(function (item) {
         total += parseInt(item.area);
       });
-      return total / this.squares.length;
+      return parseFloat(total / this.squares.length).toFixed(2);
     }
   }
 });
