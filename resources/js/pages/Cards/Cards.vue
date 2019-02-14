@@ -3,6 +3,7 @@
     <app-header></app-header>
     <div class="progress-bar__wrapper">
           <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
+
     </div>
 
       <div class="content-center">
@@ -276,6 +277,11 @@
   }
 
 }
+
+.logo {
+  padding-bottom: 20px;
+}
+
 @media (min-width: 700px) {
   .content-center {
     display: flex;

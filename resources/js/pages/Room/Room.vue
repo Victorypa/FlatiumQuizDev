@@ -191,17 +191,6 @@ fill: #a1adb7;
 height: auto;
 }
 
-.logo {
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 6%;
-
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .progress-bar {
   &__wrapper {
     margin: 30px 0;
@@ -281,9 +270,6 @@ line-height: 42px;
 outline: none;
 cursor: pointer;
 transition: .15s ease-in-out;
-}
-.primary-button:hover {
-  background-color: #aad7ea;
 }
 .button-wrapper {
 margin: 0 auto;

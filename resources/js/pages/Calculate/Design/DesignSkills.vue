@@ -69,17 +69,6 @@ fill: #a1adb7;
 height: auto;
 }
 
-.logo {
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 3%;
-
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .image {
   &-wrapper {
   display: flex;
@@ -102,7 +91,6 @@ height: auto;
     .image-content {
       padding-top: 15px;
     }
-
   }
   }
   &-text {

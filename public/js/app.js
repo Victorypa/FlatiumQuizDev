@@ -1771,6 +1771,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2442,6 +2460,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
 /* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
 /* harmony import */ var _partials_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/Card */ "./resources/js/pages/Cards/partials/Card.vue");
+//
 //
 //
 //
@@ -7881,7 +7900,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-6a960122] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-6a960122] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-content[data-v-6a960122] {\n  height: 125px;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-card:last-child .image-content[data-v-6a960122] {\n  padding-top: 15px;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 12px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #1c2233;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 240px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-content[data-v-6a960122] {\n  height: 125px;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-card:last-child .image-content[data-v-6a960122] {\n  padding-top: 15px;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 12px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #1c2233;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 240px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -7919,7 +7938,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".container[data-v-bef6465c] {\n  max-width: 900px;\n  font-family: \"Open Sans\", sans-serif;\n  position: relative;\n}\n.logo[data-v-bef6465c] {\n  width: 100px;\n  margin-top: -10px;\n}\n.content-center[data-v-bef6465c] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 50px 70px;\n  background-color: #f8f8f8;\n}\n.main-caption[data-v-bef6465c] {\n  padding-bottom: 60px;\n}\n.card-wrapper[data-v-bef6465c] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.card-wrapper h2[data-v-bef6465c] {\n  letter-spacing: 0.025em;\n  font-size: 22px;\n  margin: 15px;\n  font-weight: 600;\n}\n.card-border[data-v-bef6465c] {\n  border: none;\n}\n.card-workmaterial[data-v-bef6465c], .card-workprice[data-v-bef6465c] {\n  position: relative;\n  align-self: flex-start;\n  background-color: #fff;\n  width: 380px;\n  text-align: center;\n  padding: 70px 28px 30px;\n  margin: 15px;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n}\n.card-workmaterial[data-v-bef6465c]:before, .card-workprice[data-v-bef6465c]:before {\n  content: \"\";\n  border-top: 6px solid #a1adb7;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n}\n.card-workmaterial[data-v-bef6465c] {\n  position: relative;\n  overflow: hidden;\n}\n.card-workmaterial[data-v-bef6465c]:before {\n  border-top: 6px solid #dbc997;\n}\n.card-workmaterial span[data-v-bef6465c] {\n  -webkit-animation: 0.6s ease-in-out;\n          animation: 0.6s ease-in-out;\n  background-color: #1c2233;\n  border: 1px solid #fff;\n  color: #fff;\n  font-size: 9px;\n  left: auto;\n  letter-spacing: 1px;\n  line-height: 33px;\n  padding: 0;\n  position: absolute;\n  right: -45px;\n  text-align: center;\n  text-transform: uppercase;\n  top: 25px;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  width: 175px;\n  cursor: pointer;\n}\n.card-workmaterial span[data-v-bef6465c]::after {\n  border: 1px solid #fff;\n  border-radius: 50%;\n  content: \"i\";\n  display: inline-block;\n  font-size: 6px;\n  height: 12px;\n  line-height: 12px;\n  margin-left: 0.5em;\n  text-align: center;\n  vertical-align: middle;\n  width: 12px;\n}\n.card-price[data-v-bef6465c] {\n  font-size: 28px;\n  font-weight: 400;\n}\n.card-price span[data-v-bef6465c] {\n  font-size: 12px;\n  color: #1c2233;\n}\n.card-parameters[data-v-bef6465c] {\n  text-align: justify;\n  color: #5b6788;\n  margin: 0 auto;\n  width: 70%;\n  font-size: 13px;\n  padding: 30px 0;\n}\n.card-parameters div[data-v-bef6465c] {\n  padding: 8px 0;\n}\n.card-small-price[data-v-bef6465c] {\n  color: #5b6788;\n  font-size: 11px;\n}\n.card-header[data-v-bef6465c] {\n  background-color: transparent;\n  border: none;\n}\n.card-more[data-v-bef6465c] {\n  color: #a1adb7;\n  display: block;\n  font-size: 13px;\n  margin: 0 auto;\n  text-align: center;\n  text-transform: uppercase;\n}\n.card-more[data-v-bef6465c]:hover {\n  color: #c28800;\n}\nstrong[data-v-bef6465c] {\n  color: #1c2233;\n}\n.primary-button[data-v-bef6465c] {\n  width: 70%;\n  margin-top: 24px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n.primary-button[data-v-bef6465c]:hover {\n  background-color: #2e3854;\n}\n.primary-button--white[data-v-bef6465c] {\n  color: #1c2233;\n  background: #fff;\n  box-shadow: 0 2px 7px rgba(28, 34, 51, 0.2);\n}\n.primary-button--white[data-v-bef6465c]:hover {\n  background: #f2f2f2;\n}\n.nav-tabs .nav-link[data-v-bef6465c] {\n  color: #000;\n  padding-left: 25px;\n  padding-right: 25px;\n  letter-spacing: 2px;\n}\n.nav-tabs .nav-link.active[data-v-bef6465c] {\n  color: #c28800;\n}\n.card-info[data-v-bef6465c] {\n  position: absolute;\n  top: 38%;\n  right: -10%;\n  width: 250px;\n  padding: 15px;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n  background-color: #fff;\n  opacity: 0;\n  cursor: po;\n}\nul[data-v-bef6465c] {\n  list-style: none;\n  margin-left: 0;\n  padding: 0;\n}\nul li[data-v-bef6465c] {\n  border-bottom: 1px solid #ccc;\n  padding: 10px 0;\n}\n.navbar-collapse[data-v-bef6465c] {\n  padding-top: 12px;\n}\n.navbar-expand-lg[data-v-bef6465c] {\n  padding-bottom: 0px;\n}\n.navbar-nav .nav-link[data-v-bef6465c] {\n  padding-left: 30px;\n  padding-right: 30px;\n  padding-bottom: 20px;\n  border-bottom: 3px solid transparent;\n}\n.navbar-nav .nav-link[data-v-bef6465c]:hover {\n  border-bottom: 3px solid black;\n}\n.nav-tabs[data-v-bef6465c] {\n  margin-top: 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n}\n@media (max-width: 860px) {\n.content-center[data-v-bef6465c] {\n    height: auto;\n}\n}", ""]);
+exports.push([module.i, ".container[data-v-bef6465c] {\n  max-width: 900px;\n  font-family: \"Open Sans\", sans-serif;\n  position: relative;\n}\n.logo[data-v-bef6465c] {\n  margin-top: -10px;\n}\n.content-center[data-v-bef6465c] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 50px 70px;\n  background-color: #f8f8f8;\n}\n.main-caption[data-v-bef6465c] {\n  padding-bottom: 60px;\n}\n.card-wrapper[data-v-bef6465c] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.card-wrapper h2[data-v-bef6465c] {\n  letter-spacing: 0.025em;\n  font-size: 22px;\n  margin: 15px;\n  font-weight: 600;\n}\n.card-border[data-v-bef6465c] {\n  border: none;\n}\n.card-workmaterial[data-v-bef6465c], .card-workprice[data-v-bef6465c] {\n  position: relative;\n  align-self: flex-start;\n  background-color: #fff;\n  width: 380px;\n  text-align: center;\n  padding: 70px 28px 30px;\n  margin: 15px;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n}\n.card-workmaterial[data-v-bef6465c]:before, .card-workprice[data-v-bef6465c]:before {\n  content: \"\";\n  border-top: 6px solid #a1adb7;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n}\n.card-workmaterial[data-v-bef6465c] {\n  position: relative;\n  overflow: hidden;\n}\n.card-workmaterial[data-v-bef6465c]:before {\n  border-top: 6px solid #dbc997;\n}\n.card-workmaterial span[data-v-bef6465c] {\n  -webkit-animation: 0.6s ease-in-out;\n          animation: 0.6s ease-in-out;\n  background-color: #1c2233;\n  border: 1px solid #fff;\n  color: #fff;\n  font-size: 9px;\n  left: auto;\n  letter-spacing: 1px;\n  line-height: 33px;\n  padding: 0;\n  position: absolute;\n  right: -45px;\n  text-align: center;\n  text-transform: uppercase;\n  top: 25px;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  width: 175px;\n  cursor: pointer;\n}\n.card-workmaterial span[data-v-bef6465c]::after {\n  border: 1px solid #fff;\n  border-radius: 50%;\n  content: \"i\";\n  display: inline-block;\n  font-size: 6px;\n  height: 12px;\n  line-height: 12px;\n  margin-left: 0.5em;\n  text-align: center;\n  vertical-align: middle;\n  width: 12px;\n}\n.card-price[data-v-bef6465c] {\n  font-size: 28px;\n  font-weight: 400;\n}\n.card-price span[data-v-bef6465c] {\n  font-size: 12px;\n  color: #1c2233;\n}\n.card-parameters[data-v-bef6465c] {\n  text-align: justify;\n  color: #5b6788;\n  margin: 0 auto;\n  width: 70%;\n  font-size: 13px;\n  padding: 30px 0;\n}\n.card-parameters div[data-v-bef6465c] {\n  padding: 8px 0;\n}\n.card-small-price[data-v-bef6465c] {\n  color: #5b6788;\n  font-size: 11px;\n}\n.card-header[data-v-bef6465c] {\n  background-color: transparent;\n  border: none;\n}\n.card-more[data-v-bef6465c] {\n  color: #a1adb7;\n  display: block;\n  font-size: 13px;\n  margin: 0 auto;\n  text-align: center;\n  text-transform: uppercase;\n}\n.card-more[data-v-bef6465c]:hover {\n  color: #c28800;\n}\nstrong[data-v-bef6465c] {\n  color: #1c2233;\n}\n.primary-button[data-v-bef6465c] {\n  width: 70%;\n  margin-top: 24px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n.primary-button[data-v-bef6465c]:hover {\n  background-color: #2e3854;\n}\n.primary-button--white[data-v-bef6465c] {\n  color: #1c2233;\n  background: #fff;\n  box-shadow: 0 2px 7px rgba(28, 34, 51, 0.2);\n}\n.primary-button--white[data-v-bef6465c]:hover {\n  background: #f2f2f2;\n}\n.nav-tabs .nav-link[data-v-bef6465c] {\n  color: #000;\n  padding-left: 25px;\n  padding-right: 25px;\n  letter-spacing: 2px;\n}\n.nav-tabs .nav-link.active[data-v-bef6465c] {\n  color: #c28800;\n}\n.card-info[data-v-bef6465c] {\n  position: absolute;\n  top: 38%;\n  right: -10%;\n  width: 250px;\n  padding: 15px;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n  background-color: #fff;\n  opacity: 0;\n  cursor: po;\n}\nul[data-v-bef6465c] {\n  list-style: none;\n  margin-left: 0;\n  padding: 0;\n}\nul li[data-v-bef6465c] {\n  border-bottom: 1px solid #ccc;\n  padding: 10px 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n}\n@media (max-width: 860px) {\n.content-center[data-v-bef6465c] {\n    height: auto;\n}\n}", ""]);
 
 // exports
 
@@ -7938,7 +7957,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n@media (min-width: 700px) {\n.content-center[data-v-df4199c4] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-df4199c4] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-df4199c4] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.logo[data-v-df4199c4] {\n  padding-bottom: 20px;\n}\n@media (min-width: 700px) {\n.content-center[data-v-df4199c4] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-df4199c4] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-df4199c4] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -8052,7 +8071,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-3958fef6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-3958fef6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-3958fef6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-3958fef6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-3958fef6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-3958fef6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-3958fef6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-3958fef6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-3958fef6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-3958fef6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-3958fef6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-3958fef6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-3958fef6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-3958fef6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-3958fef6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-3958fef6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-3958fef6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-3958fef6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -57353,16 +57372,89 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
-      _c(
-        "a",
-        { staticClass: "logo__img", attrs: { href: "https://www.flatium.ru" } },
-        [
-          _c("img", {
-            attrs: { src: "/storage/quiz/logo-black.svg", alt: "Flatium-logo" }
-          })
-        ]
-      )
+    return _c("div", {}, [
+      _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
+        _c("div", { staticClass: "logo" }, [
+          _c(
+            "a",
+            {
+              staticClass: "logo__img",
+              attrs: { href: "https://www.flatium.ru" }
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/storage/quiz/logo-black.svg",
+                  alt: "Flatium-logo"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "navbar-toggler",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#navbarNavAltMarkup",
+              "aria-controls": "navbarNavAltMarkup",
+              "aria-expanded": "false",
+              "aria-label": "Toggle navigation"
+            }
+          },
+          [_c("span", { staticClass: "navbar-toggler-icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "navbarNavAltMarkup" }
+          },
+          [
+            _c("div", { staticClass: "navbar-nav" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-link active",
+                  attrs: { href: "#" }
+                },
+                [
+                  _vm._v("Projects "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Shop")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Blog")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Refer & Earn")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Help")]
+              )
+            ])
+          ]
+        )
+      ])
     ])
   }
 ]
