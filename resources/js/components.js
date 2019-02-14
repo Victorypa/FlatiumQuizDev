@@ -2,7 +2,6 @@
 Vue.component('info-form', require('./pages/Form/InfoForm').default)
 Vue.component('cards', require('./pages/Cards/Cards').default)
 Vue.component('room', require('./pages/Room/Room').default)
-Vue.component('redirect', require('./pages/Redirect/Redirect').default)
 Vue.component('results', require('./pages/Results/Results').default)
 
 Vue.component('decoration', require('./pages/Calculate/Decoration/Decoration').default)
