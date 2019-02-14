@@ -1,11 +1,12 @@
 <template>
     <div class="result__card">
       <div class="result__title">
-        <span>Ваш стиль</span>
-      <div class="result__name">
-        {{ data[0].title }}
+          <span>Ваш стиль</span>
+          <div class="result__name">
+            {{ data[0].title }}
+          </div>
       </div>
-      </div>
+
       <div class="result__desc">
         <div class="result__info">
           {{ data[0].description1 }}
@@ -22,6 +23,7 @@
         </div>
       </div> -->
       </div>
+
       <button type="button"
          name="button"
          class="primary-button"
@@ -29,6 +31,7 @@
          >
           Смотреть стиль
       </button>
+
       <button type="button"
               name="button"
               class="primary-button"
@@ -36,6 +39,7 @@
               >
         Рассчитать
       </button>
+
     </div>
 </template>
 

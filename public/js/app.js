@@ -2164,8 +2164,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: []
+  props: ['selected']
 });
 
 /***/ }),
@@ -3247,6 +3248,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -57700,48 +57705,41 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("nav", [
-      _c("div", { staticClass: "nav nav-tabs", attrs: { role: "tablist" } }, [
-        _c(
-          "a",
-          {
-            staticClass: "nav-item nav-link",
-            attrs: {
-              "data-toggle": "tab",
-              href: "#nav-result",
-              role: "tab",
-              "aria-controls": "nav-result",
-              "aria-selected": "true"
-            }
-          },
-          [_vm._v("\n       Ваш стиль\n   ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "nav-item nav-link active",
-            attrs: {
-              "data-toggle": "tab",
-              href: "#nav-needs",
-              role: "tab",
-              "aria-controls": "nav-needs",
-              "aria-selected": "false"
-            }
-          },
-          [_vm._v("\n        Рассчёт ремонта\n    ")]
-        )
-      ])
+  return _c("nav", [
+    _c("div", { staticClass: "nav nav-tabs", attrs: { role: "tablist" } }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-item nav-link",
+          class: { active: _vm.selected === "result" ? true : false },
+          attrs: {
+            "data-toggle": "tab",
+            href: "#nav-result",
+            role: "tab",
+            "aria-controls": "nav-result"
+          }
+        },
+        [_vm._v("\n       Ваш стиль\n   ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "nav-item nav-link",
+          class: { active: _vm.selected === "calculator" ? true : false },
+          attrs: {
+            "data-toggle": "tab",
+            href: "#nav-needs",
+            role: "tab",
+            "aria-controls": "nav-needs"
+          }
+        },
+        [_vm._v("\n        Рассчёт ремонта\n    ")]
+      )
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -59032,7 +59030,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation"),
+      _c("app-navigation", { attrs: { selected: "result" } }),
       _vm._v(" "),
       _vm.data.length
         ? _c(
@@ -59076,7 +59074,7 @@ var render = function() {
       _c("span", [_vm._v("Ваш стиль")]),
       _vm._v(" "),
       _c("div", { staticClass: "result__name" }, [
-        _vm._v("\n    " + _vm._s(_vm.data[0].title) + "\n  ")
+        _vm._v("\n        " + _vm._s(_vm.data[0].title) + "\n      ")
       ])
     ]),
     _vm._v(" "),

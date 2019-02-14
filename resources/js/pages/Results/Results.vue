@@ -2,7 +2,7 @@
   <div>
     <app-header></app-header>
 
-    <app-navigation></app-navigation>
+    <app-navigation selected="result"></app-navigation>
 
     <div v-if="data.length"
          class="result__wrapper"
