@@ -10694,8 +10694,10 @@ body {
 }
 
 .logo__img {
+  display: block;
   width: 100%;
   height: 100%;
+  padding-right: 15px;
 }
 
 .nav-tabs {
@@ -10706,8 +10708,11 @@ body {
 }
 
 .nav-tabs a {
-  box-shadow: inset 0 15px 15px -15px #ccc;
   transition: 0.5s;
+}
+
+.nav-tabs a.active {
+  box-shadow: inset 0 15px 15px -15px #ccc;
 }
 
 .nav-tabs a:hover {

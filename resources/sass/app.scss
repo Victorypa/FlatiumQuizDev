@@ -48,8 +48,10 @@ padding-bottom: 20px;
   margin-left: 6%;
 
   &__img {
+    display: block;
     width: 100%;
     height: 100%;
+    padding-right: 15px;
   }
 }
 .nav-tabs {
@@ -58,7 +60,9 @@ padding-bottom: 20px;
   background: #f8f8f8;
   box-shadow: inset 0 15px 15px  -15px #ccc;
   a {
-    box-shadow: inset 0 15px 15px  -15px #ccc;
+    &.active {
+      box-shadow: inset 0 15px 15px  -15px #ccc;
+    }
     transition: 0.5s;
       &:hover {
         text-decoration: underline;

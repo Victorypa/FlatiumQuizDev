@@ -100,7 +100,7 @@ height: auto;
   text-decoration: none;
   &:last-child {
     .image-content {
-          padding-top: 15px;
+      padding-top: 15px;
     }
 
   }

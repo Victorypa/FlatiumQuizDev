@@ -2146,6 +2146,201 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -7724,7 +7919,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".mobile-input[data-v-bef6465c] {\n  display: none;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.content-center[data-v-bef6465c] {\n  margin: 50px 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: -5%;\n  height: 100vh;\n}\n.vue-slider-component[data-v-bef6465c] {\n  margin: 50px 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n}", ""]);
+exports.push([module.i, ".container[data-v-bef6465c] {\n  max-width: 900px;\n  font-family: \"Open Sans\", sans-serif;\n  position: relative;\n}\n.logo[data-v-bef6465c] {\n  width: 100px;\n  margin-top: -10px;\n}\n.content-center[data-v-bef6465c] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 50px 70px;\n  background-color: #f8f8f8;\n}\n.main-caption[data-v-bef6465c] {\n  padding-bottom: 60px;\n}\n.card-wrapper[data-v-bef6465c] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.card-wrapper h2[data-v-bef6465c] {\n  letter-spacing: 0.025em;\n  font-size: 22px;\n  margin: 15px;\n  font-weight: 600;\n}\n.card-border[data-v-bef6465c] {\n  border: none;\n}\n.card-workmaterial[data-v-bef6465c], .card-workprice[data-v-bef6465c] {\n  position: relative;\n  align-self: flex-start;\n  background-color: #fff;\n  width: 380px;\n  text-align: center;\n  padding: 70px 28px 30px;\n  margin: 15px;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n}\n.card-workmaterial[data-v-bef6465c]:before, .card-workprice[data-v-bef6465c]:before {\n  content: \"\";\n  border-top: 6px solid #a1adb7;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n}\n.card-workmaterial[data-v-bef6465c] {\n  position: relative;\n  overflow: hidden;\n}\n.card-workmaterial[data-v-bef6465c]:before {\n  border-top: 6px solid #dbc997;\n}\n.card-workmaterial span[data-v-bef6465c] {\n  -webkit-animation: 0.6s ease-in-out;\n          animation: 0.6s ease-in-out;\n  background-color: #1c2233;\n  border: 1px solid #fff;\n  color: #fff;\n  font-size: 9px;\n  left: auto;\n  letter-spacing: 1px;\n  line-height: 33px;\n  padding: 0;\n  position: absolute;\n  right: -45px;\n  text-align: center;\n  text-transform: uppercase;\n  top: 25px;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  width: 175px;\n  cursor: pointer;\n}\n.card-workmaterial span[data-v-bef6465c]::after {\n  border: 1px solid #fff;\n  border-radius: 50%;\n  content: \"i\";\n  display: inline-block;\n  font-size: 6px;\n  height: 12px;\n  line-height: 12px;\n  margin-left: 0.5em;\n  text-align: center;\n  vertical-align: middle;\n  width: 12px;\n}\n.card-price[data-v-bef6465c] {\n  font-size: 28px;\n  font-weight: 400;\n}\n.card-price span[data-v-bef6465c] {\n  font-size: 12px;\n  color: #1c2233;\n}\n.card-parameters[data-v-bef6465c] {\n  text-align: justify;\n  color: #5b6788;\n  margin: 0 auto;\n  width: 70%;\n  font-size: 13px;\n  padding: 30px 0;\n}\n.card-parameters div[data-v-bef6465c] {\n  padding: 8px 0;\n}\n.card-small-price[data-v-bef6465c] {\n  color: #5b6788;\n  font-size: 11px;\n}\n.card-header[data-v-bef6465c] {\n  background-color: transparent;\n  border: none;\n}\n.card-more[data-v-bef6465c] {\n  color: #a1adb7;\n  display: block;\n  font-size: 13px;\n  margin: 0 auto;\n  text-align: center;\n  text-transform: uppercase;\n}\n.card-more[data-v-bef6465c]:hover {\n  color: #c28800;\n}\nstrong[data-v-bef6465c] {\n  color: #1c2233;\n}\n.primary-button[data-v-bef6465c] {\n  width: 70%;\n  margin-top: 24px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n.primary-button[data-v-bef6465c]:hover {\n  background-color: #2e3854;\n}\n.primary-button--white[data-v-bef6465c] {\n  color: #1c2233;\n  background: #fff;\n  box-shadow: 0 2px 7px rgba(28, 34, 51, 0.2);\n}\n.primary-button--white[data-v-bef6465c]:hover {\n  background: #f2f2f2;\n}\n.nav-tabs .nav-link[data-v-bef6465c] {\n  color: #000;\n  padding-left: 25px;\n  padding-right: 25px;\n  letter-spacing: 2px;\n}\n.nav-tabs .nav-link.active[data-v-bef6465c] {\n  color: #c28800;\n}\n.card-info[data-v-bef6465c] {\n  position: absolute;\n  top: 38%;\n  right: -10%;\n  width: 250px;\n  padding: 15px;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n  background-color: #fff;\n  opacity: 0;\n  cursor: po;\n}\nul[data-v-bef6465c] {\n  list-style: none;\n  margin-left: 0;\n  padding: 0;\n}\nul li[data-v-bef6465c] {\n  border-bottom: 1px solid #ccc;\n  padding: 10px 0;\n}\n.navbar-collapse[data-v-bef6465c] {\n  padding-top: 12px;\n}\n.navbar-expand-lg[data-v-bef6465c] {\n  padding-bottom: 0px;\n}\n.navbar-nav .nav-link[data-v-bef6465c] {\n  padding-left: 30px;\n  padding-right: 30px;\n  padding-bottom: 20px;\n  border-bottom: 3px solid transparent;\n}\n.navbar-nav .nav-link[data-v-bef6465c]:hover {\n  border-bottom: 3px solid black;\n}\n.nav-tabs[data-v-bef6465c] {\n  margin-top: 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n}\n@media (max-width: 860px) {\n.content-center[data-v-bef6465c] {\n    height: auto;\n}\n}", ""]);
 
 // exports
 
@@ -57164,7 +57359,7 @@ var staticRenderFns = [
         { staticClass: "logo__img", attrs: { href: "https://www.flatium.ru" } },
         [
           _c("img", {
-            attrs: { src: "/storage/quiz/logo1.svg", alt: "Flatium-logo" }
+            attrs: { src: "/storage/quiz/logo-black.svg", alt: "Flatium-logo" }
           })
         ]
       )
@@ -57625,96 +57820,319 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("app-header"),
-      _vm._v(" "),
-      _c("app-navigation"),
-      _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "content-center" }, [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "form",
-            {
-              on: {
-                submit: function($event) {
-                  $event.preventDefault()
-                  return _vm.submit()
-                }
-              }
-            },
-            [
-              _c(
-                "div",
-                { staticClass: "form-group" },
-                [
-                  _c("h1", { staticClass: "main-caption" }, [
-                    _vm._v(
-                      "\n                    Укажите площадь помещения\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.area,
-                        expression: "area"
-                      }
-                    ],
-                    staticClass: "mobile-input",
-                    attrs: { type: "number", required: "" },
-                    domProps: { value: _vm.area },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.area = $event.target.value
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("vue-slider", {
-                    ref: "slider",
-                    staticClass: "vue-slider",
-                    model: {
-                      value: _vm.area,
-                      callback: function($$v) {
-                        _vm.area = $$v
-                      },
-                      expression: "area"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ]
-          )
-        ])
-      ])
-    ],
-    1
-  )
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("div", { staticClass: "button-wrapper" }, [
+    return _c("div", [
+      _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
+        _c("div", { staticClass: "logo" }, [
+          _c(
+            "a",
+            {
+              staticClass: "logo__img",
+              attrs: { href: "https://www.flatium.ru" }
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/storage/quiz/logo-black.svg",
+                  alt: "Flatium-logo"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
         _c(
           "button",
-          { staticClass: "primary-button", attrs: { type: "submit" } },
-          [_vm._v("\n                         Далее\n                     ")]
+          {
+            staticClass: "navbar-toggler",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#navbarNavAltMarkup",
+              "aria-controls": "navbarNavAltMarkup",
+              "aria-expanded": "false",
+              "aria-label": "Toggle navigation"
+            }
+          },
+          [_c("span", { staticClass: "navbar-toggler-icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "navbarNavAltMarkup" }
+          },
+          [
+            _c("div", { staticClass: "navbar-nav" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-link active",
+                  attrs: { href: "#" }
+                },
+                [
+                  _vm._v("Projects "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Shop")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Blog")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Refer & Earn")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Help")]
+              )
+            ])
+          ]
         )
+      ]),
+      _vm._v(" "),
+      _c("nav", [
+        _c(
+          "div",
+          {
+            staticClass: "nav nav-tabs",
+            attrs: { id: "nav-tab", role: "tablist" }
+          },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "nav-item nav-link",
+                attrs: {
+                  id: "nav-result",
+                  "data-toggle": "tab",
+                  href: "#nav-result",
+                  role: "tab",
+                  "aria-controls": "nav-result",
+                  "aria-selected": "true"
+                }
+              },
+              [_vm._v("Ваш стиль")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nav-item nav-link",
+                attrs: {
+                  id: "nav-needs",
+                  "data-toggle": "tab",
+                  href: "#nav-needs",
+                  role: "tab",
+                  "aria-controls": "nav-needs",
+                  "aria-selected": "false"
+                }
+              },
+              [_vm._v("Рассчёт ремонта")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nav-item nav-link active",
+                attrs: {
+                  id: "nav-needs",
+                  "data-toggle": "tab",
+                  href: "#nav-needs",
+                  role: "tab",
+                  "aria-controls": "nav-needs",
+                  "aria-selected": "false"
+                }
+              },
+              [_vm._v("Стоимость")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "content-center" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "card-wrapper" }, [
+            _c("div", { staticClass: "card-workprice" }, [
+              _c("h2", [_vm._v("Стоимость работ")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-price" }, [
+                _vm._v("\n                   ₽ 240 000\n                 ")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-small-price" }, [
+                _vm._v("Стоимость за кв. м.: "),
+                _c("strong", [_vm._v("₽ 12 3546")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "button-wrapper" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "primary-button primary-button--white",
+                    attrs: { type: "submit" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        НАЧАТЬ РЕМОНТ\n                    "
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { attrs: { id: "accordion1" } }, [
+                _c("div", { staticClass: "card card-border" }, [
+                  _c("div", { staticClass: "card-header" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "card-link card-more",
+                        attrs: {
+                          "data-toggle": "collapse",
+                          href: "#collapseOne"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                            Больше информации\n                         "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "collapse",
+                      attrs: { id: "collapseOne", "data-parent": "#accordion1" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("ul", [
+                          _c("li", [
+                            _vm._v(
+                              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _vm._v(
+                              "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _vm._v(
+                              "nostrud exercitation ullamco laboris nisi ut aliquip"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [_vm._v("ex ea commodo consequat.")])
+                        ])
+                      ])
+                    ]
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-workmaterial" }, [
+              _c("h2", [_vm._v("Стоимость материалов")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-price" }, [
+                _vm._v("\n                     ₽ 240 000\n                   ")
+              ]),
+              _vm._v(" "),
+              _c("span", [_vm._v("Best Match")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-small-price" }, [
+                _vm._v("Стоимость за кв. м.: "),
+                _c("strong", [_vm._v("₽ 12 3546 ")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "button-wrapper" }, [
+                _c(
+                  "button",
+                  { staticClass: "primary-button", attrs: { type: "submit" } },
+                  [
+                    _vm._v(
+                      "\n                            СТИЛИСТ\n                        "
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { attrs: { id: "accordion2" } }, [
+                _c("div", { staticClass: "card card-border" }, [
+                  _c("div", { staticClass: "card-header" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "card-link card-more",
+                        attrs: {
+                          "data-toggle": "collapse",
+                          href: "#collapseTwo"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                               Больше информации\n                             "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "collapse",
+                      attrs: { id: "collapseTwo", "data-parent": "#accordion2" }
+                    },
+                    [
+                      _c("div", { staticClass: "card-body" }, [
+                        _vm._v(
+                          "\n                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                             "
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-info" }, [
+            _c("div", { staticClass: "card-info__title" }, [
+              _vm._v("\n                 BEST MATCH\n                 ")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-info__content" }, [
+              _vm._v(
+                "\n                 For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                 "
+              )
+            ])
+          ])
+        ])
       ])
     ])
   }
