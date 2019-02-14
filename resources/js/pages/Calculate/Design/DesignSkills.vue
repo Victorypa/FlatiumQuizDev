@@ -2,9 +2,9 @@
     <div>
         <app-header></app-header>
 
-        <app-navigation selected="calculator"></app-navigation>
+        <app-navigation></app-navigation>
 
-        <calculate-progressbar :volumn="100"></calculate-progressbar>
+        <calculate-progressbar ref="progressbar"></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
@@ -18,8 +18,8 @@
                           @click.prevent="selected(design.value)"
                           >
                       <div class="image-content" v-html="design.svg"></div>
-                      <div class="image-text" v-text="design.title"></div>
-                      <div class="image-subtitle" v-text="design.description"></div>
+                    <div class="image-text" v-text="design.title"></div>
+                    <div class="image-subtitle" v-text="design.description"></div>
                   </button>
               </div>
             </div>
@@ -43,15 +43,11 @@
             selected (type) {
                 let card_id = window.location.search.match(/\d+/g).toString()
 
-                axios.post('/cards/clicks/store', {
-                    'name': type
+                axios.post('/cards/design-skills/store', {
+                    'card_id': card_id,
+                    'type': type
                 }).then(response => {
-                    axios.post('/cards/design-skills/store', {
-                        card_id,
-                        type
-                    }).then(response => {
-                        window.location.href = `/cards/calculate-result?card_id=${card_id}`
-                    })
+                    alert('all finished, waiting')
                 })
             }
         }
@@ -62,7 +58,7 @@
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
-  opacity: 0;
+  opacity:0;  /* make things invisible upon start */;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;
@@ -71,17 +67,6 @@
 svg {
 fill: #a1adb7;
 height: auto;
-}
-
-.logo {
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 3%;
-
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .image {
@@ -104,9 +89,8 @@ height: auto;
   text-decoration: none;
   &:last-child {
     .image-content {
-          padding-top: 15px;
+      padding-top: 15px;
     }
-
   }
   }
   &-text {
