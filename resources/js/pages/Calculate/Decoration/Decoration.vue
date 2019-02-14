@@ -58,25 +58,22 @@
 
 <style lang="scss" scoped>
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
 .fade-in {
   opacity:0;  /* make things invisible upon start */;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;
 }
-
 svg {
 fill: #a1adb7;
 height: auto;
 }
-
 .image {
   &-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 600px;
+  justify-content: center;
+  max-width: 800px;
   margin: 0 auto;
   }
   &-card {
@@ -84,6 +81,15 @@ height: auto;
   display: block;
   font-size: 14px;
   text-decoration: none;
+  }
+  &-text {
+    margin-top: 50px;
+    font-size: 12px;
+    color: #1c2233;
+    letter-spacing: 2px;
+    line-height: 1.9;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 .main-caption {
@@ -93,11 +99,9 @@ height: auto;
 .content-center {
   margin: 50px 0;
 }
-
 .fill-color {
   fill: #ccc;
 }
-
 .button-card {
 border: 2px solid #eee;
 background: none;
@@ -107,7 +111,7 @@ font-weight: 400;
 height: 300px;
 letter-spacing: .11em;
 text-transform: uppercase;
-width: 175px;
+width: 230px;
 transition-duration: .2s;
 box-sizing: border-box;
 outline: none;
@@ -127,7 +131,6 @@ cursor: pointer;
     }
   }
 }
-
 svg {
 margin-bottom: 20px;
 }

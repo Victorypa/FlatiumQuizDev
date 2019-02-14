@@ -56,19 +56,16 @@
 
 <style lang="scss" scoped>
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
 .fade-in {
   opacity:0;  /* make things invisible upon start */;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;
 }
-
 svg {
 fill: #a1adb7;
 height: auto;
 }
-
 .image {
   &-wrapper {
   display: flex;
@@ -79,8 +76,6 @@ height: auto;
   }
   &-content {
     height: 125px;
-
-
   }
   &-card {
   margin: 0 10px 20px;
@@ -110,8 +105,6 @@ height: auto;
   line-height: 16px;
     color: #1c2233;
 }
-
-
 }
 .main-caption {
   max-width: 600px;
@@ -120,7 +113,6 @@ height: auto;
 .content-center {
   margin: 50px 0;
 }
-
 .button-card {
 padding: 15px;
 border: 2px solid #eee;
@@ -145,7 +137,6 @@ cursor: pointer;
     }
   }
 }
-
 @media (min-width: 700px) {
   .content-center {
     display: flex;
