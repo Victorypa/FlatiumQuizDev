@@ -2,7 +2,7 @@
     <div>
       <app-header></app-header>
 
-      <app-navigation></app-navigation>
+      <app-navigation selected="calculator"></app-navigation>
 
       <calculate-progressbar :volumn="40"></calculate-progressbar>
 
@@ -27,7 +27,7 @@
 
 <script>
     import { decorations } from './index'
-    
+
     export default {
         data () {
             return {

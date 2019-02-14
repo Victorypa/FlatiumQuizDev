@@ -19,8 +19,12 @@ class CardController extends Controller
 
     public function show(Card $card)
     {
-        return $card;
-        // dd($card);
+        $with = [
+             'squares', 'decorations', 'design_skills',
+             'material_categories', 'start_dates'
+        ];
+
+        return Card::where('id', $card->id)->with($with)->first();
     }
 
     public function store(Request $request)

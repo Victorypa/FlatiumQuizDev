@@ -2,7 +2,7 @@
     <div>
         <app-header></app-header>
 
-        <app-navigation></app-navigation>
+        <app-navigation selected="calculator"></app-navigation>
 
         <calculate-progressbar :volumn="100"></calculate-progressbar>
 
@@ -62,7 +62,7 @@
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
-  opacity:0;  /* make things invisible upon start */;
+  opacity: 0;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration: 0.7s;

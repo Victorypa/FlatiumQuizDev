@@ -2160,13 +2160,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['selected']
+  props: ['selected'],
+  data: function data() {
+    return {
+      result_url: '',
+      url: ''
+    };
+  },
+  created: function created() {
+    this.checkCalculateUrl();
+  },
+  methods: {
+    checkCalculateUrl: function checkCalculateUrl() {
+      var _this = this;
+
+      var card_id = window.location.search.match(/\d+/g).toString();
+      this.result_url = "/cards/result?card_id=".concat(card_id);
+      axios.get("/cards/".concat(card_id)).then(function (response) {
+        if (response.data.design_skills.length === 0) {
+          _this.url = "/cards/design-skills?card_id=".concat(card_id);
+        }
+
+        if (response.data.start_dates.length === 0) {
+          _this.url = "/cards/start-date?card_id=".concat(card_id);
+        }
+
+        if (response.data.material_categories.length === 0) {
+          _this.url = "/cards/material-category?card_id=".concat(card_id);
+        }
+
+        if (response.data.decorations.length === 0) {
+          _this.url = "/cards/decoration?card_id=".concat(card_id);
+        }
+
+        if (response.data.squares.length === 0) {
+          _this.url = "/cards/square?card_id=".concat(card_id);
+        }
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -7701,7 +7734,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-6a960122] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-6a960122] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-content[data-v-6a960122] {\n  height: 125px;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-card:last-child .image-content[data-v-6a960122] {\n  padding-top: 15px;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 12px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #1c2233;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 240px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-6a960122] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-6a960122] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-content[data-v-6a960122] {\n  height: 125px;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-card:last-child .image-content[data-v-6a960122] {\n  padding-top: 15px;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 12px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #1c2233;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 240px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -57262,7 +57295,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation"),
+      _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("calculate-progressbar", { attrs: { volumn: 80 } }),
       _vm._v(" "),
@@ -57339,7 +57372,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation"),
+      _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("calculate-progressbar", { attrs: { volumn: 40 } }),
       _vm._v(" "),
@@ -57416,7 +57449,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation"),
+      _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("calculate-progressbar", { attrs: { volumn: 100 } }),
       _vm._v(" "),
@@ -57501,7 +57534,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation"),
+      _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("calculate-progressbar", { attrs: { volumn: 60 } }),
       _vm._v(" "),
@@ -57595,7 +57628,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation"),
+      _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("calculate-progressbar", { attrs: { volumn: 20 } }),
       _vm._v(" "),
@@ -57712,30 +57745,22 @@ var render = function() {
         {
           staticClass: "nav-item nav-link",
           class: { active: _vm.selected === "result" ? true : false },
-          attrs: {
-            "data-toggle": "tab",
-            href: "#nav-result",
-            role: "tab",
-            "aria-controls": "nav-result"
-          }
+          attrs: { href: _vm.result_url }
         },
         [_vm._v("\n       Ваш стиль\n   ")]
       ),
       _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "nav-item nav-link",
-          class: { active: _vm.selected === "calculator" ? true : false },
-          attrs: {
-            "data-toggle": "tab",
-            href: "#nav-needs",
-            role: "tab",
-            "aria-controls": "nav-needs"
-          }
-        },
-        [_vm._v("\n        Рассчёт ремонта\n    ")]
-      )
+      _vm.url
+        ? _c(
+            "a",
+            {
+              staticClass: "nav-item nav-link",
+              class: { active: _vm.selected === "calculator" ? true : false },
+              attrs: { href: _vm.url }
+            },
+            [_vm._v("\n        Рассчёт ремонта\n    ")]
+          )
+        : _vm._e()
     ])
   ])
 }

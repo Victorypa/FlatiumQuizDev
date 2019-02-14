@@ -2,7 +2,7 @@
 <div class="">
       <app-header></app-header>
 
-      <app-navigation></app-navigation>
+      <app-navigation selected="calculator"></app-navigation>
 
       <calculate-progressbar :volumn="60"></calculate-progressbar>
 
