@@ -14,7 +14,7 @@
                 </h1>
                 <form @submit.prevent="go('name')">
                     <div class="form-wrapper">
-                        <input type="text" value=""
+                        <input type="text"
                                v-model="person.name"
                                required
                                autofocus

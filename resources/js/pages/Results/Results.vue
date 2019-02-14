@@ -4,16 +4,12 @@
 
     <app-navigation></app-navigation>
 
-    <!-- <div class="logo">
-      <a href="https://www.flatium.ru" class="logo__img">
-        <img src="/storage/quiz/logo.svg" alt="Flatium-logo">
-    </a>
-    </div> -->
-    <template v-if="data.length">
-        <div class="result__wrapper" :style="{ backgroundImage: 'url(' + data[0].image + ')' }">
-            <result :data="data"></result>
-        </div>
-    </template>
+    <div v-if="data.length"
+         class="result__wrapper"
+         :style="{ backgroundImage: 'url(' + data[0].image + ')' }"
+         >
+        <result :data="data"></result>
+    </div>
   </div>
 
 </template>

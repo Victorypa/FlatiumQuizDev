@@ -2148,7 +2148,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: []
+});
 
 /***/ }),
 
@@ -3171,10 +3189,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Results/index.js");
 /* harmony import */ var _partials_Result__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/Result */ "./resources/js/pages/Results/partials/Result.vue");
-//
-//
-//
-//
 //
 //
 //
@@ -57694,46 +57708,37 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("nav", [
-      _c(
-        "div",
-        {
-          staticClass: "nav nav-tabs",
-          attrs: { id: "nav-tab", role: "tablist" }
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass: "nav-item nav-link",
-              attrs: {
-                id: "nav-result",
-                "data-toggle": "tab",
-                href: "#nav-result",
-                role: "tab",
-                "aria-controls": "nav-result",
-                "aria-selected": "true"
-              }
-            },
-            [_vm._v("Ваш стиль")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-item nav-link active",
-              attrs: {
-                id: "nav-needs",
-                "data-toggle": "tab",
-                href: "#nav-needs",
-                role: "tab",
-                "aria-controls": "nav-needs",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Рассчёт ремонта")]
-          )
-        ]
-      )
+      _c("div", { staticClass: "nav nav-tabs", attrs: { role: "tablist" } }, [
+        _c(
+          "a",
+          {
+            staticClass: "nav-item nav-link",
+            attrs: {
+              "data-toggle": "tab",
+              href: "#nav-result",
+              role: "tab",
+              "aria-controls": "nav-result",
+              "aria-selected": "true"
+            }
+          },
+          [_vm._v("\n       Ваш стиль\n   ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "nav-item nav-link active",
+            attrs: {
+              "data-toggle": "tab",
+              href: "#nav-needs",
+              role: "tab",
+              "aria-controls": "nav-needs",
+              "aria-selected": "false"
+            }
+          },
+          [_vm._v("\n        Рассчёт ремонта\n    ")]
+        )
+      ])
     ])
   }
 ]
@@ -58025,12 +58030,7 @@ var render = function() {
                             expression: "person.name"
                           }
                         ],
-                        attrs: {
-                          type: "text",
-                          value: "",
-                          required: "",
-                          autofocus: ""
-                        },
+                        attrs: { type: "text", required: "", autofocus: "" },
                         domProps: { value: _vm.person.name },
                         on: {
                           input: function($event) {
@@ -59035,20 +59035,18 @@ var render = function() {
       _c("app-navigation"),
       _vm._v(" "),
       _vm.data.length
-        ? [
-            _c(
-              "div",
-              {
-                staticClass: "result__wrapper",
-                style: { backgroundImage: "url(" + _vm.data[0].image + ")" }
-              },
-              [_c("result", { attrs: { data: _vm.data } })],
-              1
-            )
-          ]
+        ? _c(
+            "div",
+            {
+              staticClass: "result__wrapper",
+              style: { backgroundImage: "url(" + _vm.data[0].image + ")" }
+            },
+            [_c("result", { attrs: { data: _vm.data } })],
+            1
+          )
         : _vm._e()
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
