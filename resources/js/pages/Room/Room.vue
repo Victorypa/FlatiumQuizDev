@@ -1,9 +1,8 @@
 <template>
   <div class="">
     <app-header></app-header>
-    <div class="progress-bar__wrapper">
-          <progress-bar bar-color="#aad7ea " val="60"></progress-bar>
-    </div>
+
+    <calculate-progressbar :volumn="60"></calculate-progressbar>
   <div class="content-center">
       <div class="container">
         <h1 class="main-caption">
@@ -11,9 +10,12 @@
         </h1>
         <div class="image-wrapper" v-if="rooms.length">
           <div class="image-card fade-in" v-for="(room, index) in rooms" :key="index">
-              <button class="button-card" @click.prevent="addRoom(room.title)" :class="{ 'active': selected_rooms.includes(room.title) }">
-                    <div v-html="room.svg"></div>
-                    <div class="image-text" v-text="room.title"></div>
+              <button class="button-card"
+                      @click.prevent="addRoom(room.title)"
+                      :class="{ 'active': selected_rooms.includes(room.title) }"
+                      >
+                      <div v-html="room.svg"></div>
+                      <div class="image-text" v-text="room.title"></div>
               </button>
           </div>
 
@@ -34,14 +36,9 @@
 </template>
 
 <script>
-    import ProgressBar from 'vue-simple-progress'
     import { rooms } from './index.js'
 
     export default {
-        components: {
-          ProgressBar
-        },
-
         data () {
             return {
                 rooms,

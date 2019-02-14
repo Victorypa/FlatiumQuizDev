@@ -27,6 +27,7 @@
 
 <script>
     import { decorations } from './index'
+    
     export default {
         data () {
             return {

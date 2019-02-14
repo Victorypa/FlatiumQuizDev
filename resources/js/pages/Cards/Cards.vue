@@ -1,9 +1,9 @@
 <template>
   <div>
+
     <app-header></app-header>
-    <div class="progress-bar__wrapper">
-          <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
-    </div>
+
+    <calculate-progressbar :volumn="progress_value"></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
@@ -70,7 +70,6 @@
 </template>
 
 <script>
-  import ProgressBar from 'vue-simple-progress'
   import {
        acards, bcards, c1cards, c2cards,
        c3cards, d1cards, d2cards, d3cards, cards_booleans
@@ -84,7 +83,6 @@
 
   export default {
       components: {
-        ProgressBar,
         Card
       },
       data () {

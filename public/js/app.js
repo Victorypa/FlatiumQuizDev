@@ -2188,11 +2188,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
-/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
-/* harmony import */ var _partials_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/Card */ "./resources/js/pages/Cards/partials/Card.vue");
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
+/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
+/* harmony import */ var _partials_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/Card */ "./resources/js/pages/Cards/partials/Card.vue");
 //
 //
 //
@@ -2264,32 +2262,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a,
-    Card: _partials_Card__WEBPACK_IMPORTED_MODULE_3__["default"]
+    Card: _partials_Card__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
     return {
-      acards: _index_js__WEBPACK_IMPORTED_MODULE_1__["acards"],
-      bcards: _index_js__WEBPACK_IMPORTED_MODULE_1__["bcards"],
-      c1cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["c1cards"],
-      c2cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["c2cards"],
-      c3cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["c3cards"],
-      d1cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["d1cards"],
-      d2cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["d2cards"],
-      d3cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["d3cards"],
-      cards_booleans: _index_js__WEBPACK_IMPORTED_MODULE_1__["cards_booleans"],
-      SK: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SK"],
-      K: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["K"],
-      SKAN: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SKAN"],
-      CON: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["CON"],
-      ECO: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["ECO"],
-      LOFT: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["LOFT"],
+      acards: _index_js__WEBPACK_IMPORTED_MODULE_0__["acards"],
+      bcards: _index_js__WEBPACK_IMPORTED_MODULE_0__["bcards"],
+      c1cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["c1cards"],
+      c2cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["c2cards"],
+      c3cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["c3cards"],
+      d1cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["d1cards"],
+      d2cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["d2cards"],
+      d3cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["d3cards"],
+      cards_booleans: _index_js__WEBPACK_IMPORTED_MODULE_0__["cards_booleans"],
+      SK: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SK"],
+      K: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["K"],
+      SKAN: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SKAN"],
+      CON: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["CON"],
+      ECO: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["ECO"],
+      LOFT: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["LOFT"],
       selected_uuids: [],
       progress_value: 10
     };
@@ -2464,8 +2460,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_tel_input__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_tel_input__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-tel-input/dist/vue-tel-input.css */ "./node_modules/vue-tel-input/dist/vue-tel-input.css");
 /* harmony import */ var vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_tel_input_dist_vue_tel_input_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_3__);
 //
 //
 //
@@ -2565,15 +2559,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_MODULE_1___default.a);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_3___default.a
-  },
   data: function data() {
     return {
       person: {
@@ -3312,9 +3302,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
-/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Room/index.js");
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Room/index.js");
 //
 //
 //
@@ -3350,15 +3338,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
-  },
   data: function data() {
     return {
-      rooms: _index_js__WEBPACK_IMPORTED_MODULE_1__["rooms"],
+      rooms: _index_js__WEBPACK_IMPORTED_MODULE_0__["rooms"],
       selected_rooms: []
     };
   },
@@ -7829,7 +7815,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".result__wrapper[data-v-3cc709c4] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 30px;\n  background-image: url(\"/storage/results/Loft.jpg\");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  height: auto;\n}\n.result__card[data-v-3cc709c4] {\n  max-width: 765px;\n  width: 100%;\n  text-align: center;\n  background-color: #fff;\n  padding: 50px 0;\n  margin: 35px;\n  box-shadow: 0 0 76px rgba(61, 61, 61, 0.75);\n}\n.result__card span[data-v-3cc709c4] {\n  color: #00afd8;\n  font-size: 18px;\n  text-transform: uppercase;\n}\n.result__name[data-v-3cc709c4] {\n  font-size: 36px;\n  letter-spacing: 0px;\n  line-height: 43px;\n  font-weight: 400;\n  text-align: center;\n}\n.result__desc[data-v-3cc709c4] {\n  width: 65%;\n  margin: 0 auto;\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n  color: #4b4b4b;\n}\n.result__info[data-v-3cc709c4] {\n  padding: 45px 0;\n}\n.result__socials[data-v-3cc709c4] {\n  padding: 20px 0;\n}\n.result__link[data-v-3cc709c4] {\n  content: \"\";\n  width: 25px;\n  height: 15px;\n  fill: #a5a5a5;\n}\n.result__link--vk[data-v-3cc709c4] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n.result__link--tw[data-v-3cc709c4] {\n  content: url(\"/storage/results/twitter-logo-silhouette.svg\");\n}\n.result__link--fb[data-v-3cc709c4] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n.primary-button[data-v-3cc709c4] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-3cc709c4]:hover {\n  background-color: #00a4d8;\n}\n@media only screen and (min-device-width: 500px) {\n.result__wrapper[data-v-3cc709c4] {\n    min-height: 100vh;\n}\n}", ""]);
+exports.push([module.i, ".result__wrapper[data-v-3cc709c4] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 30px;\n  background-image: url(\"/storage/results/Loft.jpg\");\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  height: auto;\n}\n.result__card[data-v-3cc709c4] {\n  max-width: 765px;\n  width: 100%;\n  text-align: center;\n  background-color: #fff;\n  padding: 50px 0;\n  margin: 35px;\n  box-shadow: 0 0 76px rgba(61, 61, 61, 0.75);\n}\n.result__card span[data-v-3cc709c4] {\n  color: #00afd8;\n  font-size: 18px;\n  text-transform: uppercase;\n}\n.result__name[data-v-3cc709c4] {\n  font-size: 36px;\n  letter-spacing: 0px;\n  line-height: 43px;\n  font-weight: 400;\n  text-align: center;\n}\n.result__desc[data-v-3cc709c4] {\n  width: 65%;\n  margin: 0 auto;\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n  color: #4b4b4b;\n}\n.result__info[data-v-3cc709c4] {\n  padding: 45px 0;\n}\n.result__socials[data-v-3cc709c4] {\n  padding: 20px 0;\n}\n.result__link[data-v-3cc709c4] {\n  content: \"\";\n  width: 25px;\n  height: 15px;\n  fill: #a5a5a5;\n}\n.result__link--vk[data-v-3cc709c4] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n.result__link--tw[data-v-3cc709c4] {\n  content: url(\"/storage/results/twitter-logo-silhouette.svg\");\n}\n.result__link--fb[data-v-3cc709c4] {\n  content: url(\"/storage/results/vk-social-network-logo.svg\");\n}\n@media only screen and (min-device-width: 500px) {\n.result__wrapper[data-v-3cc709c4] {\n    min-height: 100vh;\n}\n}", ""]);
 
 // exports
 
@@ -57810,16 +57796,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "progress-bar__wrapper" },
-        [
-          _c("progress-bar", {
-            attrs: { "bar-color": "#aad7ea ", val: _vm.progress_value }
-          })
-        ],
-        1
-      ),
+      _c("calculate-progressbar", { attrs: { volumn: _vm.progress_value } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c(
@@ -58017,16 +57994,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "progress-bar__wrapper" },
-        [
-          _c("progress-bar", {
-            attrs: { "bar-color": "#aad7ea ", val: _vm.progress_value }
-          })
-        ],
-        1
-      ),
+      _c("calculate-progressbar", { attrs: { volumn: _vm.progress_value } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -59181,12 +59149,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "progress-bar__wrapper" },
-        [_c("progress-bar", { attrs: { "bar-color": "#aad7ea ", val: "60" } })],
-        1
-      ),
+      _c("calculate-progressbar", { attrs: { volumn: 60 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [

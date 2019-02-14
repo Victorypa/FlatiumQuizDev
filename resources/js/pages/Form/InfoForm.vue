@@ -2,9 +2,9 @@
 
   <div>
     <app-header></app-header>
-    <div class="progress-bar__wrapper">
-          <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
-    </div>
+
+    <calculate-progressbar :volumn="progress_value"></calculate-progressbar>
+
     <div class="content-center">
         <div class="container">
 
@@ -100,15 +100,10 @@
 <script>
     import Vue from 'vue'
     import VueTelInput from 'vue-tel-input'
-    import 'vue-tel-input/dist/vue-tel-input.css';
-    import ProgressBar from 'vue-simple-progress'
-
+    import 'vue-tel-input/dist/vue-tel-input.css'
     Vue.use(VueTelInput)
 
     export default {
-      components: {
-        ProgressBar
-      },
         data () {
             return {
                 person: {
@@ -161,7 +156,7 @@
                                 'email': this.person.email,
                                 'phone': this.person.phone,
                             })
-                            
+
                             window.location.href = `/cards/result?card_id=${card_id}`
                         }
                         break;
