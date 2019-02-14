@@ -2387,10 +2387,7 @@ __webpack_require__.r(__webpack_exports__);
         'option': this.selected_uuids.join(''),
         'result': result
       }).then(function (response) {
-        console.log(response.data);
-        setTimeout(function () {
-          window.location.href = "/cards/rooms?card_id=".concat(response.data.id);
-        }, 500);
+        window.location.href = "/cards/rooms?card_id=".concat(response.data.id);
       });
     }
   }
@@ -2629,9 +2626,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
               'name': this.person.name,
               'email': this.person.email,
               'phone': this.person.phone
-            }).then(function (response) {
-              window.location.href = "/cards/result?card_id=".concat(card_id);
             });
+            window.location.href = "/cards/result?card_id=".concat(card_id);
           }
 
           break;
@@ -3318,75 +3314,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
 /* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Room/index.js");
 //
 //
 //
@@ -3423,12 +3351,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   data: function data() {
     return {
+      rooms: _index_js__WEBPACK_IMPORTED_MODULE_1__["rooms"],
       selected_rooms: []
     };
   },
@@ -3449,9 +3379,8 @@ __webpack_require__.r(__webpack_exports__);
       axios.post("/cards/rooms/store", {
         'card_id': card_id,
         'data': this.selected_rooms
-      }).then(function (response) {
-        window.location.href = "/cards/form?card_id=".concat(card_id);
       });
+      window.location.href = "/cards/form?card_id=".concat(card_id);
     }
   }
 });
@@ -7938,7 +7867,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-3958fef6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-3958fef6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-3958fef6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-3958fef6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-3958fef6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-3958fef6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-3958fef6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-3958fef6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-3958fef6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -59267,636 +59196,65 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "image-wrapper" }, [
-            _c("div", { staticClass: "image-card fade-in one" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Гостиная") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Гостиная")
-                    }
-                  }
-                },
+          _vm.rooms.length
+            ? _c(
+                "div",
+                { staticClass: "image-wrapper" },
                 [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "52",
-                        height: "30",
-                        viewBox: "0 0 52 30",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("living room")]),
-                      _c(
-                        "g",
-                        {
-                          attrs: {
-                            transform: "translate(1 1)",
-                            fill: "none",
-                            "fill-rule": "evenodd"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              stroke: "#FFF",
-                              "stroke-width": "1.5",
-                              "stroke-linecap": "round",
-                              "stroke-linejoin": "round",
-                              d:
-                                "M6.713 16.66h36.016V.592H6.712zm36.017.001h6.647v-6.61H42.73zm-42.73 0h6.648v-6.61H0z"
+                  _vm._l(_vm.rooms, function(room, index) {
+                    return _c(
+                      "div",
+                      { key: index, staticClass: "image-card fade-in" },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "button-card",
+                            class: {
+                              active: _vm.selected_rooms.includes(room.title)
+                            },
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.addRoom(room.title)
+                              }
                             }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              stroke: "#FFF",
-                              "stroke-width": "1.5",
-                              "stroke-linecap": "round",
-                              "stroke-linejoin": "round",
-                              d:
-                                "M0 23.49h49.442v-6.829H0zm6 0v4.71m36-4.71v4.71"
-                            }
-                          }),
-                          _c("ellipse", {
-                            attrs: {
-                              fill: "#FFF",
-                              cx: "14",
-                              cy: "5",
-                              rx: "1",
-                              ry: "1"
-                            }
-                          }),
-                          _c("ellipse", {
-                            attrs: {
-                              fill: "#FFF",
-                              cx: "25",
-                              cy: "5",
-                              rx: "1",
-                              ry: "1"
-                            }
-                          }),
-                          _c("ellipse", {
-                            attrs: {
-                              fill: "#FFF",
-                              cx: "36",
-                              cy: "5",
-                              rx: "1",
-                              ry: "1"
-                            }
-                          }),
-                          _c("ellipse", {
-                            attrs: {
-                              fill: "#FFF",
-                              cx: "36",
-                              cy: "12",
-                              rx: "1",
-                              ry: "1"
-                            }
-                          }),
-                          _c("ellipse", {
-                            attrs: {
-                              fill: "#FFF",
-                              cx: "25",
-                              cy: "12",
-                              rx: "1",
-                              ry: "1"
-                            }
-                          }),
-                          _c("ellipse", {
-                            attrs: {
-                              fill: "#FFF",
-                              cx: "14",
-                              cy: "12",
-                              rx: "1",
-                              ry: "1"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
+                          },
+                          [
+                            _c("div", {
+                              domProps: { innerHTML: _vm._s(room.svg) }
+                            }),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass: "image-text",
+                              domProps: { textContent: _vm._s(room.title) }
+                            })
+                          ]
+                        )
+                      ]
+                    )
+                  }),
                   _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Гостиная")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in two" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Столовая") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Столовая")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "42",
-                        height: "39",
-                        viewBox: "0 0 42 39",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("dinning room")]),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M8.479 21h24.824M21 21.44v16.636M16.515 38h8.752M1 16.506v21.57m10.98 0V27.29H1m40-10.784v21.57m-10.84 0V27.29h10.98M21 1.603v6.73m-4.95 4.844a4.843 4.843 0 1 1 9.683 0h-9.684zm5.797 0v.562a.956.956 0 1 1-1.912 0v-.562",
-                          stroke: "#D0D6DB",
-                          "stroke-width": "1.5",
-                          fill: "none",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round"
+                  _c("div", { staticClass: "button-wrapper" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "primary-button",
+                        attrs: { type: "submit" },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.save($event)
+                          }
                         }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Столовая")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in three" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Спальня") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Спальня")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "51",
-                        height: "30",
-                        viewBox: "0 0 51 30",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("bedroom")]),
-                      _c(
-                        "g",
-                        {
-                          attrs: {
-                            stroke: "#D0D6DB",
-                            "stroke-width": "1.5",
-                            fill: "none",
-                            "fill-rule": "evenodd",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M47.217 11.105l2.666 2.639a.753.753 0 0 1 .224.535v8.453H1.602V14.28c0-.2.081-.393.224-.535l2.667-2.639a.771.771 0 0 1 .54-.221h41.643a.77.77 0 0 1 .54.221zM3 23v6.264M49 23v6.264M5.51 10.883H46.2V1.692H5.51z"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M6.567 7.166c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046H6.567zm21.345 0c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046h-17.23z"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Спальня")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in four" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Детская") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Детская")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "41",
-                        height: "35",
-                        viewBox: "0 0 41 35",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("Page 1")]),
-                      _c(
-                        "g",
-                        {
-                          attrs: {
-                            stroke: "#D0D6DB",
-                            fill: "none",
-                            "fill-rule": "evenodd",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M1.728 21.993c10.552 9.817 26.932 9.817 37.484 0 .277-.258.728-.055.728.323v2.752c0 .354-.141.698-.397.944-10.647 10.234-27.499 10.234-38.146 0A1.31 1.31 0 0 1 1 25.068v-2.752c0-.378.451-.58.728-.323zm28.373-5.598s2.727-1.162 4.09 1.754l2.261-1.745s-1.39-2.588-4.223-2.588c-2.835 0-3.705 1.874-3.705 1.874",
-                              "stroke-width": "1.5"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M9.388 27.035c1.076-3.793 5.63-6.641 11.082-6.641 5.453 0 10.007 2.848 11.082 6.642",
-                              "stroke-width": "1.5"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M35.177 25.106s-3.166-6.849-4.883-8.538c-1.717-1.69-4.823-.735-8.665-.735-3.843 0-3.924-1.308-4.497-3.848C14.844 2.633 6.697 2.18 6.697 2.18L5.452 1l-.089 1.96c-.317.476-2.427 4.368-3.367 5.742-.25.366-.45.78-.45 1.257 0 1.118.907 2.025 2.025 2.025.433 0 .904-.208 1.164-.369 1.01-.625 4.068-2.293 4.068-2.293 1.571 3.732.344 7.65.344 7.65-1.068 1.474-4.013 7.721-4.013 7.721",
-                              "stroke-width": "1.5"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M18.103 14.796s.72-3.923-.943-7.165c-1.662-3.243-5.411-6.246-11.303-6.246"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d: "M4.555 6.992a.635.635 0 1 1 1.272 0",
-                              "stroke-width": ".5"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d: "M2.29 8.254s2.479.799 2.932 3.037",
-                              "stroke-width": "1.5"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: { d: "M4.822 10.246s4.626-4.312 5.28-7.142" }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d: "M8.545 8.771S7.604 5.5 5.363 2.961",
-                              "stroke-width": "1.5"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Детская")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in five" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Кабинет") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Кабинет")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "54",
-                        height: "27",
-                        viewBox: "0 0 54 27",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("office")]),
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M30 17h19V1H30zM1 1h52M5 1v25.2M49 9v17.2M36 5h7m-7 8h7M30 9h19",
-                          "stroke-width": "1.5",
-                          stroke: "#D0D6DB",
-                          fill: "none",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round"
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Кабинет")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in six" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Кухня") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Кухня")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "49",
-                        height: "35",
-                        viewBox: "0 0 49 35",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("Page 1")]),
-                      _c(
-                        "g",
-                        {
-                          attrs: {
-                            stroke: "#D0D6DB",
-                            "stroke-width": "1.5",
-                            fill: "none",
-                            "fill-rule": "evenodd",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: { d: "M1 33.853h24.69V7.496H1z" }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M25.689 33.853h21.87V7.496h-21.87zM1 12h24.69M4.837 30h17.015V16.14H4.837zm3.496-12h10.023M7 8.9v2.017M11 8.9v2.017M15 8.9v2.017M19 8.9v2.017m17-3.42v26.356m-2-15.887v3.098m4-3.098v3.098"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M32.643 2.122c0-.695-.561-1.259-1.253-1.259-.692 0-1.253.564-1.253 1.259v5.375m0-2.382h-.99v-.757"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Кухня")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in seven" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Санузел") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Санузел")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "49",
-                        height: "33",
-                        viewBox: "0 0 49 33",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("Page 1")]),
-                      _c(
-                        "g",
-                        {
-                          attrs: {
-                            stroke: "#D0D6DB",
-                            "stroke-width": "1.5",
-                            fill: "none",
-                            "fill-rule": "evenodd",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M21.699 14.165h26.454zM1.6 14h10.358M9.065 32h31.623M2.927 14.165s.308 10.632 7.865 17.839m36.034-17.839s-.308 10.632-7.865 17.839m-27.003-7.291h9.74V12.164h-9.74zm0-3.713H21.7M37.05 6.398c0-2.654 2.179-4.806 4.866-4.806s4.98 2.152 4.98 4.806c0 1.708-.376 5.031-2.47 7.767"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M34.779 8.645c0-1.24 1.016-2.244 2.271-2.244s2.272 1.004 2.272 2.244h-4.544z"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Санузел")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in eight" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: { active: _vm.selected_rooms.includes("Прочее") },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Прочее")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "icon-svg",
-                      attrs: {
-                        width: "16",
-                        height: "40",
-                        viewBox: "0 0 16 40",
-                        xmlns: "http://www.w3.org/2000/svg"
-                      }
-                    },
-                    [
-                      _c("title", [_vm._v("Page 1")]),
-                      _c(
-                        "g",
-                        {
-                          attrs: {
-                            stroke: "#D0D6DB",
-                            "stroke-width": "1.5",
-                            fill: "none",
-                            "fill-rule": "evenodd",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M1.942 39.2l1.306-15.405h9.023L13.577 39.2zM7 13.031v10.764m3.327-16.279c0 1.404-1.15 2.543-2.568 2.543-1.418 0-2.568-1.139-2.568-2.543 0-1.405 1.15-2.544 2.568-2.544 1.418 0 2.568 1.139 2.568 2.544z"
-                            }
-                          }),
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M14.519 7.516c0 1.065-1.884 1.64-2.386 2.5-.519.888-.097 2.785-.993 3.299-.868.497-2.305-.799-3.38-.799-1.077 0-2.513 1.296-3.382.799-.896-.514-.474-2.411-.993-3.299C2.883 9.156 1 8.581 1 7.516c0-1.066 1.883-1.64 2.385-2.5.52-.888.098-2.786.993-3.3.869-.497 2.306.799 3.382.799 1.075 0 2.512-1.296 3.38-.798.896.513.474 2.41.993 3.298.502.86 2.386 1.435 2.386 2.5zm-5.507 9.458a4.213 4.213 0 0 0-1.218 3.54 4.304 4.304 0 0 0 3.573-1.207 4.213 4.213 0 0 0 1.218-3.54 4.305 4.305 0 0 0-3.573 1.207z"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [_vm._v("Прочее")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in nine" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: {
-                    active: _vm.selected_rooms.includes("Вся квартира")
-                  },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Вся квартира")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticStyle: { "enable-background": "new 0 0 612 612" },
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                        x: "0px",
-                        y: "0px",
-                        width: "50px",
-                        height: "50px",
-                        viewBox: "0 0 612 612",
-                        "xml:space": "preserve"
-                      }
-                    },
-                    [
-                      _c("g", [
-                        _c("path", {
-                          staticClass: "fill-color",
-                          attrs: {
-                            d:
-                              "M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                      c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                      s-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                      v-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                      c0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                      c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                      v-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                      c7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z"
-                          }
-                        })
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [
-                    _vm._v("Вся квартира")
+                      },
+                      [_vm._v("\n               Далее\n           ")]
+                    )
                   ])
-                ]
+                ],
+                2
               )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "button-wrapper" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "primary-button",
-                  attrs: { type: "submit" },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.save($event)
-                    }
-                  }
-                },
-                [_vm._v("\n               Далее\n           ")]
-              )
-            ])
-          ])
+            : _vm._e()
         ])
       ])
     ],
@@ -74706,6 +74064,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Room_vue_vue_type_template_id_3958fef6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Room/index.js":
+/*!******************************************!*\
+  !*** ./resources/js/pages/Room/index.js ***!
+  \******************************************/
+/*! exports provided: rooms */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rooms", function() { return rooms; });
+var rooms = [{
+  title: 'Гостиная',
+  svg: "\n            <svg class=\"icon-svg\" width=\"51\" height=\"30\" viewBox=\"0 0 51 30\" xmlns=\"http://www.w3.org/2000/svg\"><title>bedroom</title><g stroke=\"#D0D6DB\" stroke-width=\"1.5\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M47.217 11.105l2.666 2.639a.753.753 0 0 1 .224.535v8.453H1.602V14.28c0-.2.081-.393.224-.535l2.667-2.639a.771.771 0 0 1 .54-.221h41.643a.77.77 0 0 1 .54.221zM3 23v6.264M49 23v6.264M5.51 10.883H46.2V1.692H5.51z\"></path><path d=\"M6.567 7.166c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046H6.567zm21.345 0c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046h-17.23z\"></path></g></svg>\n        "
+}, {
+  title: 'Столовая',
+  svg: "\n            <svg class=\"icon-svg\" width=\"42\" height=\"39\" viewBox=\"0 0 42 39\" xmlns=\"http://www.w3.org/2000/svg\"><title>dinning room</title><path d=\"M8.479 21h24.824M21 21.44v16.636M16.515 38h8.752M1 16.506v21.57m10.98 0V27.29H1m40-10.784v21.57m-10.84 0V27.29h10.98M21 1.603v6.73m-4.95 4.844a4.843 4.843 0 1 1 9.683 0h-9.684zm5.797 0v.562a.956.956 0 1 1-1.912 0v-.562\" stroke=\"#D0D6DB\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>\n        "
+}, {
+  title: 'Спальня',
+  svg: "\n        <svg class=\"icon-svg\" width=\"51\" height=\"30\" viewBox=\"0 0 51 30\" xmlns=\"http://www.w3.org/2000/svg\"><title>bedroom</title><g stroke=\"#D0D6DB\" stroke-width=\"1.5\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M47.217 11.105l2.666 2.639a.753.753 0 0 1 .224.535v8.453H1.602V14.28c0-.2.081-.393.224-.535l2.667-2.639a.771.771 0 0 1 .54-.221h41.643a.77.77 0 0 1 .54.221zM3 23v6.264M49 23v6.264M5.51 10.883H46.2V1.692H5.51z\"></path><path d=\"M6.567 7.166c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046H6.567zm21.345 0c-.584 0-1.057.469-1.057 1.046v1.625c0 .578.473 1.047 1.057 1.047h17.23c.585 0 1.058-.469 1.058-1.047V8.212c0-.577-.473-1.046-1.057-1.046h-17.23z\"></path></g></svg>\n        "
+}, {
+  title: 'Детская',
+  svg: "\n            <svg class=\"icon-svg\" width=\"41\" height=\"35\" viewBox=\"0 0 41 35\" xmlns=\"http://www.w3.org/2000/svg\"><title>Page 1</title><g stroke=\"#D0D6DB\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M1.728 21.993c10.552 9.817 26.932 9.817 37.484 0 .277-.258.728-.055.728.323v2.752c0 .354-.141.698-.397.944-10.647 10.234-27.499 10.234-38.146 0A1.31 1.31 0 0 1 1 25.068v-2.752c0-.378.451-.58.728-.323zm28.373-5.598s2.727-1.162 4.09 1.754l2.261-1.745s-1.39-2.588-4.223-2.588c-2.835 0-3.705 1.874-3.705 1.874\" stroke-width=\"1.5\"></path><path d=\"M9.388 27.035c1.076-3.793 5.63-6.641 11.082-6.641 5.453 0 10.007 2.848 11.082 6.642\" stroke-width=\"1.5\"></path><path d=\"M35.177 25.106s-3.166-6.849-4.883-8.538c-1.717-1.69-4.823-.735-8.665-.735-3.843 0-3.924-1.308-4.497-3.848C14.844 2.633 6.697 2.18 6.697 2.18L5.452 1l-.089 1.96c-.317.476-2.427 4.368-3.367 5.742-.25.366-.45.78-.45 1.257 0 1.118.907 2.025 2.025 2.025.433 0 .904-.208 1.164-.369 1.01-.625 4.068-2.293 4.068-2.293 1.571 3.732.344 7.65.344 7.65-1.068 1.474-4.013 7.721-4.013 7.721\" stroke-width=\"1.5\"></path><path d=\"M18.103 14.796s.72-3.923-.943-7.165c-1.662-3.243-5.411-6.246-11.303-6.246\"></path><path d=\"M4.555 6.992a.635.635 0 1 1 1.272 0\" stroke-width=\".5\"></path><path d=\"M2.29 8.254s2.479.799 2.932 3.037\" stroke-width=\"1.5\"></path><path d=\"M4.822 10.246s4.626-4.312 5.28-7.142\"></path><path d=\"M8.545 8.771S7.604 5.5 5.363 2.961\" stroke-width=\"1.5\"></path></g></svg>\n        "
+}, {
+  title: 'Кабинет',
+  svg: "\n            <svg class=\"icon-svg\" width=\"54\" height=\"27\" viewBox=\"0 0 54 27\" xmlns=\"http://www.w3.org/2000/svg\"><title>office</title><path d=\"M30 17h19V1H30zM1 1h52M5 1v25.2M49 9v17.2M36 5h7m-7 8h7M30 9h19\" stroke-width=\"1.5\" stroke=\"#D0D6DB\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>\n        "
+}, {
+  title: 'Кухня',
+  svg: "\n            <svg class=\"icon-svg\" width=\"49\" height=\"35\" viewBox=\"0 0 49 35\" xmlns=\"http://www.w3.org/2000/svg\"><title>Page 1</title><g stroke=\"#D0D6DB\" stroke-width=\"1.5\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M1 33.853h24.69V7.496H1z\"></path><path d=\"M25.689 33.853h21.87V7.496h-21.87zM1 12h24.69M4.837 30h17.015V16.14H4.837zm3.496-12h10.023M7 8.9v2.017M11 8.9v2.017M15 8.9v2.017M19 8.9v2.017m17-3.42v26.356m-2-15.887v3.098m4-3.098v3.098\"></path><path d=\"M32.643 2.122c0-.695-.561-1.259-1.253-1.259-.692 0-1.253.564-1.253 1.259v5.375m0-2.382h-.99v-.757\"></path></g></svg>\n        "
+}, {
+  title: 'Санузел',
+  svg: "\n            <svg class=\"icon-svg\" width=\"49\" height=\"33\" viewBox=\"0 0 49 33\" xmlns=\"http://www.w3.org/2000/svg\"><title>Page 1</title><g stroke=\"#D0D6DB\" stroke-width=\"1.5\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21.699 14.165h26.454zM1.6 14h10.358M9.065 32h31.623M2.927 14.165s.308 10.632 7.865 17.839m36.034-17.839s-.308 10.632-7.865 17.839m-27.003-7.291h9.74V12.164h-9.74zm0-3.713H21.7M37.05 6.398c0-2.654 2.179-4.806 4.866-4.806s4.98 2.152 4.98 4.806c0 1.708-.376 5.031-2.47 7.767\"></path><path d=\"M34.779 8.645c0-1.24 1.016-2.244 2.271-2.244s2.272 1.004 2.272 2.244h-4.544z\"></path></g></svg>\n        "
+}, {
+  title: 'Прочее',
+  svg: "\n            <svg class=\"icon-svg\" width=\"16\" height=\"40\" viewBox=\"0 0 16 40\" xmlns=\"http://www.w3.org/2000/svg\"><title>Page 1</title><g stroke=\"#D0D6DB\" stroke-width=\"1.5\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M1.942 39.2l1.306-15.405h9.023L13.577 39.2zM7 13.031v10.764m3.327-16.279c0 1.404-1.15 2.543-2.568 2.543-1.418 0-2.568-1.139-2.568-2.543 0-1.405 1.15-2.544 2.568-2.544 1.418 0 2.568 1.139 2.568 2.544z\"></path><path d=\"M14.519 7.516c0 1.065-1.884 1.64-2.386 2.5-.519.888-.097 2.785-.993 3.299-.868.497-2.305-.799-3.38-.799-1.077 0-2.513 1.296-3.382.799-.896-.514-.474-2.411-.993-3.299C2.883 9.156 1 8.581 1 7.516c0-1.066 1.883-1.64 2.385-2.5.52-.888.098-2.786.993-3.3.869-.497 2.306.799 3.382.799 1.075 0 2.512-1.296 3.38-.798.896.513.474 2.41.993 3.298.502.86 2.386 1.435 2.386 2.5zm-5.507 9.458a4.213 4.213 0 0 0-1.218 3.54 4.304 4.304 0 0 0 3.573-1.207 4.213 4.213 0 0 0 1.218-3.54 4.305 4.305 0 0 0-3.573 1.207z\"></path></g></svg>\n        "
+}, {
+  title: 'Вся квартира',
+  svg: "\n            <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n               width=\"50px\" height=\"50px\" viewBox=\"0 0 612 612\" style=\"enable-background:new 0 0 612 612;\" xml:space=\"preserve\">\n                <g>\n                  <path class=\"fill-color\" d=\"M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                    c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                    s-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                    v-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                    c0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                    c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                    v-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                    c7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z\"/>\n                </g>\n            </svg>\n        "
+}];
 
 /***/ }),
 
