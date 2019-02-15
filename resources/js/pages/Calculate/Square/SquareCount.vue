@@ -2,9 +2,9 @@
   <div>
       <app-header></app-header>
 
-      <app-navigation selected="calculator"></app-navigation>
+      <app-navigation></app-navigation>
 
-      <calculate-progressbar :volumn="20"></calculate-progressbar>
+      <calculate-progressbar ref="progressbar"></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
@@ -22,6 +22,12 @@
                   <vue-slider ref="slider"
                               v-model="area"
                               class="vue-slider"
+                              :value='value'
+                              :height='2'
+                              :dotSize="30"
+                              :max='100'
+                              :interval='1'
+                              
                               >
                  </vue-slider>
 
@@ -64,6 +70,7 @@
                   'card_id': card_id,
                   'area': this.area
               }).then(response => {
+                  this.$refs.progressbar.increment(10)
                   window.location.href = `/cards/decoration?card_id=${card_id}`
               })
           }
@@ -88,7 +95,9 @@ padding: 14.4px;
 transition: border .15s ease-in-out;
 width: 100%;
 }
-
+.main-caption {
+  padding-bottom: 80px;
+}
 .content-center {
   margin: 50px 0;
 }

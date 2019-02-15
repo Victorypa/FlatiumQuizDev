@@ -222,7 +222,7 @@ height: auto;
   margin-bottom: 30px;
 }
 .content-center {
-  margin: 50px 0;
+  margin: 15px 0;
 }
 
 .fill-color {

@@ -59,7 +59,7 @@
 
             <div v-if="booleans.phone" class="fade-in">
                 <h1 class="main-caption">
-                  Укажите свой телефон, для получения консультации
+                  Укажите свой телефон, чтобы получить результат просчёта
                 </h1>
 
                 <form @submit.prevent="go('phone')">

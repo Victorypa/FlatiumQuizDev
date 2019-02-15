@@ -2276,6 +2276,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2288,11 +2294,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
+      var _this = this;
+
       var card_id = window.location.search.match(/\d+/g).toString();
       axios.post("/cards/square/store", {
         'card_id': card_id,
         'area': this.area
       }).then(function (response) {
+        _this.$refs.progressbar.increment(10);
+
         window.location.href = "/cards/decoration?card_id=".concat(card_id);
       });
     }
@@ -8039,7 +8049,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".mobile-input[data-v-bef6465c] {\n  display: none;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.content-center[data-v-bef6465c] {\n  margin: 50px 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n}", ""]);
+exports.push([module.i, ".mobile-input[data-v-bef6465c] {\n  display: none;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.main-caption[data-v-bef6465c] {\n  padding-bottom: 80px;\n}\n.content-center[data-v-bef6465c] {\n  margin: 50px 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n}", ""]);
 
 // exports
 
@@ -8153,7 +8163,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-3958fef6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-3958fef6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-3958fef6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-3958fef6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-3958fef6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-3958fef6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-3958fef6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-3958fef6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-3958fef6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #2e3854;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-3958fef6] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-3958fef6] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.fade-in.three[data-v-3958fef6] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.fade-in.four[data-v-3958fef6] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.five[data-v-3958fef6] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.fade-in.six[data-v-3958fef6] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.fade-in.seven[data-v-3958fef6] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.fade-in.eight[data-v-3958fef6] {\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n.fade-in.nine[data-v-3958fef6] {\n  -webkit-animation-delay: 1.1s;\n          animation-delay: 1.1s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 15px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #2e3854;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -57521,70 +57531,7 @@ var staticRenderFns = [
               })
             ]
           )
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "navbar-toggler",
-            attrs: {
-              type: "button",
-              "data-toggle": "collapse",
-              "data-target": "#navbarNavAltMarkup",
-              "aria-controls": "navbarNavAltMarkup",
-              "aria-expanded": "false",
-              "aria-label": "Toggle navigation"
-            }
-          },
-          [_c("span", { staticClass: "navbar-toggler-icon" })]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "collapse navbar-collapse",
-            attrs: { id: "navbarNavAltMarkup" }
-          },
-          [
-            _c("div", { staticClass: "navbar-nav" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "nav-item nav-link active",
-                  attrs: { href: "#" }
-                },
-                [
-                  _vm._v("Projects "),
-                  _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
-                [_vm._v("Shop")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
-                [_vm._v("Blog")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
-                [_vm._v("Refer & Earn")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
-                [_vm._v("Help")]
-              )
-            ])
-          ]
-        )
+        ])
       ])
     ])
   }
@@ -58256,9 +58203,9 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation", { attrs: { selected: "calculator" } }),
+      _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar", { attrs: { volumn: 20 } }),
+      _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -58308,6 +58255,13 @@ var render = function() {
                   _c("vue-slider", {
                     ref: "slider",
                     staticClass: "vue-slider",
+                    attrs: {
+                      value: _vm.value,
+                      height: 2,
+                      dotSize: 30,
+                      max: 100,
+                      interval: 1
+                    },
                     model: {
                       value: _vm.area,
                       callback: function($$v) {
@@ -58780,7 +58734,7 @@ var render = function() {
             ? _c("div", { staticClass: "fade-in" }, [
                 _c("h1", { staticClass: "main-caption" }, [
                   _vm._v(
-                    "\n                Укажите свой телефон, для получения консультации\n              "
+                    "\n                Укажите свой телефон, чтобы получить результат просчёта\n              "
                   )
                 ]),
                 _vm._v(" "),
@@ -73158,14 +73112,15 @@ var blocks = [{
 /*!****************************************************************!*\
   !*** ./resources/js/pages/Calculate/Decoration/Decoration.vue ***!
   \****************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Decoration_vue_vue_type_template_id_5296e3e6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Decoration.vue?vue&type=template&id=5296e3e6&scoped=true& */ "./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=template&id=5296e3e6&scoped=true&");
 /* harmony import */ var _Decoration_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Decoration.vue?vue&type=script&lang=js& */ "./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Decoration_vue_vue_type_style_index_0_id_5296e3e6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true& */ "./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Decoration_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Decoration_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _Decoration_vue_vue_type_style_index_0_id_5296e3e6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true& */ "./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=style&index=0&id=5296e3e6&lang=scss&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -73197,7 +73152,7 @@ component.options.__file = "resources/js/pages/Calculate/Decoration/Decoration.v
 /*!*****************************************************************************************!*\
   !*** ./resources/js/pages/Calculate/Decoration/Decoration.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
