@@ -133,6 +133,7 @@ transition: .15s ease-in-out;
 }
 }
 
+<<<<<<< HEAD
 .primary-button {
   &:hover {
     background-color: #2e3854;
@@ -140,6 +141,10 @@ transition: .15s ease-in-out;
   &:focus {
     outline: none;
   }
+=======
+.primary-button:hover {
+  background-color: #007bff;
+>>>>>>> c37d5da1105f77fe7fbf892d76d5fc3b80a883b1
 }
 
 

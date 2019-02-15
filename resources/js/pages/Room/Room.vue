@@ -110,10 +110,6 @@ height: auto;
   max-width: 600px;
   margin-bottom: 30px;
 }
-.content-center {
-  margin: 50px 0;
-}
-
 .fill-color {
   fill: #ccc;
 }
@@ -165,6 +161,14 @@ outline: none;
 cursor: pointer;
 transition: .15s ease-in-out;
 }
+<<<<<<< HEAD
+=======
+
+.primary-button:hover {
+  background-color: #007bff;
+}
+
+>>>>>>> c37d5da1105f77fe7fbf892d76d5fc3b80a883b1
 .button-wrapper {
 margin: 0 auto;
 }
@@ -174,6 +178,10 @@ margin-bottom: 20px;
 svg [stroke] {
 stroke: #a1adb7;
 transition: stroke .15s ease-in-out;
+}
+
+.content-center {
+  padding: 50px 0;
 }
 @media (min-width: 700px) {
   .content-center {

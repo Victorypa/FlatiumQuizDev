@@ -1771,6 +1771,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1955,15 +1973,11 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     selected: function selected(type) {
       var card_id = window.location.search.match(/\d+/g).toString();
-      axios.post('/cards/clicks/store', {
-        'name': type
+      axios.post('/cards/design-skills/store', {
+        'card_id': card_id,
+        'type': type
       }).then(function (response) {
-        axios.post('/cards/design-skills/store', {
-          card_id: card_id,
-          type: type
-        }).then(function (response) {
-          window.location.href = "/cards/calculate-result?card_id=".concat(card_id);
-        });
+        alert('all finished, waiting');
       });
     }
   }
@@ -7858,7 +7872,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-6a960122] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 3%;\n}\n.logo__img[data-v-6a960122] {\n  width: 100%;\n  height: 100%;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-content[data-v-6a960122] {\n  height: 125px;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-card:last-child .image-content[data-v-6a960122] {\n  padding-top: 15px;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 12px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #1c2233;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 240px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-6a960122 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-6a960122] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-6a960122 ease-in 1;\n          animation: fadeIn-data-v-6a960122 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-6a960122] {\n  fill: #a1adb7;\n  height: auto;\n}\n.image-wrapper[data-v-6a960122] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  max-width: 800px;\n  margin: 0 auto;\n}\n.image-content[data-v-6a960122] {\n  height: 125px;\n}\n.image-card[data-v-6a960122] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.image-card:last-child .image-content[data-v-6a960122] {\n  padding-top: 15px;\n}\n.image-text[data-v-6a960122] {\n  padding-top: 30px;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.image-subtitle[data-v-6a960122] {\n  text-transform: none;\n  font-size: 12px;\n  padding-top: 14px;\n  line-height: 16px;\n  color: #1c2233;\n}\n.main-caption[data-v-6a960122] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-6a960122] {\n  margin: 50px 0;\n}\n.button-card[data-v-6a960122] {\n  padding: 15px;\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 300px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 240px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-6a960122]:hover, .button-card.active[data-v-6a960122] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-6a960122], .button-card:hover .image-subtitle[data-v-6a960122], .button-card.active .image-text[data-v-6a960122], .button-card.active .image-subtitle[data-v-6a960122] {\n  color: #000;\n}\n@media (min-width: 700px) {\n.content-center[data-v-6a960122] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-6a960122] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-6a960122] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-6a960122] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
 
 // exports
 
@@ -7934,7 +7948,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n@media (min-width: 700px) {\n.content-center[data-v-df4199c4] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-df4199c4] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-df4199c4] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes smooth-data-v-df4199c4 {\n0% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n}\n}\n@keyframes smooth-data-v-df4199c4 {\n0% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n}\n}\n.fadeout[data-v-df4199c4] {\n  -webkit-animation: smooth-data-v-df4199c4 1s ease-in;\n          animation: smooth-data-v-df4199c4 1s ease-in;\n}\n@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n@media (min-width: 700px) {\n.content-center[data-v-df4199c4] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-df4199c4] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-df4199c4] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -8022,17 +8036,9 @@ exports.push([module.i, ".result__wrapper[data-v-2f0f5870] {\n  display: flex;\n
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Room/Room.vue?vue&type=style&index=0&id=3958fef6&lang=scss&scoped=true& ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-3958fef6 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-3958fef6] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-3958fef6 ease-in 1;\n          animation: fadeIn-data-v-3958fef6 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\nsvg[data-v-3958fef6] {\n  fill: #a1adb7;\n  height: auto;\n}\n.logo[data-v-3958fef6] {\n  width: 120px;\n  margin-top: 20px;\n  margin-left: 6%;\n}\n.logo__img[data-v-3958fef6] {\n  width: 100%;\n  height: 100%;\n}\n.progress-bar__wrapper[data-v-3958fef6] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-3958fef6] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.image-card[data-v-3958fef6] {\n  margin: 0 10px 20px;\n  display: block;\n  font-size: 14px;\n  text-decoration: none;\n}\n.main-caption[data-v-3958fef6] {\n  max-width: 600px;\n  margin-bottom: 30px;\n}\n.content-center[data-v-3958fef6] {\n  margin: 50px 0;\n}\n.fill-color[data-v-3958fef6] {\n  fill: #ccc;\n}\n.button-card[data-v-3958fef6] {\n  border: 2px solid #eee;\n  background: none;\n  color: #a1adb7;\n  font-size: 11px;\n  font-weight: 400;\n  height: 160px;\n  letter-spacing: 0.11em;\n  text-transform: uppercase;\n  width: 160px;\n  transition-duration: 0.2s;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n}\n.button-card[data-v-3958fef6]:hover, .button-card.active[data-v-3958fef6] {\n  border-color: #1c2233;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.button-card:hover .image-text[data-v-3958fef6], .button-card.active .image-text[data-v-3958fef6] {\n  color: #000;\n}\n.button-card:hover .icon-svg [stroke][data-v-3958fef6], .button-card.active .icon-svg [stroke][data-v-3958fef6] {\n  stroke: #1c2233;\n}\n.button-card:hover .fill-color[data-v-3958fef6], .button-card.active .fill-color[data-v-3958fef6] {\n  fill: #000;\n}\n.primary-button[data-v-3958fef6] {\n  height: 42px;\n  font-size: 15px;\n  font-weight: 400;\n  background-color: #0a0c12;\n  color: #fff;\n  margin: 20px 0;\n  padding: 0 30px;\n  letter-spacing: 0.025em;\n  border: 0;\n  border-radius: 2px;\n  line-height: 42px;\n  outline: none;\n  cursor: pointer;\n  transition: 0.15s ease-in-out;\n}\n.primary-button[data-v-3958fef6]:hover {\n  background-color: #aad7ea;\n}\n.button-wrapper[data-v-3958fef6] {\n  margin: 0 auto;\n}\nsvg[data-v-3958fef6] {\n  margin-bottom: 20px;\n}\nsvg [stroke][data-v-3958fef6] {\n  stroke: #a1adb7;\n  transition: stroke 0.15s ease-in-out;\n}\n@media (min-width: 700px) {\n.content-center[data-v-3958fef6] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-3958fef6] {\n    flex-wrap: wrap;\n    justify-content: center;\n}\n.image-card[data-v-3958fef6] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}\n@media (max-width: 540px) {\n.button-wrapper[data-v-3958fef6] {\n    width: 100%;\n    text-align: center;\n}\n}", ""]);
-
-// exports
-
+throw new Error("Module build failed (from ./node_modules/sass-loader/lib/loader.js):\n\n<<<<<<< HEAD\n^\n      Expected selector.\n    ╷\n164 │ <<<<<<< HEAD\n    │ ^\n    ╵\n  stdin 164:1  root stylesheet\n      in /Users/elijah/Desktop/work/FlatiumQuizDev/resources/js/pages/Room/Room.vue (line 164, column 1)");
 
 /***/ }),
 
@@ -57379,16 +57385,89 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
-      _c(
-        "a",
-        { staticClass: "logo__img", attrs: { href: "https://www.flatium.ru" } },
-        [
-          _c("img", {
-            attrs: { src: "/storage/quiz/logo1.svg", alt: "Flatium-logo" }
-          })
-        ]
-      )
+    return _c("div", {}, [
+      _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
+        _c("div", { staticClass: "logo" }, [
+          _c(
+            "a",
+            {
+              staticClass: "logo__img",
+              attrs: { href: "https://www.flatium.ru" }
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/storage/quiz/logo-black.svg",
+                  alt: "Flatium-logo"
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "navbar-toggler",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#navbarNavAltMarkup",
+              "aria-controls": "navbarNavAltMarkup",
+              "aria-expanded": "false",
+              "aria-label": "Toggle navigation"
+            }
+          },
+          [_c("span", { staticClass: "navbar-toggler-icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "navbarNavAltMarkup" }
+          },
+          [
+            _c("div", { staticClass: "navbar-nav" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-link active",
+                  attrs: { href: "#" }
+                },
+                [
+                  _vm._v("Projects "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Shop")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Blog")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Refer & Earn")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                [_vm._v("Help")]
+              )
+            ])
+          ]
+        )
+      ])
     ])
   }
 ]
@@ -57573,9 +57652,9 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation", { attrs: { selected: "calculator" } }),
+      _c("app-navigation"),
       _vm._v(" "),
-      _c("calculate-progressbar", { attrs: { volumn: 100 } }),
+      _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -74560,7 +74639,7 @@ var translations = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\n\n>>>>>>> c37d5da1105f77fe7fbf892d76d5fc3b80a883b1\n                                               ^\n      Expected \"{\".\n    ╷\n147 │ >>>>>>> c37d5da1105f77fe7fbf892d76d5fc3b80a883b1\n    │                                                 ^\n    ╵\n  stdin 147:49  root stylesheet\n      in /Users/elijah/Desktop/work/FlatiumQuizDev/resources/sass/app.scss (line 147, column 49)\n    at runLoaders (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/webpack/lib/NormalModule.js:301:20)\n    at /Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at render (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass-loader/lib/loader.js:52:13)\n    at Function.$2 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:24680:48)\n    at wg.$2 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:15592:16)\n    at ud.vE (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:9070:42)\n    at ud.vD (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:9072:32)\n    at ip.uO (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8378:46)\n    at tL.$0 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8523:7)\n    at Object.eF (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:1532:80)\n    at ah.bf (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8441:3)\n    at iD.bf (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8371:25)\n    at iD.cK (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8358:6)\n    at pe.cK (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8148:35)\n    at Object.m (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:1405:19)\n    at /Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:5113:51\n    at wG.a (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:1416:71)\n    at wG.$2 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8163:23)\n    at vg.$2 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8158:25)\n    at ud.vE (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:9070:42)\n    at ud.vD (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:9072:32)\n    at ip.uO (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8378:46)\n    at tL.$0 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8523:7)\n    at Object.eF (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:1532:80)\n    at ah.bf (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8441:3)\n    at iD.bf (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8371:25)\n    at iD.cK (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8358:6)\n    at pf.$0 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8153:24)\n    at Object.Hy (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:1560:5)\n    at no.HK (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:1562:7)\n    at pj.$0 (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:8122:22)\n    at It (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:581:52)\n    at Immediate._onImmediate (/Users/elijah/Desktop/work/FlatiumQuizDev/node_modules/sass/sass.dart.js:590:51)\n    at runCallback (timers.js:810:20)");
 
 /***/ }),
 
