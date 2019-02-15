@@ -59,7 +59,7 @@
 
             <div v-if="booleans.phone" class="fade-in">
                 <h1 class="main-caption">
-                  Укажите свой телефон, для получения консультации
+                  Укажите свой телефон, чтобы получить результат просчёта
                 </h1>
 
                 <form @submit.prevent="go('phone')">
@@ -184,23 +184,6 @@ position: relative;
 margin: 0 auto;
 }
 
-
-.logo {
-  width: 120px;
-  margin-top: 20px;
-  margin-left: 6%;
-
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.progress-bar {
-  &__wrapper {
-    margin-top: 30px;
-  }
-}
 
 .vue-tel-input {
   position: relative;
