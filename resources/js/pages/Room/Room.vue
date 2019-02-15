@@ -161,14 +161,11 @@ outline: none;
 cursor: pointer;
 transition: .15s ease-in-out;
 }
-<<<<<<< HEAD
-=======
 
 .primary-button:hover {
   background-color: #007bff;
 }
 
->>>>>>> c37d5da1105f77fe7fbf892d76d5fc3b80a883b1
 .button-wrapper {
 margin: 0 auto;
 }
