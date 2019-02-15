@@ -3450,7 +3450,7 @@ __webpack_require__.r(__webpack_exports__);
         'card_id': card_id,
         'data': this.selected_rooms
       }).then(function (response) {
-        window.location.href = "/cards/form?card_id=".concat(card_id);
+        window.location.href = "/cards/result?card_id=".concat(card_id);
       });
     }
   }
