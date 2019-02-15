@@ -198,6 +198,13 @@
 </script>
 
 <style lang="scss" scoped>
+@keyframes smooth {
+0% { opacity: 1;}
+100% { opacity: 0;}
+}
+.fadeout {
+  animation: smooth 1s ease-in;
+}
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
@@ -274,8 +281,9 @@
   text-align: center;
   text-transform: uppercase;
   }
-
 }
+
+
 @media (min-width: 700px) {
   .content-center {
     display: flex;

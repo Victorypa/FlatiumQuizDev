@@ -227,10 +227,6 @@ height: auto;
   max-width: 600px;
   margin-bottom: 30px;
 }
-.content-center {
-  margin: 50px 0;
-}
-
 .fill-color {
   fill: #ccc;
 }
@@ -282,9 +278,11 @@ outline: none;
 cursor: pointer;
 transition: .15s ease-in-out;
 }
+
 .primary-button:hover {
-  background-color: #aad7ea;
+  background-color: #007bff;
 }
+
 .button-wrapper {
 margin: 0 auto;
 }
@@ -294,6 +292,10 @@ margin-bottom: 20px;
 svg [stroke] {
 stroke: #a1adb7;
 transition: stroke .15s ease-in-out;
+}
+
+.content-center {
+  padding: 50px 0;
 }
 @media (min-width: 700px) {
   .content-center {
