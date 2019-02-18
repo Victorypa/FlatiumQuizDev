@@ -6,14 +6,14 @@
           <img src="/storage/quiz/logo-black.svg" alt="Flatium-logo">
         </a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href=""></a>
         </div>
-      </div>
+      </div> -->
 </nav>
 
     <!-- <app-header></app-header> -->
@@ -30,9 +30,6 @@
 
       <div class="content-center">
           <div class="container">
-            <!-- <h1 class="main-caption">
-                 Стоимость вашего ремонта
-            </h1> -->
              <div class="card-wrapper">
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
@@ -63,7 +60,6 @@
                              <li>nostrud exercitation ullamco laboris nisi ut aliquip</li>
                              <li>ex ea commodo consequat.</li>
                            </ul>
-
                          </div>
                        </div>
                      </div>
@@ -97,16 +93,17 @@
                            </div>
                          </div>
                        </div>
+                       <div class="card-hover">
+                         <div class="card-hover__title">
+                         BEST MATCH
+                         </div>
+                         <div class="card-hover__content">
+                         For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.
+                         </div>
+                       </div>
                       </div>
                </div>
-               <div class="card-info">
-                 <div class="card-info__title">
-                 BEST MATCH
-                 </div>
-                 <div class="card-info__content">
-                 For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.
-                 </div>
-               </div>
+
              </div>
 
           </div>
@@ -152,15 +149,11 @@
   position: relative;
 }
 
-.logo {
-  width: 100px;
-  margin-top: -10px;
-}
-
 .content-center {
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin: 50px 70px;
   // height: 100vh;
   background-color: #f8f8f8;
@@ -171,15 +164,31 @@
 }
 
 .card {
+  &-hover {
+    position: absolute;
+
+    top: 5%;
+    right: 20%;
+
+    width: 250px;
+
+    padding: 15px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+
+    border-radius: 5px;
+    opacity: 0;
+  }
   &-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
     h2 {
-      letter-spacing: .025em;
       font-size: 22px;
-      margin: 15px;
+      letter-spacing: .025em;
       font-weight: 600;
+
+      margin: 15px;
     }
   }
 
@@ -190,58 +199,76 @@
   &-workmaterial, &-workprice {
     &:before {
       content: "";
-          border-top: 6px solid #a1adb7;
-
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
+
+      border-top: 6px solid #a1adb7;
     }
+
     position: relative;
+    width: 380px;
+
     align-self: flex-start;
     background-color: #fff;
-    width: 380px;
-    text-align: center;
+
     padding: 70px 28px 30px;
     margin: 15px;
+
+    text-align: center;
     box-shadow: 0 8px 8px rgba(28,34,51,.1);
+    cursor: pointer;
   }
   &-workmaterial {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .card-hover {
+        opacity: 1;
+        transition: 0.5s;
+      }
+    }
+
     &:before {
       border-top: 6px solid #dbc997;
     }
-    position: relative;
-    overflow: hidden;
+
     span {
       &::after{
-        border: 1px solid #fff;
-        border-radius: 50%;
+        width: 12px;
         content: "i";
         display: inline-block;
+
         font-size: 6px;
         height: 12px;
         line-height: 12px;
-        margin-left: .5em;
         text-align: center;
         vertical-align: middle;
-        width: 12px;
+
+        border: 1px solid #fff;
+        border-radius: 50%;
+
+        margin-left: .5em;
       }
-      animation: .6s ease-in-out;
+
+      width: 175px;
+
+      position: absolute;
+      right: -45px;
+      top: 25px;
+
       background-color: #1c2233;
       border: 1px solid #fff;
       color: #fff;
+
       font-size: 9px;
-      left: auto;
       letter-spacing: 1px;
       line-height: 33px;
-      padding: 0;
-      position: absolute;
-      right: -45px;
-      text-align: center;
       text-transform: uppercase;
-      top: 25px;
+
       transform: rotate(45deg);
-      width: 175px;
       cursor: pointer;
     }
   }
@@ -256,12 +283,12 @@
 
   }
   &-parameters {
-    text-align: justify;
-
-    color: #5b6788;
-    margin: 0 auto;
     width: 70%;
     font-size: 13px;
+    text-align: justify;
+    color: #5b6788;
+
+    margin: 0 auto;
     padding: 30px 0;
     div  {
       padding: 8px 0;
@@ -276,16 +303,17 @@
     border: none;
   }
   &-more {
-    color: #a1adb7;
     display: block;
+
     font-size: 13px;
-    margin: 0 auto;
+    color: #a1adb7;
     text-align: center;
     text-transform: uppercase;
+
+    margin: 0 auto;
     &:hover {
       color: #c28800;
     }
-
   }
 }
 
@@ -295,6 +323,7 @@ strong {
 
 .primary-button {
   width: 70%;
+
   margin-top: 24px;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -311,35 +340,6 @@ strong {
   }
 }
 
-.nav-tabs .nav-link{
-    color: #000;
-    padding-left: 25px;
-    padding-right: 25px;
-    letter-spacing: 2px;
-  &.active {
-    color: #c28800;
-  }
-}
-
-
-
-.card-info {
-  position: absolute;
-
-  top: 38%;
-  right: -10%;
-
-  width: 250px;
-
-  padding: 15px;
-  box-shadow: 0 8px 8px rgba(28,34,51,.1);
-  background-color: #fff;
-
-  opacity: 0;
-  cursor: po
-}
-
-
 ul {
   list-style: none;
   margin-left: 0;
@@ -348,29 +348,6 @@ ul {
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
   }
-}
-
-.navbar {
-  &-collapse {
-    padding-top: 12px;
-  }
-  &-expand-lg {
-    padding-bottom: 0px;
-
-  }
-}
- .navbar-nav .nav-link {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  border-bottom: 3px solid transparent;
-  &:hover {
-    border-bottom: 3px solid black;
-  }
-}
-
-.nav-tabs {
-  margin-top: 0;
 }
 
 @media (max-width: 768px) {

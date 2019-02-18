@@ -10689,7 +10689,7 @@ body {
 
 .logo {
   width: 110px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   margin-left: 3%;
 }
 
@@ -10720,15 +10720,32 @@ body {
 }
 
 .nav-tabs .nav-link {
+  position: relative;
   text-transform: uppercase;
-  color: #000;
-  padding-left: 25px;
-  padding-right: 25px;
+  color: #c28800;
+  padding: 20px;
+  padding-right: 45px;
   letter-spacing: 2px;
 }
 
+.nav-tabs .nav-link:after {
+  content: url("/storage/quiz/tick-inside-circle.svg");
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #c1bebe42;
+}
+
 .nav-tabs .nav-link.active {
-  color: #c28800;
+  color: #000;
+  padding-right: 20px;
+}
+
+.nav-tabs .nav-link.active:after {
+  display: none;
 }
 
 .navbar-collapse {
@@ -10750,23 +10767,20 @@ body {
   border-bottom: 3px solid black;
 }
 
-.nav-tabs {
-  margin-top: 0;
-}
-
 .button-wrapper {
   text-align: center;
 }
 
 .primary-button {
   height: 42px;
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 400;
   background-color: #0a0c12;
   color: #fff;
   margin: 20px 0;
   padding: 0 30px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   border: 0;
   border-radius: 5px;
   line-height: 42px;

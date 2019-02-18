@@ -4,7 +4,7 @@
 
       <app-navigation></app-navigation>
 
-      <calculate-progressbar ref="progressbar"></calculate-progressbar>
+      <!-- <calculate-progressbar ref="progressbar" :volumn="10"></calculate-progressbar> -->
 
       <div class="content-center">
           <div class="container">
@@ -27,7 +27,7 @@
                               :dotSize="30"
                               :max='100'
                               :interval='1'
-                              
+
                               >
                  </vue-slider>
 
@@ -70,7 +70,7 @@
                   'card_id': card_id,
                   'area': this.area
               }).then(response => {
-                  this.$refs.progressbar.increment(10)
+                  // this.$refs.progressbar.increment(10)
                   window.location.href = `/cards/decoration?card_id=${card_id}`
               })
           }

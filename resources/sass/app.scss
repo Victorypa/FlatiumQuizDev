@@ -44,7 +44,7 @@ padding-bottom: 20px;
 
 .logo {
   width: 110px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   margin-left: 3%;
 
 
@@ -71,16 +71,29 @@ padding-bottom: 20px;
   }
 }
 .nav-tabs .nav-link {
-    text-transform: uppercase;
-    color: #000;
-    padding-left: 25px;
-    padding-right: 25px;
-    letter-spacing: 2px;
+  position: relative;
+  text-transform: uppercase;
+  color: #c28800 ;
+  padding: 20px;
+  padding-right: 45px;
+  letter-spacing: 2px;
+  &:after {
+    content: url('/storage/quiz/tick-inside-circle.svg');
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  &:hover {
+    background-color: #c1bebe42;
+  }
   &.active {
-    color: #c28800;
+    color: #000;
+    padding-right: 20px;
+    &:after {
+      display: none;
+    }
   }
 }
-
 
 .navbar {
   &-collapse {
@@ -88,7 +101,6 @@ padding-bottom: 20px;
   }
   &-expand-lg {
     padding-bottom: 0px;
-
   }
 }
 
@@ -101,10 +113,12 @@ padding-bottom: 20px;
     border-bottom: 3px solid black;
   }
 }
-
-.nav-tabs {
-  margin-top: 0;
-}
+//
+// .nav-tabs {
+//   margin-top: 0;
+//   position: relative;
+//
+// }
 
 
 .button-wrapper {
@@ -112,14 +126,15 @@ text-align: center;
 }
 .primary-button {
 height: 42px;
-font-size: 15px;
+font-size: 11px;
 font-weight: 400;
 background-color: #0a0c12;
 color: #fff;
 
 margin: 20px 0;
 padding: 0 30px;
-letter-spacing: .025em;
+letter-spacing: .1em;
+text-transform: uppercase;
 
 border: 0;
 border-radius: 5px;
@@ -128,9 +143,9 @@ line-height: 42px;
 outline: none;
 cursor: pointer;
 transition: .15s ease-in-out;
-&--disabled {
-  background-color: #ccc;
-}
+  &--disabled {
+    background-color: #ccc;
+  }
 }
 
 .primary-button {
@@ -141,7 +156,6 @@ transition: .15s ease-in-out;
     outline: none;
   }
 }
-
 
 .content-center {
   padding: 100px 0;
