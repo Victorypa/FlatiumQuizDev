@@ -55,7 +55,7 @@
             },
 
             redirectToSquareCount (card_id) {
-                window.location.href = `/cards/square?card_id=${card_id}`
+                window.location.href = `https://flatium.ru/calculator`
             }
         }
     }

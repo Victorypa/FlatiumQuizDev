@@ -2147,7 +2147,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -3300,7 +3299,7 @@ __webpack_require__.r(__webpack_exports__);
       window.location.href = data.link;
     },
     redirectToSquareCount: function redirectToSquareCount(card_id) {
-      window.location.href = "/cards/square?card_id=".concat(card_id);
+      window.location.href = "https://flatium.ru/calculator";
     }
   }
 });
@@ -57800,22 +57799,6 @@ var staticRenderFns = [
               }
             },
             [_vm._v("Ваш стиль")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-item nav-link active",
-              attrs: {
-                id: "nav-needs",
-                "data-toggle": "tab",
-                href: "#nav-needs",
-                role: "tab",
-                "aria-controls": "nav-needs",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Рассчёт ремонта")]
           )
         ]
       )
