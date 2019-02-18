@@ -2287,6 +2287,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -58472,7 +58474,13 @@ var render = function() {
                       height: 2,
                       dotSize: 30,
                       max: 100,
-                      interval: 1
+                      interval: 1,
+                      bgStyle: { backgroundColor: "black" },
+                      tooltipStyle: {
+                        backgroundColor: "#666",
+                        borderColor: "#666"
+                      },
+                      processStyle: { backgroundColor: "#999" }
                     },
                     model: {
                       value: _vm.area,

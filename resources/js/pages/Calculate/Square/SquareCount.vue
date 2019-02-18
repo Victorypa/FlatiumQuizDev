@@ -27,7 +27,9 @@
                               :dotSize="30"
                               :max='100'
                               :interval='1'
-
+                              :bgStyle="{ backgroundColor: 'black' }"
+                              :tooltipStyle="{ backgroundColor: '#666', borderColor: '#666' }"
+                              :processStyle="{ backgroundColor: '#999' }"
                               >
                  </vue-slider>
 
