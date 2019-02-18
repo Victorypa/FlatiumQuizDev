@@ -6,7 +6,7 @@
 
       <calculate-progressbar :volumn="40"></calculate-progressbar>
 
-      <div class="content-center">
+      <div class="content-center" v-if="show">
           <div class="container">
             <h1 class="main-caption">
               Расскажите какая текущая  отделка в помещении
@@ -21,33 +21,43 @@
             </div>
           </div>
         </div>
+        <Message v-else />
     </div>
 
 </template>
 
 <script>
     import { decorations } from './index'
+    import Message from '../../Message/Message'
 
     export default {
         data () {
             return {
-                decorations
+                decorations,
+                show: true
             }
+        },
+
+        components: {
+            Message
         },
 
         methods: {
             selectDecoration (decoration) {
                 let card_id = window.location.search.match(/\d+/g).toString()
 
+                this.show = !this.show
+                setTimeout(() => {
+                    window.location.href = `/cards/material-category?card_id=${card_id}`
+                }, 2500)
+
                 axios.post('/cards/clicks/store', {
                     'name': decoration
-                }).then(resposne => {
-                    axios.post(`/cards/decoration/store`, {
-                        'card_id': card_id,
-                        'type': decoration
-                    }).then(response => {
-                        window.location.href = `/cards/material-category?card_id=${card_id}`
-                    })
+                })
+                
+                axios.post(`/cards/decoration/store`, {
+                    'card_id': card_id,
+                    'type': decoration
                 })
             }
         }
