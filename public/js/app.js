@@ -2793,6 +2793,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -2806,9 +2807,9 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
         phone: ''
       },
       booleans: {
-        name: true,
+        name: false,
         email: false,
-        phone: false
+        phone: true
       },
       progress_value: 70
     };
@@ -2843,17 +2844,14 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
           break;
 
         case 'phone':
-          if (this.person.name !== '' && this.person.email) {
-            var card_id = window.location.search.match(/\d+/g).toString();
-            axios.post("/cards/form/store", {
-              'card_id': card_id,
-              'name': this.person.name,
-              'email': this.person.email,
-              'phone': this.person.phone
-            });
-            window.location.href = "/cards/result?card_id=".concat(card_id);
-          }
-
+          var card_id = window.location.search.match(/\d+/g).toString();
+          axios.post("/cards/form/store", {
+            'card_id': card_id,
+            'name': this.person.name,
+            'email': this.person.email,
+            'phone': this.person.phone
+          });
+          window.location.href = "/cards/result?card_id=".concat(card_id);
           break;
 
         default:
@@ -58820,128 +58818,6 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
-          _vm.booleans.name
-            ? _c("div", { staticClass: "fade-in" }, [
-                _c("h1", { staticClass: "main-caption" }, [
-                  _vm._v("\n                Как вас зовут?\n              ")
-                ]),
-                _vm._v(" "),
-                _c(
-                  "form",
-                  {
-                    on: {
-                      submit: function($event) {
-                        $event.preventDefault()
-                        return _vm.go("name")
-                      }
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "form-wrapper" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.person.name,
-                            expression: "person.name"
-                          }
-                        ],
-                        attrs: { type: "text", required: "", autofocus: "" },
-                        domProps: { value: _vm.person.name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.person, "name", $event.target.value)
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "label",
-                        {
-                          staticClass: "full-name",
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              return _vm.click($event)
-                            }
-                          }
-                        },
-                        [_vm._v("Полное имя")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(0)
-                  ]
-                )
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.booleans.email
-            ? _c("div", { staticClass: "fade-in" }, [
-                _c("h1", { staticClass: "main-caption" }, [
-                  _vm._v(
-                    "\n                Укажите свой E-mail адрес, чтобы получить результат тестирования\n              "
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "form",
-                  {
-                    on: {
-                      submit: function($event) {
-                        $event.preventDefault()
-                        return _vm.go("email")
-                      }
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "form-wrapper" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.person.email,
-                            expression: "person.email"
-                          }
-                        ],
-                        attrs: { type: "email", required: "", autofocus: "" },
-                        domProps: { value: _vm.person.email },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.person, "email", $event.target.value)
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "label",
-                        {
-                          staticClass: "full-name",
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              return _vm.click($event)
-                            }
-                          }
-                        },
-                        [_vm._v("Ваша почта")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1)
-                  ]
-                )
-              ])
-            : _vm._e(),
-          _vm._v(" "),
           _vm.booleans.phone
             ? _c("div", { staticClass: "fade-in" }, [
                 _c("h1", { staticClass: "main-caption" }, [
@@ -58968,6 +58844,7 @@ var render = function() {
                         _c("vue-tel-input", {
                           attrs: {
                             placeholder: "",
+                            required: true,
                             preferredCountries: ["ru", "us", "ua"],
                             autofocus: ""
                           },
@@ -59015,26 +58892,6 @@ var render = function() {
                             "\n                         Далее\n                     "
                           )
                         ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "primary-button primary-button--disabled",
-                          attrs: { type: "submit", id: "phone_pass" },
-                          on: {
-                            submit: function($event) {
-                              $event.preventDefault()
-                              return _vm.go("phone")
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                             Пропустить\n                    "
-                          )
-                        ]
                       )
                     ])
                   ]
@@ -59047,38 +58904,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "button-wrapper" }, [
-      _c(
-        "button",
-        {
-          staticClass: "primary-button",
-          attrs: { type: "submit", id: "name" }
-        },
-        [_vm._v("\n                         Далее\n                     ")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "button-wrapper" }, [
-      _c(
-        "button",
-        {
-          staticClass: "primary-button",
-          attrs: { type: "submit", id: "email" }
-        },
-        [_vm._v("\n                         Далее\n                     ")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

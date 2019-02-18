@@ -8,7 +8,7 @@
     <div class="content-center">
         <div class="container">
 
-            <div v-if="booleans.name" class="fade-in">
+            <!-- <div v-if="booleans.name" class="fade-in">
                 <h1 class="main-caption">
                   Как вас зовут?
                 </h1>
@@ -31,9 +31,9 @@
                        </button>
                     </div>
                 </form>
-            </div>
+            </div> -->
 
-            <div v-if="booleans.email" class="fade-in">
+            <!-- <div v-if="booleans.email" class="fade-in">
                 <h1 class="main-caption">
                   Укажите свой E-mail адрес, чтобы получить результат тестирования
                 </h1>
@@ -55,7 +55,7 @@
                        </button>
                     </div>
                 </form>
-            </div>
+            </div> -->
 
             <div v-if="booleans.phone" class="fade-in">
                 <h1 class="main-caption">
@@ -65,7 +65,8 @@
                 <form @submit.prevent="go('phone')">
                     <div class="form-wrapper fade-in">
                         <vue-tel-input v-model="person.phone"
-                                        placeholder = ""
+                                       placeholder=""
+                                       :required="true"
                                        :preferredCountries="['ru', 'us', 'ua']"
                                        autofocus
                                        >
@@ -81,13 +82,13 @@
                                 >
                            Далее
                        </button>
-                       <button type="submit"
+                       <!-- <button type="submit"
                                class="primary-button primary-button--disabled"
                                @submit.prevent="go('phone')"
                                id="phone_pass"
                                >
                                Пропустить
-                      </button>
+                      </button> -->
                     </div>
                 </form>
             </div>
@@ -112,9 +113,9 @@
                     phone: ''
                 },
                 booleans: {
-                    name: true,
+                    name: false,
                     email: false,
-                    phone: false
+                    phone: true
                 },
                 progress_value: 70
             }
@@ -147,18 +148,16 @@
                         }
                         break;
                     case 'phone':
-                        if (this.person.name !== '' && this.person.email) {
-                            let card_id = window.location.search.match(/\d+/g).toString()
+                        let card_id = window.location.search.match(/\d+/g).toString()
 
-                            axios.post(`/cards/form/store`, {
-                                'card_id': card_id,
-                                'name': this.person.name,
-                                'email': this.person.email,
-                                'phone': this.person.phone,
-                            })
+                        axios.post(`/cards/form/store`, {
+                            'card_id': card_id,
+                            'name': this.person.name,
+                            'email': this.person.email,
+                            'phone': this.person.phone,
+                        })
 
-                            window.location.href = `/cards/result?card_id=${card_id}`
-                        }
+                        window.location.href = `/cards/result?card_id=${card_id}`
                         break;
                     default:
 
