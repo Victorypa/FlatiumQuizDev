@@ -15,8 +15,8 @@ Route::group(['prefix' => 'cards'], function () {
     Route::get('/rooms', 'Room\RoomController@index');
     Route::post('/rooms/store', 'Room\RoomController@store');
 
-    Route::get('/form', 'Form\FormController@index');
-    Route::post('/form/store', 'Form\FormController@store');
+    // Route::get('/form', 'Form\FormController@index');
+    // Route::post('/form/store', 'Form\FormController@store');
 
     Route::get('/result', 'Result\ResultController@index');
 

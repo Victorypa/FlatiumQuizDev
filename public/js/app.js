@@ -3555,6 +3555,11 @@ __webpack_require__.r(__webpack_exports__);
       axios.post("/cards/rooms/store", {
         'card_id': card_id,
         'data': this.selected_rooms
+<<<<<<< HEAD
+=======
+      }).then(function (response) {
+        window.location.href = "/cards/result?card_id=".concat(card_id);
+>>>>>>> 842dc291ff72a9f862561ba48509fe5f8e188302
       });
       window.location.href = "/cards/form?card_id=".concat(card_id);
     }
