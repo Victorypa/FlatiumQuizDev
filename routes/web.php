@@ -65,6 +65,3 @@ Route::group(['middleware' => 'auth', 'prefix' => 'panel'], function () {
 
 
 // Auth::routes();
-
-
-Route::get('/test/amo', 'AmoController@index');

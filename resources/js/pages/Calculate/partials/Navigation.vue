@@ -8,8 +8,7 @@
            Ваш стиль
        </a>
 
-        <a v-if="url"
-           class="nav-item nav-link"
+        <a class="nav-item nav-link"
            :href="url"
            :class="{ 'active': selected === 'calculator' ? true : false }"
            >

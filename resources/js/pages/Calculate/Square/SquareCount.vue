@@ -2,9 +2,9 @@
   <div>
       <app-header></app-header>
 
-      <app-navigation></app-navigation>
+      <app-navigation selected="calculator"></app-navigation>
 
-      <!-- <calculate-progressbar ref="progressbar" :volumn="10"></calculate-progressbar> -->
+      <calculate-progressbar ref="progressbar" :volumn="10"></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
@@ -22,7 +22,7 @@
                   <vue-slider ref="slider"
                               v-model="area"
                               class="vue-slider"
-                              :value='value'
+                              :value='area'
                               :height='2'
                               :dotSize="30"
                               :max='100'
