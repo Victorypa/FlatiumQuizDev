@@ -78,6 +78,14 @@
                                  >
                             СТИЛИСТ
                         </button>
+                        <div class="button-hover">
+                          <div class="button-hover__title">
+                          BEST MATCH
+                          </div>
+                          <div class="button-hover__content">
+                          For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.
+                          </div>
+                        </div>
                      </div>
                      <div id="accordion2">
                          <div class="card card-border">
@@ -93,14 +101,7 @@
                            </div>
                          </div>
                        </div>
-                       <div class="card-hover">
-                         <div class="card-hover__title">
-                         BEST MATCH
-                         </div>
-                         <div class="card-hover__content">
-                         For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.
-                         </div>
-                       </div>
+
                       </div>
                </div>
 
@@ -164,21 +165,7 @@
 }
 
 .card {
-  &-hover {
-    position: absolute;
 
-    top: 5%;
-    right: 20%;
-
-    width: 250px;
-
-    padding: 15px;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-
-    border-radius: 5px;
-    opacity: 0;
-  }
   &-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -221,15 +208,8 @@
     cursor: pointer;
   }
   &-workmaterial {
-    position: relative;
+    // position: relative;
     overflow: hidden;
-
-    &:hover {
-      .card-hover {
-        opacity: 1;
-        transition: 0.5s;
-      }
-    }
 
     &:before {
       border-top: 6px solid #dbc997;
@@ -321,6 +301,23 @@ strong {
   color: #1c2233;
 }
 
+.button {
+  &-hover {
+    position: absolute;
+
+    top: -155%;
+
+    padding: 15px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1000;
+  }
+}
+
+
 .primary-button {
   width: 70%;
 
@@ -329,6 +326,7 @@ strong {
   text-transform: uppercase;
   &:hover {
     background-color: #2e3854;
+
   }
   &--white {
     color: #1c2233;
@@ -336,6 +334,17 @@ strong {
     box-shadow: 0 2px 7px rgba(28,34,51,.2);
     &:hover {
       background: #f2f2f2;
+    }
+  }
+}
+
+.button-wrapper {
+  position: relative;
+
+  &:hover {
+    .button-hover {
+      opacity: 1;
+      transition: 0.5s;
     }
   }
 }
