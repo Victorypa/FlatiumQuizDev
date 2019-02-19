@@ -3,6 +3,7 @@
         <h1 class="main-caption">
             {{ title }}
         </h1>
+
         <div class="image-wrapper">
             <template v-for="card in cards">
                 <a class="image-card"
@@ -20,9 +21,7 @@
 <script>
     export default {
         props: [
-            'title',
-            'cards',
-            'type'
+            'title', 'cards', 'type'
         ],
 
         methods: {
@@ -60,8 +59,9 @@
   animation-duration: 0.7s;
 }
 
+
 .fade-in.one {
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
 }
 
 .fade-in.two {
@@ -69,7 +69,7 @@
 }
 
 .fade-in.three {
-  animation-delay: 0.8s;
+  animation-delay: 0.9s;
 }
 
 .progress-bar {

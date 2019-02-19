@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <app-header></app-header>
     <div class="progress-bar__wrapper">
           <progress-bar bar-color="#aad7ea " val="60"></progress-bar>
