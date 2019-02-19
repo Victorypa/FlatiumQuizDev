@@ -1,68 +1,83 @@
 <template>
   <div>
-
     <app-header></app-header>
-
-    <calculate-progressbar :volumn="progress_value"></calculate-progressbar>
+    <div class="progress-bar__wrapper">
+          <progress-bar bar-color="#aad7ea " :val="progress_value"></progress-bar>
+    </div>
 
       <div class="content-center">
           <div class="container">
-              <card v-if="cards_booleans.a"
-                    title='Я бы описал свой стиль как...'
-                    type='A'
-                    :cards="acards"
-                    @selected-card="AddCard"
-                    />
+              <transition name="fade">
+                  <card v-if="cards_booleans.a"
+                        title='Я бы описал свой стиль как...'
+                        type='A'
+                        :cards="acards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
 
-              <card v-if="cards_booleans.b"
-                    title="При выборе мебели и домашнего декора, я предпочитаю ..."
-                    type='B'
-                    :cards="bcards"
-                    @selected-card="AddCard"
-                    />
+              <transition name="fade">
+                  <card v-if="cards_booleans.b"
+                        title="При выборе мебели и домашнего декора, я предпочитаю ..."
+                        type='B'
+                        :cards="bcards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
 
-            <card v-if="cards_booleans.c1"
-                  title="Какое изображение домашнего декора вам больше нравятся?"
-                  type='C1'
-                  :cards="c1cards"
-                  @selected-card="AddCard"
-                  />
+              <transition name="fade">
+                  <card v-if="cards_booleans.c1"
+                        title="Какое изображение домашнего декора вам больше нравятся?"
+                        type='C1'
+                        :cards="c1cards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
 
+              <transition name="fade">
+                  <card v-if="cards_booleans.c2"
+                        title="Какое изображение домашнего декора вам больше нравятся?"
+                        type='C2'
+                        :cards="c2cards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
 
-            <card v-if="cards_booleans.c2"
-                  title="Какое изображение домашнего декора вам больше нравятся?"
-                  type='C2'
-                  :cards="c2cards"
-                  @selected-card="AddCard"
-                  />
+              <transition name="fade">
+                  <card v-if="cards_booleans.c3"
+                        title="Какое изображение домашнего декора вам больше нравятся?"
+                        type='C3'
+                        :cards="c3cards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
 
-            <card v-if="cards_booleans.c3"
-                  title="Какое изображение домашнего декора вам больше нравятся?"
-                  type='C3'
-                  :cards="c3cards"
-                  @selected-card="AddCard"
-                  />
+              <transition name="fade">
+                  <card v-if="cards_booleans.d1"
+                        title="Какие цветовые решения в вашем доме, вы предпочитаете?"
+                        type='D1'
+                        :cards="d1cards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
 
-            <card v-if="cards_booleans.d1"
-                  title="Какие цветовые решения в вашем доме, вы предпочитаете?"
-                  type='D1'
-                  :cards="d1cards"
-                  @selected-card="AddCard"
-                  />
+              <transition name="fade">
+                  <card v-if="cards_booleans.d2"
+                        title="Какие цветовые решения в вашем доме, вы предпочитаете?"
+                        type='D2'
+                        :cards="d2cards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
 
-            <card v-if="cards_booleans.d2"
-                  title="Какие цветовые решения в вашем доме, вы предпочитаете?"
-                  type='D2'
-                  :cards="d2cards"
-                  @selected-card="AddCard"
-                  />
-
-            <card v-if="cards_booleans.d3"
-                  title="Какие цветовые решения в вашем доме, вы предпочитаете?"
-                  type='D3'
-                  :cards="d3cards"
-                  @selected-card="AddCard"
-                  />
+              <transition name="fade">
+                  <card v-if="cards_booleans.d3"
+                        title="Какие цветовые решения в вашем доме, вы предпочитаете?"
+                        type='D3'
+                        :cards="d3cards"
+                        @selected-card="AddCard"
+                        />
+              </transition>
             </div>
       </div>
   </div>
@@ -70,6 +85,7 @@
 </template>
 
 <script>
+  import ProgressBar from 'vue-simple-progress'
   import {
        acards, bcards, c1cards, c2cards,
        c3cards, d1cards, d2cards, d3cards, cards_booleans
@@ -83,6 +99,7 @@
 
   export default {
       components: {
+        ProgressBar,
         Card
       },
       data () {
@@ -104,35 +121,54 @@
              switch (data.type) {
                  case 'A':
                      this.cards_booleans.a = false
-                     this.cards_booleans.b = true
+                     setTimeout(() => {
+                         this.cards_booleans.b = true
+                     }, 1000)
                      break;
-
                 case 'B':
                     this.cards_booleans.b = false
                     if (this.selected_uuids.includes('A1')) {
-                        this.cards_booleans.c1 = true
+                        setTimeout(() => {
+                            this.cards_booleans.c1 = true
+                        }, 1000)
                     }
                     if (this.selected_uuids.includes('A2')) {
-                        this.cards_booleans.c2 = true
+                        setTimeout(() => {
+                            this.cards_booleans.c2 = true
+                        }, 1000)
                     }
                     if (this.selected_uuids.includes('A3')) {
-                        this.cards_booleans.c3 = true
+                        setTimeout(() => {
+                            this.cards_booleans.c3 = true
+                        }, 1000)
                     }
                     break;
 
                 case 'C1':
                     this.cards_booleans.c1 = false
-                    this.cards_booleans.d1 = true
+
+                    setTimeout(() => {
+                        this.cards_booleans.d1 = true
+                    }, 1000)
+
                     break;
 
                 case 'C2':
                     this.cards_booleans.c2 = false
-                    this.cards_booleans.d2 = true
+
+                    setTimeout(() => {
+                        this.cards_booleans.d2 = true
+                    }, 1000)
+
                     break;
 
                 case 'C3':
                     this.cards_booleans.c3 = false
-                    this.cards_booleans.d3 = true
+
+                    setTimeout(() => {
+                        this.cards_booleans.d3 = true
+                    }, 1000)
+
                     break;
 
                 case 'D1':
@@ -185,7 +221,10 @@
                   'option': this.selected_uuids.join(''),
                   'result': result
               }).then(response => {
-                  window.location.href = `/cards/rooms?card_id=${response.data.id}`
+                  console.log(response.data);
+                  setTimeout(() => {
+                      window.location.href = `/cards/rooms?card_id=${response.data.id}`
+                  }, 500)
               })
           }
       }
@@ -193,26 +232,28 @@
 </script>
 
 <style lang="scss" scoped>
+@keyframes smooth {
+0% { opacity: 1;}
+100% { opacity: 0;}
+}
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
-  opacity:0;  /* make things invisible upon start */;
+  opacity:0;
   animation:fadeIn ease-in 1;
   animation-fill-mode:forwards;
   animation-duration:1s;
 }
 
-.fade-in.one {
-  animation-delay: 0.3s;
+.fade-leave-active {
+    animation: smooth 1s ease-in;
 }
 
-.fade-in.two {
-  animation-delay: 1.6s;
-}
-
-.fade-in.three {
-  animation-delay: 0.8s;
+.progress-bar {
+  &__wrapper {
+    margin: 30px 0;
+  }
 }
 
 .image {
@@ -263,8 +304,9 @@
   text-align: center;
   text-transform: uppercase;
   }
-
 }
+
+
 @media (min-width: 700px) {
   .content-center {
     display: flex;

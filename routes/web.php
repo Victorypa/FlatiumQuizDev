@@ -37,6 +37,8 @@ Route::group(['prefix' => 'cards'], function () {
 
     Route::get('/calculate-result', 'CalculateResult\CalculateResultController@index');
 
+    Route::post('/calculate-result/{card}', 'CalculateResult\CalculateResultController@getResult');
+
 
     Route::get('/clicks', 'Card\Click\ClickController@index');
     Route::post('/clicks/store', 'Card\Click\ClickController@store');

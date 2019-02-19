@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\CalculateResult;
 
+use App\Models\Card\Card;
+use App\Models\Price\Price;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Services\Amo\Contact\ContactCreate;
@@ -10,63 +12,32 @@ use App\Services\Amo\Leads\LeadCreate;
 class CalculateResultController extends Controller
 {
     protected $mappings = [
-        'LOFT' => [
-            'standard' => [
-                'new' => 6800,
-                'total_new' => 9500,
-                'old' => 11300
-            ],
-            'comfort' => [
-                'new' => 7100,
-                'total_new' => 9800,
-                'old' => 11800
-            ],
-            'premium' => [
-                'new' => 7500,
-                'total_new' => 10200,
-                'old' => 12200
-            ]
-        ],
-
-        'SK' => [
-            'standard' => [
-                'new' => 6510,
-                'total_new' => 9030,
-                'old' => 10800
-            ],
-            'comfort' => [
-                'new' => 6720,
-                'total_new' => 9240,
-                'old' => 11000
-            ],
-            'premium' => [
-                'new' => 7140,
-                'total_new' => 9660,
-                'old' => 11500
-            ]
-        ],
-
-        'K' => [
-            'standard' => [
-                'new' => 6700,
-                'total_new' => 9300,
-                'old' => 11200
-            ],
-            'comfort' => [
-                'new' => 6900,
-                'total_new' => 9500,
-                'old' => 11400
-            ],
-            'premium' => [
-                'new' => 7300,
-                'total_new' => 10000,
-                'old' => 11900
-            ]
-        ]
+        'LOFT' => 'LOFT',
+        'SK' => 'K',
+        'CON' => 'SK',
+        'ECO' => 'LOFT',
+        'SKAN' => 'SK',
+        'K' => 'K'
     ];
 
     public function index(Request $request)
     {
         return view('calculate.result.index');
+    }
+
+    public function getResult(Card $card)
+    {
+        $square = $card->squares()->first()->area;
+
+        $price = Price::where([
+            ['style', $this->mappings[strtoupper($card->result)]],
+            ['category', $card->material_categories()->first()->type],
+            ['type', $card->decorations()->first()->type]
+        ])->first();
+
+        return response([
+            'price' => $price,
+            'square' => $square
+        ]);
     }
 }

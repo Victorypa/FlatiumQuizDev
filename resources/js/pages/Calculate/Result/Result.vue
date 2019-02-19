@@ -1,42 +1,22 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="logo">
-        <a href="https://www.flatium.ru" class="logo__img">
-          <img src="/storage/quiz/logo-black.svg" alt="Flatium-logo">
-        </a>
-      </div>
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href=""></a>
-        </div>
-      </div> -->
-</nav>
 
-    <!-- <app-header></app-header> -->
+      <app-header></app-header>
 
-    <!-- <app-navigation selected="calculator"></app-navigation> -->
+      <app-navigation selected="calculator"></app-navigation>
 
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
-          <a class="nav-item nav-link" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
-          <a class="nav-item nav-link active" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Стоимость</a>
-        </div>
-      </nav>
+      <calculate-progressbar ref="progressbar"></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
              <div class="card-wrapper">
+
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
                  <div class="card-price">
-                   ₽ 240 000
+                   ₽ {{ getTotalPrice }}
                  </div>
-                <div class="card-small-price">Стоимость за кв. м.: <strong>₽ 12 3546</strong></div>
+                <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getAveragePrice }}</strong></div>
 
                  <div class="button-wrapper">
                      <button type="submit"
@@ -65,19 +45,21 @@
                      </div>
                    </div>
                </div>
+
                <div class="card-workmaterial">
                    <h2>Стоимость материалов</h2>
                    <div class="card-price">
-                     ₽ 240 000
+                     ₽ {{ getFakeMaterialPrice }}
                    </div>
                    <span>Best Match</span>
-                  <div class="card-small-price">Стоимость за кв. м.: <strong>₽ 12 3546 </strong></div>
+                  <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getFakeAveragePrice }} </strong></div>
                      <div class="button-wrapper">
                          <button type="submit"
                                  class="primary-button"
                                  >
                             СТИЛИСТ
                         </button>
+<<<<<<< HEAD
                         <div class="button-hover">
                           <div class="button-hover__title">
                           BEST MATCH
@@ -103,6 +85,33 @@
                        </div>
 
                       </div>
+=======
+
+                        <div id="accordion2">
+                            <div class="card card-border">
+                              <div class="card-header">
+                                <a class="card-link card-more" data-toggle="collapse" href="#collapseTwo">
+                                  Больше информации
+                                </a>
+                              </div>
+                              <div id="collapseTwo" class="collapse" data-parent="#accordion2">
+                                <div class="card-body">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="button-hover">
+                             <div class="button-hover__title">
+                             BEST MATCH
+                             </div>
+                             <div class="button-hover__content">
+                             For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.
+                             </div>
+                           </div>
+                         </div>
+                     </div>
+>>>>>>> 2f56a68ae3fc289ae132ff7f4211995e0b3731b9
                </div>
 
              </div>
@@ -114,34 +123,49 @@
 </template>
 
 <script>
-    import vueSlider from 'vue-slider-component'
-
     export default {
       data () {
         return {
-            area: 30
+            card_id: window.location.search.match(/\d+/g).toString(),
+            price: 0,
+            square: 0
         }
       },
 
-      components: {
-        vueSlider
+      created () {
+          this.getResult()
       },
 
       methods: {
-          submit () {
-              let card_id = window.location.search.match(/\d+/g).toString()
-              axios.post(`/cards/square/store`, {
-                  'card_id': card_id,
-                  'area': this.area
-              }).then(response => {
-                  this.$refs.progressbar.increment(10)
-                  window.location.href = `/cards/decoration?card_id=${card_id}`
-              })
+          getResult () {
+              axios.post(`/cards/calculate-result/${this.card_id}`)
+                   .then(response => {
+                       this.price = response.data.price.price
+                       this.square = response.data.square
+                       // console.log(this.square);
+                   })
           }
+      },
+
+      computed: {
+          getTotalPrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price)
+          },
+
+          getAveragePrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price))
+          },
+
+          getFakeMaterialPrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price - 1000)
+          },
+
+          getFakeAveragePrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price) - 1000)
+          },
       }
 }
 </script>
-
 <style lang="scss" scoped>
 
 .container {
