@@ -29,24 +29,15 @@ class CalculateResultController extends Controller
     {
         $square = $card->squares()->first()->area;
 
-        $style = $this->mappings[strtoupper($card->result)];
-
-        $category = $card->material_categories()->first()->type;
-        $type = $card->decorations()->first()->type;
-
-        return Price::where([
-            ['style', $style],
-            ['category', $category],
-            ['type', $type]
+        $price = Price::where([
+            ['style', $this->mappings[strtoupper($card->result)]],
+            ['category', $card->material_categories()->first()->type],
+            ['type', $card->decorations()->first()->type]
         ])->first();
 
         return response([
-            $price
+            'price' => $price,
+            'squre' => $square
         ]);
-    //     return response([
-    //         $style,
-    // $category,
-    // $type
-    //     ]);
     }
 }
