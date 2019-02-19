@@ -65,8 +65,7 @@
 
                 this.show = !this.show
                 setTimeout(() => {
-                    // window.location.href = `/cards/material-category?card_id=${card_id}`
-                    this.show = !this.show
+                    window.location.href = `/cards/calculate-result?card_id=${card_id}`
                 }, 2500)
 
                 switch (type) {

@@ -32,10 +32,6 @@
         }
     },
 
-    created () {
-        console.log(this.option);
-    },
-
     computed: {
         filteredOption () {
             switch (this.option) {

@@ -1,36 +1,16 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="logo">
-        <a href="https://www.flatium.ru" class="logo__img">
-          <img src="/storage/quiz/logo-black.svg" alt="Flatium-logo">
-        </a>
-      </div>
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href=""></a>
-        </div>
-      </div> -->
-</nav>
 
-    <!-- <app-header></app-header> -->
+      <app-header></app-header>
 
-    <!-- <app-navigation selected="calculator"></app-navigation> -->
+      <app-navigation selected="calculator"></app-navigation>
 
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link" id="nav-result" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Ваш стиль</a>
-          <a class="nav-item nav-link" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Рассчёт ремонта</a>
-          <a class="nav-item nav-link active" id="nav-needs" data-toggle="tab" href="#nav-needs" role="tab" aria-controls="nav-needs" aria-selected="false">Стоимость</a>
-        </div>
-      </nav>
+      <calculate-progressbar ref="progressbar"></calculate-progressbar>
 
       <div class="content-center">
           <div class="container">
              <div class="card-wrapper">
+
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
                  <div class="card-price">
@@ -65,6 +45,7 @@
                      </div>
                    </div>
                </div>
+
                <div class="card-workmaterial">
                    <h2>Стоимость материалов</h2>
                    <div class="card-price">
@@ -113,29 +94,23 @@
 </template>
 
 <script>
-    import vueSlider from 'vue-slider-component'
-
     export default {
       data () {
         return {
-            area: 30
+            card_id: window.location.search.match(/\d+/g).toString()
         }
       },
 
-      components: {
-        vueSlider
+      created () {
+          this.getResult()
       },
 
       methods: {
-          submit () {
-              let card_id = window.location.search.match(/\d+/g).toString()
-              axios.post(`/cards/square/store`, {
-                  'card_id': card_id,
-                  'area': this.area
-              }).then(response => {
-                  this.$refs.progressbar.increment(10)
-                  window.location.href = `/cards/decoration?card_id=${card_id}`
-              })
+          getResult () {
+              axios.post(`/cards/calculate-result/${this.card_id}`)
+                   .then(response => {
+                       console.log(response.data);
+                   })
           }
       }
 }
