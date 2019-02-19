@@ -2,11 +2,11 @@
     <div>
         <app-header></app-header>
 
-        <app-navigation></app-navigation>
+        <app-navigation selected="calculator"></app-navigation>
 
         <calculate-progressbar ref="progressbar"></calculate-progressbar>
 
-      <div class="content-center">
+      <div class="content-center" v-if="show">
           <div class="container">
             <h1 class="main-caption">
               Как бы вы оценили свой уровень, как дизайнера?
@@ -17,7 +17,7 @@
                   <button class="button-card"
                           @click.prevent="selected(design.value)"
                           >
-                      <div class="image-content" v-html="design.svg"></div>
+                    <div class="image-content" v-html="design.svg"></div>
                     <div class="image-text" v-text="design.title"></div>
                     <div class="image-subtitle" v-text="design.description"></div>
                   </button>
@@ -26,29 +26,62 @@
 
           </div>
       </div>
+
+      <Message v-else
+               :option="option"
+               />
     </div>
 </template>
 
 <script>
     import { designs } from './index.js'
+    import Message from '../../Message/Message'
 
     export default {
         data () {
             return {
-                designs
+                designs,
+                show: true,
+                option: ''
             }
+        },
+
+        components: {
+            Message
         },
 
         methods: {
             selected (type) {
                 let card_id = window.location.search.match(/\d+/g).toString()
 
+                axios.post('/cards/clicks/store', {
+                    'name': type
+                })
+
                 axios.post('/cards/design-skills/store', {
                     'card_id': card_id,
                     'type': type
-                }).then(response => {
-                    alert('all finished, waiting')
                 })
+
+                this.show = !this.show
+                setTimeout(() => {
+                    // window.location.href = `/cards/material-category?card_id=${card_id}`
+                    this.show = !this.show
+                }, 2500)
+
+                switch (type) {
+                    case 'junior':
+                        this.option = 'design1'
+                        break;
+                    case 'middle':
+                        this.option = 'design2'
+                        break;
+                    case 'senior':
+                        this.option = 'design3'
+                        break;
+                    default:
+                        return nul
+                }
             }
         }
     }

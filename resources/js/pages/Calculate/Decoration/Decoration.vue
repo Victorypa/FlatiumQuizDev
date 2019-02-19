@@ -21,7 +21,9 @@
             </div>
           </div>
         </div>
-        <Message v-else />
+        <Message v-else
+                 option="decoration"
+                 />
     </div>
 
 </template>
@@ -54,7 +56,7 @@
                 axios.post('/cards/clicks/store', {
                     'name': decoration
                 })
-                
+
                 axios.post(`/cards/decoration/store`, {
                     'card_id': card_id,
                     'type': decoration

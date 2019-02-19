@@ -1,8 +1,9 @@
 <template>
     <div class="content-center">
         <div class="container">
+
             <h1 class="main-caption">
-              {{ titles.title1 }}
+                {{ filteredOption }}
             </h1>
             <div class="loading">
               <span></span>
@@ -18,17 +19,46 @@
 
 <script>
     export default {
+      props: ['option'],
+
       data () {
         return {
             titles: {
-                title1: 'У вас отличный дом! И у нас есть множество вариантов выбора материалов для создания вашего интерьера',
-                title2: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
-                title3: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
-                title4: 'Мы идем к вам на помощь!',
-            },
+                decoration: 'У вас отличный дом! И у нас есть множество вариантов выбора материалов для создания вашего интерьера',
+                design1: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
+                design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
+                design3: 'Мы идем к вам на помощь!'
+            }
+        }
+    },
 
+    created () {
+        console.log(this.option);
+    },
+
+    computed: {
+        filteredOption () {
+            switch (this.option) {
+                case 'decoration':
+                    return this.titles.decoration
+                    break;
+
+                case 'design1':
+                    return this.titles.design1
+                    break;
+
+                case 'design2':
+                    return this.titles.design2
+                    break;
+
+                case 'design3':
+                    return this.titles.design3
+                    break;
+                default:
+                    return null
+            }
+        }
     }
-  }
 }
 </script>
 

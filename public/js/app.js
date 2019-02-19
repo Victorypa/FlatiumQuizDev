@@ -1898,6 +1898,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1940,6 +1942,11 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Calculate/Design/index.js");
+/* harmony import */ var _Message_Message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Message/Message */ "./resources/js/pages/Message/Message.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -1972,21 +1979,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      designs: _index_js__WEBPACK_IMPORTED_MODULE_0__["designs"]
+      designs: _index_js__WEBPACK_IMPORTED_MODULE_0__["designs"],
+      show: true,
+      option: ''
     };
+  },
+  components: {
+    Message: _Message_Message__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   methods: {
     selected: function selected(type) {
+      var _this = this;
+
       var card_id = window.location.search.match(/\d+/g).toString();
+      axios.post('/cards/clicks/store', {
+        'name': type
+      });
       axios.post('/cards/design-skills/store', {
         'card_id': card_id,
         'type': type
-      }).then(function (response) {
-        alert('all finished, waiting');
       });
+      this.show = !this.show;
+      setTimeout(function () {
+        // window.location.href = `/cards/material-category?card_id=${card_id}`
+        _this.show = !_this.show;
+      }, 2500);
+
+      switch (type) {
+        case 'junior':
+          this.option = 'design1';
+          break;
+
+        case 'middle':
+          this.option = 'design2';
+          break;
+
+        case 'senior':
+          this.option = 'design3';
+          break;
+
+        default:
+          return nul;
+      }
     }
   }
 });
@@ -2930,16 +2968,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['option'],
   data: function data() {
     return {
       titles: {
-        title1: 'У вас отличный дом! И у нас есть множество вариантов выбора материалов для создания вашего интерьера',
-        title2: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
-        title3: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
-        title4: 'Мы идем к вам на помощь!'
+        decoration: 'У вас отличный дом! И у нас есть множество вариантов выбора материалов для создания вашего интерьера',
+        design1: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
+        design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
+        design3: 'Мы идем к вам на помощь!'
       }
     };
+  },
+  created: function created() {
+    console.log(this.option);
+  },
+  computed: {
+    filteredOption: function filteredOption() {
+      switch (this.option) {
+        case 'decoration':
+          return this.titles.decoration;
+          break;
+
+        case 'design1':
+          return this.titles.design1;
+          break;
+
+        case 'design2':
+          return this.titles.design2;
+          break;
+
+        case 'design3':
+          return this.titles.design3;
+          break;
+
+        default:
+          return null;
+      }
+    }
   }
 });
 
@@ -57965,7 +58032,7 @@ var render = function() {
                 : _vm._e()
             ])
           ])
-        : _c("Message")
+        : _c("Message", { attrs: { option: "decoration" } })
     ],
     1
   )
@@ -57997,59 +58064,63 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("app-navigation"),
+      _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
-      _c("div", { staticClass: "content-center" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("h1", { staticClass: "main-caption" }, [
-            _vm._v(
-              "\n          Как бы вы оценили свой уровень, как дизайнера?\n        "
-            )
-          ]),
-          _vm._v(" "),
-          _vm.designs.length
-            ? _c(
-                "div",
-                { staticClass: "image-wrapper" },
-                _vm._l(_vm.designs, function(design) {
-                  return _c("div", { staticClass: "image-card fade-in" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "button-card",
-                        on: {
-                          click: function($event) {
-                            $event.preventDefault()
-                            return _vm.selected(design.value)
-                          }
-                        }
-                      },
-                      [
-                        _c("div", {
-                          staticClass: "image-content",
-                          domProps: { innerHTML: _vm._s(design.svg) }
-                        }),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass: "image-text",
-                          domProps: { textContent: _vm._s(design.title) }
-                        }),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass: "image-subtitle",
-                          domProps: { textContent: _vm._s(design.description) }
-                        })
-                      ]
-                    )
-                  ])
-                }),
-                0
-              )
-            : _vm._e()
-        ])
-      ])
+      _vm.show
+        ? _c("div", { staticClass: "content-center" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("h1", { staticClass: "main-caption" }, [
+                _vm._v(
+                  "\n          Как бы вы оценили свой уровень, как дизайнера?\n        "
+                )
+              ]),
+              _vm._v(" "),
+              _vm.designs.length
+                ? _c(
+                    "div",
+                    { staticClass: "image-wrapper" },
+                    _vm._l(_vm.designs, function(design) {
+                      return _c("div", { staticClass: "image-card fade-in" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "button-card",
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.selected(design.value)
+                              }
+                            }
+                          },
+                          [
+                            _c("div", {
+                              staticClass: "image-content",
+                              domProps: { innerHTML: _vm._s(design.svg) }
+                            }),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass: "image-text",
+                              domProps: { textContent: _vm._s(design.title) }
+                            }),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass: "image-subtitle",
+                              domProps: {
+                                textContent: _vm._s(design.description)
+                              }
+                            })
+                          ]
+                        )
+                      ])
+                    }),
+                    0
+                  )
+                : _vm._e()
+            ])
+          ])
+        : _c("Message", { attrs: { option: _vm.option } })
     ],
     1
   )
@@ -59041,7 +59112,7 @@ var render = function() {
   return _c("div", { staticClass: "content-center" }, [
     _c("div", { staticClass: "container" }, [
       _c("h1", { staticClass: "main-caption" }, [
-        _vm._v("\n            " + _vm._s(_vm.titles.title1) + "\n          ")
+        _vm._v("\n              " + _vm._s(_vm.filteredOption) + "\n          ")
       ]),
       _vm._v(" "),
       _vm._m(0)
