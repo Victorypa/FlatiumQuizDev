@@ -2424,9 +2424,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
-/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
-/* harmony import */ var _partials_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/Card */ "./resources/js/pages/Cards/partials/Card.vue");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-simple-progress */ "./node_modules/vue-simple-progress/dist/vue-simple-progress.js");
+/* harmony import */ var vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./resources/js/pages/Cards/index.js");
+/* harmony import */ var _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/results.js */ "./resources/js/utilities/results.js");
+/* harmony import */ var _partials_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/Card */ "./resources/js/pages/Cards/partials/Card.vue");
 //
 //
 //
@@ -2498,75 +2500,108 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    Card: _partials_Card__WEBPACK_IMPORTED_MODULE_2__["default"]
+    ProgressBar: vue_simple_progress__WEBPACK_IMPORTED_MODULE_0___default.a,
+    Card: _partials_Card__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
   data: function data() {
     return {
-      acards: _index_js__WEBPACK_IMPORTED_MODULE_0__["acards"],
-      bcards: _index_js__WEBPACK_IMPORTED_MODULE_0__["bcards"],
-      c1cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["c1cards"],
-      c2cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["c2cards"],
-      c3cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["c3cards"],
-      d1cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["d1cards"],
-      d2cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["d2cards"],
-      d3cards: _index_js__WEBPACK_IMPORTED_MODULE_0__["d3cards"],
-      cards_booleans: _index_js__WEBPACK_IMPORTED_MODULE_0__["cards_booleans"],
-      SK: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SK"],
-      K: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["K"],
-      SKAN: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["SKAN"],
-      CON: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["CON"],
-      ECO: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["ECO"],
-      LOFT: _utilities_results_js__WEBPACK_IMPORTED_MODULE_1__["LOFT"],
+      acards: _index_js__WEBPACK_IMPORTED_MODULE_1__["acards"],
+      bcards: _index_js__WEBPACK_IMPORTED_MODULE_1__["bcards"],
+      c1cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["c1cards"],
+      c2cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["c2cards"],
+      c3cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["c3cards"],
+      d1cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["d1cards"],
+      d2cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["d2cards"],
+      d3cards: _index_js__WEBPACK_IMPORTED_MODULE_1__["d3cards"],
+      cards_booleans: _index_js__WEBPACK_IMPORTED_MODULE_1__["cards_booleans"],
+      SK: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SK"],
+      K: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["K"],
+      SKAN: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["SKAN"],
+      CON: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["CON"],
+      ECO: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["ECO"],
+      LOFT: _utilities_results_js__WEBPACK_IMPORTED_MODULE_2__["LOFT"],
       selected_uuids: [],
       progress_value: 10
     };
   },
   methods: {
     AddCard: function AddCard(data) {
+      var _this = this;
+
       this.progress_value += 10;
       this.selected_uuids.push(data.uuid);
 
       switch (data.type) {
         case 'A':
           this.cards_booleans.a = false;
-          this.cards_booleans.b = true;
+          setTimeout(function () {
+            _this.cards_booleans.b = true;
+          }, 1000);
           break;
 
         case 'B':
           this.cards_booleans.b = false;
 
           if (this.selected_uuids.includes('A1')) {
-            this.cards_booleans.c1 = true;
+            setTimeout(function () {
+              _this.cards_booleans.c1 = true;
+            }, 1000);
           }
 
           if (this.selected_uuids.includes('A2')) {
-            this.cards_booleans.c2 = true;
+            setTimeout(function () {
+              _this.cards_booleans.c2 = true;
+            }, 1000);
           }
 
           if (this.selected_uuids.includes('A3')) {
-            this.cards_booleans.c3 = true;
+            setTimeout(function () {
+              _this.cards_booleans.c3 = true;
+            }, 1000);
           }
 
           break;
 
         case 'C1':
           this.cards_booleans.c1 = false;
-          this.cards_booleans.d1 = true;
+          setTimeout(function () {
+            _this.cards_booleans.d1 = true;
+          }, 1000);
           break;
 
         case 'C2':
           this.cards_booleans.c2 = false;
-          this.cards_booleans.d2 = true;
+          setTimeout(function () {
+            _this.cards_booleans.d2 = true;
+          }, 1000);
           break;
 
         case 'C3':
           this.cards_booleans.c3 = false;
-          this.cards_booleans.d3 = true;
+          setTimeout(function () {
+            _this.cards_booleans.d3 = true;
+          }, 1000);
           break;
 
         case 'D1':
@@ -2619,7 +2654,10 @@ __webpack_require__.r(__webpack_exports__);
         'option': this.selected_uuids.join(''),
         'result': result
       }).then(function (response) {
-        window.location.href = "/cards/rooms?card_id=".concat(response.data.id);
+        console.log(response.data);
+        setTimeout(function () {
+          window.location.href = "/cards/rooms?card_id=".concat(response.data.id);
+        }, 500);
       });
     }
   }
@@ -2636,6 +2674,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -8258,7 +8297,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-in.one[data-v-df4199c4] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-df4199c4] {\n  -webkit-animation-delay: 1.6s;\n          animation-delay: 1.6s;\n}\n.fade-in.three[data-v-df4199c4] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n@media (min-width: 700px) {\n.content-center[data-v-df4199c4] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-df4199c4] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-df4199c4] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes smooth-data-v-df4199c4 {\n0% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n}\n}\n@keyframes smooth-data-v-df4199c4 {\n0% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n}\n}\n@-webkit-keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-df4199c4 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-df4199c4] {\n  opacity: 0;\n  -webkit-animation: fadeIn-data-v-df4199c4 ease-in 1;\n          animation: fadeIn-data-v-df4199c4 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n}\n.fade-leave-active[data-v-df4199c4] {\n  -webkit-animation: smooth-data-v-df4199c4 1s ease-in;\n          animation: smooth-data-v-df4199c4 1s ease-in;\n}\n.progress-bar__wrapper[data-v-df4199c4] {\n  margin: 30px 0;\n}\n.image-wrapper[data-v-df4199c4] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-df4199c4] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-df4199c4]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-df4199c4]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-df4199c4] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-df4199c4] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n@media (min-width: 700px) {\n.content-center[data-v-df4199c4] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-df4199c4] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-df4199c4] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -8277,7 +8316,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-49d9c7e8] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n          animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.fade-in.two[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.three[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n.progress-bar__wrapper[data-v-49d9c7e8] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-49d9c7e8] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-49d9c7e8] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-49d9c7e8]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-49d9c7e8]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-49d9c7e8] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-49d9c7e8] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-49d9c7e8] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-49d9c7e8] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-49d9c7e8] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-49d9c7e8] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@keyframes fadeIn-data-v-49d9c7e8 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.fade-in[data-v-49d9c7e8] {\n  opacity: 0;\n  /* make things invisible upon start */\n  -webkit-animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n          animation: fadeIn-data-v-49d9c7e8 ease-in 1;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n.fade-in.one[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.fade-in.two[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.fade-in.three[data-v-49d9c7e8] {\n  -webkit-animation-delay: 0.9s;\n          animation-delay: 0.9s;\n}\n.progress-bar__wrapper[data-v-49d9c7e8] {\n  margin-top: 30px;\n}\n.image-wrapper[data-v-49d9c7e8] {\n  display: flex;\n  justify-content: center;\n}\n.image-card[data-v-49d9c7e8] {\n  width: 90%;\n  height: 100%;\n  display: block;\n  border: 2px solid #eee;\n  padding: 18px;\n  margin-left: 30px;\n  font-size: 14px;\n  text-decoration: none;\n  outline: none;\n  transition-duration: 0.6s;\n  cursor: pointer;\n}\n.image-card[data-v-49d9c7e8]:first-child {\n  margin-left: 0;\n}\n.image-card[data-v-49d9c7e8]:hover {\n  border: 2px solid #000;\n  box-shadow: 0 15px 22px 0 rgba(28, 34, 51, 0.2);\n  -webkit-transform: scale(1.025);\n          transform: scale(1.025);\n}\n.image-card img[data-v-49d9c7e8] {\n  height: auto;\n  width: 100%;\n}\n.image-text[data-v-49d9c7e8] {\n  margin: 0;\n  padding: 0;\n  font-size: 12px;\n  color: #1c2233;\n  letter-spacing: 2px;\n  line-height: 1.9;\n  margin-top: 14px;\n  text-align: center;\n  text-transform: uppercase;\n}\n.content-center[data-v-49d9c7e8] {\n  padding: 30px 0;\n}\n@media (min-width: 700px) {\n.content-center[data-v-49d9c7e8] {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -5%;\n    height: 100vh;\n}\n}\n@media (max-width: 700px) {\n.image-wrapper[data-v-49d9c7e8] {\n    flex-wrap: wrap;\n}\n.image-card[data-v-49d9c7e8] {\n    margin-bottom: 20px;\n    margin-left: 0px;\n}\n}", ""]);
 
 // exports
 
@@ -58624,107 +58663,172 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("calculate-progressbar", { attrs: { volumn: _vm.progress_value } }),
+      _c(
+        "div",
+        { staticClass: "progress-bar__wrapper" },
+        [
+          _c("progress-bar", {
+            attrs: { "bar-color": "#aad7ea ", val: _vm.progress_value }
+          })
+        ],
+        1
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c(
           "div",
           { staticClass: "container" },
           [
-            _vm.cards_booleans.a
-              ? _c("card", {
-                  attrs: {
-                    title: "Я бы описал свой стиль как...",
-                    type: "A",
-                    cards: _vm.acards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e(),
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.a
+                  ? _c("card", {
+                      attrs: {
+                        title: "Я бы описал свой стиль как...",
+                        type: "A",
+                        cards: _vm.acards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.cards_booleans.b
-              ? _c("card", {
-                  attrs: {
-                    title:
-                      "При выборе мебели и домашнего декора, я предпочитаю ...",
-                    type: "B",
-                    cards: _vm.bcards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e(),
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.b
+                  ? _c("card", {
+                      attrs: {
+                        title:
+                          "При выборе мебели и домашнего декора, я предпочитаю ...",
+                        type: "B",
+                        cards: _vm.bcards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.cards_booleans.c1
-              ? _c("card", {
-                  attrs: {
-                    title:
-                      "Какое изображение домашнего декора вам больше нравятся?",
-                    type: "C1",
-                    cards: _vm.c1cards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e(),
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.c1
+                  ? _c("card", {
+                      attrs: {
+                        title:
+                          "Какое изображение домашнего декора вам больше нравятся?",
+                        type: "C1",
+                        cards: _vm.c1cards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.cards_booleans.c2
-              ? _c("card", {
-                  attrs: {
-                    title:
-                      "Какое изображение домашнего декора вам больше нравятся?",
-                    type: "C2",
-                    cards: _vm.c2cards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e(),
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.c2
+                  ? _c("card", {
+                      attrs: {
+                        title:
+                          "Какое изображение домашнего декора вам больше нравятся?",
+                        type: "C2",
+                        cards: _vm.c2cards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.cards_booleans.c3
-              ? _c("card", {
-                  attrs: {
-                    title:
-                      "Какое изображение домашнего декора вам больше нравятся?",
-                    type: "C3",
-                    cards: _vm.c3cards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e(),
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.c3
+                  ? _c("card", {
+                      attrs: {
+                        title:
+                          "Какое изображение домашнего декора вам больше нравятся?",
+                        type: "C3",
+                        cards: _vm.c3cards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.cards_booleans.d1
-              ? _c("card", {
-                  attrs: {
-                    title:
-                      "Какие цветовые решения в вашем доме, вы предпочитаете?",
-                    type: "D1",
-                    cards: _vm.d1cards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e(),
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.d1
+                  ? _c("card", {
+                      attrs: {
+                        title:
+                          "Какие цветовые решения в вашем доме, вы предпочитаете?",
+                        type: "D1",
+                        cards: _vm.d1cards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.cards_booleans.d2
-              ? _c("card", {
-                  attrs: {
-                    title:
-                      "Какие цветовые решения в вашем доме, вы предпочитаете?",
-                    type: "D2",
-                    cards: _vm.d2cards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e(),
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.d2
+                  ? _c("card", {
+                      attrs: {
+                        title:
+                          "Какие цветовые решения в вашем доме, вы предпочитаете?",
+                        type: "D2",
+                        cards: _vm.d2cards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.cards_booleans.d3
-              ? _c("card", {
-                  attrs: {
-                    title:
-                      "Какие цветовые решения в вашем доме, вы предпочитаете?",
-                    type: "D3",
-                    cards: _vm.d3cards
-                  },
-                  on: { "selected-card": _vm.AddCard }
-                })
-              : _vm._e()
+            _c(
+              "transition",
+              { attrs: { name: "fade" } },
+              [
+                _vm.cards_booleans.d3
+                  ? _c("card", {
+                      attrs: {
+                        title:
+                          "Какие цветовые решения в вашем доме, вы предпочитаете?",
+                        type: "D3",
+                        cards: _vm.d3cards
+                      },
+                      on: { "selected-card": _vm.AddCard }
+                    })
+                  : _vm._e()
+              ],
+              1
+            )
           ],
           1
         )
