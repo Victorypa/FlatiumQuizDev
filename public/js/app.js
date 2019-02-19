@@ -2020,7 +2020,7 @@ __webpack_require__.r(__webpack_exports__);
           break;
 
         default:
-          return nul;
+          return null;
       }
     }
   }
@@ -2211,7 +2211,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-<<<<<<< HEAD
 //
 //
 //
@@ -2224,16 +2223,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-
-=======
->>>>>>> 2f56a68ae3fc289ae132ff7f4211995e0b3731b9
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2985,9 +2974,9 @@ __webpack_require__.r(__webpack_exports__);
     return {
       titles: {
         decoration: 'У вас отличный дом! И у нас есть множество вариантов выбора материалов для создания вашего интерьера',
-        design1: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
+        design1: 'Мы идем к вам на помощь!',
         design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
-        design3: 'Мы идем к вам на помощь!'
+        design3: 'Отлично! Вы наш коллега и мы отлично сработаемся.'
       }
     };
   },
@@ -58150,79 +58139,17 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "card-small-price" }, [
                 _vm._v("Стоимость за кв. м.: "),
-<<<<<<< HEAD
-                _c("strong", [_vm._v("₽ 12 3546 ")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "button-wrapper" }, [
-                _c(
-                  "button",
-                  { staticClass: "primary-button", attrs: { type: "submit" } },
-                  [
-                    _vm._v(
-                      "\n                            СТИЛИСТ\n                        "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "button-hover" }, [
-                  _c("div", { staticClass: "button-hover__title" }, [
-                    _vm._v(
-                      "\n                          BEST MATCH\n                          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "button-hover__content" }, [
-                    _vm._v(
-                      "\n                          For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                          "
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { attrs: { id: "accordion2" } }, [
-                _c("div", { staticClass: "card card-border" }, [
-                  _c("div", { staticClass: "card-header" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "card-link card-more",
-                        attrs: {
-                          "data-toggle": "collapse",
-                          href: "#collapseTwo"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                               Больше информации\n                             "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "collapse",
-                      attrs: { id: "collapseTwo", "data-parent": "#accordion2" }
-                    },
-                    [
-                      _c("div", { staticClass: "card-body" }, [
-                        _vm._v(
-                          "\n                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                             "
-                        )
-                      ])
-                    ]
-                  )
-                ])
-=======
                 _c("strong", [
                   _vm._v("₽ " + _vm._s(_vm.getFakeAveragePrice) + " ")
                 ])
               ]),
               _vm._v(" "),
-              _vm._m(2)
-            ])
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3)
+            ]),
+            _vm._v(" "),
+            _vm._m(4)
           ])
         ])
       ])
@@ -58293,7 +58220,6 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("li", [_vm._v("ex ea commodo consequat.")])
->>>>>>> 2f56a68ae3fc289ae132ff7f4211995e0b3731b9
               ])
             ])
           ]
@@ -58312,52 +58238,74 @@ var staticRenderFns = [
         [_vm._v("\n                          СТИЛИСТ\n                      ")]
       ),
       _vm._v(" "),
-      _c("div", { attrs: { id: "accordion2" } }, [
-        _c("div", { staticClass: "card card-border" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _c(
-              "a",
-              {
-                staticClass: "card-link card-more",
-                attrs: { "data-toggle": "collapse", href: "#collapseTwo" }
-              },
-              [
-                _vm._v(
-                  "\n                                Больше информации\n                              "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse",
-              attrs: { id: "collapseTwo", "data-parent": "#accordion2" }
-            },
-            [
-              _c("div", { staticClass: "card-body" }, [
-                _vm._v(
-                  "\n                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                              "
-                )
-              ])
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
       _c("div", { staticClass: "button-hover" }, [
         _c("div", { staticClass: "button-hover__title" }, [
           _vm._v(
-            "\n                           BEST MATCH\n                           "
+            "\n                        BEST MATCH\n                        "
           )
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "button-hover__content" }, [
           _vm._v(
-            "\n                           For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                           "
+            "\n                        For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                        "
           )
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "accordion2" } }, [
+      _c("div", { staticClass: "card card-border" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c(
+            "a",
+            {
+              staticClass: "card-link card-more",
+              attrs: { "data-toggle": "collapse", href: "#collapseTwo" }
+            },
+            [
+              _vm._v(
+                "\n                             Больше информации\n                           "
+              )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse",
+            attrs: { id: "collapseTwo", "data-parent": "#accordion2" }
+          },
+          [
+            _c("div", { staticClass: "card-body" }, [
+              _vm._v(
+                "\n                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                           "
+              )
+            ])
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "button-hover" }, [
+      _c("div", { staticClass: "button-hover__title" }, [
+        _vm._v(
+          "\n                           BEST MATCH\n                           "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "button-hover__content" }, [
+        _vm._v(
+          "\n                           For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                           "
+        )
       ])
     ])
   }

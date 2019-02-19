@@ -79,7 +79,7 @@
                         this.option = 'design3'
                         break;
                     default:
-                        return nul
+                        return null
                 }
             }
         }

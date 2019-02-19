@@ -59,7 +59,6 @@
                                  >
                             СТИЛИСТ
                         </button>
-<<<<<<< HEAD
                         <div class="button-hover">
                           <div class="button-hover__title">
                           BEST MATCH
@@ -85,22 +84,8 @@
                        </div>
 
                       </div>
-=======
 
-                        <div id="accordion2">
-                            <div class="card card-border">
-                              <div class="card-header">
-                                <a class="card-link card-more" data-toggle="collapse" href="#collapseTwo">
-                                  Больше информации
-                                </a>
-                              </div>
-                              <div id="collapseTwo" class="collapse" data-parent="#accordion2">
-                                <div class="card-body">
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        
                           <div class="button-hover">
                              <div class="button-hover__title">
                              BEST MATCH
@@ -111,7 +96,6 @@
                            </div>
                          </div>
                      </div>
->>>>>>> 2f56a68ae3fc289ae132ff7f4211995e0b3731b9
                </div>
 
              </div>
