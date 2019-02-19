@@ -58513,7 +58513,7 @@ var render = function() {
                       value: _vm.area,
                       height: 2,
                       dotSize: 30,
-                      max: 100,
+                      max: 500,
                       interval: 1,
                       bgStyle: { backgroundColor: "black" },
                       tooltipStyle: {
