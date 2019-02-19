@@ -14,9 +14,9 @@
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
                  <div class="card-price">
-                   ₽ 240 000
+                   ₽ {{ getTotalPrice }}
                  </div>
-                <div class="card-small-price">Стоимость за кв. м.: <strong>₽ 12 3546</strong></div>
+                <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getAveragePrice }}</strong></div>
 
                  <div class="button-wrapper">
                      <button type="submit"
@@ -49,10 +49,10 @@
                <div class="card-workmaterial">
                    <h2>Стоимость материалов</h2>
                    <div class="card-price">
-                     ₽ 240 000
+                     ₽ {{ getFakeMaterialPrice }}
                    </div>
                    <span>Best Match</span>
-                  <div class="card-small-price">Стоимость за кв. м.: <strong>₽ 12 3546 </strong></div>
+                  <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getFakeAveragePrice }} </strong></div>
                      <div class="button-wrapper">
                          <button type="submit"
                                  class="primary-button"
@@ -97,7 +97,9 @@
     export default {
       data () {
         return {
-            card_id: window.location.search.match(/\d+/g).toString()
+            card_id: window.location.search.match(/\d+/g).toString(),
+            price: 0,
+            square: 0
         }
       },
 
@@ -109,9 +111,29 @@
           getResult () {
               axios.post(`/cards/calculate-result/${this.card_id}`)
                    .then(response => {
-                       console.log(response.data);
+                       this.price = response.data.price.price
+                       this.square = response.data.square
+                       // console.log(this.square);
                    })
           }
+      },
+
+      computed: {
+          getTotalPrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price)
+          },
+
+          getAveragePrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price))
+          },
+
+          getFakeMaterialPrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price - 1000)
+          },
+
+          getFakeAveragePrice () {
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price) - 1000)
+          },
       }
 }
 </script>

@@ -37,7 +37,7 @@ class CalculateResultController extends Controller
 
         return response([
             'price' => $price,
-            'squre' => $square
+            'square' => $square
         ]);
     }
 }

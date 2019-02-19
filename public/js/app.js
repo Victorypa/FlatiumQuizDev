@@ -2213,7 +2213,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      card_id: window.location.search.match(/\d+/g).toString()
+      card_id: window.location.search.match(/\d+/g).toString(),
+      price: 0,
+      square: 0
     };
   },
   created: function created() {
@@ -2221,9 +2223,26 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     getResult: function getResult() {
+      var _this = this;
+
       axios.post("/cards/calculate-result/".concat(this.card_id)).then(function (response) {
-        console.log(response.data);
+        _this.price = response.data.price.price;
+        _this.square = response.data.square; // console.log(this.square);
       });
+    }
+  },
+  computed: {
+    getTotalPrice: function getTotalPrice() {
+      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price);
+    },
+    getAveragePrice: function getAveragePrice() {
+      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price));
+    },
+    getFakeMaterialPrice: function getFakeMaterialPrice() {
+      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price - 1000);
+    },
+    getFakeAveragePrice: function getFakeAveragePrice() {
+      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price) - 1000);
     }
   }
 });
@@ -58215,7 +58234,59 @@ var render = function() {
       _vm._v(" "),
       _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "content-center" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "card-wrapper" }, [
+            _c("div", { staticClass: "card-workprice" }, [
+              _c("h2", [_vm._v("Стоимость работ")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-price" }, [
+                _vm._v(
+                  "\n                 ₽ " +
+                    _vm._s(_vm.getTotalPrice) +
+                    "\n               "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-small-price" }, [
+                _vm._v("Стоимость за кв. м.: "),
+                _c("strong", [_vm._v("₽ " + _vm._s(_vm.getAveragePrice))])
+              ]),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-workmaterial" }, [
+              _c("h2", [_vm._v("Стоимость материалов")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-price" }, [
+                _vm._v(
+                  "\n                   ₽ " +
+                    _vm._s(_vm.getFakeMaterialPrice) +
+                    "\n                 "
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", [_vm._v("Best Match")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-small-price" }, [
+                _vm._v("Стоимость за кв. м.: "),
+                _c("strong", [
+                  _vm._v("₽ " + _vm._s(_vm.getFakeAveragePrice) + " ")
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3),
+              _vm._v(" "),
+              _vm._m(4)
+            ])
+          ])
+        ])
+      ])
     ],
     1
   )
@@ -58225,164 +58296,134 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "content-center" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "card-wrapper" }, [
-          _c("div", { staticClass: "card-workprice" }, [
-            _c("h2", [_vm._v("Стоимость работ")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-price" }, [
-              _vm._v("\n                 ₽ 240 000\n               ")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-small-price" }, [
-              _vm._v("Стоимость за кв. м.: "),
-              _c("strong", [_vm._v("₽ 12 3546")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "button-wrapper" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "primary-button primary-button--white",
-                  attrs: { type: "submit" }
-                },
-                [
-                  _vm._v(
-                    "\n                      НАЧАТЬ РЕМОНТ\n                  "
-                  )
-                ]
+    return _c("div", { staticClass: "button-wrapper" }, [
+      _c(
+        "button",
+        {
+          staticClass: "primary-button primary-button--white",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("\n                      НАЧАТЬ РЕМОНТ\n                  ")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "accordion1" } }, [
+      _c("div", { staticClass: "card card-border" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c(
+            "a",
+            {
+              staticClass: "card-link card-more",
+              attrs: { "data-toggle": "collapse", href: "#collapseOne" }
+            },
+            [
+              _vm._v(
+                "\n                          Больше информации\n                       "
               )
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "accordion1" } }, [
-              _c("div", { staticClass: "card card-border" }, [
-                _c("div", { staticClass: "card-header" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "card-link card-more",
-                      attrs: { "data-toggle": "collapse", href: "#collapseOne" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                          Больше информации\n                       "
-                      )
-                    ]
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse",
+            attrs: { id: "collapseOne", "data-parent": "#accordion1" }
+          },
+          [
+            _c("div", { staticClass: "card-body" }, [
+              _c("ul", [
+                _c("li", [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor"
                   )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "collapse",
-                    attrs: { id: "collapseOne", "data-parent": "#accordion1" }
-                  },
-                  [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("ul", [
-                        _c("li", [
-                          _vm._v(
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor"
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _vm._v(
-                            "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _vm._v(
-                            "nostrud exercitation ullamco laboris nisi ut aliquip"
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [_vm._v("ex ea commodo consequat.")])
-                      ])
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-workmaterial" }, [
-            _c("h2", [_vm._v("Стоимость материалов")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-price" }, [
-              _vm._v("\n                   ₽ 240 000\n                 ")
-            ]),
-            _vm._v(" "),
-            _c("span", [_vm._v("Best Match")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-small-price" }, [
-              _vm._v("Стоимость за кв. м.: "),
-              _c("strong", [_vm._v("₽ 12 3546 ")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "button-wrapper" }, [
-              _c(
-                "button",
-                { staticClass: "primary-button", attrs: { type: "submit" } },
-                [
+                _c("li", [
                   _vm._v(
-                    "\n                          СТИЛИСТ\n                      "
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "accordion2" } }, [
-              _c("div", { staticClass: "card card-border" }, [
-                _c("div", { staticClass: "card-header" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "card-link card-more",
-                      attrs: { "data-toggle": "collapse", href: "#collapseTwo" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                             Больше информации\n                           "
-                      )
-                    ]
+                    "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
                   )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "collapse",
-                    attrs: { id: "collapseTwo", "data-parent": "#accordion2" }
-                  },
-                  [
-                    _c("div", { staticClass: "card-body" }, [
-                      _vm._v(
-                        "\n                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                           "
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-hover" }, [
-              _c("div", { staticClass: "card-hover__title" }, [
-                _vm._v(
-                  "\n                       BEST MATCH\n                       "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-hover__content" }, [
-                _vm._v(
-                  "\n                       For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                       "
-                )
+                _c("li", [
+                  _vm._v("nostrud exercitation ullamco laboris nisi ut aliquip")
+                ]),
+                _vm._v(" "),
+                _c("li", [_vm._v("ex ea commodo consequat.")])
               ])
             ])
-          ])
-        ])
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "button-wrapper" }, [
+      _c(
+        "button",
+        { staticClass: "primary-button", attrs: { type: "submit" } },
+        [_vm._v("\n                          СТИЛИСТ\n                      ")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "accordion2" } }, [
+      _c("div", { staticClass: "card card-border" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c(
+            "a",
+            {
+              staticClass: "card-link card-more",
+              attrs: { "data-toggle": "collapse", href: "#collapseTwo" }
+            },
+            [
+              _vm._v(
+                "\n                             Больше информации\n                           "
+              )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse",
+            attrs: { id: "collapseTwo", "data-parent": "#accordion2" }
+          },
+          [
+            _c("div", { staticClass: "card-body" }, [
+              _vm._v(
+                "\n                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                           "
+              )
+            ])
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-hover" }, [
+      _c("div", { staticClass: "card-hover__title" }, [
+        _vm._v("\n                       BEST MATCH\n                       ")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-hover__content" }, [
+        _vm._v(
+          "\n                       For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                       "
+        )
       ])
     ])
   }
