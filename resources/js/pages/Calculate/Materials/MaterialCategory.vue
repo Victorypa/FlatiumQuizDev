@@ -98,22 +98,25 @@
   &-text {
   padding-top: 30px;
   font-size: 12px;
-    color: #1c2233;
-    letter-spacing: 2px;
-    line-height: 1.9;
-    margin-top: 14px;
-    text-align: center;
-    text-transform: uppercase;
+  color: #1c2233;
+  letter-spacing: 2px;
+  line-height: 1.9;
+  margin-top: 14px;
+  text-align: center;
+  text-transform: uppercase;
   }
   &-subtitle {
-  text-transform: none;
-  font-size: 10px;
-  padding-top: 40px;
-  line-height: 16px;
+        text-align: center;
+
+  width: 200px;
+  font-size: 12px;
   color: #1c2233;
-      line-height: 1.9;
+  line-height: 1.5;
+  text-transform: none;
+
+  margin: 0 auto;
+  padding-top: 40px;
   ul {
-    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -161,6 +164,7 @@ cursor: pointer;
 
 @media (min-width: 1320px) {
   .image-subtitle {
+
     opacity: 0;
     transition: 0.5s;
   }
@@ -169,6 +173,7 @@ cursor: pointer;
     &:first-child {
     .image-subtitle {
       position: absolute;
+      text-align: left;
       left: -2%;
       top: 30%;
     }
@@ -179,19 +184,28 @@ cursor: pointer;
       }
     }
 
-    &:nth-child(2):hover   {
-      .image-subtitle {
-          opacity: 1;
+    &:nth-child(2) {
+      &:hover   {
+        .image-subtitle {
+            opacity: 1;
+        }
       }
     }
-    &:nth-child(3):hover  {
+
+    &:nth-child(3) {
       .image-subtitle {
         position: absolute;
+        text-align: left;
         right: -4%;
         top: 30%;
-          opacity: 1;
+      }
+      &:hover  {
+        .image-subtitle {
+            opacity: 1;
+        }
       }
     }
+
   }
 }
 
