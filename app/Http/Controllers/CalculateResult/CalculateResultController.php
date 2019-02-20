@@ -27,12 +27,12 @@ class CalculateResultController extends Controller
 
     public function getResult(Card $card)
     {
-        $square = $card->squares()->first()->area;
+        $square = $card->squares()->latest()->first()->area;
 
         $price = Price::where([
             ['style', $this->mappings[strtoupper($card->result)]],
-            ['category', $card->material_categories()->first()->type],
-            ['type', $card->decorations()->first()->type]
+            ['category', $card->material_categories()->latest()->first()->type],
+            ['type', $card->decorations()->latest()->first()->type]
         ])->first();
 
         return response([

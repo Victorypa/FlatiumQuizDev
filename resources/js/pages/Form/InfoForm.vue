@@ -8,7 +8,7 @@
     <div class="content-center">
         <div class="container">
 
-            <!-- <div v-if="booleans.name" class="fade-in">
+            <div v-if="booleans.name" class="fade-in">
                 <h1 class="main-caption">
                   Как вас зовут?
                 </h1>
@@ -31,9 +31,9 @@
                        </button>
                     </div>
                 </form>
-            </div> -->
+            </div>
 
-            <!-- <div v-if="booleans.email" class="fade-in">
+            <div v-if="booleans.email" class="fade-in">
                 <h1 class="main-caption">
                   Укажите свой E-mail адрес, чтобы получить результат тестирования
                 </h1>
@@ -55,7 +55,7 @@
                        </button>
                     </div>
                 </form>
-            </div> -->
+            </div>
 
             <div v-if="booleans.phone" class="fade-in">
                 <h1 class="main-caption">
@@ -157,7 +157,7 @@
                             'phone': this.person.phone,
                         })
 
-                        window.location.href = `/cards/result?card_id=${card_id}`
+                        window.location.href = `/cards/calculate-result?card_id=${card_id}`
                         break;
                     default:
 

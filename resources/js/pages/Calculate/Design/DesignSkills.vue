@@ -65,7 +65,7 @@
 
                 this.show = !this.show
                 setTimeout(() => {
-                    window.location.href = `/cards/calculate-result?card_id=${card_id}`
+                    window.location.href = `/cards/form?card_id=${card_id}`
                 }, 2500)
 
                 switch (type) {
