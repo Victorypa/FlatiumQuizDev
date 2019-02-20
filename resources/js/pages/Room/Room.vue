@@ -134,7 +134,7 @@ import ProgressBar from 'vue-simple-progress'
                     'card_id': card_id,
                     'data': this.selected_rooms
                 }).then(response => {
-                    window.location.href = `/cards/form?card_id=${card_id}`
+                    window.location.href = `/cards/result?card_id=${card_id}`
                 })
             }
         }

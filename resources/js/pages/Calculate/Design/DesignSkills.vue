@@ -4,7 +4,7 @@
 
         <app-navigation selected="calculator"></app-navigation>
 
-        <calculate-progressbar ref="progressbar"></calculate-progressbar>
+        <calculate-progressbar ref="progressbar" :volumn="80"></calculate-progressbar>
 
       <div class="content-center" v-if="show">
           <div class="container">
@@ -65,7 +65,7 @@
 
                 this.show = !this.show
                 setTimeout(() => {
-                    window.location.href = `/cards/calculate-result?card_id=${card_id}`
+                    window.location.href = `/cards/form?card_id=${card_id}`
                 }, 2500)
 
                 switch (type) {

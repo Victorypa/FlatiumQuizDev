@@ -5,7 +5,7 @@
 
       <app-navigation selected="calculator"></app-navigation>
 
-      <calculate-progressbar ref="progressbar"></calculate-progressbar>
+      <!-- <calculate-progressbar ref="progressbar"></calculate-progressbar> -->
 
       <div class="content-center">
           <div class="container">
@@ -85,7 +85,7 @@
 
                       </div>
 
-                        
+
                           <div class="button-hover">
                              <div class="button-hover__title">
                              BEST MATCH
