@@ -3,7 +3,7 @@
   <div>
     <app-header></app-header>
 
-    <calculate-progressbar :volumn="progress_value"></calculate-progressbar>
+    <calculate-progressbar :volumn="90"></calculate-progressbar>
 
     <div class="content-center">
         <div class="container">

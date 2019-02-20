@@ -4,7 +4,7 @@
 
         <app-navigation selected="calculator"></app-navigation>
 
-        <calculate-progressbar ref="progressbar"></calculate-progressbar>
+        <calculate-progressbar ref="progressbar" :volumn="80"></calculate-progressbar>
 
       <div class="content-center" v-if="show">
           <div class="container">

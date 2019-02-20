@@ -57906,7 +57906,7 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
-      _c("calculate-progressbar", { attrs: { volumn: 80 } }),
+      _c("calculate-progressbar", { attrs: { volumn: 70 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -58062,7 +58062,10 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
+      _c("calculate-progressbar", {
+        ref: "progressbar",
+        attrs: { volumn: 80 }
+      }),
       _vm._v(" "),
       _vm.show
         ? _c("div", { staticClass: "content-center" }, [
@@ -58244,8 +58247,6 @@ var render = function() {
       _c("app-header"),
       _vm._v(" "),
       _c("app-navigation", { attrs: { selected: "calculator" } }),
-      _vm._v(" "),
-      _c("calculate-progressbar", { ref: "progressbar" }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
@@ -58956,7 +58957,7 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("calculate-progressbar", { attrs: { volumn: _vm.progress_value } }),
+      _c("calculate-progressbar", { attrs: { volumn: 90 } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
