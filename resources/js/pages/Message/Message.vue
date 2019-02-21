@@ -72,29 +72,29 @@
   height: 1em;
   margin: .5em;
 
-  background: #007DB6;
+  background: #000;
   border-radius: .6em;
   animation: loading 1s infinite alternate;
   transform: translateY(-60px);
 }
 
 .loading span:nth-of-type(2) {
-  background: #008FB2;
+  background: #122139;
   animation-delay: 0.2s;
   transform: translateY(-45px);
 }
 .loading span:nth-of-type(3) {
-  background: #0275b1c7;
+  background: #00a4d187;
   animation-delay: 0.4s;
     transform: translateY(-40px);
 }
 .loading span:nth-of-type(4) {
-  background: #549dff;
+  background: #ccc;
   animation-delay: 0.6s;
       transform: translateY(-45px);
 }
 .loading span:nth-of-type(5) {
-  background: #7bbfba;
+  background: #c288009c;
   animation-delay: 0.8s;
   transform: translateY(-60px);
 }

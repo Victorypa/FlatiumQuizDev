@@ -250,12 +250,6 @@
     animation: smooth 1s ease-in;
 }
 
-.progress-bar {
-  &__wrapper {
-    margin: 30px 0;
-  }
-}
-
 .image {
   &-wrapper {
   display: flex;

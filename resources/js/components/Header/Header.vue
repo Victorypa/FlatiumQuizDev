@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="navbar__wrapper">
     <nav class="navbar navbar-expand-lg navbar-light">
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
   <div class="logo">
@@ -29,3 +29,11 @@
 
     }
 </script>
+
+<style lang="scss" scoped>
+.navbar {
+  &__wrapper {
+    box-shadow: 0 5px 15px 0px #ccc;
+  }
+}
+</style>

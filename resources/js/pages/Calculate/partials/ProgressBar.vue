@@ -15,3 +15,11 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+.progress-bar {
+  &__wrapper {
+    box-shadow: 0 15px 15px -15px #ccc;
+  }
+}
+</style>

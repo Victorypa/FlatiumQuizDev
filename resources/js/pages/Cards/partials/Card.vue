@@ -72,12 +72,6 @@
   animation-delay: 0.9s;
 }
 
-.progress-bar {
-  &__wrapper {
-    margin-top: 30px;
-  }
-}
-
 .image {
   &-wrapper {
   display: flex;
