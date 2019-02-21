@@ -10,6 +10,18 @@ use App\Services\Amo\Contact\ContactCreate;
 
 class CalculatorController extends Controller
 {
+    protected $translations = [
+        'LOFT' => 'ЛОФТ',
+        'SK' => 'Современная классика',
+        'K' => 'Классика',
+        'standard' => 'Стандарт',
+        'comfort' => 'Комфорт',
+        'premium' => 'премиум',
+        'new' => 'Новостройка с белыми стенами',
+        'total_new' => 'Новостройка без отделки',
+        'old' => 'Вторичное жилье со старой отделкой',
+    ];
+
     protected $mappings = [
         'LOFT' => [
             'standard' => [
@@ -81,9 +93,9 @@ class CalculatorController extends Controller
 
         $calculator = Calculator::create([
             'square' => $request->get('square'),
-            'type' => $request->get('type'),
-            'style' => $request->get('style'),
-            'category' => $request->get('category'),
+            'type' => $this->$translations[$request->get('type')],
+            'style' => $this->$translations[$request->get('style')],
+            'category' => $this->$translations[$request->get('category')],
             'phone' => $request->get('phone'),
             'name' => $request->get('name'),
             'price' => $price
@@ -98,7 +110,11 @@ class CalculatorController extends Controller
             (new LeadCreate($this->client))->create([
                 'name' => $request->get('name'),
                 'sale' => $price,
-                'tags' => array($request->get('type'), $request->get('style'), $request->get('category')),
+                'tags' => array(
+                    $this->$translations[$request->get('type')],
+                    $this->$translations[$request->get('style')],
+                    $this->$translations[$request->get('category')]
+                ),
                 'pipeline_id' => $pipelineId,
                 'contacts_id' => $contact->id,
                 'responsible_user_id' => 2211916,
