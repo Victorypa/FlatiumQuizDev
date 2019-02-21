@@ -91,11 +91,15 @@ class CalculatorController extends Controller
 
         $price = $this->mappings[$request->get('style')][$request->get('category')][$request->get('type')] * $request->get('square');
 
+        $type = $this->translations[$request->get('type')];
+        $style = $this->translations[$request->get('style')];
+        $category = $this->translations[$request->get('category')];
+
         $calculator = Calculator::create([
             'square' => $request->get('square'),
-            'type' => $this->$translations[$request->get('type')],
-            'style' => $this->$translations[$request->get('style')],
-            'category' => $this->$translations[$request->get('category')],
+            'type' => $type,
+            'style' => $style,
+            'category' => $category,
             'phone' => $request->get('phone'),
             'name' => $request->get('name'),
             'price' => $price
@@ -111,9 +115,7 @@ class CalculatorController extends Controller
                 'name' => $request->get('name'),
                 'sale' => $price,
                 'tags' => array(
-                    $this->$translations[$request->get('type')],
-                    $this->$translations[$request->get('style')],
-                    $this->$translations[$request->get('category')]
+                    $type, $style, $category
                 ),
                 'pipeline_id' => $pipelineId,
                 'contacts_id' => $contact->id,
