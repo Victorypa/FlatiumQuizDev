@@ -3753,6 +3753,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -60115,6 +60116,57 @@ var render = function() {
                 "button",
                 {
                   staticClass: "button-card",
+                  class: {
+                    active: _vm.selected_rooms.includes("Вся квартира")
+                  },
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      return _vm.addRoom("Вся квартира")
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticStyle: { "enable-background": "new 0 0 612 612" },
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                        x: "0px",
+                        y: "0px",
+                        width: "50px",
+                        height: "50px",
+                        viewBox: "0 0 612 612",
+                        "xml:space": "preserve"
+                      }
+                    },
+                    [
+                      _c("g", [
+                        _c("path", {
+                          staticClass: "fill-color",
+                          attrs: {
+                            d:
+                              "M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                      c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                      s-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                      v-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                      c0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                      c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                      v-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                      c7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z"
+                          }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "image-text" }, [
+                    _vm._v("Вся квартира")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "image-card fade-in two" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button-card",
                   class: { active: _vm.selected_rooms.includes("Гостиная") },
                   on: {
                     click: function($event) {
@@ -60231,7 +60283,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in two" }, [
+            _c("div", { staticClass: "image-card fade-in three" }, [
               _c(
                 "button",
                 {
@@ -60277,7 +60329,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in three" }, [
+            _c("div", { staticClass: "image-card fade-in four" }, [
               _c(
                 "button",
                 {
@@ -60339,7 +60391,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in four" }, [
+            _c("div", { staticClass: "image-card fade-in five" }, [
               _c(
                 "button",
                 {
@@ -60436,7 +60488,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in five" }, [
+            _c("div", { staticClass: "image-card fade-in six" }, [
               _c(
                 "button",
                 {
@@ -60482,7 +60534,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in six" }, [
+            _c("div", { staticClass: "image-card fade-in seven" }, [
               _c(
                 "button",
                 {
@@ -60547,7 +60599,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in seven" }, [
+            _c("div", { staticClass: "image-card fade-in eight" }, [
               _c(
                 "button",
                 {
@@ -60609,7 +60661,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in eight" }, [
+            _c("div", { staticClass: "image-card fade-in nine" }, [
               _c(
                 "button",
                 {
@@ -60667,57 +60719,6 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("div", { staticClass: "image-text" }, [_vm._v("Прочее")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "image-card fade-in nine" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button-card",
-                  class: {
-                    active: _vm.selected_rooms.includes("Вся квартира")
-                  },
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.addRoom("Вся квартира")
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticStyle: { "enable-background": "new 0 0 612 612" },
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                        x: "0px",
-                        y: "0px",
-                        width: "50px",
-                        height: "50px",
-                        viewBox: "0 0 612 612",
-                        "xml:space": "preserve"
-                      }
-                    },
-                    [
-                      _c("g", [
-                        _c("path", {
-                          staticClass: "fill-color",
-                          attrs: {
-                            d:
-                              "M597.656,4.781H14.344C6.417,4.781,0,11.207,0,19.125v459c0,7.918,6.417,14.344,14.344,14.344H344.25\n                      c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5v-38.25c0-7.918-6.417-14.344-14.344-14.344\n                      s-14.344,6.426-14.344,14.344v38.25H28.688v-229.5h172.125v76.5c0,7.918,6.417,14.344,14.344,14.344s14.344-6.426,14.344-14.344\n                      v-19.125h181.688c7.928,0,14.344-6.426,14.344-14.344s-6.416-14.344-14.344-14.344H229.5V90.844\n                      c0-7.918-6.417-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v114.75H28.688V33.469h554.625v229.5h-76.5v-38.25\n                      c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v52.594c0,7.918,6.416,14.344,14.344,14.344h90.844v286.875H459\n                      v-95.625c0-7.918-6.416-14.344-14.344-14.344s-14.344,6.426-14.344,14.344v109.969c0,7.918,6.416,14.344,14.344,14.344h153\n                      c7.928,0,14.344-6.426,14.344-14.344V19.125C612,11.207,605.584,4.781,597.656,4.781z"
-                          }
-                        })
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "image-text" }, [
-                    _vm._v("Вся квартира")
-                  ])
                 ]
               )
             ]),
