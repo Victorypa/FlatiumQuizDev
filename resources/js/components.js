@@ -21,3 +21,5 @@ Vue.component('panel', require('./pages/Panel/Panel').default)
 Vue.component('clicks', require('./pages/Panel/Clicks/Clicks').default)
 Vue.component('calculators', require('./pages/Panel/Calculators/Calculators').default)
 Vue.component('calculator-prices', require('./pages/Panel/Prices/Prices').default)
+
+Vue.component('app-message', require('./pages/Message/Message').default)
