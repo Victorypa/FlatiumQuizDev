@@ -73,7 +73,7 @@ padding-bottom: 20px;
 .nav-tabs .nav-link {
   position: relative;
   text-transform: uppercase;
-  color: #c28800 ;
+  color: #00a4d1 ;
   padding: 20px;
   padding-right: 45px;
   letter-spacing: 2px;
@@ -89,6 +89,8 @@ padding-bottom: 20px;
   &.active {
     color: #000;
     padding-right: 20px;
+    border: 1px solid #dee2e6 !important;
+
     &:after {
       display: none;
     }
@@ -150,7 +152,7 @@ transition: .15s ease-in-out;
 
 .primary-button {
   &:hover {
-    background-color: #2e3854;
+    background-color: #122139;
   }
   &:focus {
     outline: none;

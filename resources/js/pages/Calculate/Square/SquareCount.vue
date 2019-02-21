@@ -8,8 +8,8 @@
 
       <div class="content-center">
           <div class="container">
-              <form @submit.prevent="submit()">
-                <div class="form-group">
+              <form class="square-content" @submit.prevent="submit()">
+                <div>
                   <h1 class="main-caption">
                       Укажите площадь помещения
                   </h1>
@@ -18,24 +18,21 @@
                          required
                          v-model="area"
                          >
-
-                  <vue-slider ref="slider"
-                              v-model="area"
-                              class="vue-slider"
-                              :value='area'
-                              :height='2'
-                              :dotSize="30"
-                              :max='500'
-                              :interval='1'
-                              :bgStyle="{ backgroundColor: 'black' }"
-                              :tooltipStyle="{ backgroundColor: '#666', borderColor: '#666' }"
-                              :processStyle="{ backgroundColor: '#999' }"
-                              >
-                 </vue-slider>
-
                 </div>
-
-                <div class="form-group">
+                <vue-slider ref="slider"
+                            v-model="area"
+                            class="vue-slider"
+                            :value='area'
+                            :height='2'
+                            :dotSize="30"
+                            :max='500'
+                            :interval='1'
+                            :bgStyle="{ backgroundColor: 'black' }"
+                            :tooltipStyle="{ backgroundColor: '#f8f8f8', borderColor: '#ccc', color: '#000', fontSize: '18px', padding: '10px'}"
+                            :processStyle="{ backgroundColor: '#999' }"
+                            >
+               </vue-slider>
+                <div>
                     <div class="button-wrapper">
                         <button type="submit"
                                 class="primary-button"
@@ -97,11 +94,16 @@ padding: 14.4px;
 transition: border .15s ease-in-out;
 width: 100%;
 }
-.main-caption {
-  padding-bottom: 80px;
-}
+
 .content-center {
   margin: 50px 0;
+}
+
+.square-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  justify-content: space-around;
 }
 
 @media (max-width: 768px) {
