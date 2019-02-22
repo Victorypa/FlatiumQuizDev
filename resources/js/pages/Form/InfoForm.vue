@@ -59,7 +59,7 @@
 
             <div v-if="booleans.phone" class="fade-in">
                 <h1 class="main-caption">
-                  Укажите свой телефон, чтобы получить результат просчёта
+                  Укажите свой телефон, чтобы мы продублировали результат просчёта
                 </h1>
 
                 <form @submit.prevent="go('phone')">
@@ -82,13 +82,6 @@
                                 >
                            Далее
                        </button>
-                       <!-- <button type="submit"
-                               class="primary-button primary-button--disabled"
-                               @submit.prevent="go('phone')"
-                               id="phone_pass"
-                               >
-                               Пропустить
-                      </button> -->
                     </div>
                 </form>
             </div>

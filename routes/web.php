@@ -4,6 +4,10 @@ Route::get('/', function () {
     return redirect('/cards');
 });
 
+Route::get('/message', function () {
+  return view('test.message');
+});
+
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login', 'Auth\LoginController@login');
 Route::post('/logout', 'Auth\LoginController@logout')->name('logout');

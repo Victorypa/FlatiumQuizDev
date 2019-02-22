@@ -15,7 +15,10 @@
         }
     }
 </script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3643a8f75df3c2648517f91924e2aa8d40eddbfa
 <style lang="scss" scoped>
 .progress-bar {
   &__wrapper {

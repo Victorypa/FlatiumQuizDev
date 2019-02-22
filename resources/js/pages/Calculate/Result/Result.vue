@@ -82,24 +82,12 @@
                            </div>
                          </div>
                        </div>
-
-                      </div>
-
-
-                          <div class="button-hover">
-                             <div class="button-hover__title">
-                             BEST MATCH
-                             </div>
-                             <div class="button-hover__content">
-                             For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.
-                             </div>
-                           </div>
-                         </div>
                      </div>
+                     
+                  </div>
+                 </div>
                </div>
-
              </div>
-
           </div>
       </div>
   </div>
@@ -199,7 +187,7 @@
       left: 0;
       right: 0;
 
-      border-top: 6px solid #a1adb7;
+      border-top: 6px solid #122139;
     }
 
     position: relative;
@@ -220,7 +208,7 @@
     overflow: hidden;
 
     &:before {
-      border-top: 6px solid #dbc997;
+      border-top: 6px solid #c28800;
     }
 
     span {
@@ -247,7 +235,7 @@
       right: -45px;
       top: 25px;
 
-      background-color: #1c2233;
+      background-color: #122139;
       border: 1px solid #fff;
       color: #fff;
 
@@ -333,7 +321,7 @@ strong {
   letter-spacing: .1em;
   text-transform: uppercase;
   &:hover {
-    background-color: #2e3854;
+    background-color: #122139;
 
   }
   &--white {
