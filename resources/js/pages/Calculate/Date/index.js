@@ -19,11 +19,11 @@ export const blocks = [
                             <path d="M46.3794671,95.7074985 L62.0648626,95.7074985" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <rect id="Rectangle-path" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" x="0.120842801" y="7.97562487" width="108.202644" height="108.202644"></rect>
                             <path d="M0.120842801,26.0537079 L108.323487,26.0537079" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M30.6940715,0 L30.6940715,15.6853956" id="Shape" stroke="#1C2233" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M77.7502582,0 L77.7502582,15.6853956" id="Shape" stroke="#1C2233" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M118.425945,74.7050196 C121.084487,70.7172072 122.679612,66.1976864 122.679612,60.8806032 C122.679612,47.3220409 111.779591,36.4220202 98.2210287,36.4220202 C84.6624664,36.4220202 73.7624458,47.3220409 73.7624458,60.8806032 C73.7624458,74.4391655 84.6624664,85.3391861 98.2210287,85.3391861 C103.006404,85.3391861 107.525924,84.0099153 111.247883,81.6172278 L118.425945,81.6172278 L118.425945,74.7050196 Z" id="Shape" stroke="#F8B1B0" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M30.6940715,0 L30.6940715,15.6853956" id="Shape" stroke="#000" stroke-linecap="#000" stroke-linejoin="round"></path>
+                            <path d="M77.7502582,0 L77.7502582,15.6853956" id="Shape" stroke="#000" stroke-linecap="#000" stroke-linejoin="round"></path>
+                            <path d="M118.425945,74.7050196 C121.084487,70.7172072 122.679612,66.1976864 122.679612,60.8806032 C122.679612,47.3220409 111.779591,36.4220202 98.2210287,36.4220202 C84.6624664,36.4220202 73.7624458,47.3220409 73.7624458,60.8806032 C73.7624458,74.4391655 84.6624664,85.3391861 98.2210287,85.3391861 C103.006404,85.3391861 107.525924,84.0099153 111.247883,81.6172278 L118.425945,81.6172278 L118.425945,74.7050196 Z" id="Shape" stroke="#c28800" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="#000"></path>
                             <g id="Group" transform="translate(96.094195, 47.853749)">
-                                <path d="M2.1268333,0.797562487 L2.1268333,15.9512497" id="Shape" stroke="#1C2233" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2.1268333,0.797562487 L2.1268333,15.9512497" id="Shape" stroke="#000" stroke-linecap="#000" stroke-linejoin="round"></path>
                                 <circle id="Oval" fill="#1C2233" fill-rule="nonzero" cx="2.1268333" cy="21.268333" r="1.59512497"></circle>
                             </g>
                         </g>
@@ -55,12 +55,12 @@ export const blocks = [
                             <path d="M14.9217391,96.1919255 L30.6428571,96.1919255" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M46.3639752,96.1919255 L62.0850932,96.1919255" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M77.8062112,0.532919255 L77.8062112,16.2540373" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M118.308075,75.1416149 C120.972671,71.1447205 122.571429,66.6149068 122.571429,61.2857143 C122.571429,47.6962733 111.646584,36.7714286 98.0571429,36.7714286 C84.4677019,36.7714286 73.5428571,47.6962733 73.5428571,61.2857143 C73.5428571,74.8751553 84.4677019,85.8 98.0571429,85.8 C102.853416,85.8 107.38323,84.4677019 111.113665,82.0695652 L118.308075,82.0695652 L118.308075,75.1416149 Z" id="Shape" stroke="#F8B1B0" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M118.308075,75.1416149 C120.972671,71.1447205 122.571429,66.6149068 122.571429,61.2857143 C122.571429,47.6962733 111.646584,36.7714286 98.0571429,36.7714286 C84.4677019,36.7714286 73.5428571,47.6962733 73.5428571,61.2857143 C73.5428571,74.8751553 84.4677019,85.8 98.0571429,85.8 C102.853416,85.8 107.38323,84.4677019 111.113665,82.0695652 L118.308075,82.0695652 L118.308075,75.1416149 Z" id="Shape" stroke="#c28800" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M109.514907,49.5614907 L86.8658385,49.5614907" id="Shape" stroke="#1C2233" stroke-width="0.7021" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M107.38323,51.1602484 L107.38323,49.2950311 L88.9975155,49.2950311 L88.9975155,51.1602484 C88.9975155,54.8906832 91.3956522,58.3546584 94.8596273,59.6869565 C95.9254658,60.2198758 96.7248447,61.0192547 96.7248447,62.0850932 C96.7248447,63.1509317 95.9254658,64.2167702 94.8596273,64.4832298 C91.3956522,65.815528 88.9975155,69.0130435 88.9975155,73.0099379 L88.9975155,74.8751553 L107.38323,74.8751553 L107.38323,73.0099379 C107.38323,69.2795031 104.985093,65.815528 101.521118,64.4832298 C100.45528,63.9503106 99.6559006,63.1509317 99.6559006,62.0850932 C99.6559006,61.0192547 100.45528,59.9534161 101.521118,59.6869565 C104.985093,58.3546584 107.38323,55.1571429 107.38323,51.1602484 Z" id="Shape" stroke="#1C2233" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M92.7279503,52.4925466 C92.9944099,54.6242236 94.3267081,56.489441 96.4583851,57.2888199 C97.257764,57.5552795 97.7906832,58.0881988 97.7906832,58.8875776 L97.7906832,64.4832298 L98.5900621,64.4832298 L98.5900621,58.8875776 C98.5900621,58.0881988 99.1229814,57.5552795 99.9223602,57.2888199 C102.054037,56.7559006 103.386335,54.8906832 103.652795,52.4925466 C103.652795,52.226087 103.386335,51.9596273 103.119876,51.9596273 L93.2608696,51.9596273 C92.9944099,51.9596273 92.7279503,52.226087 92.7279503,52.4925466 Z" id="Shape" fill="#D1D3D4" fill-rule="nonzero"></path>
-                            <path d="M90.3298137,74.8751553 C90.3298137,74.8751553 93.7937888,70.078882 98.5900621,70.078882 C103.119876,70.078882 106.850311,74.8751553 106.850311,74.8751553 L90.3298137,74.8751553 Z" id="Shape" fill="#D1D3D4" fill-rule="nonzero"></path>
-                            <path d="M109.514907,74.8751553 L86.8658385,74.8751553" id="Shape" stroke="#1C2233" stroke-width="0.7021" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M90.3298137,74.8751553 C90.3298137,74.8751553 93.7937888,70.078882 98.5900621,70.078882 C103.119876,70.078882 106.850311,74.8751553 106.850311,74.8751553 L90.3298137,74.8751553 Z" id="Shape" fill="#c28800" fill-rule="nonzero"></path>
+                            <path d="M109.514907,74.8751553 L86.8658385,74.8751553" id="Shape" stroke="#c28800" stroke-width="0.7021" stroke-linecap="#c28800" stroke-linejoin="#c28800"></path>
                         </g>
                     </g>
                 </g>
@@ -93,7 +93,7 @@ export const blocks = [
                             <path d="M47.2641093,62.6873898 L62.7358907,62.6873898" id="Shape" stroke="#1C2233"></path>
                             <path d="M47.2641093,45.6150794 L62.7358907,45.6150794" id="Shape" stroke="#1C2233"></path>
                             <path d="M78.4744268,0.5335097 L78.4744268,16.2720459" id="Shape" stroke="#1C2233"></path>
-                            <circle id="Oval" stroke="#F8B1B0" fill="#FFFFFF" fill-rule="nonzero" cx="55" cy="70.9567901" r="15.4717813"></circle>
+                            <circle id="Oval" stroke="#c28800" fill="#FFFFFF" fill-rule="nonzero" cx="55" cy="70.9567901" r="15.4717813"></circle>
                             <polyline id="Shape" stroke="#1C2233" points="47.5308642 71.7570547 52.3324515 76.558642 62.202381 66.6887125"></polyline>
                         </g>
                     </g>
@@ -112,7 +112,7 @@ export const blocks = [
                 <g id="Timeline-Copy" transform="translate(-998.000000, -345.000000)" stroke-width="1.5">
                     <g id="Group-3" transform="translate(-668.000000, -403.000000)">
                         <g id="Sometime-in-the-Future" transform="translate(1667.000000, 749.000000)">
-                            <circle id="Oval" stroke="#F8B1B0" cx="54.8320652" cy="71.7690217" r="26.9766304"></circle>
+                            <circle id="Oval" stroke="#c28800" cx="54.8320652" cy="71.7690217" r="26.9766304"></circle>
                             <rect id="Rectangle-path" stroke="#1C2233" x="0.585869565" y="8.44184783" width="108.465761" height="108.465761"></rect>
                             <path d="M0.585869565,26.6570652 L109.078261,26.6570652" id="Shape" stroke="#1C2233"></path>
                             <path d="M31.3173913,0.585869565 L31.3173913,16.2711957" id="Shape" stroke="#1C2233"></path>
