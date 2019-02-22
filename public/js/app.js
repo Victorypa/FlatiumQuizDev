@@ -1789,7 +1789,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      hovered: false
+    };
+  },
+  computed: {
+    logoPath: function logoPath() {
+      return this.hovered ? '/storage/quiz/logo-blue.svg' : '/storage/quiz/logo-black.svg';
+    }
+  }
+});
 
 /***/ }),
 
@@ -57924,36 +57940,30 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar__wrapper" }, [
-      _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
-        _c("div", { staticClass: "logo" }, [
-          _c(
-            "a",
-            {
-              staticClass: "logo__img",
-              attrs: { href: "https://www.flatium.ru" }
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/storage/quiz/logo-black.svg",
-                  alt: "Flatium-logo"
-                }
-              })
-            ]
-          )
-        ])
+  return _c("div", { staticClass: "navbar__wrapper" }, [
+    _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
+      _c("div", { staticClass: "logo" }, [
+        _c(
+          "a",
+          {
+            staticClass: "logo__img",
+            attrs: { href: "https://www.flatium.ru" },
+            on: {
+              mouseover: function($event) {
+                _vm.hovered = !_vm.hovered
+              },
+              mouseout: function($event) {
+                _vm.hovered = !_vm.hovered
+              }
+            }
+          },
+          [_c("img", { attrs: { src: _vm.logoPath, alt: "Flatium-logo" } })]
+        )
       ])
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

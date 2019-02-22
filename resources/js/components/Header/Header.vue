@@ -3,9 +3,14 @@
     <nav class="navbar navbar-expand-lg navbar-light">
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
   <div class="logo">
-    <a href="https://www.flatium.ru" class="logo__img">
-      <img src="/storage/quiz/logo-black.svg" alt="Flatium-logo">
-  </a>
+    <a href="https://www.flatium.ru"
+       class="logo__img"
+       @mouseover="hovered = !hovered"
+       @mouseout="hovered = !hovered"
+       >
+
+        <img :src="logoPath" alt="Flatium-logo">
+    </a>
   </div>
   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -26,7 +31,19 @@
 
 <script>
     export default {
+        data () {
+            return {
+                hovered: false
+            }
+        },
 
+        computed: {
+            logoPath () {
+                return this.hovered
+                ? '/storage/quiz/logo-blue.svg'
+                : '/storage/quiz/logo-black.svg'
+            }
+        }
     }
 </script>
 
