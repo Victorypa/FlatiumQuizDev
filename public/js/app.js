@@ -2395,31 +2395,35 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     checkCalculateUrl: function checkCalculateUrl() {
-      var _this = this;
-
       var card_id = window.location.search.match(/\d+/g).toString();
       this.result_url = "/cards/result?card_id=".concat(card_id);
-      axios.get("/cards/".concat(card_id)).then(function (response) {
-        if (response.data.design_skills.length === 0) {
-          _this.url = "/cards/design-skills?card_id=".concat(card_id);
-        }
-
-        if (response.data.start_dates.length === 0) {
-          _this.url = "/cards/start-date?card_id=".concat(card_id);
-        }
-
-        if (response.data.material_categories.length === 0) {
-          _this.url = "/cards/material-category?card_id=".concat(card_id);
-        }
-
-        if (response.data.decorations.length === 0) {
-          _this.url = "/cards/decoration?card_id=".concat(card_id);
-        }
-
-        if (response.data.squares.length === 0) {
-          _this.url = "/cards/square?card_id=".concat(card_id);
-        }
-      });
+      this.url = "/cards/square?card_id=".concat(card_id); // axios.get(`/cards/${card_id}`)
+      //      .then(response => {
+      //          // if (response.data.design_skills.length === 0) {
+      //          //     this.url = `/cards/design-skills?card_id=${card_id}`
+      //          // }
+      //          //
+      //          // else if (response.data.start_dates.length === 0) {
+      //          //     this.url = `/cards/start-date?card_id=${card_id}`
+      //          // }
+      //          //
+      //          // else if (response.data.material_categories.length === 0) {
+      //          //     this.url = `/cards/material-category?card_id=${card_id}`
+      //          // }
+      //          //
+      //          // else if (response.data.decorations.length === 0) {
+      //          //     this.url = `/cards/decoration?card_id=${card_id}`
+      //          // }
+      //          //
+      //          // else if (response.data.squares.length === 0) {
+      //          //     this.url = `/cards/square?card_id=${card_id}`
+      //          // }
+      //
+      //          // else {
+      //          //     this.url = `/cards/square?card_id=${card_id}`
+      //          // }
+      //          this.url = `/cards/square?card_id=${card_id}`
+      //      })
     }
   }
 });
