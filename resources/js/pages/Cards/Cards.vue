@@ -249,6 +249,7 @@
 .fade-leave-active {
     animation: smooth 1s ease-in;
 }
+
 .image {
   &-wrapper {
   display: flex;
