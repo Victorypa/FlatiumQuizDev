@@ -94,10 +94,6 @@
   animation-fill-mode:forwards;
   animation-duration: 0.7s;
 }
-svg {
-fill: #a1adb7;
-height: auto;
-}
 .image {
   &-wrapper {
   display: flex;
@@ -106,22 +102,14 @@ height: auto;
   max-width: 800px;
   margin: 0 auto;
   }
-  &-content {
-    height: 125px;
-  }
   &-card {
   margin: 0 10px 20px;
   display: block;
   font-size: 14px;
   text-decoration: none;
-  &:last-child {
-    .image-content {
-      padding-top: 15px;
-    }
-  }
   }
   &-text {
-    padding-top: 30px;
+    font-weight: 600;
     font-size: 12px;
     color: #1c2233;
     letter-spacing: 2px;
@@ -131,11 +119,12 @@ height: auto;
     text-transform: uppercase;
   }
   &-subtitle {
+  min-height: 80px;
   text-transform: none;
   font-size: 12px;
   padding-top: 14px;
   line-height: 16px;
-    color: #1c2233;
+  color: #1c2233;
 }
 }
 .main-caption {
