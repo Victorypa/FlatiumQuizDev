@@ -2225,9 +2225,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -58404,82 +58401,77 @@ var render = function() {
       _vm._v(" "),
       _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
-      _c("div", { staticClass: "content-center" }, [
-        _c(
-          "div",
-          { staticClass: "container" },
-          [
-            !_vm.show
-              ? _c("div", { staticClass: "card-wrapper" }, [
-                  _c("div", { staticClass: "card-workprice" }, [
-                    _c("h2", [_vm._v("Стоимость работ")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-price" }, [
-                      _vm._v(
-                        "\n                 ₽ " +
-                          _vm._s(_vm.getTotalPrice) +
-                          "\n               "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-small-price" }, [
-                      _vm._v("Стоимость за кв. м.: "),
-                      _c("strong", [_vm._v("₽ " + _vm._s(_vm.getAveragePrice))])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "button-wrapper" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "primary-button primary-button--white",
-                          attrs: { type: "submit" },
-                          on: {
-                            click: function($event) {
-                              _vm.show = !_vm.show
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                      НАЧАТЬ РЕМОНТ\n                  "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(0)
+      !_vm.show
+        ? _c("div", { staticClass: "content-center" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "card-wrapper" }, [
+                _c("div", { staticClass: "card-workprice" }, [
+                  _c("h2", [_vm._v("Стоимость работ")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-price" }, [
+                    _vm._v(
+                      "\n                 ₽ " +
+                        _vm._s(_vm.getTotalPrice) +
+                        "\n               "
+                    )
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "card-workmaterial" }, [
-                    _c("h2", [_vm._v("Стоимость материалов")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-price" }, [
-                      _vm._v(
-                        "\n                   ₽ " +
-                          _vm._s(_vm.getFakeMaterialPrice) +
-                          "\n                 "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Лучшие цены")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-small-price" }, [
-                      _vm._v("Стоимость за кв. м.: "),
-                      _c("strong", [
-                        _vm._v("₽ " + _vm._s(_vm.getFakeAveragePrice) + " ")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1),
-                    _vm._v(" "),
-                    _vm._m(2)
-                  ])
+                  _c("div", { staticClass: "card-small-price" }, [
+                    _vm._v("Стоимость за кв. м.: "),
+                    _c("strong", [_vm._v("₽ " + _vm._s(_vm.getAveragePrice))])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "button-wrapper" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "primary-button primary-button--white",
+                        attrs: { type: "submit" },
+                        on: {
+                          click: function($event) {
+                            _vm.show = !_vm.show
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                      НАЧАТЬ РЕМОНТ\n                  "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(0)
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-workmaterial" }, [
+                  _c("h2", [_vm._v("Стоимость материалов")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-price" }, [
+                    _vm._v(
+                      "\n                   ₽ " +
+                        _vm._s(_vm.getFakeMaterialPrice) +
+                        "\n                 "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Лучшие цены")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-small-price" }, [
+                    _vm._v("Стоимость за кв. м.: "),
+                    _c("strong", [
+                      _vm._v("₽ " + _vm._s(_vm.getFakeAveragePrice) + " ")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _vm._m(2)
                 ])
-              : _c("Message", { attrs: { option: "design4" } })
-          ],
-          1
-        )
-      ])
+              ])
+            ])
+          ])
+        : _c("Message", { attrs: { option: "design4" } })
     ],
     1
   )

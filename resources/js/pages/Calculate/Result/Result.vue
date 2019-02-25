@@ -1,13 +1,12 @@
 <template>
   <div>
-
       <app-header></app-header>
 
       <app-navigation selected="calculator"></app-navigation>
 
-      <div class="content-center">
+      <div class="content-center" v-if="!show">
           <div class="container">
-             <div class="card-wrapper" v-if="!show">
+             <div class="card-wrapper">
 
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
@@ -83,14 +82,12 @@
                        </div>
                      </div>
                   </div>
-
-                  <Message v-else option="design4"/>
                  </div>
+
                </div>
-             </div>
+
+               <Message v-else option="design4"/>
           </div>
-      </div>
-  </div>
 
 </template>
 
