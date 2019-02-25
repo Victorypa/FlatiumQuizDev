@@ -69,28 +69,6 @@ padding-bottom: 20px;
       }
   }
 }
- .nav-tabs .nav-link {
-  position: relative;
-  text-transform: uppercase;
-  color: #00a4d1 ;
-  padding: 20px;
-  letter-spacing: 2px;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-  &.done {
-    padding-right: 45px;
-    &:after {
-      content: url('/storage/quiz/tick-inside-circle.svg');
-      position: absolute;
-      right: 15px;
-      top: 20px;
-    }
-  }
-
-  &:hover {
-    background-color: #c1bebe42;
-  }
-}
 
 .navbar {
   &-collapse {
