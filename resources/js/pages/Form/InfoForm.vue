@@ -67,8 +67,9 @@
                         <vue-tel-input v-model="person.phone"
                                        placeholder=""
                                        :required="true"
-                                       :preferredCountries="['ru', 'us', 'ua']"
                                        autofocus
+                                       :enabledFlags="false"
+                                       :onlyCountries="['RU']"
                                        >
                        </vue-tel-input>
                         <label class="full-name full-name--tel" @click.prevent="click">Введите номер телефона</label>
@@ -161,7 +162,6 @@
 </script>
 
 <style lang="scss" scoped>
-
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 .fade-in {
   opacity: 0;

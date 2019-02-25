@@ -13,13 +13,13 @@
            Ваш стиль
        </a>
 
-        <a class="nav-item nav-link done"
+        <a class="nav-item nav-link"
            :href="url"
            :class="{
                'active': selected === 'calculator' ? true : false,
                'nav-link-black': selected === 'calculator' ? true : false,
-               'done': selected === 'calculator' && passed ? true : false,
-               'done-blue': selected === 'result' ? true : false,
+               'done': (selected === 'calculator' && passed) ? true : false,
+               'done-blue': (selected === 'result' && passed) ? true : false,
            }"
            >
             Рассчёт ремонта
