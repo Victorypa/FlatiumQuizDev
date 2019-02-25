@@ -8,6 +8,7 @@ use App\Models\Calculator\Calculator;
 use App\Services\Amo\Leads\LeadCreate;
 use App\Services\Amo\Contact\ContactCreate;
 
+
 class CalculatorController extends Controller
 {
     protected $mappings = [
@@ -103,7 +104,8 @@ class CalculatorController extends Controller
                 'contacts_id' => $contact->id,
                 'responsible_user_id' => 2211916,
                 'custom_fields' => array(
-                    'square' => $request->get('square')
+                    'square' => $request->get('square'),
+                    'roistat_cookie' => $request->get('roistat_cookie')
                 )
             ]);
         }

@@ -4,8 +4,8 @@ namespace App\Http\Controllers\CalculateResult;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Services\Amo\Contact\ContactCreate;
 use App\Services\Amo\Leads\LeadCreate;
+use App\Services\Amo\Contact\ContactCreate;
 
 class CalculateResultController extends Controller
 {
