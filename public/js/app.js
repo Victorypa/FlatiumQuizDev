@@ -2385,12 +2385,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['selected'],
   data: function data() {
     return {
       result_url: '',
-      url: ''
+      url: '',
+      passed: false
     };
   },
   created: function created() {
@@ -2398,35 +2403,40 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     checkCalculateUrl: function checkCalculateUrl() {
+      var _this = this;
+
       var card_id = window.location.search.match(/\d+/g).toString();
       this.result_url = "/cards/result?card_id=".concat(card_id);
-      this.url = "/cards/square?card_id=".concat(card_id); // axios.get(`/cards/${card_id}`)
-      //      .then(response => {
-      //          // if (response.data.design_skills.length === 0) {
-      //          //     this.url = `/cards/design-skills?card_id=${card_id}`
-      //          // }
-      //          //
-      //          // else if (response.data.start_dates.length === 0) {
-      //          //     this.url = `/cards/start-date?card_id=${card_id}`
-      //          // }
-      //          //
-      //          // else if (response.data.material_categories.length === 0) {
-      //          //     this.url = `/cards/material-category?card_id=${card_id}`
-      //          // }
-      //          //
-      //          // else if (response.data.decorations.length === 0) {
-      //          //     this.url = `/cards/decoration?card_id=${card_id}`
-      //          // }
-      //          //
-      //          // else if (response.data.squares.length === 0) {
-      //          //     this.url = `/cards/square?card_id=${card_id}`
-      //          // }
-      //
-      //          // else {
-      //          //     this.url = `/cards/square?card_id=${card_id}`
-      //          // }
-      //          this.url = `/cards/square?card_id=${card_id}`
-      //      })
+      this.url = "/cards/square?card_id=".concat(card_id);
+      axios.get("/cards/".concat(card_id)).then(function (response) {
+        if (response.data.design_skills.length !== 0 && response.data.start_dates.length !== 0 && response.data.material_categories.length !== 0 && response.data.decorations.length !== 0 && response.data.squares.length !== 0) {
+          _this.passed = true;
+        } // if (response.data.design_skills.length === 0) {
+        //     this.url = `/cards/design-skills?card_id=${card_id}`
+        // }
+        //
+        // else if (response.data.start_dates.length === 0) {
+        //     this.url = `/cards/start-date?card_id=${card_id}`
+        // }
+        //
+        // else if (response.data.material_categories.length === 0) {
+        //     this.url = `/cards/material-category?card_id=${card_id}`
+        // }
+        //
+        // else if (response.data.decorations.length === 0) {
+        //     this.url = `/cards/decoration?card_id=${card_id}`
+        // }
+        //
+        // else if (response.data.squares.length === 0) {
+        //     this.url = `/cards/square?card_id=${card_id}`
+        // }
+        // else {
+        //     this.url = `/cards/square?card_id=${card_id}`
+        // }
+
+
+        _this.url = "/cards/square?card_id=".concat(card_id);
+      });
     }
   }
 });
@@ -8391,7 +8401,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "a[data-v-4012d86f] {\n  color: #00a4d1;\n}\n.nav-link-black[data-v-4012d86f] {\n  color: black;\n}\n.nav-link-blue[data-v-4012d86f] {\n  color: #00a4d1;\n}\n.nav-tabs .nav-link[data-v-4012d86f] {\n  position: relative;\n  text-transform: uppercase;\n  padding: 20px;\n  letter-spacing: 2px;\n  border-top-left-radius: 0 !important;\n  border-top-right-radius: 0 !important;\n}\n.nav-tabs .nav-link.done[data-v-4012d86f] {\n  padding-right: 45px;\n}\n.nav-tabs .nav-link.done[data-v-4012d86f]:after {\n  content: url(\"/storage/quiz/tick-inside-circle.svg\");\n  position: absolute;\n  right: 15px;\n  top: 20px;\n}\n.nav-tabs .nav-link[data-v-4012d86f]:hover {\n  background-color: #c1bebe42;\n}", ""]);
+exports.push([module.i, "a[data-v-4012d86f] {\n  color: #00a4d1;\n}\n.nav-link-black[data-v-4012d86f] {\n  color: black;\n}\n.nav-link-blue[data-v-4012d86f] {\n  color: #00a4d1;\n}\n.nav-tabs .nav-link[data-v-4012d86f] {\n  position: relative;\n  text-transform: uppercase;\n  padding: 20px;\n  letter-spacing: 2px;\n  border-top-left-radius: 0 !important;\n  border-top-right-radius: 0 !important;\n}\n.nav-tabs .nav-link.done[data-v-4012d86f] {\n  padding-right: 45px;\n}\n.nav-tabs .nav-link.done[data-v-4012d86f]:after {\n  content: url(\"/storage/quiz/tick-inside-circle-black.svg\");\n  position: absolute;\n  right: 15px;\n  top: 20px;\n}\n.nav-tabs .nav-link.done-blue[data-v-4012d86f] {\n  padding-right: 45px;\n}\n.nav-tabs .nav-link.done-blue[data-v-4012d86f]:after {\n  content: url(\"/storage/quiz/tick-inside-circle.svg\");\n  position: absolute;\n  right: 15px;\n  top: 20px;\n}\n.nav-tabs .nav-link[data-v-4012d86f]:hover {\n  background-color: #c1bebe42;\n}", ""]);
 
 // exports
 
@@ -58747,7 +58757,7 @@ var render = function() {
       _c(
         "a",
         {
-          staticClass: "nav-item nav-link",
+          staticClass: "nav-item nav-link done",
           class: {
             active: _vm.selected === "result" ? true : false,
             "nav-link-black": _vm.selected === "result" ? true : false
@@ -58763,7 +58773,8 @@ var render = function() {
           staticClass: "nav-item nav-link",
           class: {
             active: _vm.selected === "calculator" ? true : false,
-            "nav-link-black": _vm.selected === "calculator" ? true : false
+            "nav-link-black": _vm.selected === "calculator" ? true : false,
+            done: _vm.passed
           },
           attrs: { href: _vm.url }
         },

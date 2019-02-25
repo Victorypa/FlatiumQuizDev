@@ -1,7 +1,7 @@
 <template>
     <nav>
       <div class="nav nav-tabs" role="tablist">
-        <a class="nav-item nav-link"
+        <a class="nav-item nav-link done"
            :class="{ 'active': selected === 'result' ? true : false, 'nav-link-black': selected === 'result' ? true : false }"
            :href="result_url"
            >
@@ -10,7 +10,11 @@
 
         <a class="nav-item nav-link"
            :href="url"
-           :class="{ 'active': selected === 'calculator' ? true : false, 'nav-link-black': selected === 'calculator' ? true : false  }"
+           :class="{
+               'active': selected === 'calculator' ? true : false,
+               'nav-link-black': selected === 'calculator' ? true : false,
+               'done': passed
+           }"
            >
             Рассчёт ремонта
         </a>
@@ -25,7 +29,8 @@
         data () {
             return {
                 result_url: '',
-                url: ''
+                url: '',
+                passed: false
             }
         },
 
@@ -41,33 +46,44 @@
 
                 this.url = `/cards/square?card_id=${card_id}`
 
-                // axios.get(`/cards/${card_id}`)
-                //      .then(response => {
-                //          // if (response.data.design_skills.length === 0) {
-                //          //     this.url = `/cards/design-skills?card_id=${card_id}`
-                //          // }
-                //          //
-                //          // else if (response.data.start_dates.length === 0) {
-                //          //     this.url = `/cards/start-date?card_id=${card_id}`
-                //          // }
-                //          //
-                //          // else if (response.data.material_categories.length === 0) {
-                //          //     this.url = `/cards/material-category?card_id=${card_id}`
-                //          // }
-                //          //
-                //          // else if (response.data.decorations.length === 0) {
-                //          //     this.url = `/cards/decoration?card_id=${card_id}`
-                //          // }
-                //          //
-                //          // else if (response.data.squares.length === 0) {
-                //          //     this.url = `/cards/square?card_id=${card_id}`
-                //          // }
-                //
-                //          // else {
-                //          //     this.url = `/cards/square?card_id=${card_id}`
-                //          // }
-                //          this.url = `/cards/square?card_id=${card_id}`
-                //      })
+                axios.get(`/cards/${card_id}`)
+                     .then(response => {
+                         if (
+                             response.data.design_skills.length !== 0 &&
+                             response.data.start_dates.length !== 0 &&
+                             response.data.material_categories.length !== 0 &&
+                             response.data.decorations.length !== 0 &&
+                             response.data.squares.length !== 0
+                         ) {
+                             this.passed = true
+                         }
+                         // if (response.data.design_skills.length === 0) {
+                         //     this.url = `/cards/design-skills?card_id=${card_id}`
+                         // }
+                         //
+                         // else if (response.data.start_dates.length === 0) {
+                         //     this.url = `/cards/start-date?card_id=${card_id}`
+                         // }
+                         //
+                         // else if (response.data.material_categories.length === 0) {
+                         //     this.url = `/cards/material-category?card_id=${card_id}`
+                         // }
+                         //
+                         // else if (response.data.decorations.length === 0) {
+                         //     this.url = `/cards/decoration?card_id=${card_id}`
+                         // }
+                         //
+                         // else if (response.data.squares.length === 0) {
+                         //     this.url = `/cards/square?card_id=${card_id}`
+                         // }
+
+                         // else {
+                         //     this.url = `/cards/square?card_id=${card_id}`
+                         // }
+                         this.url = `/cards/square?card_id=${card_id}`
+                     })
+
+
             }
         }
     }
@@ -97,11 +113,21 @@ a {
  &.done {
    padding-right: 45px;
    &:after {
-     content: url('/storage/quiz/tick-inside-circle.svg');
+     content: url('/storage/quiz/tick-inside-circle-black.svg');
      position: absolute;
      right: 15px;
      top: 20px;
    }
+ }
+
+ &.done-blue {
+     padding-right: 45px;
+     &:after {
+       content: url('/storage/quiz/tick-inside-circle.svg');
+       position: absolute;
+       right: 15px;
+       top: 20px;
+     }
  }
 
  &:hover {
