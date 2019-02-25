@@ -2,7 +2,7 @@
     <nav>
       <div class="nav nav-tabs" role="tablist">
         <a class="nav-item nav-link"
-           :class="{ 'active': selected === 'result' ? true : false }"
+           :class="{ 'active': selected === 'result' ? true : false, 'nav-link-black': selected === 'result' ? true : false }"
            :href="result_url"
            >
            Ваш стиль
@@ -10,7 +10,7 @@
 
         <a class="nav-item nav-link"
            :href="url"
-           :class="{ 'active': selected === 'calculator' ? true : false }"
+           :class="{ 'active': selected === 'calculator' ? true : false, 'nav-link-black': selected === 'calculator' ? true : false  }"
            >
             Рассчёт ремонта
         </a>
@@ -72,3 +72,40 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+
+a {
+    color: #00a4d1;
+}
+
+.nav-link-black {
+    color: black;
+}
+
+.nav-link-blue {
+    color: #00a4d1;
+}
+
+.nav-tabs .nav-link {
+ position: relative;
+ text-transform: uppercase;
+ padding: 20px;
+ letter-spacing: 2px;
+ border-top-left-radius: 0 !important;
+ border-top-right-radius: 0 !important;
+ &.done {
+   padding-right: 45px;
+   &:after {
+     content: url('/storage/quiz/tick-inside-circle.svg');
+     position: absolute;
+     right: 15px;
+     top: 20px;
+   }
+ }
+
+ &:hover {
+   background-color: #c1bebe42;
+ }
+}
+</style>

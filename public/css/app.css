@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*!
- * Bootstrap v4.3.0 (https://getbootstrap.com/)
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -10716,31 +10716,6 @@ body {
 
 .nav-tabs a:hover {
   text-decoration: underline;
-}
-
-.nav-tabs .nav-link {
-  position: relative;
-  text-transform: uppercase;
-  color: #00a4d1;
-  padding: 20px;
-  letter-spacing: 2px;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-}
-
-.nav-tabs .nav-link.done {
-  padding-right: 45px;
-}
-
-.nav-tabs .nav-link.done:after {
-  content: url("/storage/quiz/tick-inside-circle.svg");
-  position: absolute;
-  right: 15px;
-  top: 20px;
-}
-
-.nav-tabs .nav-link:hover {
-  background-color: #c1bebe42;
 }
 
 .navbar-collapse {
