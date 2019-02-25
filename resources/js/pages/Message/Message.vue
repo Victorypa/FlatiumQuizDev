@@ -60,7 +60,7 @@
 
 <style lang="scss" scoped>
 .content-center {
-  margin: 50px 0;
+  margin-top: 0;
 }
 .loading {
   text-align: center;

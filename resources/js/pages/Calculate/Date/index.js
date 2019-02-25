@@ -11,7 +11,7 @@ export const blocks = [
                             <path d="M15.0086759,45.1952076 L30.6940715,45.1952076" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M46.3794671,45.1952076 L62.0648626,45.1952076" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M15.0086759,61.9440198 L30.6940715,61.9440198" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M46.3794671,61.9440198 L62.0648626,61.9440198" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M46.3794671,61.9440198 L62.0648626,61.9440198" id="Shape" stroke="#1C2233" st  roke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M15.0086759,78.9586862 L30.6940715,78.9586862" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M46.3794671,78.9586862 L62.0648626,78.9586862" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M77.7502582,95.7074985 L93.4356538,95.7074985" id="Shape" stroke="#1C2233" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
