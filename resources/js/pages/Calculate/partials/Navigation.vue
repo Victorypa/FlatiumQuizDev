@@ -1,19 +1,25 @@
 <template>
     <nav>
       <div class="nav nav-tabs" role="tablist">
-        <a class="nav-item nav-link done"
-           :class="{ 'active': selected === 'result' ? true : false, 'nav-link-black': selected === 'result' ? true : false }"
+        <a class="nav-item nav-link"
+           :class="{
+               'active': selected === 'result' ? true : false,
+               'nav-link-black': selected === 'result' ? true : false,
+               'done': selected === 'result' ? true : false,
+               'done-blue': selected === 'calculator' ? true : false,
+           }"
            :href="result_url"
            >
            Ваш стиль
        </a>
 
-        <a class="nav-item nav-link"
+        <a class="nav-item nav-link done"
            :href="url"
            :class="{
                'active': selected === 'calculator' ? true : false,
                'nav-link-black': selected === 'calculator' ? true : false,
-               'done': passed
+               'done': selected === 'calculator' && passed ? true : false,
+               'done-blue': selected === 'result' ? true : false,
            }"
            >
             Рассчёт ремонта
@@ -80,7 +86,6 @@
                          // else {
                          //     this.url = `/cards/square?card_id=${card_id}`
                          // }
-                         this.url = `/cards/square?card_id=${card_id}`
                      })
 
 
@@ -110,6 +115,7 @@ a {
  letter-spacing: 2px;
  border-top-left-radius: 0 !important;
  border-top-right-radius: 0 !important;
+
  &.done {
    padding-right: 45px;
    &:after {
@@ -119,6 +125,7 @@ a {
      top: 20px;
    }
  }
+
 
  &.done-blue {
      padding-right: 45px;

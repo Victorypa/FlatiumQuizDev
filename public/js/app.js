@@ -2389,6 +2389,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['selected'],
   data: function data() {
@@ -2434,8 +2440,6 @@ __webpack_require__.r(__webpack_exports__);
         //     this.url = `/cards/square?card_id=${card_id}`
         // }
 
-
-        _this.url = "/cards/square?card_id=".concat(card_id);
       });
     }
   }
@@ -58757,10 +58761,12 @@ var render = function() {
       _c(
         "a",
         {
-          staticClass: "nav-item nav-link done",
+          staticClass: "nav-item nav-link",
           class: {
             active: _vm.selected === "result" ? true : false,
-            "nav-link-black": _vm.selected === "result" ? true : false
+            "nav-link-black": _vm.selected === "result" ? true : false,
+            done: _vm.selected === "result" ? true : false,
+            "done-blue": _vm.selected === "calculator" ? true : false
           },
           attrs: { href: _vm.result_url }
         },
@@ -58770,11 +58776,12 @@ var render = function() {
       _c(
         "a",
         {
-          staticClass: "nav-item nav-link",
+          staticClass: "nav-item nav-link done",
           class: {
             active: _vm.selected === "calculator" ? true : false,
             "nav-link-black": _vm.selected === "calculator" ? true : false,
-            done: _vm.passed
+            done: _vm.selected === "calculator" && _vm.passed ? true : false,
+            "done-blue": _vm.selected === "result" ? true : false
           },
           attrs: { href: _vm.url }
         },
