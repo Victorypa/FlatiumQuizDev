@@ -5,11 +5,9 @@
 
       <app-navigation selected="calculator"></app-navigation>
 
-      <!-- <calculate-progressbar ref="progressbar"></calculate-progressbar> -->
-
       <div class="content-center">
           <div class="container">
-             <div class="card-wrapper">
+             <div class="card-wrapper" v-if="!show">
 
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
@@ -21,6 +19,7 @@
                  <div class="button-wrapper">
                      <button type="submit"
                              class="primary-button primary-button--white"
+                             @click="show = !show"
                              >
                         НАЧАТЬ РЕМОНТ
                     </button>
@@ -83,8 +82,9 @@
                          </div>
                        </div>
                      </div>
-
                   </div>
+
+                  <Message v-else option="design4"/>
                  </div>
                </div>
              </div>
@@ -95,13 +95,20 @@
 </template>
 
 <script>
+    import Message from '../../Message/Message'
+
     export default {
       data () {
         return {
             card_id: window.location.search.match(/\d+/g).toString(),
             price: 0,
-            square: 0
+            square: 0,
+            show: false
         }
+      },
+
+      components: {
+          Message
       },
 
       created () {
@@ -114,7 +121,6 @@
                    .then(response => {
                        this.price = response.data.price.price
                        this.square = response.data.square
-                       // console.log(this.square);
                    })
           }
       },

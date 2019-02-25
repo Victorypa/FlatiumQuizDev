@@ -3,7 +3,12 @@
         <div class="container">
 
             <h1 class="main-caption">
-                {{ filteredOption }}
+                <span v-if="option === 'design4'" v-html="filteredOption">
+
+                </span>
+                <span v-else>
+                    {{ filteredOption }}
+                </span>
             </h1>
             <div class="loading">
               <span></span>
@@ -20,7 +25,6 @@
 <script>
     export default {
       props: ['option'],
-
       data () {
         return {
             titles: {
@@ -28,8 +32,7 @@
                 design1: 'Мы идем к вам на помощь!',
                 design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
                 design3: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
-                design4: 'Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время. А пока что можете посмотреть наш кейс по ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле(https://flatium.ru/blog/scandistory).'
-
+                design4: "Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время. А пока что можете посмотреть наш кейс по <a style='color: #00a4d1' target='_blank' href='https://flatium.ru/blog/scandistory'>ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле.</a>"
             }
         }
     },
@@ -53,9 +56,9 @@
                     return this.titles.design3
                     break;
 
-                    case 'design4':
-                        return this.titles.design4
-                        break;
+                case 'design4':
+                    return this.titles.design4
+                    break;
 
                 default:
                     return null
@@ -66,9 +69,6 @@
 </script>
 
 <style lang="scss" scoped>
-.content-center {
-  margin-top: 0;
-}
 .loading {
   text-align: center;
 }
@@ -122,10 +122,11 @@
 }
 
 .content-center {
+  margin-top: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -5%;
   height: 100vh;
 }
 

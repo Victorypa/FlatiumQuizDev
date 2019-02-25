@@ -2131,6 +2131,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Message_Message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Message/Message */ "./resources/js/pages/Message/Message.vue");
 //
 //
 //
@@ -2227,13 +2228,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       card_id: window.location.search.match(/\d+/g).toString(),
       price: 0,
-      square: 0
+      square: 0,
+      show: false
     };
+  },
+  components: {
+    Message: _Message_Message__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   created: function created() {
     this.getResult();
@@ -2244,7 +2250,7 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.post("/cards/calculate-result/".concat(this.card_id)).then(function (response) {
         _this.price = response.data.price.price;
-        _this.square = response.data.square; // console.log(this.square);
+        _this.square = response.data.square;
       });
     }
   },
@@ -2966,6 +2972,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['option'],
   data: function data() {
@@ -2975,7 +2986,7 @@ __webpack_require__.r(__webpack_exports__);
         design1: 'Мы идем к вам на помощь!',
         design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
         design3: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
-        design4: 'Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время. А пока что можете посмотреть наш кейс по ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле(https://flatium.ru/blog/scandistory).'
+        design4: "Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время. А пока что можете посмотреть наш кейс по <a style='color: #00a4d1' target='_blank' href='https://flatium.ru/blog/scandistory'>ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле.</a>"
       }
     };
   },
@@ -8478,7 +8489,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".content-center[data-v-00618fe6] {\n  margin-top: 0;\n}\n.loading[data-v-00618fe6] {\n  text-align: center;\n}\n.loading span[data-v-00618fe6] {\n  display: inline-block;\n  vertical-align: middle;\n  width: 1em;\n  height: 1em;\n  margin: 0.5em;\n  background: #000;\n  border-radius: 0.6em;\n  -webkit-animation: loading-data-v-00618fe6 1s infinite alternate;\n          animation: loading-data-v-00618fe6 1s infinite alternate;\n  -webkit-transform: translateY(-60px);\n          transform: translateY(-60px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(2) {\n  background: #122139;\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n  -webkit-transform: translateY(-45px);\n          transform: translateY(-45px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(3) {\n  background: #00a4d187;\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n  -webkit-transform: translateY(-40px);\n          transform: translateY(-40px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(4) {\n  background: #ccc;\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n  -webkit-transform: translateY(-45px);\n          transform: translateY(-45px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(5) {\n  background: #c288009c;\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n  -webkit-transform: translateY(-60px);\n          transform: translateY(-60px);\n}\n@-webkit-keyframes loading-data-v-00618fe6 {\n0% {\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px);\n    opacity: 0;\n}\n100% {\n    opacity: 1;\n}\n}\n@keyframes loading-data-v-00618fe6 {\n0% {\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px);\n    opacity: 0;\n}\n100% {\n    opacity: 1;\n}\n}\n.main-caption[data-v-00618fe6] {\n  padding-bottom: 100px;\n  max-width: 540px;\n}\n.content-center[data-v-00618fe6] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: -5%;\n  height: 100vh;\n}", ""]);
+exports.push([module.i, ".loading[data-v-00618fe6] {\n  text-align: center;\n}\n.loading span[data-v-00618fe6] {\n  display: inline-block;\n  vertical-align: middle;\n  width: 1em;\n  height: 1em;\n  margin: 0.5em;\n  background: #000;\n  border-radius: 0.6em;\n  -webkit-animation: loading-data-v-00618fe6 1s infinite alternate;\n          animation: loading-data-v-00618fe6 1s infinite alternate;\n  -webkit-transform: translateY(-60px);\n          transform: translateY(-60px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(2) {\n  background: #122139;\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n  -webkit-transform: translateY(-45px);\n          transform: translateY(-45px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(3) {\n  background: #00a4d187;\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n  -webkit-transform: translateY(-40px);\n          transform: translateY(-40px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(4) {\n  background: #ccc;\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n  -webkit-transform: translateY(-45px);\n          transform: translateY(-45px);\n}\n.loading span[data-v-00618fe6]:nth-of-type(5) {\n  background: #c288009c;\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n  -webkit-transform: translateY(-60px);\n          transform: translateY(-60px);\n}\n@-webkit-keyframes loading-data-v-00618fe6 {\n0% {\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px);\n    opacity: 0;\n}\n100% {\n    opacity: 1;\n}\n}\n@keyframes loading-data-v-00618fe6 {\n0% {\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px);\n    opacity: 0;\n}\n100% {\n    opacity: 1;\n}\n}\n.main-caption[data-v-00618fe6] {\n  padding-bottom: 100px;\n  max-width: 540px;\n}\n.content-center[data-v-00618fe6] {\n  margin-top: 0;\n  padding: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}", ""]);
 
 // exports
 
@@ -58394,76 +58405,86 @@ var render = function() {
       _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "card-wrapper" }, [
-            _c("div", { staticClass: "card-workprice" }, [
-              _c("h2", [_vm._v("Стоимость работ")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-price" }, [
-                _vm._v(
-                  "\n                 ₽ " +
-                    _vm._s(_vm.getTotalPrice) +
-                    "\n               "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-small-price" }, [
-                _vm._v("Стоимость за кв. м.: "),
-                _c("strong", [_vm._v("₽ " + _vm._s(_vm.getAveragePrice))])
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _vm._m(1)
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-workmaterial" }, [
-              _c("h2", [_vm._v("Стоимость материалов")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-price" }, [
-                _vm._v(
-                  "\n                   ₽ " +
-                    _vm._s(_vm.getFakeMaterialPrice) +
-                    "\n                 "
-                )
-              ]),
-              _vm._v(" "),
-              _c("span", [_vm._v("Лучшие цены")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-small-price" }, [
-                _vm._v("Стоимость за кв. м.: "),
-                _c("strong", [
-                  _vm._v("₽ " + _vm._s(_vm.getFakeAveragePrice) + " ")
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            !_vm.show
+              ? _c("div", { staticClass: "card-wrapper" }, [
+                  _c("div", { staticClass: "card-workprice" }, [
+                    _c("h2", [_vm._v("Стоимость работ")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card-price" }, [
+                      _vm._v(
+                        "\n                 ₽ " +
+                          _vm._s(_vm.getTotalPrice) +
+                          "\n               "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card-small-price" }, [
+                      _vm._v("Стоимость за кв. м.: "),
+                      _c("strong", [_vm._v("₽ " + _vm._s(_vm.getAveragePrice))])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "button-wrapper" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "primary-button primary-button--white",
+                          attrs: { type: "submit" },
+                          on: {
+                            click: function($event) {
+                              _vm.show = !_vm.show
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                      НАЧАТЬ РЕМОНТ\n                  "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(0)
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-workmaterial" }, [
+                    _c("h2", [_vm._v("Стоимость материалов")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card-price" }, [
+                      _vm._v(
+                        "\n                   ₽ " +
+                          _vm._s(_vm.getFakeMaterialPrice) +
+                          "\n                 "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("span", [_vm._v("Лучшие цены")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card-small-price" }, [
+                      _vm._v("Стоимость за кв. м.: "),
+                      _c("strong", [
+                        _vm._v("₽ " + _vm._s(_vm.getFakeAveragePrice) + " ")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _vm._m(2)
+                  ])
                 ])
-              ]),
-              _vm._v(" "),
-              _vm._m(2),
-              _vm._v(" "),
-              _vm._m(3)
-            ])
-          ])
-        ])
+              : _c("Message", { attrs: { option: "design4" } })
+          ],
+          1
+        )
       ])
     ],
     1
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "button-wrapper" }, [
-      _c(
-        "button",
-        {
-          staticClass: "primary-button primary-button--white",
-          attrs: { type: "submit" }
-        },
-        [_vm._v("\n                      НАЧАТЬ РЕМОНТ\n                  ")]
-      )
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -59350,7 +59371,15 @@ var render = function() {
   return _c("div", { staticClass: "content-center" }, [
     _c("div", { staticClass: "container" }, [
       _c("h1", { staticClass: "main-caption" }, [
-        _vm._v("\n              " + _vm._s(_vm.filteredOption) + "\n          ")
+        _vm.option === "design4"
+          ? _c("span", { domProps: { innerHTML: _vm._s(_vm.filteredOption) } })
+          : _c("span", [
+              _vm._v(
+                "\n                  " +
+                  _vm._s(_vm.filteredOption) +
+                  "\n              "
+              )
+            ])
       ]),
       _vm._v(" "),
       _vm._m(0)
