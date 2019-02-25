@@ -29,16 +29,16 @@
                      <div class="card card-border">
                        <div class="card-header">
                          <a class="card-link card-more" data-toggle="collapse" href="#collapseOne">
-                            Больше информации
+                          Дополнительно
                          </a>
                        </div>
                        <div id="collapseOne" class="collapse" data-parent="#accordion1">
                          <div class="card-body">
                            <ul>
-                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
-                             <li>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</li>
-                             <li>nostrud exercitation ullamco laboris nisi ut aliquip</li>
-                             <li>ex ea commodo consequat.</li>
+                             <li>Бесплатную адаптацию проекта</li>
+                             <li>Бесплатную разработку рабочей документации</li>
+                             <li>Базовый комплект “Умный дом” в подарок</li>
+                             <li>Контроль ремонта удаленно, через личный кабинет</li>
                            </ul>
                          </div>
                        </div>
@@ -51,7 +51,7 @@
                    <div class="card-price">
                      ₽ {{ getFakeMaterialPrice }}
                    </div>
-                   <span>Best Match</span>
+                   <span>Лучшие цены</span>
                   <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getFakeAveragePrice }} </strong></div>
                      <div class="button-wrapper">
                          <button type="submit"
@@ -61,10 +61,10 @@
                         </button>
                         <div class="button-hover">
                           <div class="button-hover__title">
-                          BEST MATCH
+                        <b>  Создайте свой уникальный стиль </b> <br>
                           </div>
                           <div class="button-hover__content">
-                          For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.
+                          Интерьерный стилист профессионально подберет мебель и декор, подготовит планировочное решение и коллаж-визуализацию вашего будущего интерьера.
                           </div>
                         </div>
                      </div>
@@ -77,13 +77,13 @@
                            </div>
                            <div id="collapseTwo" class="collapse" data-parent="#accordion2">
                              <div class="card-body">
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                               В стоимость включены все черновые и чистовые материалы: напольное покрытие, краска для стен, межкомнатные двери, плинтуса, карнизы, молдинги; в санузле: сантехника, полотенцесушитель, керамическая плитка на пол и стены, смеситель, мебель; электрофурнитура и осветительное оборудование. А также, закупка и доставка всех материалов. Мы работаем с большим количеством поставщиков материалов и имеем самые выгодные предложения по цене. Поэтому, мы можем предложить вам материалы с дополнительными скидками.
                              </div>
                            </div>
                          </div>
                        </div>
                      </div>
-                     
+
                   </div>
                  </div>
                </div>
@@ -301,7 +301,9 @@ strong {
   &-hover {
     position: absolute;
 
-    top: -155%;
+    bottom: 75%;
+    left: -9%;
+
 
     padding: 15px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);

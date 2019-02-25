@@ -2974,7 +2974,8 @@ __webpack_require__.r(__webpack_exports__);
         decoration: 'У вас отличный дом! И у нас есть множество вариантов выбора материалов для создания вашего интерьера',
         design1: 'Мы идем к вам на помощь!',
         design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
-        design3: 'Отлично! Вы наш коллега и мы отлично сработаемся.'
+        design3: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
+        design4: 'Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время. А пока что можете посмотреть наш кейс по ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле(https://flatium.ru/blog/scandistory).'
       }
     };
   },
@@ -2995,6 +2996,10 @@ __webpack_require__.r(__webpack_exports__);
 
         case 'design3':
           return this.titles.design3;
+          break;
+
+        case 'design4':
+          return this.titles.design4;
           break;
 
         default:
@@ -8193,7 +8198,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".container[data-v-695b3226] {\n  max-width: 900px;\n  font-family: \"Open Sans\", sans-serif;\n  position: relative;\n}\n.content-center[data-v-695b3226] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 50px 70px;\n  background-color: #f8f8f8;\n}\n.main-caption[data-v-695b3226] {\n  padding-bottom: 60px;\n}\n.card-wrapper[data-v-695b3226] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.card-wrapper h2[data-v-695b3226] {\n  font-size: 22px;\n  letter-spacing: 0.025em;\n  font-weight: 600;\n  margin: 15px;\n}\n.card-border[data-v-695b3226] {\n  border: none;\n}\n.card-workmaterial[data-v-695b3226], .card-workprice[data-v-695b3226] {\n  position: relative;\n  width: 380px;\n  align-self: flex-start;\n  background-color: #fff;\n  padding: 70px 28px 30px;\n  margin: 15px;\n  text-align: center;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n  cursor: pointer;\n}\n.card-workmaterial[data-v-695b3226]:before, .card-workprice[data-v-695b3226]:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  border-top: 6px solid #122139;\n}\n.card-workmaterial[data-v-695b3226] {\n  overflow: hidden;\n}\n.card-workmaterial[data-v-695b3226]:before {\n  border-top: 6px solid #c28800;\n}\n.card-workmaterial span[data-v-695b3226] {\n  width: 175px;\n  position: absolute;\n  right: -45px;\n  top: 25px;\n  background-color: #122139;\n  border: 1px solid #fff;\n  color: #fff;\n  font-size: 9px;\n  letter-spacing: 1px;\n  line-height: 33px;\n  text-transform: uppercase;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  cursor: pointer;\n}\n.card-workmaterial span[data-v-695b3226]::after {\n  width: 12px;\n  content: \"i\";\n  display: inline-block;\n  font-size: 6px;\n  height: 12px;\n  line-height: 12px;\n  text-align: center;\n  vertical-align: middle;\n  border: 1px solid #fff;\n  border-radius: 50%;\n  margin-left: 0.5em;\n}\n.card-price[data-v-695b3226] {\n  font-size: 28px;\n  font-weight: 400;\n}\n.card-price span[data-v-695b3226] {\n  font-size: 12px;\n  color: #1c2233;\n}\n.card-parameters[data-v-695b3226] {\n  width: 70%;\n  font-size: 13px;\n  text-align: justify;\n  color: #5b6788;\n  margin: 0 auto;\n  padding: 30px 0;\n}\n.card-parameters div[data-v-695b3226] {\n  padding: 8px 0;\n}\n.card-small-price[data-v-695b3226] {\n  color: #5b6788;\n  font-size: 11px;\n}\n.card-header[data-v-695b3226] {\n  background-color: transparent;\n  border: none;\n}\n.card-more[data-v-695b3226] {\n  display: block;\n  font-size: 13px;\n  color: #a1adb7;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n}\n.card-more[data-v-695b3226]:hover {\n  color: #c28800;\n}\nstrong[data-v-695b3226] {\n  color: #1c2233;\n}\n.button-hover[data-v-695b3226] {\n  position: absolute;\n  top: -155%;\n  padding: 15px;\n  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);\n  background-color: #fff;\n  border-radius: 5px;\n  opacity: 0;\n  z-index: 1000;\n}\n.primary-button[data-v-695b3226] {\n  width: 70%;\n  margin-top: 24px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n.primary-button[data-v-695b3226]:hover {\n  background-color: #122139;\n}\n.primary-button--white[data-v-695b3226] {\n  color: #1c2233;\n  background: #fff;\n  box-shadow: 0 2px 7px rgba(28, 34, 51, 0.2);\n}\n.primary-button--white[data-v-695b3226]:hover {\n  background: #f2f2f2;\n}\n.button-wrapper[data-v-695b3226] {\n  position: relative;\n}\n.button-wrapper:hover .button-hover[data-v-695b3226] {\n  opacity: 1;\n  transition: 0.5s;\n}\nul[data-v-695b3226] {\n  list-style: none;\n  margin-left: 0;\n  padding: 0;\n}\nul li[data-v-695b3226] {\n  border-bottom: 1px solid #ccc;\n  padding: 10px 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-695b3226] {\n    display: block;\n}\n.vue-slider[data-v-695b3226] {\n    padding: 40px;\n    display: none;\n}\n}\n@media (max-width: 860px) {\n.content-center[data-v-695b3226] {\n    height: auto;\n}\n}", ""]);
+exports.push([module.i, ".container[data-v-695b3226] {\n  max-width: 900px;\n  font-family: \"Open Sans\", sans-serif;\n  position: relative;\n}\n.content-center[data-v-695b3226] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 50px 70px;\n  background-color: #f8f8f8;\n}\n.main-caption[data-v-695b3226] {\n  padding-bottom: 60px;\n}\n.card-wrapper[data-v-695b3226] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.card-wrapper h2[data-v-695b3226] {\n  font-size: 22px;\n  letter-spacing: 0.025em;\n  font-weight: 600;\n  margin: 15px;\n}\n.card-border[data-v-695b3226] {\n  border: none;\n}\n.card-workmaterial[data-v-695b3226], .card-workprice[data-v-695b3226] {\n  position: relative;\n  width: 380px;\n  align-self: flex-start;\n  background-color: #fff;\n  padding: 70px 28px 30px;\n  margin: 15px;\n  text-align: center;\n  box-shadow: 0 8px 8px rgba(28, 34, 51, 0.1);\n  cursor: pointer;\n}\n.card-workmaterial[data-v-695b3226]:before, .card-workprice[data-v-695b3226]:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  border-top: 6px solid #122139;\n}\n.card-workmaterial[data-v-695b3226] {\n  overflow: hidden;\n}\n.card-workmaterial[data-v-695b3226]:before {\n  border-top: 6px solid #c28800;\n}\n.card-workmaterial span[data-v-695b3226] {\n  width: 175px;\n  position: absolute;\n  right: -45px;\n  top: 25px;\n  background-color: #122139;\n  border: 1px solid #fff;\n  color: #fff;\n  font-size: 9px;\n  letter-spacing: 1px;\n  line-height: 33px;\n  text-transform: uppercase;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n  cursor: pointer;\n}\n.card-workmaterial span[data-v-695b3226]::after {\n  width: 12px;\n  content: \"i\";\n  display: inline-block;\n  font-size: 6px;\n  height: 12px;\n  line-height: 12px;\n  text-align: center;\n  vertical-align: middle;\n  border: 1px solid #fff;\n  border-radius: 50%;\n  margin-left: 0.5em;\n}\n.card-price[data-v-695b3226] {\n  font-size: 28px;\n  font-weight: 400;\n}\n.card-price span[data-v-695b3226] {\n  font-size: 12px;\n  color: #1c2233;\n}\n.card-parameters[data-v-695b3226] {\n  width: 70%;\n  font-size: 13px;\n  text-align: justify;\n  color: #5b6788;\n  margin: 0 auto;\n  padding: 30px 0;\n}\n.card-parameters div[data-v-695b3226] {\n  padding: 8px 0;\n}\n.card-small-price[data-v-695b3226] {\n  color: #5b6788;\n  font-size: 11px;\n}\n.card-header[data-v-695b3226] {\n  background-color: transparent;\n  border: none;\n}\n.card-more[data-v-695b3226] {\n  display: block;\n  font-size: 13px;\n  color: #a1adb7;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n}\n.card-more[data-v-695b3226]:hover {\n  color: #c28800;\n}\nstrong[data-v-695b3226] {\n  color: #1c2233;\n}\n.button-hover[data-v-695b3226] {\n  position: absolute;\n  bottom: 75%;\n  left: -9%;\n  padding: 15px;\n  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);\n  background-color: #fff;\n  border-radius: 5px;\n  opacity: 0;\n  z-index: 1000;\n}\n.primary-button[data-v-695b3226] {\n  width: 70%;\n  margin-top: 24px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n.primary-button[data-v-695b3226]:hover {\n  background-color: #122139;\n}\n.primary-button--white[data-v-695b3226] {\n  color: #1c2233;\n  background: #fff;\n  box-shadow: 0 2px 7px rgba(28, 34, 51, 0.2);\n}\n.primary-button--white[data-v-695b3226]:hover {\n  background: #f2f2f2;\n}\n.button-wrapper[data-v-695b3226] {\n  position: relative;\n}\n.button-wrapper:hover .button-hover[data-v-695b3226] {\n  opacity: 1;\n  transition: 0.5s;\n}\nul[data-v-695b3226] {\n  list-style: none;\n  margin-left: 0;\n  padding: 0;\n}\nul li[data-v-695b3226] {\n  border-bottom: 1px solid #ccc;\n  padding: 10px 0;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-695b3226] {\n    display: block;\n}\n.vue-slider[data-v-695b3226] {\n    padding: 40px;\n    display: none;\n}\n}\n@media (max-width: 860px) {\n.content-center[data-v-695b3226] {\n    height: auto;\n}\n}", ""]);
 
 // exports
 
@@ -58227,7 +58232,7 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _c("span", [_vm._v("Best Match")]),
+              _c("span", [_vm._v("Лучшие цены")]),
               _vm._v(" "),
               _c("div", { staticClass: "card-small-price" }, [
                 _vm._v("Стоимость за кв. м.: "),
@@ -58278,7 +58283,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                          Больше информации\n                       "
+                "\n                        Дополнительно\n                       "
               )
             ]
           )
@@ -58293,23 +58298,17 @@ var staticRenderFns = [
           [
             _c("div", { staticClass: "card-body" }, [
               _c("ul", [
-                _c("li", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor"
-                  )
-                ]),
+                _c("li", [_vm._v("Бесплатную адаптацию проекта")]),
                 _vm._v(" "),
                 _c("li", [
-                  _vm._v(
-                    "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-                  )
+                  _vm._v("Бесплатную разработку рабочей документации")
                 ]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Базовый комплект “Умный дом” в подарок")]),
                 _vm._v(" "),
                 _c("li", [
-                  _vm._v("nostrud exercitation ullamco laboris nisi ut aliquip")
-                ]),
-                _vm._v(" "),
-                _c("li", [_vm._v("ex ea commodo consequat.")])
+                  _vm._v("Контроль ремонта удаленно, через личный кабинет")
+                ])
               ])
             ])
           ]
@@ -58330,14 +58329,14 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "button-hover" }, [
         _c("div", { staticClass: "button-hover__title" }, [
-          _vm._v(
-            "\n                        BEST MATCH\n                        "
-          )
+          _c("b", [_vm._v("  Создайте свой уникальный стиль ")]),
+          _vm._v(" "),
+          _c("br")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "button-hover__content" }, [
           _vm._v(
-            "\n                        For dining rooms we suggest the Havenly Full package, which comes with a room layout floorplan.\n                        "
+            "\n                        Интерьерный стилист профессионально подберет мебель и декор, подготовит планировочное решение и коллаж-визуализацию вашего будущего интерьера.\n                        "
           )
         ])
       ])
@@ -58373,7 +58372,7 @@ var staticRenderFns = [
           [
             _c("div", { staticClass: "card-body" }, [
               _vm._v(
-                "\n                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n                           "
+                "\n                             В стоимость включены все черновые и чистовые материалы: напольное покрытие, краска для стен, межкомнатные двери, плинтуса, карнизы, молдинги; в санузле: сантехника, полотенцесушитель, керамическая плитка на пол и стены, смеситель, мебель; электрофурнитура и осветительное оборудование. А также, закупка и доставка всех материалов. Мы работаем с большим количеством поставщиков материалов и имеем самые выгодные предложения по цене. Поэтому, мы можем предложить вам материалы с дополнительными скидками.\n                           "
               )
             ])
           ]

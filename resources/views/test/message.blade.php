@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <app-message />
+    <app-message option="design4"/>
 @endsection
