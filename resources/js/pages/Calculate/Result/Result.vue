@@ -381,7 +381,7 @@ ul {
   height: 150px;
 
   right: -40%;
-  top: 15%;
+  top: 5%;
   opacity: 0;
 
   z-index: 999;
@@ -394,9 +394,7 @@ ul {
     background-color: #fff;
     opacity: 1;
 
-    right: 3%;
-
-
+      right: 1%;
   }
 
 }
