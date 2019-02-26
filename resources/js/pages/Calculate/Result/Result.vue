@@ -45,6 +45,9 @@
                </div>
 
                <div class="card-workmaterial">
+                 <div class="tooltip-on-hover">
+                   Мы предлагаем клиентам материалы на лучших условиях и с дополнительными скидками от поставщиков и производителей.
+                 </div>
                    <h2>Стоимость материалов</h2>
                    <div class="card-price">
                      ₽ {{ getFakeMaterialPrice }}
@@ -218,6 +221,12 @@
     }
 
     span {
+      &:hover {
+        .card-small-price {
+        display: none;
+        }
+      }
+
       &::after{
         width: 12px;
         content: "i";
@@ -362,6 +371,35 @@ ul {
   }
 }
 
+.tooltip-on-hover {
+  position: absolute;
+
+  font-size: 12px;
+
+  width: 200px;
+  height: 150px;
+
+  right: -40%;
+  top: 15%;
+  opacity: 0;
+
+  z-index: 999;
+
+  border-radius: 6px;
+  padding: 15px;
+  transition: .3s;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  &:hover {
+    background-color: #fff;
+    opacity: 1;
+
+    right: 3%;
+
+
+  }
+
+}
+
 @media (max-width: 768px) {
   .mobile-input {
     display: block;
@@ -376,9 +414,5 @@ ul {
   .content-center {
     margin: 0;
   }
-  .nav-tabs a {
-    display: none;
-  }
-
 }
 </style>
