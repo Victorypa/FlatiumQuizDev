@@ -2265,7 +2265,9 @@ __webpack_require__.r(__webpack_exports__);
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price));
     },
     getFakeMaterialPrice: function getFakeMaterialPrice() {
-      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price - 1000);
+      if (this.square && this.price) {
+        return parseInt(this.square * this.price) - 1000;
+      }
     },
     getFakeAveragePrice: function getFakeAveragePrice() {
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price) - 1000);
@@ -2291,7 +2293,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['end', 'speed'],
+  props: ['end'],
   data: function data() {
     return {
       count: 0,
@@ -2300,7 +2302,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     increment: function increment() {
-      return Math.ceil(this.end / this.speed);
+      return Math.ceil(this.end / 5);
     },
     filteredCount: function filteredCount() {
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.count));
@@ -2842,6 +2844,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_masked_input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-masked-input */ "./node_modules/vue-masked-input/dist/maskedInput.js");
+//
 //
 //
 //
@@ -58979,14 +58982,13 @@ var render = function() {
                 _c("div", { staticClass: "card-workprice" }, [
                   _c("h2", [_vm._v("Стоимость работ")]),
                   _vm._v(" "),
-                  _vm.getTotalPrice && _vm.square
+                  _vm.getTotalPrice
                     ? _c(
                         "div",
                         { staticClass: "card-price" },
                         [
-                          _c("Count", {
-                            attrs: { end: _vm.getTotalPrice, speed: _vm.square }
-                          })
+                          _vm._v("\n                   ₽ "),
+                          _c("Count", { attrs: { end: _vm.getTotalPrice } })
                         ],
                         1
                       )
@@ -59029,13 +59031,19 @@ var render = function() {
                   _vm._v(" "),
                   _c("h2", [_vm._v("Стоимость материалов")]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "card-price" }, [
-                    _vm._v(
-                      "\n                   ₽ " +
-                        _vm._s(_vm.getFakeMaterialPrice) +
-                        "\n                 "
-                    )
-                  ]),
+                  _vm.getFakeMaterialPrice
+                    ? _c(
+                        "div",
+                        { staticClass: "card-price" },
+                        [
+                          _vm._v("\n                   ₽ "),
+                          _c("Count", {
+                            attrs: { end: _vm.getFakeMaterialPrice }
+                          })
+                        ],
+                        1
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c("span", [_vm._v("Лучшие цены")]),
                   _vm._v(" "),
@@ -59193,7 +59201,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h3", [_vm._v("\n    " + _vm._s(_vm.filteredCount) + " Р\n")])
+  return _c("h3", [_vm._v("\n    " + _vm._s(_vm.filteredCount) + "\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -59857,7 +59865,8 @@ var render = function() {
                         _c("masked-input", {
                           attrs: {
                             type: "tel",
-                            mask: "\\+\\7 (111) 111-11-11"
+                            mask: "\\+\\7 (111) 111-11-11",
+                            required: ""
                           },
                           model: {
                             value: _vm.person.phone,

@@ -67,6 +67,7 @@
                         <masked-input type="tel"
                                       v-model="person.phone"
                                       mask="\+\7 (111) 111-11-11"
+                                      required
                                       />
                         <label class="full-name full-name--tel" @click.prevent="click">Введите номер телефона</label>
                     </div>
@@ -150,7 +151,7 @@
                             'email': this.person.email,
                             'phone': this.person.phone,
                         })
-                        
+
                         window.location.href = `/cards/calculate-result?card_id=${card_id}`
                         break;
                     default:

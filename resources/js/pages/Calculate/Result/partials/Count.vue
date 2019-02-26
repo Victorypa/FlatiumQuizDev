@@ -1,12 +1,12 @@
 <template>
     <h3>
-        {{ filteredCount }} Р
+        {{ filteredCount }}
     </h3>
 </template>
 
 <script>
 export default {
-    props: ['end', 'speed'],
+    props: ['end'],
 
     data() {
         return {
@@ -17,7 +17,7 @@ export default {
 
     computed: {
         increment() {
-            return Math.ceil(this.end / this.speed);
+            return Math.ceil(this.end / 5);
         },
 
         filteredCount () {
