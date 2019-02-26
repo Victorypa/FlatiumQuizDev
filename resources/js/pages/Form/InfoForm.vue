@@ -5,6 +5,8 @@
 
     <calculate-progressbar :volumn="90"></calculate-progressbar>
 
+    <app-navigation selected="calculator"></app-navigation>
+    
     <div class="content-center">
         <div class="container">
 

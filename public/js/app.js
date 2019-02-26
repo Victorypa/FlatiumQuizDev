@@ -2935,6 +2935,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -59714,6 +59716,8 @@ var render = function() {
       _c("app-header"),
       _vm._v(" "),
       _c("calculate-progressbar", { attrs: { volumn: 90 } }),
+      _vm._v(" "),
+      _c("app-navigation", { attrs: { selected: "calculator" } }),
       _vm._v(" "),
       _c("div", { staticClass: "content-center" }, [
         _c("div", { staticClass: "container" }, [
