@@ -2132,6 +2132,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Message_Message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Message/Message */ "./resources/js/pages/Message/Message.vue");
+/* harmony import */ var _partials_Count__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/Count */ "./resources/js/pages/Calculate/Result/partials/Count.vue");
 //
 //
 //
@@ -2226,6 +2227,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2236,7 +2238,8 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   components: {
-    Message: _Message_Message__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Message: _Message_Message__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Count: _partials_Count__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   created: function created() {
     this.getResult();
@@ -2253,7 +2256,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     getTotalPrice: function getTotalPrice() {
-      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price);
+      return this.square * this.price;
     },
     getAveragePrice: function getAveragePrice() {
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price));
@@ -2263,6 +2266,54 @@ __webpack_require__.r(__webpack_exports__);
     },
     getFakeAveragePrice: function getFakeAveragePrice() {
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price) - 1000);
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['end', 'speed'],
+  data: function data() {
+    return {
+      count: 0,
+      interval: null
+    };
+  },
+  computed: {
+    increment: function increment() {
+      return Math.ceil(this.end / this.speed);
+    },
+    filteredCount: function filteredCount() {
+      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.count));
+    }
+  },
+  mounted: function mounted() {
+    this.interval = setInterval(this.tick, 40);
+  },
+  methods: {
+    tick: function tick() {
+      if (this.count + this.increment >= this.end) {
+        this.count = this.end;
+        return clearInterval(this.interval);
+      }
+
+      this.count += this.increment;
     }
   }
 });
@@ -58420,13 +58471,18 @@ var render = function() {
                 _c("div", { staticClass: "card-workprice" }, [
                   _c("h2", [_vm._v("Стоимость работ")]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "card-price" }, [
-                    _vm._v(
-                      "\n                 ₽ " +
-                        _vm._s(_vm.getTotalPrice) +
-                        "\n               "
-                    )
-                  ]),
+                  _vm.getTotalPrice && _vm.square
+                    ? _c(
+                        "div",
+                        { staticClass: "card-price" },
+                        [
+                          _c("Count", {
+                            attrs: { end: _vm.getTotalPrice, speed: _vm.square }
+                          })
+                        ],
+                        1
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c("div", { staticClass: "card-small-price" }, [
                     _vm._v("Стоимость за кв. м.: "),
@@ -58602,6 +58658,30 @@ var staticRenderFns = [
     ])
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=template&id=a463603c&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=template&id=a463603c& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("h3", [_vm._v("\n    " + _vm._s(_vm.filteredCount) + " Р\n")])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -74130,6 +74210,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Result_vue_vue_type_template_id_695b3226_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Result_vue_vue_type_template_id_695b3226_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/Result/partials/Count.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/pages/Calculate/Result/partials/Count.vue ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Count_vue_vue_type_template_id_a463603c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Count.vue?vue&type=template&id=a463603c& */ "./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=template&id=a463603c&");
+/* harmony import */ var _Count_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Count.vue?vue&type=script&lang=js& */ "./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Count_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Count_vue_vue_type_template_id_a463603c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Count_vue_vue_type_template_id_a463603c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/Calculate/Result/partials/Count.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Count_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Count.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Count_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=template&id=a463603c&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=template&id=a463603c& ***!
+  \***********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Count_vue_vue_type_template_id_a463603c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Count.vue?vue&type=template&id=a463603c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Calculate/Result/partials/Count.vue?vue&type=template&id=a463603c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Count_vue_vue_type_template_id_a463603c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Count_vue_vue_type_template_id_a463603c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
