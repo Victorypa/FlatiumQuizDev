@@ -2998,7 +2998,7 @@ __webpack_require__.r(__webpack_exports__);
         design1: 'Мы идем к вам на помощь!',
         design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
         design3: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
-        design4: "<b>Спасибо за вашу заявку.</b> <br> Мы свяжемся с вами в ближайшее время. <br> А пока что можете посмотреть наш кейс по <a style='color: #00a4d1' target='_blank' href='https://flatium.ru/blog/scandistory'>ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле.</a>"
+        design4: "<b>Спасибо за вашу заявку.</b> <br> Мы свяжемся с вами в ближайшее время. <br> А пока что можете посмотреть наш кейс по <a style='color: #00a4d1' target='_blank' href='https://flatium.ru/blog/scandistory'>ремонту 4-х комнатной коммунальной квартиры в скандинавском стиле.</a>"
       }
     };
   },
@@ -8240,7 +8240,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".mobile-input[data-v-bef6465c] {\n  display: none;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.content-center[data-v-bef6465c] {\n  margin: 50px 0;\n}\n.square-content[data-v-bef6465c] {\n  display: flex;\n  flex-direction: column;\n  min-height: 50vh;\n  justify-content: space-around;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n}", ""]);
+exports.push([module.i, ".mobile-input[data-v-bef6465c] {\n  display: none;\n  border: 2px solid #eee;\n  border-radius: 5px;\n  box-sizing: border-box;\n  font-weight: 400;\n  font-size: 15px;\n  line-height: 1.5;\n  text-indent: 0;\n  letter-spacing: 0.025em;\n  outline: none;\n  padding: 14.4px;\n  transition: border 0.15s ease-in-out;\n  width: 100%;\n}\n.content-center[data-v-bef6465c] {\n  margin: 50px 0;\n}\n.square-content[data-v-bef6465c] {\n  display: flex;\n  flex-direction: column;\n  min-height: 50vh;\n  justify-content: space-around;\n}\n@media (max-width: 768px) {\n.mobile-input[data-v-bef6465c] {\n    display: block;\n}\n.vue-slider[data-v-bef6465c] {\n    padding: 40px;\n    display: none;\n}\n.square-content[data-v-bef6465c] {\n    min-height: auto;\n}\n}", ""]);
 
 // exports
 

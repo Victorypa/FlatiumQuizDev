@@ -107,13 +107,16 @@ width: 100%;
 }
 
 @media (max-width: 768px) {
-.mobile-input {
-  display: block;
-}
-.vue-slider {
-  padding: 40px;
-  display: none;
-}
+  .mobile-input {
+    display: block;
+  }
+  .vue-slider {
+    padding: 40px;
+    display: none;
+  }
+  .square-content {
+    min-height: auto;
+  }
 }
 
 </style>
