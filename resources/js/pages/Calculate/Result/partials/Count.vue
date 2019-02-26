@@ -1,6 +1,6 @@
 <template>
     <h3>
-        {{ filteredCount }}
+        ₽ {{ filteredCount }}
     </h3>
 </template>
 

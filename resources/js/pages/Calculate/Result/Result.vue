@@ -11,7 +11,7 @@
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
                  <div class="card-price" v-if="getTotalPrice && square">
-                     ₽ <Count :end="getTotalPrice" :speed="square" />
+                     <Count :end="getTotalPrice" :speed="square" />
                  </div>
                 <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getAveragePrice }}</strong></div>
 
@@ -50,7 +50,7 @@
                  </div>
                    <h2>Стоимость материалов</h2>
                    <div class="card-price" v-if="getFakeMaterialPrice">
-                      ₽ <Count :end="getFakeMaterialPrice"/>
+                      <Count :end="getFakeMaterialPrice"/>
                    </div>
                    <span>Лучшие цены</span>
                   <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getFakeAveragePrice }} </strong></div>

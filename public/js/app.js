@@ -59025,7 +59025,6 @@ var render = function() {
                         "div",
                         { staticClass: "card-price" },
                         [
-                          _vm._v("\n                   ₽ "),
                           _c("Count", {
                             attrs: { end: _vm.getTotalPrice, speed: _vm.square }
                           })
@@ -59076,7 +59075,6 @@ var render = function() {
                         "div",
                         { staticClass: "card-price" },
                         [
-                          _vm._v("\n                    ₽ "),
                           _c("Count", {
                             attrs: { end: _vm.getFakeMaterialPrice }
                           })
@@ -59241,7 +59239,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h3", [_vm._v("\n    " + _vm._s(_vm.filteredCount) + "\n")])
+  return _c("h3", [_vm._v("\n    ₽ " + _vm._s(_vm.filteredCount) + "\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
