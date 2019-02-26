@@ -10,8 +10,8 @@
 
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
-                 <div class="card-price">
-                   ₽ {{ getTotalPrice }}
+                 <div class="card-price" v-if="getTotalPrice && square">
+                     <Count :end="getTotalPrice" :speed="square" />
                  </div>
                 <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getAveragePrice }}</strong></div>
 
@@ -96,6 +96,7 @@
 
 <script>
     import Message from '../../Message/Message'
+    import Count from './partials/Count'
 
     export default {
       data () {
@@ -108,7 +109,7 @@
       },
 
       components: {
-          Message
+          Message, Count
       },
 
       created () {
@@ -127,7 +128,7 @@
 
       computed: {
           getTotalPrice () {
-              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price)
+              return this.square * this.price
           },
 
           getAveragePrice () {
