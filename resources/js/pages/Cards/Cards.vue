@@ -221,10 +221,7 @@
                   'option': this.selected_uuids.join(''),
                   'result': result
               }).then(response => {
-                  console.log(response.data);
-                  setTimeout(() => {
-                      window.location.href = `/cards/rooms?card_id=${response.data.id}`
-                  }, 500)
+                  window.location.href = `/cards/result?card_id=${response.data.id}`
               })
           }
       }
