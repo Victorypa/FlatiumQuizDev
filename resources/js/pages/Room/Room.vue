@@ -260,26 +260,6 @@ cursor: pointer;
   }
 }
 
-
-.primary-button {
-height: 42px;
-font-size: 15px;
-font-weight: 400;
-background-color: #0a0c12;
-color: #fff;
-margin: 20px 0;
-padding: 0 30px;
-letter-spacing: .025em;
-border: 0;
-border-radius: 2px;
-line-height: 42px;
-outline: none;
-cursor: pointer;
-transition: .15s ease-in-out;
-}
-.primary-button:hover {
-  background-color: #2e3854;
-}
 .button-wrapper {
 margin: 0 auto;
 }

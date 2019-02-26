@@ -51,7 +51,7 @@
                 this.show = !this.show
                 setTimeout(() => {
                     window.location.href = `/cards/material-category?card_id=${card_id}`
-                }, 2500)
+                }, 5000)
 
                 axios.post('/cards/clicks/store', {
                     'name': decoration

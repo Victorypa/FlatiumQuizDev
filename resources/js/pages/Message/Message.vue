@@ -32,7 +32,7 @@
                 design1: 'Мы идем к вам на помощь!',
                 design2: 'Ура! Мы любим помогать и расширять кругозор наших клиентов',
                 design3: 'Отлично! Вы наш коллега и мы отлично сработаемся.',
-                design4: "Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время. А пока что можете посмотреть наш кейс по <a style='color: #00a4d1' target='_blank' href='https://flatium.ru/blog/scandistory'>ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле.</a>"
+                design4: "<b>Спасибо за вашу заявку.</b> <br> Мы свяжемся с вами в ближайшее время. <br> А пока что можете посмотреть наш кейс по <a style='color: #00a4d1' target='_blank' href='https://flatium.ru/blog/scandistory'>ремонту в 4-х комнатной коммунальной квартиры в скандинавском стиле.</a>"
             }
         }
     },
@@ -127,7 +127,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 75vh;
 }
 
+@media (max-width: 860px) {
+  .content-center {
+    margin: 0;
+  }
+}
 </style>

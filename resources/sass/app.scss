@@ -132,3 +132,11 @@ transition: .15s ease-in-out;
 .vue-simple-progress-bar{
   background: #c28800 !important;
 }
+
+@media (max-width: 860px) {
+  .nav-tabs {
+    font-size: 12px;
+
+    padding: 0;
+  }
+}
