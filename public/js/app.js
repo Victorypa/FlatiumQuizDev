@@ -2265,7 +2265,9 @@ __webpack_require__.r(__webpack_exports__);
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price));
     },
     getFakeMaterialPrice: function getFakeMaterialPrice() {
-      return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price - 1000);
+      if (this.square && this.price) {
+        return parseInt(this.square * this.price - 1000);
+      }
     },
     getFakeAveragePrice: function getFakeAveragePrice() {
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.price) - 1000);
@@ -2300,7 +2302,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     increment: function increment() {
-      return Math.ceil(this.end / 5);
+      return Math.ceil(this.end / 7);
     },
     filteredCount: function filteredCount() {
       return new Intl.NumberFormat('ru-Ru').format(parseInt(this.count));
@@ -59023,6 +59025,7 @@ var render = function() {
                         "div",
                         { staticClass: "card-price" },
                         [
+                          _vm._v("\n                   ₽ "),
                           _c("Count", {
                             attrs: { end: _vm.getTotalPrice, speed: _vm.square }
                           })
@@ -59068,13 +59071,19 @@ var render = function() {
                   _vm._v(" "),
                   _c("h2", [_vm._v("Стоимость материалов")]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "card-price" }, [
-                    _vm._v(
-                      "\n                   ₽ " +
-                        _vm._s(_vm.getFakeMaterialPrice) +
-                        "\n                 "
-                    )
-                  ]),
+                  _vm.getFakeMaterialPrice
+                    ? _c(
+                        "div",
+                        { staticClass: "card-price" },
+                        [
+                          _vm._v("\n                    ₽ "),
+                          _c("Count", {
+                            attrs: { end: _vm.getFakeMaterialPrice }
+                          })
+                        ],
+                        1
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c("span", [_vm._v("Лучшие цены")]),
                   _vm._v(" "),

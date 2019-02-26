@@ -17,7 +17,7 @@ export default {
 
     computed: {
         increment() {
-            return Math.ceil(this.end / 5);
+            return Math.ceil(this.end / 7);
         },
 
         filteredCount () {
