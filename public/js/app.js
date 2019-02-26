@@ -2673,6 +2673,10 @@ __webpack_require__.r(__webpack_exports__);
           setTimeout(function () {
             _this.cards_booleans.b = true;
           }, 1000);
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
           break;
 
         case 'B':
@@ -2682,18 +2686,30 @@ __webpack_require__.r(__webpack_exports__);
             setTimeout(function () {
               _this.cards_booleans.c1 = true;
             }, 1000);
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
           }
 
           if (this.selected_uuids.includes('A2')) {
             setTimeout(function () {
               _this.cards_booleans.c2 = true;
             }, 1000);
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
           }
 
           if (this.selected_uuids.includes('A3')) {
             setTimeout(function () {
               _this.cards_booleans.c3 = true;
             }, 1000);
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
           }
 
           break;
@@ -2703,6 +2719,10 @@ __webpack_require__.r(__webpack_exports__);
           setTimeout(function () {
             _this.cards_booleans.d1 = true;
           }, 1000);
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
           break;
 
         case 'C2':
@@ -2717,21 +2737,37 @@ __webpack_require__.r(__webpack_exports__);
           setTimeout(function () {
             _this.cards_booleans.d3 = true;
           }, 1000);
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
           break;
 
         case 'D1':
           this.cards_booleans.d1 = false;
           this.resultsFiltering(this.selected_uuids.join(''));
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
           break;
 
         case 'D2':
           this.cards_booleans.d2 = false;
           this.resultsFiltering(this.selected_uuids.join(''));
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
           break;
 
         case 'D3':
           this.cards_booleans.d3 = false;
           this.resultsFiltering(this.selected_uuids.join(''));
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
           break;
 
         default:

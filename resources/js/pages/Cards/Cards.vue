@@ -124,6 +124,7 @@
                      setTimeout(() => {
                          this.cards_booleans.b = true
                      }, 1000)
+                     window.scrollTo({ top: 0, behavior: 'smooth' });
                      break;
                 case 'B':
                     this.cards_booleans.b = false
@@ -131,31 +132,32 @@
                         setTimeout(() => {
                             this.cards_booleans.c1 = true
                         }, 1000)
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
                     if (this.selected_uuids.includes('A2')) {
                         setTimeout(() => {
                             this.cards_booleans.c2 = true
                         }, 1000)
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
                     if (this.selected_uuids.includes('A3')) {
                         setTimeout(() => {
                             this.cards_booleans.c3 = true
                         }, 1000)
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
                     break;
 
                 case 'C1':
                     this.cards_booleans.c1 = false
-
                     setTimeout(() => {
                         this.cards_booleans.d1 = true
                     }, 1000)
-
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     break;
 
                 case 'C2':
                     this.cards_booleans.c2 = false
-
                     setTimeout(() => {
                         this.cards_booleans.d2 = true
                     }, 1000)
@@ -164,26 +166,28 @@
 
                 case 'C3':
                     this.cards_booleans.c3 = false
-
                     setTimeout(() => {
                         this.cards_booleans.d3 = true
                     }, 1000)
-
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     break;
 
                 case 'D1':
                     this.cards_booleans.d1 = false
                     this.resultsFiltering(this.selected_uuids.join(''))
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     break;
 
                 case 'D2':
                     this.cards_booleans.d2 = false
                     this.resultsFiltering(this.selected_uuids.join(''))
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     break;
 
                 case 'D3':
                     this.cards_booleans.d3 = false
                     this.resultsFiltering(this.selected_uuids.join(''))
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     break;
                  default:
                  return null;
