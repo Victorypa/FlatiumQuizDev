@@ -70,8 +70,8 @@
                                        autofocus
                                        :enabledFlags="false"
                                        :onlyCountries="['RU']"
-                                       >
-                       </vue-tel-input>
+                                       @onInput="onInput"
+                                       />
                         <label class="full-name full-name--tel" @click.prevent="click">Введите номер телефона</label>
                     </div>
 
@@ -116,15 +116,20 @@
         },
 
         methods: {
-          click (e) {
-            if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
-              return
-            } else {
-              e.target.style.top = '-6px'
-              e.target.style.fontSize = '14px'
-            }
+            onInput({ number, isValid, country }) {
+                return isValid
+            },
 
-          },
+            click (e) {
+              if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
+                return
+              } else {
+                e.target.style.top = '-6px'
+                e.target.style.fontSize = '14px'
+              }
+
+            },
+
             go (type) {
                 switch (type) {
                     case 'name':

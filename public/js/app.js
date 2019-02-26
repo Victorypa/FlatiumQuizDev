@@ -2957,6 +2957,12 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_tel_input__WEBPACK_IMPORTED_M
     };
   },
   methods: {
+    onInput: function onInput(_ref) {
+      var number = _ref.number,
+          isValid = _ref.isValid,
+          country = _ref.country;
+      return isValid;
+    },
     click: function click(e) {
       if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
         return;
@@ -59348,6 +59354,7 @@ var render = function() {
                             enabledFlags: false,
                             onlyCountries: ["RU"]
                           },
+                          on: { onInput: _vm.onInput },
                           model: {
                             value: _vm.person.phone,
                             callback: function($$v) {
