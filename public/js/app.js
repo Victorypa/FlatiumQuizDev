@@ -2887,6 +2887,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -58629,12 +58630,12 @@ var render = function() {
       _c(
         "a",
         {
-          staticClass: "nav-item nav-link done",
+          staticClass: "nav-item nav-link",
           class: {
             active: _vm.selected === "calculator" ? true : false,
             "nav-link-black": _vm.selected === "calculator" ? true : false,
             done: _vm.selected === "calculator" && _vm.passed ? true : false,
-            "done-blue": _vm.selected === "result" ? true : false
+            "done-blue": _vm.selected === "result" && _vm.passed ? true : false
           },
           attrs: { href: _vm.url }
         },
@@ -59119,8 +59120,9 @@ var render = function() {
                           attrs: {
                             placeholder: "",
                             required: true,
-                            preferredCountries: ["ru", "us", "ua"],
-                            autofocus: ""
+                            autofocus: "",
+                            enabledFlags: false,
+                            onlyCountries: ["RU"]
                           },
                           model: {
                             value: _vm.person.phone,
