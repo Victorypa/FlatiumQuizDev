@@ -64,14 +64,10 @@
 
                 <form @submit.prevent="go('phone')">
                     <div class="form-wrapper fade-in">
-                        <vue-tel-input v-model="person.phone"
-                                       placeholder=""
-                                       :required="true"
-                                       autofocus
-                                       :enabledFlags="false"
-                                       :onlyCountries="['RU']"
-                                       @onInput="onInput"
-                                       />
+                        <masked-input type="tel"
+                                      v-model="person.phone"
+                                      mask="\+\7 (111) 111-11-11"
+                                      />
                         <label class="full-name full-name--tel" @click.prevent="click">Введите номер телефона</label>
                     </div>
 
@@ -94,13 +90,12 @@
 
 <script>
     import Vue from 'vue'
-    import VueTelInput from 'vue-tel-input'
-    import 'vue-tel-input/dist/vue-tel-input.css'
-    Vue.use(VueTelInput)
+    import MaskedInput from 'vue-masked-input'
 
     export default {
         data () {
             return {
+                show: false,
                 person: {
                     name: '',
                     email: '',
@@ -115,11 +110,11 @@
             }
         },
 
-        methods: {
-            onInput({ number, isValid, country }) {
-                return isValid
-            },
+        components: {
+            MaskedInput
+        },
 
+        methods: {
             click (e) {
               if (!this.person.name === '' || !this.person.email === '' || !this.person.phone === '') {
                 return
@@ -155,7 +150,7 @@
                             'email': this.person.email,
                             'phone': this.person.phone,
                         })
-
+                        
                         window.location.href = `/cards/calculate-result?card_id=${card_id}`
                         break;
                     default:
@@ -181,12 +176,19 @@ position: relative;
 margin: 0 auto;
 }
 
+.border-red {
+    border: 2px solid red !important;
+
+    &:focus-within {
+       border: 2px solid red !important;
+    }
+}
 
 .vue-tel-input {
   position: relative;
   display: flex;
-  border: 2px solid #eee;
   border-radius: 5px;
+  border: 2px solid #eee;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 15px;
@@ -199,7 +201,7 @@ margin: 0 auto;
   transition: border .15s ease-in-out;
   width: 100%;
   &:focus-within {
-      border: 2px solid #eee !important;
+     border: 2px solid #eee !important;
   }
 }
 
