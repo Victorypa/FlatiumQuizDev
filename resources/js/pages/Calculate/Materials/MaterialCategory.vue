@@ -210,6 +210,10 @@ cursor: pointer;
 }
 
 @media (max-width: 700px) {
+
+.image-subtitle {
+  width: auto;
+}
 .image-wrapper  {
 flex-wrap: wrap;
 justify-content: center;

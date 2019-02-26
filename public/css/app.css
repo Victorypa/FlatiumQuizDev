@@ -10788,5 +10788,9 @@ body {
   .nav-tabs .nav-link {
     width: 100%;
   }
+
+  .content-center {
+    margin: 0 !important;
+  }
 }
 

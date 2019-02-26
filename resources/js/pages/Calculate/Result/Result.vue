@@ -10,8 +10,8 @@
 
                <div class="card-workprice">
                  <h2>Стоимость работ</h2>
-                 <div class="card-price" v-if="getTotalPrice">
-                     ₽ <Count :end="getTotalPrice"/>
+                 <div class="card-price" v-if="getTotalPrice && square">
+                     <Count :end="getTotalPrice" :speed="square" />
                  </div>
                 <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getAveragePrice }}</strong></div>
 
@@ -49,8 +49,8 @@
                    Мы предлагаем клиентам материалы на лучших условиях и с дополнительными скидками от поставщиков и производителей.
                  </div>
                    <h2>Стоимость материалов</h2>
-                   <div class="card-price" v-if="getFakeMaterialPrice">
-                     ₽ <Count :end="getFakeMaterialPrice"/>
+                   <div class="card-price">
+                     ₽ {{ getFakeMaterialPrice }}
                    </div>
                    <span>Лучшие цены</span>
                   <div class="card-small-price">Стоимость за кв. м.: <strong>₽ {{ getFakeAveragePrice }} </strong></div>
@@ -136,9 +136,7 @@
           },
 
           getFakeMaterialPrice () {
-              if (this.square && this.price) {
-                  return parseInt(this.square * this.price) - 1000
-              }
+              return new Intl.NumberFormat('ru-Ru').format(parseInt(this.square) * this.price - 1000)
           },
 
           getFakeAveragePrice () {
@@ -320,7 +318,7 @@ strong {
     position: absolute;
 
     bottom: 75%;
-    font-size: 12px;
+    font-size: 14px;
 
     padding: 15px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
@@ -379,11 +377,11 @@ ul {
 
   font-size: 12px;
 
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 120px;
 
   right: -40%;
-  top: 5%;
+  top: 1%;
   opacity: 0;
 
   z-index: 999;
