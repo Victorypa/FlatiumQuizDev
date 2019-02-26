@@ -376,6 +376,9 @@ ul {
   .content-center {
     margin: 0;
   }
-
+  .nav-tabs a {
+    display: none;
   }
+
+}
 </style>

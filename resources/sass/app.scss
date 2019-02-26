@@ -138,5 +138,8 @@ transition: .15s ease-in-out;
     font-size: 12px;
 
     padding: 0;
+    .nav-link {
+      width: 100%;
+    }
   }
 }
