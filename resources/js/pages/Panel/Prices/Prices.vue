@@ -13,7 +13,11 @@
                         <strong>Тип</strong>
                     </th>
                     <th>
-                        <strong>Цена</strong>
+                        <strong>Цена (работа)</strong>
+                    </th>
+
+                    <th>
+                        <strong>Цена (материал)</strong>
                     </th>
                 </tr>
             </thead>

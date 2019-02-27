@@ -38,6 +38,7 @@
 
         <script src="{{ secure_asset('js/app.js') }}"></script>
         {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
+
         @yield('scripts')
 
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPTLKSR"

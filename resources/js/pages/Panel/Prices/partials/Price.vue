@@ -9,17 +9,36 @@
         <td>
             {{ translations[price.type] }}
         </td>
-        <td class="clickable" v-if="!show" @click="show = !show">
-            {{ currentPrice }} Р
+        <td class="clickable text-center"
+            v-if="!work_show"
+            @click="work_show = !work_show"
+            >
+            {{ price.price }} Р
         </td>
         <td v-else>
-            <form @submit.prevent="updatePrice(price.id)">
+            <form @submit.prevent="updatePrice()">
                 <input type="text"
-                       v-model="currentPrice"
+                       v-model="price.price"
                        />
                 <button type="submit" class="btn btn-sm btn-primary">Сохранить</button>
             </form>
         </td>
+
+        <td class="clickable text-center"
+            v-if="!material_show"
+            @click="material_show = !material_show"
+            >
+            {{ price.material_price }} Р
+        </td>
+        <td v-else>
+            <form @submit.prevent="updatePrice()">
+                <input type="text"
+                       v-model="price.material_price"
+                       />
+                <button type="submit" class="btn btn-sm btn-primary">Сохранить</button>
+            </form>
+        </td>
+
     </tr>
 </template>
 
@@ -32,17 +51,19 @@
         data () {
             return {
                 translations,
-                currentPrice: this.price.price,
-                show: false
+                work_show: false,
+                material_show: false
             }
         },
 
         methods: {
-            updatePrice (id) {
-                axios.patch(`/panel/prices/${id}`, {
-                    'price': this.currentPrice
+            updatePrice () {
+                axios.patch(`/panel/prices/${this.price.id}`, {
+                    'price': this.price.price,
+                    'material_price': this.price.material_price
                 }).then(response => {
-                    this.show = false
+                    this.material_show = false
+                    this.work_show = false
                 })
             }
         }
