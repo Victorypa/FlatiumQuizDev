@@ -34,6 +34,15 @@ class LeadCreate extends ServiceAbstract
                                 'value' => $this->exists('remont_id', $data['custom_fields'])
                             )
                         )
+                    ),
+
+                    array(
+                        'id' => 585849,
+                        'values' => array(
+                            array(
+                                'value' => $this->exists('roistat_cookie', $data['custom_fields'])
+                            )
+                        )
                     )
                 ) : null
             )
